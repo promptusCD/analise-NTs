@@ -1,0 +1,103 @@
+# manifest.yaml - Registro de todas as fontes do projeto
+# Cada entrada deve ter: id, documento, tipo, arquivo, sha256, status_ingestao
+# Tipos: nota_tecnica | moc | xsd | externa
+# Status: pendente | extraida | revisada
+
+- id: NFE-NT-2026.007-v1.10
+  documento: NF-e
+  tipo: nota_tecnica
+  nt: "2026.007"
+  versao: "1.10"
+  titulo: "Emissao por Contribuinte exclusivo IBS/CBS"
+  arquivo: fontes/nfe/notas-tecnicas/NT_2026_007_v1.10.pdf
+  sha256: 4A9D9DE64504F409
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: NFE-NT-2026.002-v1.11
+  documento: NF-e
+  tipo: nota_tecnica
+  nt: "2026.002"
+  versao: "1.11"
+  titulo: "DANFE Simplificado Tipo 2"
+  arquivo: fontes/nfe/notas-tecnicas/NT_2026_002_v1.11_DANFE_Simplificado.pdf
+  sha256: 72C033B2C7490710
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: NFE-NT-2026.008-v1.00
+  documento: NF-e
+  tipo: nota_tecnica
+  nt: "2026.008"
+  versao: "1.00"
+  titulo: "Valor Liquido do Produto"
+  arquivo: fontes/nfe/notas-tecnicas/NT_2026_008_v1.00_Valor_Liquido.pdf
+  sha256: BC56E76AE5F3354F
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: NFE-NT-2026.010-v1.00
+  documento: NF-e
+  tipo: nota_tecnica
+  nt: "2026.010"
+  versao: "1.00"
+  titulo: "DANFE impressao RTC"
+  arquivo: fontes/nfe/notas-tecnicas/NT_2026_010_v1.00_DANFE_impressao.pdf
+  sha256: EADC5246235F37A5
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: CTE-NT-2026.004-v1.00
+  documento: CT-e
+  tipo: nota_tecnica
+  nt: "2026.004"
+  versao: "1.00"
+  titulo: "Reforma Tributaria do Consumo CT-e"
+  arquivo: fontes/cte/notas-tecnicas/CTe_NT_2026_004_v1.00.pdf
+  sha256: 49ADF3048AB9CC5C
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: CTE-NT-2025.001-v1.14b
+  documento: CT-e
+  tipo: nota_tecnica
+  nt: "2025.001"
+  versao: "1.14b"
+  titulo: "RTC CT-e minuta"
+  arquivo: fontes/cte/notas-tecnicas/CTe_NT_2025_001_RTC_v1.14b.pdf
+  sha256: C664274F51EF2EFE
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: CTE-NT-2026.002-v1.01
+  documento: CT-e
+  tipo: nota_tecnica
+  nt: "2026.002"
+  versao: "1.01"
+  titulo: "Evolucoes RTC CT-e"
+  arquivo: fontes/cte/notas-tecnicas/CTe_NT_2026_002_v1.01.pdf
+  sha256: 604B6B61981A2F57
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: MDFE-NT-2025.001-v1.03
+  documento: MDF-e
+  tipo: nota_tecnica
+  nt: "2025.001"
+  versao: "1.03"
+  titulo: "Ajustes layout e regras MDF-e"
+  arquivo: fontes/mdfe/notas-tecnicas/MDFe_NT_2025_001_v1.03.pdf
+  sha256: C4B32BE94EB484E7
+  status_ingestao: pendente
+  confianca: oficial
+
+- id: MDFE-NT-2026.001-v1.00
+  documento: MDF-e
+  tipo: nota_tecnica
+  nt: "2026.001"
+  versao: "1.00"
+  titulo: "Alteracao regra validacao MDF-e"
+  arquivo: fontes/mdfe/notas-tecnicas/MDFe_NT_2026_001_v1.00.pdf
+  sha256: CF1ECB48D9C1BAF9
+  status_ingestao: pendente
+  confianca: oficial

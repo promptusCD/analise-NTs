@@ -1,0 +1,22 @@
+{
+  "name": "fiscal-dfe-knowledge",
+  "version": "1.0.0",
+  "description": "Repositorio de conhecimento fiscal para NF-e, CT-e e MDF-e",
+  "main": "index.js",
+  "scripts": {
+    "calendario": "node scripts/js/gerar_calendario.js",
+    "docs-fiscais": "node scripts/js/atualizar_docs_fiscais.js",
+    "manifest": "node scripts/js/verificar_manifest.js",
+    "novidades": "node scripts/js/detectar_novidades.js",
+    "consultar": "node scripts/js/consultar.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {},
+  "keywords": ["fiscal", "nfe", "cte", "mdfe", "nota-tecnica", "xsd"],
+  "author": "",
+  "license": "MIT"
+}

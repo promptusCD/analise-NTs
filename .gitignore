@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Temporarios
+*.tmp
+*.bak
+*.swp
+*~
+
+# Saidas geradas (regeneradas por scripts)
+catalogo/nt/
+catalogo/regras/*.json
+catalogo/campos/*.json
+catalogo/legendas/*.yaml
+calendario/CALENDARIO.md
+calendario/calendario.html
+
+# XLSX (fontes originais, nao versionar)
+*.xlsx
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# OpenSpec (gerenciado internamente)
+# NAO ignorar openspec/ - ele precisa ser versionado
