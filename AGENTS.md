@@ -59,7 +59,8 @@ Voce consulta documentacao tecnica de NF-e, CT-e e MDF-e. Siga SEMPRE:
 ## Regras de Ingestao
 
 12. **Ao ingerir uma NT nova**: extrair -> catalogar -> atualizar
-    calendario -> regenerar docs-fiscais -> registrar duvidas -> commit.
+    calendario -> regenerar docs-fiscais -> registrar duvidas.
+    **NAO fazer commit** - aguardar o usuario.
 
 ---
 

@@ -110,6 +110,7 @@ rules:
     - Cada task deve ter verificacao de conclusao
     - Ordenar por dependencia
     - Tasks de maximo 2 horas de implementacao
+    - NUNCA incluir tasks de commit/merge - isso e atividade humana
 
 operations:
   apply:
@@ -118,9 +119,11 @@ operations:
       - Seguir hierarquia de fontes (oficial > fornecedor > forum)
       - Nunca editar arquivos em fontes/
       - Nunca editar blocos AUTO dos docs-fiscais
-      - Commits em pt-BR
+      - NUNCA fazer commits nem merges - isso e atividade exclusivamente humana
+      - Apos implementar, aguardar o usuario fazer o commit manualmente
   archive:
     guidance:
       - Resumir o que foi feito antes de arquivar
       - Verificar que todos os testes passam
       - Atualizar docs/duvidas-abertas.md se necessario
+      - NUNCA fazer commits nem merges - aguardar o usuario
