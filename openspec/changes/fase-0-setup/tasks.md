@@ -58,6 +58,6 @@
 
 ## 9. Verificacao Final
 
-- [ ] 9.1 Rodar `node scripts/js/verificar_manifest.js` (se existir) ou verificar manualmente que todos os arquivos estao no manifest
-- [ ] 9.2 Confirmar que a estrutura de diretorios esta completa conforme REFERENCIA.md secao 3
-- [ ] 9.3 Commit com mensagem "fase-0-setup: estrutura base e organizacao de arquivos"
+- [x] 9.1 Rodar `node scripts/js/verificar_manifest.js` (se existir) ou verificar manualmente que todos os arquivos estao no manifest
+- [x] 9.2 Confirmar que a estrutura de diretorios esta completa conforme REFERENCIA.md secao 3
+- [x] 9.3 Commit com mensagem "fase-0-setup: estrutura base e organizacao de arquivos"

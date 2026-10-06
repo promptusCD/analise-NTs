@@ -747,7 +747,7 @@ ou `python scripts/...`. Basta digitar `/comando` e a IA faz tudo.
 | `/impacto <nt>` | Checklist para dev | Leitura de catalogo + NT |
 | `/atualizar-fontes` | Buscar novidades + versionar | WebFetch (portais) + JS |
 | `/duvidas` | Lista priorizada | Leitura de duvidas-abertas.md |
-| `/catalogar-atualizar` | Atualizar CATALOGO_ARQUIVOS | Leitura de diretorios + escrita |
+| `/catalogar-atualizar` | Organizar entrada/, atualizar manifest e catalogo | Classificacao + movimentacao + escrita |
 
 ### Permissoes
 A IA deve ter acesso a:
