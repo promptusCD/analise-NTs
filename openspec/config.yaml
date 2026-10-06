@@ -1,32 +1,126 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  # fiscal-dfe-knowledge - Contexto do Projeto
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+  ## O que e
+  Repositorio de conhecimento fiscal que transforma documentos brutos do governo
+  (Notas Tecnicas, MOCs e XSDs de NF-e/NFC-e, CT-e e MDF-e) em conhecimento
+  organizado, consultavel e com fonte citada.
 
-# Per-operation guidance (optional)
-# Add advisory guidance for how apply and archive work should be conducted.
-# This is separate from artifact rules above.
-# Example:
-#   operations:
-#     apply:
-#       guidance:
-#         - Keep test summaries concise
-#     archive:
-#       guidance:
-#         - Summarize the archive outcome before finishing
+  ## Arquitetura: Hibrida Python + JavaScript
+  - Python 3.11+ para extracao de PDF (PyMuPDF) e XSD (lxml)
+  - Node.js para orquestracao, CLI, calendario, HTML
+  - Scripts Python em scripts/python/, scripts JS em scripts/js/
+  - Python roda via child_process do Node.js
+
+  ## Stack Tecnica
+  - Python: pymupdf, python-docx, lxml, pyyaml, pytest, jinja2
+  - Node.js: js-yaml, ejs, node-fetch
+  - CLI: opencode (commands em .opencode/commands/, skills em .opencode/skills/)
+  - Versionamento: git com commits semanticos
+
+  ## Documentos Fiscais Cobertos
+  - NF-e (modelo 55) e NFC-e (modelo 65)
+  - CT-e (modelo 57), CT-e OS (modelo 67), GTV-e (modelo 64), CT-e Simplificado
+  - MDF-e (modelo 58)
+
+  ## Hierarquia de Fontes
+  1. Oficial (NT/MOC/XSD do portal) - SEMPRE prevalece
+  2. Fornecedor (FlexDocs, TecnoSpeed) - rotular como "nao oficial"
+  3. Forum (ACBr, blogs) - rotular como "nao oficial"
+  Conflito: mostrar as duas, prevalece a oficial, registrar em docs/duvidas-abertas.md
+
+  ## Portais Oficiais
+  - NF-e: nfe.fazenda.gov.br (primario) + dfe-portal.svrs.rs.gov.br/NFe (secundario)
+  - CT-e: cte.fazenda.gov.br (primario) + dfe-portal.svrs.rs.gov.br/Cte (secundario)
+  - MDF-e: dfe-portal.svrs.rs.gov.br/Mdfe (unico portal)
+  REGRA: Sempre consultar AMBOS os portais
+
+  ## Marcacoes de Cor nas NTs
+  - Fundo amarelo = alterado na versao atual
+  - Fundo verde = alterado em versao posterior
+  - Texto vermelho riscado = excluido
+  - Sem marcação = inalterado ou novo inteiro
+  A cor nunca prova sozinha. Cruze com secao "Descricao das alteracoes"
+
+  ## Vigencia
+  Calculada pela data de hoje, nunca digitada:
+  - futura | em_homologacao | prazo_homologacao_encerrado | em_producao | excluida
+
+  ## Estrutura de Diretorios
+  - fontes/ = arquivos originais organizados por documento (nfe/, cte/, mdfe/, externas/)
+  - catalogo/ = camada "mastigada" gerada por scripts (nt/, regras/, campos/, legendas/)
+  - calendario/ = fonte unica de vigencias (calendario.yaml -> .md/.html)
+  - docs-fiscais/ = documentacao por documento (NFE.md, CTE.md, MDFE.md)
+  - entrada/ = area de recebimento (colar arquivos aqui, /catalogar-atualizar organiza)
+
+  ## Commands Disponiveis
+  - /atualizar-fontes: buscar novidades nos portais
+  - /catalogar-atualizar: organizar entrada/ automaticamente em fontes/
+  - /ingerir-nt <arquivo>: extrair NT com marcações de cor
+  - /consultar <pergunta>: resposta com fontes citadas
+  - /regra <id>: detalhe de regra de validacao
+  - /campo <tag>: dados de campo XSD
+  - /calendario [doc]: vigencias filtradas
+  - /impacto <nt>: checklist para dev
+  - /duvidas: lista priorizada
+
+  ## Convencoes
+  - Nomenclatura de NTs: <DOC>_NT_<numero>_v<versao>.pdf
+  - Nomenclatura de MOCs: MOC_<DOC>_<secao>_<versao>.pdf
+  - Commits: mensagens em pt-BR, formato convencional
+  - Tudo em pt-BR (documentacao, scripts, comentarios)
+  - Nunca editar arquivos em fontes/ (originais imutaveis)
+  - Nunca editar blocos AUTO dos docs-fiscais (usar scripts)
+
+  ## XSDs Disponiveis
+  - NF-e: PL_NFe_010b_v1.30, PL_NFe_010f_v1.04, Eventos_RTC, Eventos_RTC_v1.30, Evento_211110_v1.40, Eventos_Fisco_v1.23
+  - CT-e: PL_CTe_400_NT2026.004_RTC_v1.00, PL_CTe_400_NT2026.001_v1.01c
+  - MDF-e: PL_MDFe_300b_NT012025_v1.05
+
+  ## NTs Ingeridas
+  - NF-e: 2026.007 v1.10, 2026.002 v1.11, 2026.008 v1.00, 2026.010 v1.00
+  - CT-e: 2026.004 v1.00, 2025.001 v1.14b, 2026.002 v1.01
+  - MDF-e: 2025.001 v1.03, 2026.001 v1.00
+
+  ## MOCs Disponiveis
+  - NF-e: v7.00 (Visao Geral + Anexo I + Anexo II + Anexo III)
+  - CT-e: v4.00 (Visao Geral + Anexo I + Anexo II DACTE)
+  - MDF-e: v3.00b (Visao Geral + Anexo I + Anexo II DAMDFE)
+
+  ## Armadilhas Conhecidas
+  - Regra nova inteira muitas vezes nao vem marcada com cor
+  - Texto extraido de PDF sem camada visual faz regra excluida parecer vigente
+  - Um mesmo numero de versao pode ter multiplas linhas no cronograma
+  - "Ate 05/10/2026" deve ser guardado literal, nao reinterpretar
+  - Regra excluida aparece como texto normal se extraido sem marcações
+
+rules:
+  proposal:
+    - Em pt-BR
+    - Incluir secao "Impacto" com arquivos/codigo afetado
+    - Referenciar docs/REFERENCIA.md para contexto completo
+  design:
+    - Em pt-BR
+    - Justificar decisoes tecnicas com alternativas consideradas
+    - Incluir secao "Riscos / Trade-offs"
+  tasks:
+    - Em pt-BR
+    - Cada task deve ter verificacao de conclusao
+    - Ordenar por dependencia
+    - Tasks de maximo 2 horas de implementacao
+
+operations:
+  apply:
+    guidance:
+      - Ler AGENTS.md antes de implementar
+      - Seguir hierarquia de fontes (oficial > fornecedor > forum)
+      - Nunca editar arquivos em fontes/
+      - Nunca editar blocos AUTO dos docs-fiscais
+      - Commits em pt-BR
+  archive:
+    guidance:
+      - Resumir o que foi feito antes de arquivar
+      - Verificar que todos os testes passam
+      - Atualizar docs/duvidas-abertas.md se necessario
