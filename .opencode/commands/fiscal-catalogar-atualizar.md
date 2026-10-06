@@ -95,7 +95,35 @@ Registrar cada arquivo movido/criado no manifest com:
 Adicionar/atualizar entradas no catalogo para cada arquivo organizado.
 
 ### 3. Atualizar ARQUIVOS_NECESSARIOS.md
-Marcar itens encontrados como OK. Se todos concluidos, versionar.
+
+#### 3.1 Verificar status atual
+- Ler `docs/ARQUIVOS_NECESSARIOS.md`
+- Se tem "Status: ATIVO" = ciclo em andamento (esperado)
+- Se tem "Status: CONCLUIDO" = ciclo ja fechado (criar novo antes de continuar)
+
+#### 3.2 Marcar itens encontrados
+- Para cada arquivo movido de `entrada/` para `fontes/`, buscar item
+  correspondente no ARQUIVOS_NECESSARIOS
+- Marcar item como OK
+- Atualizar contagem de "Documentos pendentes: N"
+
+#### 3.3 Verificar se ciclo completo
+Se TODOS os itens estiverem OK:
+1. Adicionar data e versao ao cabecalho do ARQUIVOS_NECESSARIOS.md:
+   ```
+   > Status: CONCLUIDO
+   > Versao: vN (incrementar)
+   > Data de conclusao: YYYY-MM-DD
+   > Documentos importados: N/N
+   ```
+2. Copiar arquivo para `docs/historico-arquivos/ARQUIVOS_NECESSARIOS_vN_YYYY-MM-DD.md`
+3. Criar novo `docs/ARQUIVOS_NECESSARIOS.md` (sem data/versao, status ATIVO)
+   para o proximo ciclo
+
+Se ainda ha itens pendentes:
+- Manter como ATIVO
+- Atualizar contagem de pendentes
+- Listar itens que ainda faltam
 
 ### 4. Relatorio final
 
