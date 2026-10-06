@@ -1,0 +1,733 @@
+{
+  "documento": "CT-e",
+  "versao": "4.00",
+  "secao": "Anexo I Leiaute",
+  "titulo": "",
+  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_Anexo_I_Leiaute_v4.00.pdf",
+  "sha256": "344089906615a2a4d93f6e0ffdafe6cb957c1bb04a57514438de95b58bc00fd2",
+  "extraido_em": "2026-10-06T21:36:20.726494+00:00",
+  "tipo_documento": "MOC",
+  "secoes": [
+    {
+      "numero": "2",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "1 Regras de Validação do CTe (Modelo 57)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.999",
+      "titulo": "999,99)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "12",
+      "titulo": ", Modelo diferente de 57, Número zerado, Forma de emissão inválido, UF",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "2 Regras de Validação do CTe OS (Modelo 67)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "3 Regras de Validação da GTVe (Modelo 64)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "1 Leiaute do Modal Rodoviário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "2 Leiaute do Modal Aéreo",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "3 Leiaute do Modal Ferroviário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "4 Leiaute do Modal Aquaviário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "5 Leiaute do Modal Dutoviário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "6 Leiaute do Multimodal",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "7 Expressões Regulares e Valores de Domínio do Modelo 57",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "1 Leiaute do Modal Rodoviário OS",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "777/2015",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "2 Expressões Regulares e Valores de Domínio do Modelo 67",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "1 Expressões Regulares e Valores de Domínio do Modelo 64",
+      "pagina_inicio": 0
+    }
+  ],
+  "regras": [
+    {
+      "id": "2009",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou > 12), Modelo diferente de 57, Número",
+      "secao": ""
+    },
+    {
+      "id": "2009",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou > 12), Modelo diferente de 57, Número",
+      "secao": ""
+    },
+    {
+      "id": "2009",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou > 12), Modelo diferente de 57, Número",
+      "secao": ""
+    },
+    {
+      "id": "2009",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou > 12), Modelo diferente de 67, Número",
+      "secao": ""
+    },
+    {
+      "id": "2020",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou > 12), Modelo diferente de 64, Número",
+      "secao": ""
+    },
+    {
+      "id": "2009",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou > 12), Modelo diferente de 67, Número",
+      "secao": ""
+    },
+    {
+      "id": "2009",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou > 12), Modelo diferente de 67, Número",
+      "secao": ""
+    },
+    {
+      "id": "3-",
+      "cStat": "",
+      "descricao": "emissão CTe pelo contribuinte com",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para as operações com o",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para operações com o exterior.",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para operações com o exterior.",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "- 256",
+      "secao": ""
+    },
+    {
+      "id": "0-",
+      "cStat": "",
+      "descricao": "Sem data definida",
+      "secao": ""
+    },
+    {
+      "id": "1-Na",
+      "cStat": "",
+      "descricao": "data;",
+      "secao": ""
+    },
+    {
+      "id": "2-Até",
+      "cStat": "",
+      "descricao": "a data;",
+      "secao": ""
+    },
+    {
+      "id": "3-A",
+      "cStat": "",
+      "descricao": "partir da data",
+      "secao": ""
+    },
+    {
+      "id": "4-No",
+      "cStat": "",
+      "descricao": "período",
+      "secao": ""
+    },
+    {
+      "id": "0-",
+      "cStat": "",
+      "descricao": "Sem hora definida",
+      "secao": ""
+    },
+    {
+      "id": "00",
+      "cStat": "",
+      "descricao": "- Tributação normal ICMS",
+      "secao": ""
+    },
+    {
+      "id": "20",
+      "cStat": "",
+      "descricao": "- Tributação com BC reduzida do ICMS",
+      "secao": ""
+    },
+    {
+      "id": "40",
+      "cStat": "",
+      "descricao": "- ICMS isenção;",
+      "secao": ""
+    },
+    {
+      "id": "41",
+      "cStat": "",
+      "descricao": "- ICMS não tributada;",
+      "secao": ""
+    },
+    {
+      "id": "51",
+      "cStat": "",
+      "descricao": "- ICMS diferido",
+      "secao": ""
+    },
+    {
+      "id": "60",
+      "cStat": "",
+      "descricao": "- ICMS cobrado por substituição",
+      "secao": ""
+    },
+    {
+      "id": "90",
+      "cStat": "",
+      "descricao": "- ICMS outros",
+      "secao": ""
+    },
+    {
+      "id": "90",
+      "cStat": "",
+      "descricao": "- ICMS Outra UF",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- Simples Nacional",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- NF Modelo 01/1A e Avulsa;",
+      "secao": ""
+    },
+    {
+      "id": "04",
+      "cStat": "",
+      "descricao": "- NF de Produtor",
+      "secao": ""
+    },
+    {
+      "id": "00",
+      "cStat": "",
+      "descricao": "- Declaração;",
+      "secao": ""
+    },
+    {
+      "id": "10",
+      "cStat": "",
+      "descricao": "- Dutoviário;",
+      "secao": ""
+    },
+    {
+      "id": "59",
+      "cStat": "",
+      "descricao": "- CF-e SAT;",
+      "secao": ""
+    },
+    {
+      "id": "65",
+      "cStat": "",
+      "descricao": "- NFC-e;",
+      "secao": ""
+    },
+    {
+      "id": "99",
+      "cStat": "",
+      "descricao": "- Outros",
+      "secao": ""
+    },
+    {
+      "id": "08-DTA",
+      "cStat": "",
+      "descricao": "(Despacho de Trânsito",
+      "secao": ""
+    },
+    {
+      "id": "09-Conhecimento",
+      "cStat": "",
+      "descricao": "Aéreo Internacional;",
+      "secao": ""
+    },
+    {
+      "id": "10",
+      "cStat": "",
+      "descricao": "– Conhecimento - Carta de Porte",
+      "secao": ""
+    },
+    {
+      "id": "11",
+      "cStat": "",
+      "descricao": "– Conhecimento Avulso;",
+      "secao": ""
+    },
+    {
+      "id": "12-TIF",
+      "cStat": "",
+      "descricao": "(Transporte Internacional",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "- 256",
+      "secao": ""
+    },
+    {
+      "id": "404",
+      "cStat": "",
+      "descricao": "infCTeSupl",
+      "secao": ""
+    },
+    {
+      "id": "50",
+      "cStat": "",
+      "descricao": "- 1000",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- certificado do expedidor para",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- artigo perigoso conforme Declaração",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- somente em aeronave cargueira;",
+      "secao": ""
+    },
+    {
+      "id": "04",
+      "cStat": "",
+      "descricao": "- artigo perigoso - declaração do",
+      "secao": ""
+    },
+    {
+      "id": "05",
+      "cStat": "",
+      "descricao": "- artigo perigoso em quantidade isenta;",
+      "secao": ""
+    },
+    {
+      "id": "06",
+      "cStat": "",
+      "descricao": "- gelo seco para refrigeração",
+      "secao": ""
+    },
+    {
+      "id": "07",
+      "cStat": "",
+      "descricao": "- não restrito (especificar a Disposição",
+      "secao": ""
+    },
+    {
+      "id": "08",
+      "cStat": "",
+      "descricao": "- artigo perigoso em carga consolidada",
+      "secao": ""
+    },
+    {
+      "id": "09",
+      "cStat": "",
+      "descricao": "- autorização da autoridade",
+      "secao": ""
+    },
+    {
+      "id": "10",
+      "cStat": "",
+      "descricao": "– baterias de íons de lítio em",
+      "secao": ""
+    },
+    {
+      "id": "11",
+      "cStat": "",
+      "descricao": "- baterias de íons de lítio em",
+      "secao": ""
+    },
+    {
+      "id": "12",
+      "cStat": "",
+      "descricao": "- baterias de íons de lítio em",
+      "secao": ""
+    },
+    {
+      "id": "13",
+      "cStat": "",
+      "descricao": "– baterias de metal lítio em",
+      "secao": ""
+    },
+    {
+      "id": "14",
+      "cStat": "",
+      "descricao": "- baterias de metal lítio em",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "- baterias de metal lítio em",
+      "secao": ""
+    },
+    {
+      "id": "99",
+      "cStat": "",
+      "descricao": "- outro (especificar no campo",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "posições, sendo 11 inteiras e 4",
+      "secao": ""
+    },
+    {
+      "id": "5-",
+      "cStat": "",
+      "descricao": "Unidades (apenas para artigos",
+      "secao": ""
+    },
+    {
+      "id": "1-Ferrovia",
+      "cStat": "",
+      "descricao": "de origem;",
+      "secao": ""
+    },
+    {
+      "id": "2-Ferrovia",
+      "cStat": "",
+      "descricao": "de destino",
+      "secao": ""
+    },
+    {
+      "id": "1-Ferrovia",
+      "cStat": "",
+      "descricao": "de origem;",
+      "secao": ""
+    },
+    {
+      "id": "2-Ferrovia",
+      "cStat": "",
+      "descricao": "de destino",
+      "secao": ""
+    },
+    {
+      "id": "3-",
+      "cStat": "",
+      "descricao": "emissão CTe pelo contribuinte com",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para as operações com o",
+      "secao": ""
+    },
+    {
+      "id": "02-",
+      "cStat": "",
+      "descricao": "Aéreo;",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Aquaviário;",
+      "secao": ""
+    },
+    {
+      "id": "04",
+      "cStat": "",
+      "descricao": "- Ferroviário.",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para operações com o exterior.",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para operações com o exterior.",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "- 256",
+      "secao": ""
+    },
+    {
+      "id": "00",
+      "cStat": "",
+      "descricao": "- Tributação normal ICMS",
+      "secao": ""
+    },
+    {
+      "id": "20",
+      "cStat": "",
+      "descricao": "- Tributação com BC reduzida do ICMS",
+      "secao": ""
+    },
+    {
+      "id": "40",
+      "cStat": "",
+      "descricao": "- ICMS isenção;",
+      "secao": ""
+    },
+    {
+      "id": "41",
+      "cStat": "",
+      "descricao": "- ICMS não tributada;",
+      "secao": ""
+    },
+    {
+      "id": "51",
+      "cStat": "",
+      "descricao": "- ICMS diferido",
+      "secao": ""
+    },
+    {
+      "id": "90",
+      "cStat": "",
+      "descricao": "- Outros",
+      "secao": ""
+    },
+    {
+      "id": "90",
+      "cStat": "",
+      "descricao": "- ICMS Outra UF",
+      "secao": ""
+    },
+    {
+      "id": "90",
+      "cStat": "",
+      "descricao": "- ICMS Simples Nacional",
+      "secao": ""
+    },
+    {
+      "id": "3-Tempo",
+      "cStat": "",
+      "descricao": "de espera",
+      "secao": ""
+    },
+    {
+      "id": "5-Ad",
+      "cStat": "",
+      "descricao": "Valorem",
+      "secao": ""
+    },
+    {
+      "id": "189",
+      "cStat": "",
+      "descricao": "infCTeSupl",
+      "secao": ""
+    },
+    {
+      "id": "0-TAC",
+      "cStat": "",
+      "descricao": "– Agregado;",
+      "secao": ""
+    },
+    {
+      "id": "1-TAC",
+      "cStat": "",
+      "descricao": "Independente; ou",
+      "secao": ""
+    },
+    {
+      "id": "2-",
+      "cStat": "",
+      "descricao": "Contingência offline",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para as operações com o",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "- 256",
+      "secao": ""
+    },
+    {
+      "id": "160",
+      "cStat": "",
+      "descricao": "infCTeSupl",
+      "secao": ""
+    }
+  ],
+  "campos": [
+    {
+      "tag": "indAlteraToma",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": "e informado toma4:"
+    },
+    {
+      "tag": "indAlteraToma",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": "e informado toma4:"
+    },
+    {
+      "tag": "indAlteraToma",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": "e informado toma3:"
+    },
+    {
+      "tag": "prop",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    }
+  ]
+}

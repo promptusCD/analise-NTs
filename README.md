@@ -58,7 +58,7 @@ fiscal-dfe-knowledge/
 ├── package.json                 # Dependencias Node.js
 ├── requirements.txt             # Dependencias Python
 │
-├── entrada/                     # Area de recebimento (antes de organizar)
+├── entrada/                     # Area de recebimento (permanente na raiz)
 │   ├── *.pdf, *.docx            # NTs e MOCs brutos
 │   ├── XSDs/                    # Pacotes de schemas XML
 │   └── tabelas-informes/        # Tabelas e informes tecnicos
@@ -185,7 +185,6 @@ Ler `entrada/`, organizar automaticamente em `fontes/`, atualizar manifest e cat
 - Move para a pasta correta em `fontes/`
 - Verifica duplicatas por SHA256
 - Atualiza manifest.yaml e CATALOGO_ARQUIVOS.md
-- Limpa `entrada/` apos mover
 
 ---
 

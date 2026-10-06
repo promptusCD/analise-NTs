@@ -1,0 +1,345 @@
+# MOC MDF-e v3.00b
+
+**Secao:** VisaoGeral
+**Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_VisaoGeral_v3.00b.pdf
+**SHA256:** f8501acf8880c6b6705d286ee56acf59657de491c92e9d45aba7c666119932d7
+**Extraido em:** 2026-10-06T21:36:23.188755+00:00
+
+## Secoes
+
+- **2** - 1
+- **2.1** - 1
+- **2.1** - 2
+- **2.1** - 3
+- **2.1** - 4
+- **2.1** - 5
+- **2.1** - 6
+- **2.1** - 7
+- **2.1** - 8
+- **2.1** - 9
+- **2.1** - 10
+- **3** - 1
+- **3** - 2
+- **3.2** - 1
+- **3.2** - 2
+- **3.2** - 3
+- **3.2** - 4
+- **3.2** - 5
+- **3.2** - 6
+- **3** - 3
+- **3** - 4
+- **3.4** - 1
+- **3.4** - 2
+- **3.4** - 3
+- **3** - 5
+- **3.5** - 1
+- **3.5** - 2
+- **3.5** - 3
+- **3.5** - 4
+- **3** - 6
+- **3.6** - 1
+- **3.6** - 2
+- **3.6** - 3
+- **3** - 7
+- **3.7** - 1
+- **3.7** - 2
+- **3** - 8
+- **3** - 9
+- **4** - 1
+- **4.1** - 1
+- **4.1** - 2
+- **4.1** - 3
+- **4.1** - 4
+- **4.1** - 5
+- **4.1** - 6
+- **4.1** - 7
+- **4.1** - 8
+- **4.1** - 9
+- **4.1** - 10
+- **4** - 2
+- **4.2** - 1
+- **4.2** - 2
+- **4.2** - 3
+- **4.2** - 4
+- **4.2** - 5
+- **4.2** - 6
+- **4** - 3
+- **4.3** - 1
+- **4.3** - 2
+- **4.3** - 3
+- **4.3** - 4
+- **4.3** - 5
+- **4.3** - 6
+- **4** - 4
+- **4.4** - 1
+- **4.4** - 2
+- **4.4** - 3
+- **4.4** - 4
+- **4.4** - 5
+- **4.4** - 6
+- **4** - 5
+- **4.5** - 1
+- **4.5** - 2
+- **4.5** - 3
+- **4.5** - 4
+- **4.5** - 5
+- **4.5** - 6
+- **4** - 6
+- **4.6** - 1
+- **4.6** - 2
+- **5.1** - 1
+- **5.1** - 2
+- **5.1** - 3
+- **5.1** - 4
+- **5.1** - 5
+- **5.1** - 6
+- **5.1** - 7
+- **6** - 1
+- **6.1** - 1
+- **6.1** - 2
+- **6** - 2
+- **6.2** - 1
+- **6.2** - 2
+- **6** - 3
+- **6.3** - 1
+- **6.3** - 2
+- **6** - 4
+- **6.4** - 1
+- **6.4** - 2
+- **6** - 5
+- **6.5** - 1
+- **6.5** - 2
+- **6** - 6
+- **6** - 7
+- **7** - 1
+- **7.1** - 1
+- **7** - 2
+- **7** - 3
+- **7** - 4
+- **7** - 5
+- **7** - 6
+- **8** - 1
+- **8** - 2
+- **8** - 3
+- **9** - 1
+- **9** - 2
+- **9.2** - 1
+- **9.2** - 2
+- **9** - 3
+- **9.3** - 1
+- **9.3** - 2
+- **9.3** - 3
+- **9** - 4
+- **10** - 1
+- **10** - 2
+- **10** - 3
+- **10** - 4
+- **11** - 1
+- **11** - 2
+- **3** - 00
+- **3** - 00a
+- **3** - 00b
+- **3** - 00a
+- **3** - 00b
+- **2** - 1 Conceitos
+- **2.1** - 1 MDFe (modelo 58)
+- **2.1** - 2 DAMDFE
+- **2.1** - 3 Chave de Acesso do MDFe
+- **2.1** - 4 Chave Natural do MDFe
+- **2.1** - 5 Emitentes do MDFe
+- **2.1** - 6 Série reservada
+- **2.1** - 7 Regime Especial da Nota Fiscal Fácil (NFF)
+- **2.1** - 8 Encerramento do MDFe
+- **2.1** - 9 MDFe com carregamento posterior
+- **2.1** - 10 Provedor de Assinatura e Autorização
+- **2.1.10** - 1 Assinatura RSA e Geração do DFe pelo PAA
+- **1** - Solicitar o vínculo com o Provedor de Assinatura e Autorização no portal DFe da SVRS com CPF do
+- **2** - Obter no portal o par de chaves RSA (chave privada e chave pública)
+- **3** - No software do PAA: utilizar a chave privada para assinar o conteúdo da tag Id do DFe (RSA SHA1
+- **4** - Informar a chave pública no padrão XML Signature no grupo RSAKeyValue
+- **6** - PAA deverá transmitir o DFe para o serviço de autorização da SVRS
+- **2.1.10** - 2 Estrutura das informações do PAA no XML do DFe
+- **3** - 1 Modelo Conceitual
+- **3** - 00a) serão descontinuados em data a ser definida para os contribuintes em Nota Técnica futura,
+- **3** - 2 Padrões Técnicos
+- **3.2** - 1 Padrão de documento XML
+- **3.2** - 2 Padrão de Comunicação
+- **3.2** - 3 Padrão de Certificado Digital
+- **2.16.76.1.3** - 3 ou CPF na mesma extensão do certificado, com o OID = 2.16.76.1.3.1,
+- **3.2** - 4 Padrão da Assinatura Digital
+- **3.2** - 5 Validação da Assinatura Digital pelo Ambiente Autorizador
+- **3.2** - 6 Resumo dos Padrões Técnicos
+- **1** - 1-2004-08-24.html).
+- **3** - 3 Modelo Operacional
+- **3** - 4 Padrão de Mensagens dos Web Services
+- **3.4** - 1 Informações de controle e área de dados das mensagens
+- **3.4** - 2 Validação da estrutura XML das Mensagens dos Web Services
+- **3.4** - 3 Schemas XML das Mensagens dos Web Services
+- **3** - 5 Versão dos Schemas XML
+- **3.5** - 1 Liberação das versões dos schemas para o MDFe
+- **3.5** - 2 Correção de Pacote de Liberação
+- **3.5** - 3 Divulgação de novos Pacotes de Liberação
+- **3.5** - 4 Controle de Versão
+- **3** - 6 Schema XML – estrutura genérica e estrutura específica do modal
+- **3.6** - 1 Parte Genérica
+- **3.6** - 2 Parte Específica para cada Modal
+- **3.6** - 3 Parte Genérica e Parte Específica para cada Modal - Versões
+- **3** - 7 Sistema de Registro de Eventos
+- **3.7** - 1 Relação dos Tipos de Evento
+- **3.7** - 2 Eventos de Marcação
+- **3** - 8 Data e hora de emissão e outros horários
+- **3** - 9 SEFAZ virtual
+- **4** - 1 Regras de Validação Gerais
+- **4.1** - 1 Grupo A: Validação do Certificado de Transmissão (protocolo TLS)
+- **4.1** - 2 Grupo A-1: Validação do Certificado de Transmissão (Regime Especial NFF)
+- **4.1** - 3 Grupo A-2: Validação do Certificado de Transmissão (Regime Especial NFF)
+- **4.1** - 4 Grupo B-0: Validação da Compactação da Mensagem
+- **4.1** - 5 Grupo B: Validação Inicial da Mensagem no Web Service
+- **4.1** - 6 Grupo C: Validação da área de dados da mensagem
+- **4.1** - 7 Grupo D: Validações do Certificado de Assinatura Digital
+- **4.1** - 8 Grupo E: Validações da Assinatura Digital
+- **4.1** - 9 Grupo E-1: Validações da Assinatura Digital (Regime Especial NFF)
+- **4.1** - 10 Grupo E-2: Validações da Assinatura Digital (PAA)
+- **4** - 2 Serviço de Recepção MDFe
+- **4.2** - 1 Leiaute Mensagem de Entrada
+- **4.2** - 2 Leiaute Mensagem de Retorno
+- **4.2** - 3 Leiaute do MDFe processado
+- **4.2** - 4 Regras de Validação Básicas do Serviço
+- **4.2** - 5 Validação das regras de negócio do MDFe
+- **4.2** - 6 Final do Processamento do MDFe
+- **4** - 3 Serviço de Consulta Situação do MDFe
+- **4.3** - 1 Leiaute Mensagem de Entrada
+- **4.3** - 2 Leiaute Mensagem de Retorno
+- **4.3** - 3 Descrição do Processo de Web Service
+- **4.3** - 4 Regras de Validação Básicas do Serviço
+- **4.3** - 5 Validação das Regras de Negócio da Consulta Situação
+- **4.3** - 6 Final do Processamento
+- **4** - 4 Serviço de Consulta MDFe não encerrados
+- **4.4** - 1 Leiaute Mensagem de Entrada
+- **4.4** - 2 Leiaute Mensagem de Retorno
+- **4.4** - 3 Descrição do Processo de Web Service
+- **4.4** - 4 Regras de Validação Básicas do Serviço
+- **4.4** - 5 Validação das Regras de Negócio da Consulta Não Encerrados
+- **4.4** - 6 Final do Processamento
+- **4** - 5 Serviço de Consulta Status do Serviço de Autorização
+- **4.5** - 1 Leiaute Mensagem de Entrada
+- **4.5** - 2 Leiaute Mensagem de Retorno
+- **4.5** - 3 Descrição do Processo de Web Service
+- **4.5** - 4 Regras de Validação Básicas do Serviço
+- **4.5** - 5 Validação das Regras de Negócio da Consulta Status Serviço
+- **4.5** - 6 Final do Processamento
+- **4** - 6 Serviço de Consulta Cadastro (NFeConsultaCadastro)
+- **4.6** - 1 Onde obter as Definições deste Web Service
+- **4.6** - 2 Onde obter os Schemas XML deste Web Service
+- **5.1** - 1 Leiaute Mensagem de Entrada
+- **5.1** - 2 Leiaute Mensagem de Retorno
+- **5.1** - 3 Descrição do Processo de Web Service
+- **5.1** - 4 Regras de Validação Básicas do Serviço
+- **5.1** - 5 Validação das Regras de Negócio do Serviço de Registro de Eventos
+- **5.1** - 6 Processamento das validações específicas de cada evento
+- **5.1** - 7 Final do Processamento do Evento
+- **6** - 1 Evento de Cancelamento
+- **6.1** - 1 Validação das Regras Específicas do Evento
+- **6.1** - 2 Final do Processamento
+- **6** - 2 Evento de Encerramento
+- **6.2** - 1 Validação das Regras Específicas do Evento
+- **6.2** - 2 Final do Processamento
+- **6** - 3 Evento de Inclusão de Condutor
+- **6.3** - 1 Validação das Regras Específicas do Evento
+- **6.3** - 2 Final do Processamento
+- **6** - 4 Evento de Inclusão de DF-e
+- **6.4** - 1 Validação das Regras Específicas do Evento
+- **12** - , Modelo diferente de 55, Número zerado,
+- **6.4** - 2 Final do Processamento
+- **6** - 5 Evento de Pagamento da Operação de Transporte
+- **6.5** - 1 Validação das Regras Específicas do Evento
+- **6.5** - 2 Final do Processamento
+- **6** - 6 Evento de Confirmação do Serviço de Transporte
+- **6** - 7 Evento de Alteração do Pagamento do Serviço de Transporte
+- **7** - 1 Ambiente de Homologação / Produção
+- **7.1** - 1 Sobre as condições de teste para as empresas
+- **7** - 2 Tratamento de caracteres especiais no texto de XML
+- **7** - 3 Cálculo do dígito verificador da chave de acesso do MDFe
+- **7** - 4 Codificação das Unidades Federadas
+- **7** - 5 Número do protocolo
+- **7** - 6 Tempo médio de resposta
+- **8** - 1 Erros e problemas comuns
+- **8** - 2 Regras de Validação de Consumo Indevido
+- **8** - 3 Aplicação de Uso Indevido para rejeições relacionadas ao não
+- **9** - 1 Licença
+- **9** - 2 Imagem do QR Code para MDFe
+- **9.2** - 1 Para MDFe com tipo de emissão Normal:
+- **9.2** - 2 Para MDFe com tipo de emissão Contingência Off-Line:
+- **9** - 3 Configurações para QR Code
+- **9.3** - 1 Capacidade de armazenamento
+- **9.3** - 2 Capacidade de correção de erros
+- **9.3** - 3 Tipo de caracteres
+- **9** - 4 URL da Consulta do MDFe via QR Code no XML
+- **10** - 1 Consulta Pública Resumida de MDFe via Digitação de Chave de
+- **10** - 2 Consulta Pública Resumida de MDFe via QR Code
+- **10** - 3 Tabela padronizada com os códigos e mensagens na consulta do
+- **10** - 4 Padronização dos endereços das consultas públicas
+- **11** - 1 Detalhes técnicos da Contingência
+- **11** - 2 Resumo das ações para entrada em contingência
+- **10.2.2** - ;
+
+## Regras de Validacao (46 encontradas)
+
+- `B64`: 1 - 1
+- `B64`: 1 - 1
+- `1-`: Emitente
+- `1-`: Emitente
+- `1-`: Emitente
+- `1-`: Emitente
+- `2-Fisco`: Emitente
+- `54`: -
+- `920-969`: ou para Regime Especial da Nota Fiscal
+- `9999999`: para encerramento no exterior
+- `2006`: ou maior que atual, Mês inválido (0 ou >
+- `01`: - Vale Pedágio
+- `02`: - Impostos, taxas e contribuições
+- `03`: - Despesas (bancárias, meios de
+- `99`: – Outros
+- `0-Pagamento`: à Vista;
+- `1-Pagamento`: à Prazo;
+- `01`: - Vale Pedágio
+- `02`: - Impostos, taxas e contribuições
+- `03`: - Despesas (bancárias, meios de
+- `99`: – Outros
+- `0-Pagamento`: à Vista;
+- `1-Pagamento`: à Prazo.
+- `20`: 6 0 54 0 28 18 15 0 0 18 81 8 7 0 0 8 15 0 54 40 35 0 5 8 0 0 0 0 0 0 35 32
+- `24-Rio`: Grande do Norte
+- `31-Minas`: Gerais
+- `32-Espírito`: Santo
+- `33-Rio`: de Janeiro
+- `35-São`: Paulo
+- `42-Santa`: Catarina
+- `43-Rio`: Grande do Sul
+- `50-Mato`: Grosso do Sul
+- `51-Mato`: Grosso
+- `53-Distrito`: Federal
+- `10`: posições numéricas sequenciais no ano.
+- `1ª`: parte - Endereço do site da Portal Nacional do MDFe, seguido do caractere “?”; exemplo:
+- `2ª`: parte – Parâmetros para consultar a chave de acesso de MDFe separados pelo caractere “&”;
+- `1ª`: parte - URL para acessar o MDFe, seguido do caractere “?”
+- `2ª`: parte - parâmetros chMDFe e tpAmb da mesma forma como na forma de emissão normal
+- `3ª`: parte – sign assinatura digital no padrão RSA SHA-1 (Base64) do valor do parâmetro chMDFe
+- `1ª`: parte: URL
+- `2ª`: parte : parâmetros
+- `3ª`: parte: assinatura
+- `10`: Consulta Pública MDFe
+- `44`: caracteres numéricos.
+- `11`: Contingência para MDFe
+
+## Campos do Leiaute (9 encontrados)
+
+- `X509SubjectName`: 
+- `X509IssuerSerial`: 
+- `X509IssuerName`: 
+- `X509SerialNumber`: 
+- `X509SKI`: 
+- `KeyValue`: 
+- `RSAKeyValue`: 
+- `Modulus`: 
+- `Exponent`: 

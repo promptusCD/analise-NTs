@@ -9,7 +9,7 @@ em `docs/REFERENCIA.md` secao 18.
 
 ## Proximos passos
 1. Rodar `/organizar-fontes` (ou fase-0.5-organizacao) para mover arquivos
-2. Verificar integridade (SHA256) antes de limpar entrada/
+2. Verificar integridade (SHA256)
 3. Atualizar manifest.yaml com todos os arquivos
 4. Atualizar CATALOGO_ARQUIVOS.md
 

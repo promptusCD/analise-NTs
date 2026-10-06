@@ -115,7 +115,7 @@ fiscal-dfe-knowledge/
 +-- package.json                 # Dependencias Node.js
 +-- requirements.txt             # Dependencias Python
 |
-+-- entrada/                     # Area de recebimento (PDFs novos antes de ingerir)
++-- entrada/                     # Area de recebimento permanente na raiz (PDFs novos antes de ingerir)
 |   +-- *.pdf, *.docx           # NTs e MOCs brutos
 |   +-- XSDs/                    # Pacotes de schemas XML
 |
@@ -806,7 +806,7 @@ fontes/
 1. **Mover, nao copiar**: arquivo sai de `entrada/` e vai para `fontes/`
 2. **Verificar antes de limpar**: confirmar que TODOS os arquivos foram movidos corretamente
 3. **SHA256**: calcular hash antes e depois para garantir integridade
-4. **entrada/ limpo**: apos organizacao, `entrada/` fica vazio para novos downloads
+4. **entrada/ permanente**: `entrada/` e uma pasta permanente na raiz do projeto, nao precisa ser limpa
 5. **Nomenclatura**: nomes padronizados conforme tabela acima
 
 ### Mapeamento entrada/ -> fontes/

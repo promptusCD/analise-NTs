@@ -1,0 +1,2094 @@
+{
+  "documento": "",
+  "versao": "",
+  "secao": "",
+  "titulo": "",
+  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/nfe/moc/MOC_NFe_v7.00_Anexo_I_Leiaute.pdf",
+  "sha256": "5eb4cf2010b10b0b62f78197c4eb64025f24535d4c6e61158bc7806dd008f55d",
+  "extraido_em": "2026-10-06T21:36:18.012991+00:00",
+  "tipo_documento": "MOC",
+  "secoes": [
+    {
+      "numero": "1",
+      "titulo": "Introdução ..............................................................................................................................................................7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Leiaute da NF-e......................................................................................................................................................8",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "Orientações Gerais ............................................................................................................................................... 67",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.1",
+      "titulo": "Abreviações utilizadas nas colunas de cabeçalho do leiaute................................................................... 67",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "Regras de preenchimento dos campos da Nota Fiscal Eletrônica ........................................................... 69",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.3",
+      "titulo": "Preenchimento da URL do QR Code ........................................................................................................ 70",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "Regras de Validação dos Webservices .................................................................................................................. 71",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "Regras de Validação Gerais...................................................................................................................... 71",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.1",
+      "titulo": "Grupo A: Validação do Certificado de Transmissão (protocolo TLS)............................................................ 71",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.2",
+      "titulo": "Grupo B: Validação Inicial da Mensagem no Web Service .......................................................................... 71",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.3",
+      "titulo": "Grupo D: Validação da Área de Dados...................................................................................................... 72",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.4",
+      "titulo": "Grupo E: Validação do Certificado Digital de Assinatura............................................................................. 73",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.5",
+      "titulo": "Grupo F: Validação da Assinatura Digital .................................................................................................. 74",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "Regras de Negócio específicas ................................................................................................................. 74",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2.1",
+      "titulo": "Autorização de NF-e ................................................................................................................................ 74",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "Regras de Validação de Consumo Indevido (NT 2018.002) .................................................................. 140",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.1",
+      "titulo": "Autorização de NF-e .............................................................................................................................. 140",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.2",
+      "titulo": "Consulta Lote ........................................................................................................................................ 141",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.3",
+      "titulo": "Inutilização de numeração de NF-e......................................................................................................... 141",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.4",
+      "titulo": "Consulta Protocolo ................................................................................................................................ 141",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.5",
+      "titulo": "Registro de Eventos............................................................................................................................... 142",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.6",
+      "titulo": "Outros Serviços ..................................................................................................................................... 142",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "Lista das Regras de Validação ................................................................................................................ 143",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4.1",
+      "titulo": "Tabela de Códigos de Resultado de Processamento (cStat)..................................................................... 143",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4.2",
+      "titulo": "Tabela de Códigos de Rejeição .............................................................................................................. 143",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4.3",
+      "titulo": "Tabela de Códigos de Denegação de Uso .............................................................................................. 153",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2019",
+      "titulo": "001 v1.51",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "0, que trata do leiaute da NF-e e da NFC-e. Consolida todas as alterações de leiaute das",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "Introdução",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Leiaute da NF-e",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "1 do MOC – Visão Geral, Tabela de UF, Município e País).",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "29",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "29",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "29",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "47",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "79",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "20",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "21",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "22",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "23",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "24",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "25",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "40",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "41",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "60",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "70",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "71",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "72",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "73",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "74",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "128",
+      "titulo": "75",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "171",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "171",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "171",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "178",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "178",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "178",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "178",
+      "titulo": "04",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "184",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "184",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "184",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "184",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "192",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "192",
+      "titulo": "w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "192",
+      "titulo": "x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "192",
+      "titulo": "y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "192",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "192",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "192",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "201",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "201",
+      "titulo": "w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "201",
+      "titulo": "x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "201",
+      "titulo": "y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "201",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "201",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "201",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "204",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "204",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "204",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "211",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "211",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "211",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "212",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "212",
+      "titulo": "w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "212",
+      "titulo": "x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "212",
+      "titulo": "y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "215",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "216",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "216",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "0 N27.1 -",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "217",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "225",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "225",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "225",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "225",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "231",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "231",
+      "titulo": "w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "231",
+      "titulo": "x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "231",
+      "titulo": "y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "231",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "231",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "231",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "234",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "239",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "239",
+      "titulo": "w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "239",
+      "titulo": "x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "239",
+      "titulo": "y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "239",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "04",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "05",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "06",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "07",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "08",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "09",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "11",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "12",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "13",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "14",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "15",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "16",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "17",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "18",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "19",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "20",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "20a",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005 v1.20)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "20b",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005 v1.20)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "21",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "21a",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "21b",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "21c",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "21d",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "22",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "23",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "23a",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "23b",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "23c",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "23d",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "23e",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "24",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "25",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "26",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "27",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "28",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "24",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "25",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "26",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "27",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "28",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "29",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "30",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "31",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "32",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "33",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "34",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "35",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.35",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "35w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "35x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "35y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "36",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "37",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "38",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "39",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "40",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "41",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "42",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "224",
+      "titulo": "43",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "44",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "45",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "46",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.46",
+      "titulo": "0 N23.1 -",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "46w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "46x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "46y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "47",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "48",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "49",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "50",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "50",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.50",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.50",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005 v1.20)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "51",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.51",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "51w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "51x",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "51y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.51",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.51",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.51",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.51",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.51",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "52",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "53",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "54",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "55",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "55",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "56",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "57",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "58",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "59",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.59",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "60",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "61",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "62",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "63",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "64",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "65",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.65",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "65w",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "65X",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "65Y",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "52",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245.52",
+      "titulo": "0",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "245",
+      "titulo": "53",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "281",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "283",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "287",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "289",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "307",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "309",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "313",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "315",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "329",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "329",
+      "titulo": "03",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "329",
+      "titulo": "05",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "329",
+      "titulo": "07",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "329",
+      "titulo": "08",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "331",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "331",
+      "titulo": "02",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "337",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "372",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "01",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "11",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "12",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "13",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "20",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "21",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "22",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "23",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "24",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "25",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "26",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "27",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "398",
+      "titulo": "28",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "Orientações Gerais",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.1",
+      "titulo": "Abreviações utilizadas nas colunas de cabeçalho do leiaute",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "Regras de preenchimento dos campos da Nota Fiscal Eletrônica",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.3",
+      "titulo": "Preenchimento da URL do QR Code",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "Regras de Validação dos Webservices",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "Regras de Validação Gerais",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.1",
+      "titulo": "Grupo A: Validação do Certificado de Transmissão (protocolo TLS)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.2",
+      "titulo": "Grupo B: Validação Inicial da Mensagem no Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "109",
+      "titulo": "Estas validações poderão ser dispensadas se o Web Service não ficar disponível quando o serviço estiver paralisado.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.3",
+      "titulo": "Grupo D: Validação da Área de Dados",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.4",
+      "titulo": "Grupo E: Validação do Certificado Digital de Assinatura",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1.5",
+      "titulo": "Grupo F: Validação da Assinatura Digital",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "Regras de Negócio específicas",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2.1",
+      "titulo": "Autorização de NF-e",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": ". Neste caso, a SEFAZ Autorizadora irá retornar cStat=”150- Autorizado Uso",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": ". A NFC-e transmitida para a SEFAZ Autorizadora após o prazo de 24 horas",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2020",
+      "titulo": "006)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "001)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": ":",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2019",
+      "titulo": "001 v1.00)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2017",
+      "titulo": "001)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "553 (NT 2010/007)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "503; 3.553 (NT 2011/004, NT 2020.002 v1.00)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "503; 3.553 (NT 2011/004)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2017",
+      "titulo": "001)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "405, 5.656, 5.667 (NT 2015.002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "949 ou 6.949.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005 v1.30)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "90",
+      "titulo": ":",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "005 v1.30)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "103, 5.104, 5.115 (NT 2015.002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "405, 5.656, 5.667 (NT 2015.002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "003)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "30)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "30)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2016",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "Banco de Dados: Emitente",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Banco de Dados: NF-e",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "Banco de Dados: Inutilização",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "Banco de Dados: Chave de Acesso na Exportação Indireta",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "Banco de Dados: Destinatário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2019",
+      "titulo": "001 v1.00)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2019",
+      "titulo": "001 v1.00)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "Banco de Dados: Cadastro da SEFAZ",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "Banco de Dados: Acompanhamento do Contribuinte",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2015",
+      "titulo": "002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "Banco de Dados: Cadastro Centralizado de GTIN (CCG)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "790",
+      "titulo": "e CEST informado na NF-e diferente do cadastrado no CCG   (NT",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2017",
+      "titulo": "001)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "Regras de Validação de Consumo Indevido (NT 2018.002)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.1",
+      "titulo": "Autorização de NF-e",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.2",
+      "titulo": "Consulta Lote",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.3",
+      "titulo": "Inutilização de numeração de NF-e",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.4",
+      "titulo": "Consulta Protocolo",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.5",
+      "titulo": "Registro de Eventos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3.6",
+      "titulo": "Outros Serviços",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "Lista das Regras de Validação",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4.1",
+      "titulo": "Tabela de Códigos de Resultado de Processamento (cStat)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4.2",
+      "titulo": "Tabela de Códigos de Rejeição",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2020",
+      "titulo": "006)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2018",
+      "titulo": "004]",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4.3",
+      "titulo": "Tabela de Códigos de Denegação de Uso",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "Recomendada a não utilização de caracteres especiais ou acentuação nos textos das mensagens",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Recomendado que o campo xMotivo da mensagem de erro para o código 999 seja informado com",
+      "pagina_inicio": 0
+    }
+  ],
+  "regras": [
+    {
+      "id": "N12-98",
+      "cStat": "",
+      "descricao": ".",
+      "secao": ""
+    },
+    {
+      "id": "N26b",
+      "cStat": "",
+      "descricao": "foi alterado para ter ocorrência “0-1” nos Grupos: “Grupo Tributação do",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "de dezembro de 1970.",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "20",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "- 256 (v2.0)",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "60",
+      "secao": ""
+    },
+    {
+      "id": "11v0-10",
+      "cStat": "",
+      "descricao": "Informar o valor unitário de comercialização do produto,",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "20",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "21",
+      "secao": ""
+    },
+    {
+      "id": "300",
+      "cStat": "",
+      "descricao": "ou 400 (v2.0)",
+      "secao": ""
+    },
+    {
+      "id": "203",
+      "cStat": "",
+      "descricao": "(v2.0)",
+      "secao": ""
+    },
+    {
+      "id": "203-",
+      "cStat": "",
+      "descricao": "Isenção do ICMS nos Simples Nacional para faixa de",
+      "secao": ""
+    },
+    {
+      "id": "100-600",
+      "cStat": "",
+      "descricao": "Ver orientações de preenchimento na seção 3.3 deste",
+      "secao": ""
+    },
+    {
+      "id": "00",
+      "cStat": "",
+      "descricao": "- Tributada integralmente;",
+      "secao": ""
+    },
+    {
+      "id": "10",
+      "cStat": "",
+      "descricao": "- Tributada e com cobrança do ICMS por substituição tributária;",
+      "secao": ""
+    },
+    {
+      "id": "20",
+      "cStat": "",
+      "descricao": "- Com redução de base de cálculo;",
+      "secao": ""
+    },
+    {
+      "id": "30",
+      "cStat": "",
+      "descricao": "- Isenta ou não tributada e com cobrança do ICMS por substituição tributária;",
+      "secao": ""
+    },
+    {
+      "id": "40",
+      "cStat": "",
+      "descricao": "- Isenta;",
+      "secao": ""
+    },
+    {
+      "id": "41",
+      "cStat": "",
+      "descricao": "- Não tributada;",
+      "secao": ""
+    },
+    {
+      "id": "50",
+      "cStat": "",
+      "descricao": "- Suspensão;",
+      "secao": ""
+    },
+    {
+      "id": "51",
+      "cStat": "",
+      "descricao": "- Diferimento;",
+      "secao": ""
+    },
+    {
+      "id": "60",
+      "cStat": "",
+      "descricao": "- ICMS cobrado anteriormente por substituição tributária;",
+      "secao": ""
+    },
+    {
+      "id": "70",
+      "cStat": "",
+      "descricao": "- Com redução de base de cálculo e cobrança do ICMS por substituição tributária;",
+      "secao": ""
+    },
+    {
+      "id": "90",
+      "cStat": "",
+      "descricao": "- Outros.",
+      "secao": ""
+    },
+    {
+      "id": "900",
+      "cStat": "",
+      "descricao": "e vFCPST (id:N23d) difere da vBCFCPST (id:N23a)* pFCPST (id:N23b) -",
+      "secao": ""
+    },
+    {
+      "id": "90",
+      "cStat": "",
+      "descricao": "(Sem Pagamento).  ) (NT 2016.002)",
+      "secao": ""
+    },
+    {
+      "id": "656",
+      "cStat": "",
+      "descricao": "permanentemente, até entrar em contato com a UF autorizadora.",
+      "secao": ""
+    },
+    {
+      "id": "656",
+      "cStat": "",
+      "descricao": "permanentemente, até entrar em contato com a UF autorizadora.",
+      "secao": ""
+    },
+    {
+      "id": "656",
+      "cStat": "",
+      "descricao": "permanentemente, até entrar em contato com a UF autorizadora.",
+      "secao": ""
+    }
+  ],
+  "campos": []
+}

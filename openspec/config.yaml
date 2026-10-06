@@ -53,7 +53,7 @@ context: |
   - catalogo/ = camada "mastigada" gerada por scripts (nt/, regras/, campos/, legendas/)
   - calendario/ = fonte unica de vigencias (calendario.yaml -> .md/.html)
   - docs-fiscais/ = documentacao por documento (NFE.md, CTE.md, MDFE.md)
-  - entrada/ = area de recebimento (colar arquivos aqui, /catalogar-atualizar organiza)
+  - entrada/ = area de recebimento permanente na raiz (colar arquivos aqui, /catalogar-atualizar organiza)
 
   ## Commands Disponiveis
   - /atualizar-fontes: buscar novidades nos portais

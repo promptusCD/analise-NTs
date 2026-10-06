@@ -1,0 +1,522 @@
+{
+  "documento": "CT-e",
+  "versao": "4.00",
+  "secao": "Anexo II DACTE",
+  "titulo": "",
+  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_Anexo_II_DACTE_v4.00.pdf",
+  "sha256": "803ab81d83b548fb5279bf3e39b0c629c6f81c19fb601764001d82f19baf554a",
+  "extraido_em": "2026-10-06T21:36:21.102911+00:00",
+  "tipo_documento": "MOC",
+  "secoes": [
+    {
+      "numero": "2",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "3.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "4.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "5.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "6.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "7.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "8.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "9.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "10.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "11.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "12.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "13.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "14.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "15.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "16.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "17.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.17",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.17",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "18.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.18",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "19.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.19",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.19",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "20.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "21.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21",
+      "titulo": "3.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21",
+      "titulo": "4.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21",
+      "titulo": "5.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "3.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "4.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "5.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "6.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "7.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "8.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "9.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "10.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "11.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "12.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "Introdução",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Documento Auxiliar de CT-e – DACTE",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "3.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "4.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "5.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "6.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "7.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "8.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "9.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.10",
+      "titulo": "Bloco de Canhoto",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.11",
+      "titulo": "Verso do DACTE",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.12",
+      "titulo": "Folhas Adicionais",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.13",
+      "titulo": "Formulário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.14",
+      "titulo": "Tamanho do Papel",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.15",
+      "titulo": "Modelos de DACTE Permitidos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.16",
+      "titulo": "DACTE em Modo Paisagem",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.17",
+      "titulo": "Código de Barras",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.17.1",
+      "titulo": "Cálculo do dígito verificador do CODE-128C",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.17.2",
+      "titulo": "Representação simbólica do código",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.18",
+      "titulo": "Informações da consulta via QR Code",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.18.1",
+      "titulo": "Dimensões mínimas do QR Code",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.19",
+      "titulo": "Campos de Conteúdo Variável",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.19.1",
+      "titulo": "CT-e emissão Normal",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.19.2",
+      "titulo": "CT-e emissão em contingência – FS-DA",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.20",
+      "titulo": "CT-e emitido em ambiente de homologação",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21",
+      "titulo": "Outros",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21.1",
+      "titulo": "Marca d’Água",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21.2",
+      "titulo": "Impressão do Número da Folha",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21.3",
+      "titulo": "Código de Barras",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21.4",
+      "titulo": "Casos Específicos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.21.5",
+      "titulo": "Canhoto",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "Correlação dos campos do XML do CT-e x DACTE",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "Correlação dos campos do XML do CT-e OS x DACTE OS",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "Modelos de geração/impressão do DACTE",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "3.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "4.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "5.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "6.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "7.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "8.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5",
+      "titulo": "9.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.10",
+      "titulo": "Modal Dutoviário (emissão em contingência)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.11",
+      "titulo": "Multimodal (emissão normal)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.12",
+      "titulo": "Multimodal (emissão em contingência)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "Modelo de geração/impressão do DACTE OS",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "1.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "2.",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "Conjunto de caracteres Código de Barras CODE-128C",
+      "pagina_inicio": 0
+    }
+  ],
+  "regras": [
+    {
+      "id": "9999",
+      "cStat": "",
+      "descricao": "9999 9999 9999 9999 9999 9999 9999 9999 9999 9999",
+      "secao": ""
+    },
+    {
+      "id": "9999",
+      "cStat": "",
+      "descricao": "9999 9999 9999 9999 9999 9999 9999 9999",
+      "secao": ""
+    }
+  ],
+  "campos": []
+}

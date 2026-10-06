@@ -1,0 +1,124 @@
+{
+  "documento": "MDF-e",
+  "versao": "3.00b",
+  "secao": "Anexo II DAMDFE",
+  "titulo": "",
+  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_Anexo_II_DAMDFE_v3.00b.docx",
+  "sha256": "a3febb3447be96bf059001532208e9dc026ac50199cc03a2bf3f3f877cd0855f",
+  "extraido_em": "2026-10-06T21:36:23.558139+00:00",
+  "tipo_documento": "MOC",
+  "secoes": [
+    {
+      "numero": "1",
+      "titulo": "Introdução\t5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Documento Auxiliar de MDF-e – DAMDFE\t6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "Leiaute de Impressão DAMDFE\t6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.2",
+      "titulo": "Código de Barras\t7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.2.1",
+      "titulo": "Cálculo do dígito verificador do CODE-128C\t8",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.2.2",
+      "titulo": "Representação simbólica do código\t9",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.3",
+      "titulo": "Informações da consulta via QR Code\t9",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.4",
+      "titulo": "MDF-e emitido em contingência\t9",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.5",
+      "titulo": "MDF-e emitido em ambiente de homologação\t10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.6",
+      "titulo": "Configurações da Impressão\t10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.6.1",
+      "titulo": "Requisitos do Papel do DAMDFE\t10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.6.2",
+      "titulo": "Dimensões mínimas do QR Code\t10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7",
+      "titulo": "Modelos de Impressão do DAMDFE\t11",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.1",
+      "titulo": "Modal rodoviário (emissão normal)\t11",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.2",
+      "titulo": "Modal Rodoviário (emissão em contingência)\t12",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.3",
+      "titulo": "Modal aéreo (emissão normal)\t13",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.4",
+      "titulo": "Modal aéreo (emissão em contingência)\t14",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.5",
+      "titulo": "Modal Aquaviário (emissão normal)\t15",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.6",
+      "titulo": "Modal Aquaviário (emissão contingência)\t16",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.7",
+      "titulo": "Modal Ferroviário (emissão normal)\t17",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.7.8",
+      "titulo": "Modal Ferroviário (emissão contingência)\t18",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.8",
+      "titulo": "Conjunto de caracteres Código de Barras CODE-128C\t19",
+      "pagina_inicio": 0
+    }
+  ],
+  "regras": [],
+  "campos": []
+}

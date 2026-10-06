@@ -1,0 +1,463 @@
+{
+  "documento": "MDF-e",
+  "versao": "3.00b",
+  "secao": "Anexo I Leiaute",
+  "titulo": "",
+  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_Anexo_I_Leiaute_v3.00b.pdf",
+  "sha256": "823ca492144eb928821c8ac6d5440f7625397d7b90a770003256559c6d6abe78",
+  "extraido_em": "2026-10-06T21:36:22.420956+00:00",
+  "tipo_documento": "MOC",
+  "secoes": [
+    {
+      "numero": "2",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00a",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00b",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00a",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00b",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "1 Regras de Validação Básicas do Serviço",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "2 Regras de Validação Específicas do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "12",
+      "titulo": ", Modelo diferente de 57, Número zerado, Tipo de emissão inválido, UF",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "12",
+      "titulo": ", Modelo diferente de 55, Número zerado, Tipo de emissão inválido, UF",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "12",
+      "titulo": ", Modelo diferente de 58, Número zerado, Tipo de emissão inválido, UF",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "Responsável pela Geração do CIOT",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Responsável pelo pagamento do Vale-pedágio",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "11",
+      "titulo": "442/07. Para os demais modais esta informação é",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "1 Leiaute do Modal Rodoviário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "2 Leiaute do Modal Aéreo",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "3 Leiaute do Modal Ferroviário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "4 Leiaute do Modal Aquaviário",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "5 Expressões regulares",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "6 Valores de domínio",
+      "pagina_inicio": 0
+    }
+  ],
+  "regras": [
+    {
+      "id": "168",
+      "cStat": "",
+      "descricao": "horas",
+      "secao": ""
+    },
+    {
+      "id": "11",
+      "cStat": "",
+      "descricao": "(base 2,9) da chave de acesso.",
+      "secao": ""
+    },
+    {
+      "id": "3-Regime",
+      "cStat": "",
+      "descricao": "Especial NFF",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "Emitente do MDFe;",
+      "secao": ""
+    },
+    {
+      "id": "22",
+      "cStat": "",
+      "descricao": "- Responsável pela contratação do serviço de transporte",
+      "secao": ""
+    },
+    {
+      "id": "01-Granel",
+      "cStat": "",
+      "descricao": "sólido;",
+      "secao": ""
+    },
+    {
+      "id": "02-Granel",
+      "cStat": "",
+      "descricao": "líquido;",
+      "secao": ""
+    },
+    {
+      "id": "05-Carga",
+      "cStat": "",
+      "descricao": "Geral;",
+      "secao": ""
+    },
+    {
+      "id": "07-Perigosa",
+      "cStat": "",
+      "descricao": "(granel sólido);",
+      "secao": ""
+    },
+    {
+      "id": "08-Perigosa",
+      "cStat": "",
+      "descricao": "(granel líquido);",
+      "secao": ""
+    },
+    {
+      "id": "09-Perigosa",
+      "cStat": "",
+      "descricao": "(carga frigorificada);",
+      "secao": ""
+    },
+    {
+      "id": "10-Perigosa",
+      "cStat": "",
+      "descricao": "(conteinerizada);",
+      "secao": ""
+    },
+    {
+      "id": "11-Perigosa",
+      "cStat": "",
+      "descricao": "(carga geral).",
+      "secao": ""
+    },
+    {
+      "id": "12",
+      "cStat": "",
+      "descricao": "- 14",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "– KG; 02 - TON",
+      "secao": ""
+    },
+    {
+      "id": "173",
+      "cStat": "",
+      "descricao": "infPAA",
+      "secao": ""
+    },
+    {
+      "id": "180",
+      "cStat": "",
+      "descricao": "infMDFeSupl",
+      "secao": ""
+    },
+    {
+      "id": "50",
+      "cStat": "",
+      "descricao": "-",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- TAG;",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- Cupom;",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Cartão",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "Veículo Comercial 2 eixos;0",
+      "secao": ""
+    },
+    {
+      "id": "06",
+      "cStat": "",
+      "descricao": "Veículo Comercial 4 eixos;0",
+      "secao": ""
+    },
+    {
+      "id": "10",
+      "cStat": "",
+      "descricao": "Veículo Comercial 7 eixos;",
+      "secao": ""
+    },
+    {
+      "id": "11",
+      "cStat": "",
+      "descricao": "Veículo Comercial 8 eixos;",
+      "secao": ""
+    },
+    {
+      "id": "12",
+      "cStat": "",
+      "descricao": "Veículo Comercial 9 eixos;",
+      "secao": ""
+    },
+    {
+      "id": "13",
+      "cStat": "",
+      "descricao": "Veículo Comercial 10 eixos;",
+      "secao": ""
+    },
+    {
+      "id": "14",
+      "cStat": "",
+      "descricao": "Veículo Comercial Acima de 10 eixos;",
+      "secao": ""
+    },
+    {
+      "id": "15",
+      "cStat": "",
+      "descricao": "posições, sendo 13 inteiras e 2 decimais.",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- Impostos, taxas e contribuições;",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Despesas (bancárias, meios de",
+      "secao": ""
+    },
+    {
+      "id": "0-TAC",
+      "cStat": "",
+      "descricao": "Agregado;",
+      "secao": ""
+    },
+    {
+      "id": "1-TAC",
+      "cStat": "",
+      "descricao": "Independente;",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- Truck;",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- Toco;",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Cavalo Mecânico;",
+      "secao": ""
+    },
+    {
+      "id": "04",
+      "cStat": "",
+      "descricao": "- VAN;",
+      "secao": ""
+    },
+    {
+      "id": "05",
+      "cStat": "",
+      "descricao": "- Utilitário;",
+      "secao": ""
+    },
+    {
+      "id": "06",
+      "cStat": "",
+      "descricao": "- Outros.",
+      "secao": ""
+    },
+    {
+      "id": "00",
+      "cStat": "",
+      "descricao": "- não aplicável;",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- Aberta;",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- Fechada/Baú;",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Granelera;",
+      "secao": ""
+    },
+    {
+      "id": "04",
+      "cStat": "",
+      "descricao": "- Porta Container;",
+      "secao": ""
+    },
+    {
+      "id": "05",
+      "cStat": "",
+      "descricao": "- Sider",
+      "secao": ""
+    },
+    {
+      "id": "0-TAC",
+      "cStat": "",
+      "descricao": "Agregado;",
+      "secao": ""
+    },
+    {
+      "id": "1-TAC",
+      "cStat": "",
+      "descricao": "Independente;",
+      "secao": ""
+    },
+    {
+      "id": "00",
+      "cStat": "",
+      "descricao": "- não aplicável;",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- Aberta;",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- Fechada/Baú;",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Granelera;",
+      "secao": ""
+    },
+    {
+      "id": "04",
+      "cStat": "",
+      "descricao": "- Porta Container;",
+      "secao": ""
+    },
+    {
+      "id": "05",
+      "cStat": "",
+      "descricao": "- Sider",
+      "secao": ""
+    }
+  ],
+  "campos": []
+}

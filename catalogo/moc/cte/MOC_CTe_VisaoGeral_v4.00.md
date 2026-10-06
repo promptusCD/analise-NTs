@@ -1,0 +1,431 @@
+# MOC CT-e v4.00
+
+**Secao:** VisaoGeral
+**Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_VisaoGeral_v4.00.pdf
+**SHA256:** aa06733d7b45cac1ab31864a1ac14e9eb376409fb938e5d9065c3ce88356aac4
+**Extraido em:** 2026-10-06T21:36:21.879270+00:00
+
+## Secoes
+
+- **2** - 1
+- **2.1** - 1
+- **2.1** - 2
+- **2.1** - 3
+- **2.1** - 4
+- **2.1** - 5
+- **2.1** - 6
+- **2.1** - 7
+- **3** - 1
+- **3** - 2
+- **3.2** - 1
+- **3.2** - 2
+- **3.2** - 3
+- **3.2** - 4
+- **3.2** - 5
+- **3.2** - 6
+- **3** - 3
+- **3.3** - 1
+- **3** - 4
+- **3.4** - 1
+- **3.4** - 2
+- **3.4** - 3
+- **3** - 5
+- **3.5** - 1
+- **3.5** - 2
+- **3.5** - 3
+- **3.5** - 4
+- **3** - 6
+- **3.6** - 1
+- **3.6** - 2
+- **3.6** - 3
+- **3** - 7
+- **3.7** - 1
+- **3.7** - 2
+- **3** - 8
+- **3** - 9
+- **4** - 1
+- **4.1** - 1
+- **4.1** - 2
+- **4.1** - 3
+- **4.1** - 4
+- **4.1** - 5
+- **4.1** - 6
+- **4.1** - 7
+- **4.1** - 8
+- **4.1** - 9
+- **4.1** - 10
+- **4.1** - 11
+- **4** - 2
+- **4.2** - 1
+- **4.2** - 2
+- **4.2** - 3
+- **4.2** - 4
+- **4.2** - 5
+- **4.2** - 6
+- **4** - 3
+- **4.3** - 1
+- **4.3** - 2
+- **4.3** - 3
+- **4.3** - 4
+- **4.3** - 5
+- **4.3** - 6
+- **4** - 4
+- **4.4** - 1
+- **4.4** - 2
+- **4.4** - 3
+- **4.4** - 4
+- **4.4** - 5
+- **4.4** - 6
+- **4** - 5
+- **4.5** - 1
+- **4.5** - 2
+- **4.5** - 3
+- **4.5** - 4
+- **4.5** - 5
+- **4.5** - 6
+- **4** - 6
+- **4.6** - 1
+- **4.6** - 2
+- **4.6** - 3
+- **4.6** - 4
+- **4.6** - 5
+- **4.6** - 6
+- **4** - 7
+- **4.7** - 1
+- **4.7** - 2
+- **5.1** - 1
+- **5.1** - 2
+- **5.1** - 3
+- **5.1** - 4
+- **5.1** - 5
+- **5.1** - 6
+- **5.1** - 7
+- **6** - 1
+- **6.1** - 1
+- **6.1** - 2
+- **6** - 2
+- **6.2** - 1
+- **6.2** - 2
+- **6** - 3
+- **6.3** - 1
+- **6.3** - 2
+- **6** - 4
+- **6.4** - 1
+- **6.4** - 2
+- **6** - 5
+- **6.5** - 1
+- **6.5** - 2
+- **6** - 6
+- **6.6** - 1
+- **6.6** - 2
+- **6** - 7
+- **6.7** - 1
+- **6.7** - 2
+- **6** - 8
+- **6.8** - 1
+- **6.8** - 2
+- **6** - 9
+- **6.9** - 1
+- **6.9** - 2
+- **7** - 1
+- **7.1** - 1
+- **7** - 2
+- **7** - 3
+- **7** - 4
+- **7** - 5
+- **7** - 6
+- **8** - 1
+- **8** - 2
+- **9** - 1
+- **9** - 2
+- **9.2** - 1
+- **9.2** - 2
+- **9** - 3
+- **9.3** - 1
+- **9.3** - 2
+- **9.3** - 3
+- **9** - 4
+- **10** - 1
+- **10** - 2
+- **10** - 3
+- **10** - 4
+- **11** - 1
+- **11** - 2
+- **11** - 3
+- **11.3** - 1
+- **11.3** - 2
+- **11.3** - 3
+- **11.3** - 4
+- **11** - 4
+- **11** - 5
+- **11.5** - 1
+- **11.5** - 2
+- **11.5** - 3
+- **13** - 1
+- **13** - 2
+- **4** - 00
+- **4** - 00a
+- **2** - 1 Conceitos
+- **2.1** - 1 CTe (modelo 57) e CTe Outros Serviços (Modelo 67)
+- **2.1** - 2 GTVe (modelo 64)
+- **2.1** - 3 DACTE
+- **2.1** - 4 Chave de Acesso do CTe
+- **2.1** - 5 Chave Natural do CTe
+- **2.1** - 6 Regime Especial da Nota Fiscal Fácil (NFF)
+- **2.1** - 7 Provedor de Assinatura e Autorização
+- **2.1.7** - 1 Assinatura RSA e Geração do DFe pelo PAA
+- **1** - Solicitar o vínculo com o Provedor de Assinatura e Autorização no portal DFe da SVRS com CPF do
+- **2** - Obter no portal o par de chaves RSA (chave privada e chave pública)
+- **3** - No software do PAA: utilizar a chave privada para assinar o conteúdo da tag Id do DFe (RSA SHA1
+- **4** - Informar a chave pública no padrão XML Signature no grupo RSAKeyValue
+- **6** - PAA deverá transmitir o DFe para o serviço de autorização da SVRS
+- **2.1.7** - 2 Estrutura das informações do PAA no XML do DFe
+- **3** - 1 Modelo Conceitual
+- **3** - 2 Padrões Técnicos
+- **3.2** - 1 Padrão de documento XML
+- **3.2** - 2 Padrão de Comunicação
+- **3.2** - 3 Padrão de Certificado Digital
+- **3.2** - 4 Padrão da Assinatura Digital
+- **3.2** - 5 Validação da Assinatura Digital pelo Ambiente Autorizador
+- **3.2** - 6 Resumo dos Padrões Técnicos
+- **3** - 3 Modelo Operacional
+- **3.3** - 1 Filas e Mensagens
+- **3** - 4 Padrão de Mensagens dos Web Services
+- **3.4** - 1 Informações de controle e área de dados das mensagens
+- **3.4** - 2 Validação da estrutura XML das Mensagens dos Web Services
+- **3.4** - 3 Schemas XML das Mensagens dos Web Services
+- **3** - 5 Versão dos Schemas XML
+- **3.5** - 1 Liberação das versões dos schemas para o CTe
+- **3.5** - 2 Correção de Pacote de Liberação
+- **3.5** - 3 Divulgação de novos Pacotes de Liberação
+- **3.5** - 4 Controle de Versão
+- **3** - 6 Schema XML – estrutura genérica e estrutura específica do modal
+- **3.6** - 1 Parte Genérica
+- **3.6** - 2 Parte Específica para cada Modal
+- **3.6** - 3 Parte Genérica e Parte Específica para cada Modal - Versões
+- **3** - 7 Sistema de Registro de Eventos
+- **3.7** - 1 Relação dos Tipos de Evento
+- **3.7** - 2 Eventos de Marcação
+- **3** - 8 Data e hora de emissão e outros horários
+- **3** - 9 SEFAZ virtual
+- **4** - 1 Regras de Validação Gerais
+- **4.1** - 1 Grupo A: Validação do Certificado de Transmissão (protocolo TLS)
+- **4.1** - 2 Grupo A-1: Validação do Certificado de Transmissão (NFF)
+- **4.1** - 3 Grupo A-2: Validação do Certificado de Transmissão Eventos (NFF)
+- **4.1** - 4 Grupo B-0: Validação da Compactação da Mensagem
+- **4.1** - 5 Grupo B: Validação Inicial da Mensagem no Web Service
+- **4.1** - 6 Grupo C: Validação da área de dados da mensagem
+- **4.1** - 7 Grupo C-1: Validação do Ambiente de Autorização
+- **4.1** - 8 Grupo D: Validações do Certificado de Assinatura Digital
+- **4.1** - 9 Grupo E: Validações da Assinatura Digital
+- **4.1** - 10 Grupo E-1: Validações da Assinatura Digital (Regime Especial NFF)
+- **4.1** - 11 Grupo E-2: Validações da Assinatura Digital (PAA)
+- **4** - 2 Serviço de Recepção de CTe de Transporte de Carga (modelo 57)
+- **4.2** - 1 Leiaute Mensagem de Entrada
+- **4.2** - 2 Leiaute Mensagem de Retorno
+- **4.2** - 3 Leiaute do CTe processado
+- **4.2** - 4 Regras de Validação Básicas do Serviço
+- **4.2** - 5 Validação das regras de negócio do CTe
+- **4.2** - 6 Final do Processamento do CTe
+- **4** - 3 Serviço de Recepção de CTe Outros Serviços (modelo 67)
+- **4.3** - 1 Leiaute Mensagem de Entrada
+- **4.3** - 2 Leiaute Mensagem de Retorno
+- **4.3** - 3 Leiaute do CTe OS processado
+- **4.3** - 4 Regras de Validação Básicas do Serviço
+- **4.3** - 5 Validação das regras de negócio do CTe OS
+- **2** - 2 do Anexo I: Manual de Orientações do Contribuinte – Leiaute e Regras de Validação.
+- **4.3** - 6 Final do Processamento do CTe OS
+- **4** - 4 Serviço de Recepção de GTVe (Modelo 64)
+- **4.4** - 1 Leiaute Mensagem de Entrada
+- **4.4** - 2 Leiaute Mensagem de Retorno
+- **4.4** - 3 Leiaute da GTVe processada
+- **4.4** - 4 Regras de Validação Básicas do Serviço
+- **4.4** - 5 Validação das regras de negócio da GTVe
+- **4.4** - 6 Final do Processamento da GTVe
+- **4** - 5 Serviço de Consulta Situação do CTe
+- **4.5** - 1 Leiaute Mensagem de Entrada
+- **4.5** - 2 Leiaute Mensagem de Retorno
+- **4.5** - 3 Descrição do Processo de Web Service
+- **4.5** - 4 Regras de Validação Básicas do Serviço
+- **4.5** - 5 Validação das Regras de Negócio da Consulta Situação
+- **4.5** - 6 Final do Processamento
+- **4** - 6 Serviço de Consulta Status do Serviço de Autorização
+- **4.6** - 1 Leiaute Mensagem de Entrada
+- **4.6** - 2 Leiaute Mensagem de Retorno
+- **4.6** - 3 Descrição do Processo de Web Service
+- **4.6** - 4 Validações Básicas do Serviço
+- **4.6** - 5 Validação das Regras de Negócio da Consulta Status Serviço
+- **4.6** - 6 Final do Processamento
+- **4** - 7 Serviço de Consulta Cadastro (NFeConsultaCadastro)
+- **4.7** - 1 Onde obter as Definições deste Web Service
+- **4.7** - 2 Onde obter os Schemas XML deste Web Service
+- **5.1** - 1 Leiaute Mensagem de Entrada
+- **5.1** - 2 Leiaute Mensagem de Retorno
+- **5.1** - 3 Descrição do Processo de Web Service
+- **5.1** - 4 Regras de Validação Básicas do Serviço
+- **5.1** - 5 Validação das Regras de Negócio do Serviço de Registro de Eventos
+- **5.1** - 6 Processamento das validações específicas de cada evento
+- **5.1** - 7 Final do Processamento do Evento
+- **6** - 1 Evento Prévio de Emissão em Contingência (EPEC)
+- **6.1** - 1 Validação das Regras Específicas do Evento
+- **6.1** - 2 Final do Processamento
+- **6** - 2 Evento de Cancelamento
+- **6.2** - 1 Validação das Regras Específicas do Evento
+- **6.2** - 2 Final do Processamento
+- **6** - 3 Evento de Registros do Multimodal
+- **6.3** - 1 Validação das Regras Específicas do Evento
+- **6.3** - 2 Final do Processamento
+- **6** - 4 Evento Carta de Correção eletrônica
+- **6.4** - 1 Validação das Regras Específicas do Evento
+- **6.4** - 2 Final do Processamento
+- **6** - 5 Evento Prestação de Serviço em Desacordo
+- **6.5** - 1 Validação das Regras Específicas do Evento
+- **6.5** - 2 Final do Processamento
+- **6** - 6 Evento Cancelamento do Evento Prestação de Serviço em Desacordo
+- **6.6** - 1 Validação das Regras Específicas do Evento
+- **6.6** - 2 Final do Processamento
+- **6** - 7 Evento Informações da GTV
+- **6.7** - 1 Validação das Regras Específicas do Evento
+- **6.7** - 2 Final do Processamento
+- **6** - 8 Evento Comprovante de Entrega do CTe
+- **6.8** - 1 Validação das Regras Específicas do Evento
+- **6.8** - 2 Final do Processamento
+- **6** - 9 Evento Cancelamento Comprovante de Entrega do CTe
+- **6.9** - 1 Validação das Regras Específicas do Evento
+- **6.9** - 2 Final do Processamento
+- **7** - 1 Ambiente de Homologação / Produção
+- **7.1** - 1 Sobre as condições de teste para as empresas
+- **7** - 2 Tratamento de caracteres especiais no texto de XML
+- **7** - 3 Cálculo do dígito verificador da chave de acesso do CTe
+- **7** - 4 Codigo das Unidades Federadas
+- **7** - 5 Número do protocolo
+- **7** - 6 Tempo médio de resposta
+- **8** - 1 Erros e problemas comuns
+- **8** - 2 Regras de Validação de Consumo Indevido
+- **9** - 1 Licença
+- **9** - 2 Imagem do QR Code para CTe
+- **9.2** - 1 Para CTe com tipo de emissão Normal:
+- **9.2** - 2 Para CTe com tipo de emissão Contingência:
+- **9** - 3 Configurações para QR Code
+- **9.3** - 1 Capacidade de armazenamento
+- **9.3** - 2 Capacidade de correção de erros
+- **9.3** - 3 Tipo de caracteres
+- **9** - 4 URL da Consulta do CTe via QR Code no XML
+- **10** - 1 Consulta Pública Resumida de CTe via Digitação de Chave de Acesso
+- **10** - 2 Consulta Pública Resumida de CTe via QR Code
+- **10** - 3 Tabela padronizada com os códigos e mensagens na consulta do CTe
+- **10** - 4 Padronização dos endereços das consultas públicas
+- **11** - 1 Definição
+- **11** - 2 Modelo Operacional de Emissão do Conhecimento de Transporte
+- **11** - 3 Modalidades de Emissão de CTe
+- **11.3** - 1 Emissão Normal
+- **11.3** - 2 Contingência em Formulário de Segurança para Impressão do DACTE – FS-DA
+- **11.3** - 3 SVC – Sistema Virtual de Contingência
+- **11.3** - 4  EPEC – Evento Prévio de Emissão em Contingência (Apenas modelo 57)
+- **11** - 4 Documento Auxiliar do Conhecimento de Transporte Eletrônico -
+- **11** - 5 Ações que devem ser tomadas após a recuperação da falha
+- **11.5** - 1 Transmissão dos CTe Emitidos em Contingência
+- **11.5** - 2 Rejeição de CTe Emitidos em Contingência
+- **1** - Gerar novamente o arquivo com a mesma numeração e série, sanando a irregularidade desde
+- **2** - Solicitar Autorização de Uso do CTe;
+- **3** - Imprimir o DACTE correspondente ao CTe autorizado, no mesmo tipo de papel utilizado para
+- **4** - Providenciar, junto ao tomador, a entrega do CTe autorizado bem como do novo DACTE impresso
+- **11.5** - 3 CTe pendentes de retorno
+- **5** - 351 - Prestação de serviço de transporte para execução de serviço da mesma natureza
+- **5** - 352 - Prestação de serviço de transporte a estabelecimento industrial
+- **5** - 353 - Prestação de serviço de transporte a estabelecimento comercial
+- **5** - 354 - Prestação de serviço de transporte a estabelecimento de prestador de serviço de comunicação
+- **5** - 355 - Prestação de serviço de transporte a estabelecimento de geradora ou de distribuidora de energia elétrica
+- **5** - 356 - Prestação de serviço de transporte a estabelecimento de produtor rural
+- **5** - 357 - Prestação de serviço de transporte a não contribuinte
+- **5** - 359 - Prestação de serviço de transporte a contribuinte ou a não contribuinte quando a mercadoria transportada
+- **5** - 360 - Prestação de serviço de transporte a contribuinte substituto em relação ao serviço de transporte
+- **5** - 601 - Transferência de crédito de ICMS acumulado
+- **5** - 602 - Transferência de saldo credor de ICMS para outro estabelecimento da mesma empresa, destinado à
+- **5** - 603 - Ressarcimento de ICMS retido por substituição tributária
+- **5** - 605 - Transferência de saldo devedor de ICMS de outro estabelecimento da mesma empresa.
+- **5** - 606 - Utilização de saldo credor de ICMS para extinção por compensação de débitos fiscais.
+- **5** - 932 - Prestação de serviço de transporte iniciada em unidade da Federação diversa daquela onde inscrito o
+- **5** - 949 - Outra saída de mercadoria ou prestação de serviço não especificado
+- **6** - 351 - Prestação de serviço de transporte para execução de serviço da mesma natureza
+- **6** - 352 - Prestação de serviço de transporte a estabelecimento industrial
+- **6** - 353 - Prestação de serviço de transporte a estabelecimento comercial
+- **6** - 354 - Prestação de serviço de transporte a estabelecimento de prestador de serviço de comunicação
+- **6** - 355 - Prestação de serviço de transporte a estabelecimento de geradora ou de distribuidora de energia elétrica
+- **6** - 356 - Prestação de serviço de transporte a estabelecimento de produtor rural
+- **6** - 357 - Prestação de serviço de transporte a não contribuinte
+- **6** - 359 - Prestação de serviço de transporte a contribuinte ou a não contribuinte quando a mercadoria transportada
+- **6** - 360 - Prestação de serviço de transporte a contribuinte substituto em relação ao serviço de transporte.
+- **6** - 603 - Ressarcimento de ICMS retido por substituição tributária
+- **6** - 932 - Prestação de serviço de transporte iniciada em unidade da Federação diversa daquela onde inscrito o
+- **6** - 949 - Outra saída de mercadoria ou prestação de serviço não especificado
+- **7** - 358 - Prestação de serviço de transporte
+- **7** - 949 - Outra saída de mercadoria ou prestação de serviço não especificado
+- **13** - 1 CTe de Transporte de Cargas (57)
+- **13** - 2 CTe Outros Serviços (67)
+
+## Regras de Validacao (55 encontradas)
+
+- `57`: e 67
+- `1-Empresa`: Emitente
+- `1-Empresa`: Emitente
+- `1-Empresa`: Emitente
+- `1-Empresa`: Emitente
+- `1-Empresa`: Emitente
+- `1-Empresa`: Emitente
+- `1-Empresa`: Emitente
+- `57`: e 67
+- `2-Fisco`: do Emitente
+- `57`: e 67
+- `2-Fisco`: do Emitente
+- `57`: e 67
+- `2-Fisco`: do Emitente
+- `2-Fisco`: do Emitente
+- `57`: e 67
+- `2-Fisco`: do Emitente
+- `2-Fisco`: do Emitente
+- `4-Fisco`: da chave
+- `4-Fisco`: da chave
+- `4-Fisco`: da chave
+- `4-Fisco`: da chave
+- `57`: e 67
+- `57`: e 67
+- `168`: horas (7 dias)
+- `19`: de fevereiro de 1998 (Texto Livre)
+- `45`: dias da autorização do CTe
+- `11`: de um número é calculado multiplicando-se cada algarismo pela sequência de multiplicadores
+- `31-Minas`: Gerais
+- `32-Espírito`: Santo
+- `42-Santa`: Catarina
+- `50-Mato`: Grosso do Sul
+- `51-Mato`: Grosso
+- `20`: 6 0 54 0 28 18 15 0 0 18 81 8 7 0 0 8 15 0 54 40 35 0 5 8 0 0 0 0 0 0 35 32
+- `24-Rio`: Grande do Norte
+- `33-Rio`: de Janeiro
+- `35-São`: Paulo
+- `43-Rio`: Grande do Sul
+- `53-Distrito`: Federal
+- `10`: posições numéricas sequenciais no ano.
+- `1ª`: parte - Endereço do site da Portal da SEFAZ autorizadora do CTe, seguido do caractere “?”;
+- `2ª`: parte – Parâmetros para consultar a chave de acesso de CTe separados pelo caractere “&”;
+- `1ª`: parte - URL para acessar o CTe, seguido do caractere “?”
+- `2ª`: parte - parâmetros chCTe e tpAmb da mesma forma como na forma de emissão normal separados
+- `3ª`: parte – sign assinatura digital no padrão RSA SHA-1 (Base64) do valor do parâmetro chCTe
+- `1ª`: parte: URL
+- `2ª`: parte: parâmetros
+- `3ª`: parte: assinatura
+- `10`: Consulta Pública CTe
+- `44`: caracteres numéricos.
+- ... e mais 5 regras
+
+## Campos do Leiaute (9 encontrados)
+
+- `X509SubjectName`: 
+- `X509IssuerSerial`: 
+- `X509IssuerName`: 
+- `X509SerialNumber`: 
+- `X509SKI`: 
+- `KeyValue`: 
+- `RSAKeyValue`: 
+- `Modulus`: 
+- `Exponent`: 

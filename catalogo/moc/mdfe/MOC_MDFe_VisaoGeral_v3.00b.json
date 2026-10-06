@@ -1,0 +1,1730 @@
+{
+  "documento": "MDF-e",
+  "versao": "3.00b",
+  "secao": "VisaoGeral",
+  "titulo": "",
+  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_VisaoGeral_v3.00b.pdf",
+  "sha256": "f8501acf8880c6b6705d286ee56acf59657de491c92e9d45aba7c666119932d7",
+  "extraido_em": "2026-10-06T21:36:23.188755+00:00",
+  "tipo_documento": "MOC",
+  "secoes": [
+    {
+      "numero": "2",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "8",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "9",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.4",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.4",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.4",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.6",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.6",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.6",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.7",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.7",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "8",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "9",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "8",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "9",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "10",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.6",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.6",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.1",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.1",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.2",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.2",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.3",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.3",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.4",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.4",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.5",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.5",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "7",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7.1",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "5",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "6",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.2",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.2",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.3",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.3",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.3",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "3",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "4",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "11",
+      "titulo": "1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "11",
+      "titulo": "2",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00a",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00b",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00a",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00b",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "1 Conceitos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "1 MDFe (modelo 58)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "2 DAMDFE",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "3 Chave de Acesso do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "4 Chave Natural do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "5 Emitentes do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "6 Série reservada",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "7 Regime Especial da Nota Fiscal Fácil (NFF)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "8 Encerramento do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "9 MDFe com carregamento posterior",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1",
+      "titulo": "10 Provedor de Assinatura e Autorização",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1.10",
+      "titulo": "1 Assinatura RSA e Geração do DFe pelo PAA",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "Solicitar o vínculo com o Provedor de Assinatura e Autorização no portal DFe da SVRS com CPF do",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2",
+      "titulo": "Obter no portal o par de chaves RSA (chave privada e chave pública)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "No software do PAA: utilizar a chave privada para assinar o conteúdo da tag Id do DFe (RSA SHA1",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "Informar a chave pública no padrão XML Signature no grupo RSAKeyValue",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "PAA deverá transmitir o DFe para o serviço de autorização da SVRS",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.1.10",
+      "titulo": "2 Estrutura das informações do PAA no XML do DFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "1 Modelo Conceitual",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "00a) serão descontinuados em data a ser definida para os contribuintes em Nota Técnica futura,",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "2 Padrões Técnicos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "1 Padrão de documento XML",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "2 Padrão de Comunicação",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "3 Padrão de Certificado Digital",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "2.16.76.1.3",
+      "titulo": "3 ou CPF na mesma extensão do certificado, com o OID = 2.16.76.1.3.1,",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "4 Padrão da Assinatura Digital",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "5 Validação da Assinatura Digital pelo Ambiente Autorizador",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.2",
+      "titulo": "6 Resumo dos Padrões Técnicos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "1",
+      "titulo": "1-2004-08-24.html).",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "3 Modelo Operacional",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "4 Padrão de Mensagens dos Web Services",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.4",
+      "titulo": "1 Informações de controle e área de dados das mensagens",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.4",
+      "titulo": "2 Validação da estrutura XML das Mensagens dos Web Services",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.4",
+      "titulo": "3 Schemas XML das Mensagens dos Web Services",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "5 Versão dos Schemas XML",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "1 Liberação das versões dos schemas para o MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "2 Correção de Pacote de Liberação",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "3 Divulgação de novos Pacotes de Liberação",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.5",
+      "titulo": "4 Controle de Versão",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "6 Schema XML – estrutura genérica e estrutura específica do modal",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.6",
+      "titulo": "1 Parte Genérica",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.6",
+      "titulo": "2 Parte Específica para cada Modal",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.6",
+      "titulo": "3 Parte Genérica e Parte Específica para cada Modal - Versões",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "7 Sistema de Registro de Eventos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.7",
+      "titulo": "1 Relação dos Tipos de Evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3.7",
+      "titulo": "2 Eventos de Marcação",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "8 Data e hora de emissão e outros horários",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "3",
+      "titulo": "9 SEFAZ virtual",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "1 Regras de Validação Gerais",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "1 Grupo A: Validação do Certificado de Transmissão (protocolo TLS)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "2 Grupo A-1: Validação do Certificado de Transmissão (Regime Especial NFF)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "3 Grupo A-2: Validação do Certificado de Transmissão (Regime Especial NFF)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "4 Grupo B-0: Validação da Compactação da Mensagem",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "5 Grupo B: Validação Inicial da Mensagem no Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "6 Grupo C: Validação da área de dados da mensagem",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "7 Grupo D: Validações do Certificado de Assinatura Digital",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "8 Grupo E: Validações da Assinatura Digital",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "9 Grupo E-1: Validações da Assinatura Digital (Regime Especial NFF)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.1",
+      "titulo": "10 Grupo E-2: Validações da Assinatura Digital (PAA)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "2 Serviço de Recepção MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "1 Leiaute Mensagem de Entrada",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "2 Leiaute Mensagem de Retorno",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "3 Leiaute do MDFe processado",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "4 Regras de Validação Básicas do Serviço",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "5 Validação das regras de negócio do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.2",
+      "titulo": "6 Final do Processamento do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "3 Serviço de Consulta Situação do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "1 Leiaute Mensagem de Entrada",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "2 Leiaute Mensagem de Retorno",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "3 Descrição do Processo de Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "4 Regras de Validação Básicas do Serviço",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "5 Validação das Regras de Negócio da Consulta Situação",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.3",
+      "titulo": "6 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "4 Serviço de Consulta MDFe não encerrados",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "1 Leiaute Mensagem de Entrada",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "2 Leiaute Mensagem de Retorno",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "3 Descrição do Processo de Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "4 Regras de Validação Básicas do Serviço",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "5 Validação das Regras de Negócio da Consulta Não Encerrados",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.4",
+      "titulo": "6 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "5 Serviço de Consulta Status do Serviço de Autorização",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "1 Leiaute Mensagem de Entrada",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "2 Leiaute Mensagem de Retorno",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "3 Descrição do Processo de Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "4 Regras de Validação Básicas do Serviço",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "5 Validação das Regras de Negócio da Consulta Status Serviço",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.5",
+      "titulo": "6 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4",
+      "titulo": "6 Serviço de Consulta Cadastro (NFeConsultaCadastro)",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.6",
+      "titulo": "1 Onde obter as Definições deste Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "4.6",
+      "titulo": "2 Onde obter os Schemas XML deste Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "1 Leiaute Mensagem de Entrada",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "2 Leiaute Mensagem de Retorno",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "3 Descrição do Processo de Web Service",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "4 Regras de Validação Básicas do Serviço",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "5 Validação das Regras de Negócio do Serviço de Registro de Eventos",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "6 Processamento das validações específicas de cada evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "5.1",
+      "titulo": "7 Final do Processamento do Evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "1 Evento de Cancelamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.1",
+      "titulo": "1 Validação das Regras Específicas do Evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.1",
+      "titulo": "2 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "2 Evento de Encerramento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.2",
+      "titulo": "1 Validação das Regras Específicas do Evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.2",
+      "titulo": "2 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "3 Evento de Inclusão de Condutor",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.3",
+      "titulo": "1 Validação das Regras Específicas do Evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.3",
+      "titulo": "2 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "4 Evento de Inclusão de DF-e",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.4",
+      "titulo": "1 Validação das Regras Específicas do Evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "12",
+      "titulo": ", Modelo diferente de 55, Número zerado,",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.4",
+      "titulo": "2 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "5 Evento de Pagamento da Operação de Transporte",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.5",
+      "titulo": "1 Validação das Regras Específicas do Evento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6.5",
+      "titulo": "2 Final do Processamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "6 Evento de Confirmação do Serviço de Transporte",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "6",
+      "titulo": "7 Evento de Alteração do Pagamento do Serviço de Transporte",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "1 Ambiente de Homologação / Produção",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7.1",
+      "titulo": "1 Sobre as condições de teste para as empresas",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "2 Tratamento de caracteres especiais no texto de XML",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "3 Cálculo do dígito verificador da chave de acesso do MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "4 Codificação das Unidades Federadas",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "5 Número do protocolo",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "7",
+      "titulo": "6 Tempo médio de resposta",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "1 Erros e problemas comuns",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "2 Regras de Validação de Consumo Indevido",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "8",
+      "titulo": "3 Aplicação de Uso Indevido para rejeições relacionadas ao não",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "1 Licença",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "2 Imagem do QR Code para MDFe",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.2",
+      "titulo": "1 Para MDFe com tipo de emissão Normal:",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.2",
+      "titulo": "2 Para MDFe com tipo de emissão Contingência Off-Line:",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "3 Configurações para QR Code",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.3",
+      "titulo": "1 Capacidade de armazenamento",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.3",
+      "titulo": "2 Capacidade de correção de erros",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9.3",
+      "titulo": "3 Tipo de caracteres",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "9",
+      "titulo": "4 URL da Consulta do MDFe via QR Code no XML",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "1 Consulta Pública Resumida de MDFe via Digitação de Chave de",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "2 Consulta Pública Resumida de MDFe via QR Code",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "3 Tabela padronizada com os códigos e mensagens na consulta do",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10",
+      "titulo": "4 Padronização dos endereços das consultas públicas",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "11",
+      "titulo": "1 Detalhes técnicos da Contingência",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "11",
+      "titulo": "2 Resumo das ações para entrada em contingência",
+      "pagina_inicio": 0
+    },
+    {
+      "numero": "10.2.2",
+      "titulo": ";",
+      "pagina_inicio": 0
+    }
+  ],
+  "regras": [
+    {
+      "id": "B64",
+      "cStat": "",
+      "descricao": "1 - 1",
+      "secao": ""
+    },
+    {
+      "id": "B64",
+      "cStat": "",
+      "descricao": "1 - 1",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "Emitente",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "Emitente",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "Emitente",
+      "secao": ""
+    },
+    {
+      "id": "1-",
+      "cStat": "",
+      "descricao": "Emitente",
+      "secao": ""
+    },
+    {
+      "id": "2-Fisco",
+      "cStat": "",
+      "descricao": "Emitente",
+      "secao": ""
+    },
+    {
+      "id": "54",
+      "cStat": "",
+      "descricao": "-",
+      "secao": ""
+    },
+    {
+      "id": "920-969",
+      "cStat": "",
+      "descricao": "ou para Regime Especial da Nota Fiscal",
+      "secao": ""
+    },
+    {
+      "id": "9999999",
+      "cStat": "",
+      "descricao": "para encerramento no exterior",
+      "secao": ""
+    },
+    {
+      "id": "2006",
+      "cStat": "",
+      "descricao": "ou maior que atual, Mês inválido (0 ou >",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- Vale Pedágio",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- Impostos, taxas e contribuições",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Despesas (bancárias, meios de",
+      "secao": ""
+    },
+    {
+      "id": "99",
+      "cStat": "",
+      "descricao": "– Outros",
+      "secao": ""
+    },
+    {
+      "id": "0-Pagamento",
+      "cStat": "",
+      "descricao": "à Vista;",
+      "secao": ""
+    },
+    {
+      "id": "1-Pagamento",
+      "cStat": "",
+      "descricao": "à Prazo;",
+      "secao": ""
+    },
+    {
+      "id": "01",
+      "cStat": "",
+      "descricao": "- Vale Pedágio",
+      "secao": ""
+    },
+    {
+      "id": "02",
+      "cStat": "",
+      "descricao": "- Impostos, taxas e contribuições",
+      "secao": ""
+    },
+    {
+      "id": "03",
+      "cStat": "",
+      "descricao": "- Despesas (bancárias, meios de",
+      "secao": ""
+    },
+    {
+      "id": "99",
+      "cStat": "",
+      "descricao": "– Outros",
+      "secao": ""
+    },
+    {
+      "id": "0-Pagamento",
+      "cStat": "",
+      "descricao": "à Vista;",
+      "secao": ""
+    },
+    {
+      "id": "1-Pagamento",
+      "cStat": "",
+      "descricao": "à Prazo.",
+      "secao": ""
+    },
+    {
+      "id": "20",
+      "cStat": "",
+      "descricao": "6 0 54 0 28 18 15 0 0 18 81 8 7 0 0 8 15 0 54 40 35 0 5 8 0 0 0 0 0 0 35 32",
+      "secao": ""
+    },
+    {
+      "id": "24-Rio",
+      "cStat": "",
+      "descricao": "Grande do Norte",
+      "secao": ""
+    },
+    {
+      "id": "31-Minas",
+      "cStat": "",
+      "descricao": "Gerais",
+      "secao": ""
+    },
+    {
+      "id": "32-Espírito",
+      "cStat": "",
+      "descricao": "Santo",
+      "secao": ""
+    },
+    {
+      "id": "33-Rio",
+      "cStat": "",
+      "descricao": "de Janeiro",
+      "secao": ""
+    },
+    {
+      "id": "35-São",
+      "cStat": "",
+      "descricao": "Paulo",
+      "secao": ""
+    },
+    {
+      "id": "42-Santa",
+      "cStat": "",
+      "descricao": "Catarina",
+      "secao": ""
+    },
+    {
+      "id": "43-Rio",
+      "cStat": "",
+      "descricao": "Grande do Sul",
+      "secao": ""
+    },
+    {
+      "id": "50-Mato",
+      "cStat": "",
+      "descricao": "Grosso do Sul",
+      "secao": ""
+    },
+    {
+      "id": "51-Mato",
+      "cStat": "",
+      "descricao": "Grosso",
+      "secao": ""
+    },
+    {
+      "id": "53-Distrito",
+      "cStat": "",
+      "descricao": "Federal",
+      "secao": ""
+    },
+    {
+      "id": "10",
+      "cStat": "",
+      "descricao": "posições numéricas sequenciais no ano.",
+      "secao": ""
+    },
+    {
+      "id": "1ª",
+      "cStat": "",
+      "descricao": "parte - Endereço do site da Portal Nacional do MDFe, seguido do caractere “?”; exemplo:",
+      "secao": ""
+    },
+    {
+      "id": "2ª",
+      "cStat": "",
+      "descricao": "parte – Parâmetros para consultar a chave de acesso de MDFe separados pelo caractere “&”;",
+      "secao": ""
+    },
+    {
+      "id": "1ª",
+      "cStat": "",
+      "descricao": "parte - URL para acessar o MDFe, seguido do caractere “?”",
+      "secao": ""
+    },
+    {
+      "id": "2ª",
+      "cStat": "",
+      "descricao": "parte - parâmetros chMDFe e tpAmb da mesma forma como na forma de emissão normal",
+      "secao": ""
+    },
+    {
+      "id": "3ª",
+      "cStat": "",
+      "descricao": "parte – sign assinatura digital no padrão RSA SHA-1 (Base64) do valor do parâmetro chMDFe",
+      "secao": ""
+    },
+    {
+      "id": "1ª",
+      "cStat": "",
+      "descricao": "parte: URL",
+      "secao": ""
+    },
+    {
+      "id": "2ª",
+      "cStat": "",
+      "descricao": "parte : parâmetros",
+      "secao": ""
+    },
+    {
+      "id": "3ª",
+      "cStat": "",
+      "descricao": "parte: assinatura",
+      "secao": ""
+    },
+    {
+      "id": "10",
+      "cStat": "",
+      "descricao": "Consulta Pública MDFe",
+      "secao": ""
+    },
+    {
+      "id": "44",
+      "cStat": "",
+      "descricao": "caracteres numéricos.",
+      "secao": ""
+    },
+    {
+      "id": "11",
+      "cStat": "",
+      "descricao": "Contingência para MDFe",
+      "secao": ""
+    }
+  ],
+  "campos": [
+    {
+      "tag": "X509SubjectName",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "X509IssuerSerial",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "X509IssuerName",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "X509SerialNumber",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "X509SKI",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "KeyValue",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "RSAKeyValue",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "Modulus",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    },
+    {
+      "tag": "Exponent",
+      "tipo": "",
+      "minOccurs": "",
+      "maxOccurs": "",
+      "descricao": ""
+    }
+  ]
+}

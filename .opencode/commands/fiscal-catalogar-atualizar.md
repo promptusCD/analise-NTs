@@ -19,7 +19,8 @@ CATALOGO_ARQUIVOS.md.
 ### 0. Pre-etapa: Organizar entrada/
 
 **REGRA: O usuario pode colar qualquer arquivo em `entrada/` e esta
-etapa cuida de organizar automaticamente.**
+etapa cuida de organizar automaticamente. O `entrada/README.md` deve
+ser preservado e nunca removido.**
 
 #### 0.1 Listar tudo em entrada/
 ```powershell
@@ -82,10 +83,11 @@ Antes de mover, calcular SHA256 e comparar com arquivos ja existentes em fontes/
 - Se hash identico = duplicata, remover de entrada/ sem mover
 - Se hash diferente = versao diferente, alertar usuario
 
-#### 0.5 Limpar entrada/
+#### 0.5 Verificar organizacao
 Apos mover tudo com sucesso:
-- Verificar que todos os arquivos foram movidos
-- Remover entrada/ (diretorios vazios)
+- Verificar que todos os arquivos foram movidos corretamente
+- Manter entrada/ como pasta permanente na raiz
+- Preservar entrada/README.md (nunca remover)
 
 ### 1. Atualizar manifest.yaml
 Registrar cada arquivo movido/criado no manifest com:
@@ -139,7 +141,7 @@ Arquivos processados: N
 
 Manifest atualizado: sim
 Catalogo atualizado: sim
-entrada/ limpo: sim
+entrada/ verificado: sim
 ```
 
 ## Erros tratados
