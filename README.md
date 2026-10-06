@@ -180,9 +180,126 @@ Listar e priorizar duvidas abertas.
 - Sugere como resolver
 
 ### `/catalogar-atualizar`
-Atualizar o CATALOGO_ARQUIVOS.md com todos os arquivos do projeto.
+Ler `entrada/`, organizar automaticamente em `fontes/`, atualizar manifest e catalogo.
+- Identifica tipo (NT/MOC/XSD/Tabela) e documento fiscal (NF-e/CT-e/MDF-e)
+- Move para a pasta correta em `fontes/`
+- Verifica duplicatas por SHA256
+- Atualiza manifest.yaml e CATALOGO_ARQUIVOS.md
+- Limpa `entrada/` apos mover
 
 ---
+
+## Fluxo de Utilizacao
+
+Este e o fluxo padrao para adicionar novos documentos ao repositorio.
+
+### Passo 1: Verificar o que falta
+
+Rode `/atualizar-fontes` para consultar os portais oficiais e ver o que
+e novo. A IA compara o que esta nos portais com o que ja temos no
+manifest.yaml e gera um relatorio de novidades.
+
+```
+/atualizar-fontes
+```
+
+Saida: lista de NTs, MOCs e XSDs novos disponiveis nos portais.
+
+### Passo 2: Baixar os arquivos
+
+Acesse os links indicados no relatorio e baixe os arquivos manualmente.
+Coloque TUDO na pasta `entrada/` — nao precisa se preocupar em organizar.
+
+```
+entrada/
+├── NT_2026.009_v1.00.pdf          ← NT nova
+├── MOC_NFe_v8.00.pdf              ← MOC atualizado
+├── PL_CTe_400_NT2026.005.zip      ← XSD novo
+└── Tabela_CFOP_v2.00.xlsx         ← Tabela
+```
+
+### Passo 3: Organizar e catalogar
+
+Rode `/catalogar-atualizar`. A IA le tudo em `entrada/`, identifica
+automaticamente o que e cada arquivo, move para a pasta correta em
+`fontes/` e atualiza o manifest e o catalogo.
+
+```
+/catalogar-atualizar
+```
+
+O que acontece:
+1. Le todos os arquivos em `entrada/`
+2. Identifica: NT, MOC, XSD ou Tabela
+3. Identifica: NF-e, CT-e ou MDF-e
+4. Move para `fontes/<doc>/<tipo>/`
+5. Verifica duplicatas (SHA256)
+6. Atualiza manifest.yaml
+7. Atualiza CATALOGO_ARQUIVOS.md
+8. Limpa `entrada/`
+
+### Passo 4: Ingerir NTs novas (se houver NTs)
+
+Se foram adicionadas NTs novas, rode `/ingerir-nt` para cada uma.
+A IA extrai as marcações de cor, cataloga regras e campos, atualiza
+o calendario e os docs-fiscais.
+
+```
+/ingerir-nt fontes/nfe/notas-tecnicas/NT_2026_009_v1.00.pdf
+```
+
+O que acontece:
+1. Extrai marcações de cor (Python/PyMuPDF)
+2. Gera JSON + MD em `catalogo/nt/<doc>/`
+3. Atualiza legenda de cores
+4. Atualiza calendario de vigencias
+5. Regenera blocos AUTO dos docs-fiscais
+6. Registra duvidas encontradas
+
+### Passo 5: Verificar impacto (para desenvolvedores)
+
+Se voce e desenvolvedor e precisa saber o que mudar no sistema de
+emissao, rode `/impacto` para gerar um checklist.
+
+```
+/impacto NT-CT-e-2026.004
+```
+
+Saida: campos novos/alterados/removidos, regras, rejeicoes, eventos,
+datas de vigencia — pronto para criar tarefas no Jira/Linear.
+
+### Passo 6: Consultar (uso diario)
+
+No dia a dia, use `/consultar` para tirar duvidas rapidas.
+
+```
+/consultar "A regra C17-10 da NF-e esta vigente?"
+/consultar "Quando entra em producao o vTPrestLiq no CT-e?"
+/regra C17-10
+/campo vTPrestLiq CT-e
+/calendario CT-e
+```
+
+### Resumo do fluxo
+
+```
+  /atualizar-fontes          ← O que falta?
+       |
+       v
+  Baixar e colar em entrada/ ← Download manual
+       |
+       v
+  /catalogar-atualizar       ← Organiza automaticamente
+       |
+       v
+  /ingerir-nt <arquivo>      ← Extrai marcações, cataloga
+       |
+       v
+  /impacto <nt>              ← Checklist para dev
+       |
+       v
+  /consultar <pergunta>      ← Uso diario
+```
 
 ## Como Funciona a Extracao de Cores
 
