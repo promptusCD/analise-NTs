@@ -3,9 +3,9 @@
   "versao": "3.00b",
   "secao": "Anexo I Leiaute",
   "titulo": "",
-  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_Anexo_I_Leiaute_v3.00b.pdf",
+  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\mdfe\\moc\\MOC_MDFe_Anexo_I_Leiaute_v3.00b.pdf",
   "sha256": "823ca492144eb928821c8ac6d5440f7625397d7b90a770003256559c6d6abe78",
-  "extraido_em": "2026-10-07T02:04:18.115121+00:00",
+  "extraido_em": "2026-10-07T15:49:59.953467+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {
@@ -4075,7 +4075,7 @@
       }
     },
     {
-      "texto": "173    infPAA 1 Grupo de Informação do Provedor G 0 - 1",
+      "texto": "173   infPAA 1 Grupo de Informação do Provedor G 0 - 1",
       "seq": "173",
       "tag": "infPAA",
       "nivel": "1",

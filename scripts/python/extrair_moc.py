@@ -157,7 +157,23 @@ def extrair_moc(file_path, manifest_path=None):
 
     linhas = filtrar_ruido(all_items, num_paginas)
 
-    resultado = montar_moc_estrutura(linhas, permitir_numero_ponto=(ext == ".docx"))
+    # MOCs em PDF podem numerar secoes como "N. Titulo" (ex: Anexo II DACTE
+    # do CT-e, "1. Introducao"). Habilita o formato "com ponto" quando ha
+    # pelo menos 3 linhas com essa forma; DOCX sempre usa o formato.
+    permitir_numero_ponto = ext == ".docx"
+    if not permitir_numero_ponto:
+        contagem = 0
+        for item in linhas:
+            t = item.get("text", "").strip()
+            if re.match(r"^\d{1,2}\.\s+[A-ZÀ-Ú]", t) or re.match(
+                r"^\d+(?:\.\d+)+\.\s+[A-ZÀ-Ú]", t
+            ):
+                contagem += 1
+                if contagem >= 3:
+                    permitir_numero_ponto = True
+                    break
+
+    resultado = montar_moc_estrutura(linhas, permitir_numero_ponto=permitir_numero_ponto)
     secoes = resultado["secoes"]
     regras = resultado["regras_validacao"]
     campos = resultado["campos_leiaute"]

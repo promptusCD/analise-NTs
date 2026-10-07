@@ -234,8 +234,16 @@ def montar_moc_estrutura(linhas, logger=None, permitir_numero_ponto=False):
         marc = item.get("marcacao", "SEM_MARCA")
         pagina = item.get("pagina", 0)
 
-        # Titulo de secao? (sempre, inclusive dentro de tabela)
-        numero, titulo = _detectar_titulo(texto, em_tabela=(modo != "texto"), permitir_numero_ponto=permitir_numero_ponto)
+        # Titulo de secao?
+        em_tabela = modo != "texto"
+        numero, titulo = _detectar_titulo(
+            texto,
+            em_tabela=em_tabela,
+            # Formato "N. Titulo" so vale fora de tabela: dentro de blocos de
+            # leiaute/regras, linhas "N. ..." sao conteudo (grupos, notas),
+            # nao secoes - virar secao reseta o modo e perde regras/campos.
+            permitir_numero_ponto=permitir_numero_ponto and not em_tabela,
+        )
         if numero is not None:
             fechar_modo()
             secao_atual = nova_secao(numero, titulo)

@@ -3,9 +3,9 @@
   "versao": "4.00",
   "secao": "VisaoGeral",
   "titulo": "",
-  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_VisaoGeral_v4.00.pdf",
+  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\cte\\moc\\MOC_CTe_VisaoGeral_v4.00.pdf",
   "sha256": "aa06733d7b45cac1ab31864a1ac14e9eb376409fb938e5d9065c3ce88356aac4",
-  "extraido_em": "2026-10-07T02:02:34.123161+00:00",
+  "extraido_em": "2026-10-07T15:49:43.253860+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {
@@ -110,7 +110,7 @@
               "titulo": "GTVe (modelo 64)",
               "paragrafos": [
                 {
-                  "texto": "A Guia de Transporte de Valores Eletrônica (GTVe) é um documento de existência exclusivamente digital, emitido e armazenado eletronicamente com o intuito de documentar prestações de serviço de transporte de valores, cuja validade jurídica é garantida pela assinatura digital do emitente e pela autorização de uso fornecida pela administração tributária do domicílio do contribuinte.",
+                  "texto": "A Guia de Transporte de Valores Eletrônica (GTVe) é um documento de existência exclusivamente digital, emitido e armazenado eletronicamente com o intuito de documentar prestações de serviço de transporte de valores, cuja validade jurídica é garantida pela assinatura digital do emitente e pela autorização de uso f ornecida pela administração tributária do domicílio do contribuinte.",
                   "marcacao": "SEM_MARCA",
                   "pagina": 8
                 },
@@ -806,7 +806,17 @@
               "pagina": 20
             },
             {
-              "texto": "Serviço de Implementação Síncrona Contribuinte Secretaria de Fazenda Estadual (1) Solicitação de serviço (2) Solicitação de serviço Processamento Aplicativo Web Service de Serviços Cliente (4) Resultado (3) Resultado Etapas do processo ideal:",
+              "texto": "Serviço de Implementação Síncrona",
+              "marcacao": "SEM_MARCA",
+              "pagina": 20
+            },
+            {
+              "texto": "Contribuinte Secretaria de Fazenda Estadual",
+              "marcacao": "RISCADO_SEM_COR",
+              "pagina": 20
+            },
+            {
+              "texto": "(1) Solicitação de serviço (2) Solicitação de serviço Processamento Aplicativo Web Service de Serviços Cliente (4) Resultado (3) Resultado Etapas do processo ideal:",
               "marcacao": "SEM_MARCA",
               "pagina": 20
             },
@@ -14285,7 +14295,8 @@
       "AMARELO": 0,
       "VERDE": 0,
       "EXCLUIDO": 0,
-      "SEM_MARCA": 1075
+      "SEM_MARCA": 1076,
+      "RISCADO_SEM_COR": 1
     }
   }
 }

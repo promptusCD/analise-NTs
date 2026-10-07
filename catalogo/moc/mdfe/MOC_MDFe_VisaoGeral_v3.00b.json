@@ -3,9 +3,9 @@
   "versao": "3.00b",
   "secao": "VisaoGeral",
   "titulo": "",
-  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_VisaoGeral_v3.00b.pdf",
+  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\mdfe\\moc\\MOC_MDFe_VisaoGeral_v3.00b.pdf",
   "sha256": "f8501acf8880c6b6705d286ee56acf59657de491c92e9d45aba7c666119932d7",
-  "extraido_em": "2026-10-07T02:04:01.348808+00:00",
+  "extraido_em": "2026-10-07T15:50:20.119806+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {
@@ -885,7 +885,17 @@
               "pagina": 21
             },
             {
-              "texto": "Serviço de Implementação Síncrona Contribuinte Secretaria de Fazenda Estadual (1) Solicitação de serviço (2) Solicitação de serviço Processamento Aplicativo Web Service de Serviços Cliente (4) Resultado (3) Resultado Etapas do processo ideal:",
+              "texto": "Serviço de Implementação Síncrona",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            },
+            {
+              "texto": "Contribuinte Secretaria de Fazenda Estadual",
+              "marcacao": "RISCADO_SEM_COR",
+              "pagina": 21
+            },
+            {
+              "texto": "(1) Solicitação de serviço (2) Solicitação de serviço Processamento Aplicativo Web Service de Serviços Cliente (4) Resultado (3) Resultado Etapas do processo ideal:",
               "marcacao": "SEM_MARCA",
               "pagina": 21
             },
@@ -10962,8 +10972,9 @@
       "AMARELO": 0,
       "VERDE": 0,
       "EXCLUIDO": 0,
-      "SEM_MARCA": 801,
-      "VERMELHO_TEXTO": 3
+      "SEM_MARCA": 802,
+      "VERMELHO_TEXTO": 3,
+      "RISCADO_SEM_COR": 1
     }
   }
 }

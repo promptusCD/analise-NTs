@@ -29,10 +29,15 @@ Este projeto automatiza essa leitura e organiza o conhecimento em:
 ```
 EXTRACAO (Python 3.11+)
   pymupdf + python-docx + lxml
-  scripts/python/extrair_nt.py
+  scripts/python/extrair_nt.py    -> catalogo/nt/<doc>/*.json
+  scripts/python/extrair_moc.py   -> catalogo/moc/<doc>/*.json
   scripts/python/catalogar_xsd.py
         |
-        v  (JSON / arquivos)
+        v  (JSON robusto: secoes tipificadas, tabelas, regras)
+IA GERA O MD (opencode)
+  /gerar-md <nt|moc>  -> le o JSON e escreve catalogo/**/*.md legivel
+        |
+        v  (JSON + MD)
 ORQUESTRACAO (Node.js)
   js-yaml + ejs + node-fetch
   scripts/js/gerar_calendario.js
@@ -43,8 +48,12 @@ ORQUESTRACAO (Node.js)
         v
 CONSULTA (CLI + opencode)
   /consultar, /regra, /campo, /calendario
-  /ingerir-nt, /impacto, /atualizar-fontes
+  /ingerir-nt, /gerar-md, /fiscal-processar
+  /impacto, /atualizar-fontes
 ```
+
+**Regra de ouro do fluxo:** Python so extrai JSON. Quem formata o MD e a IA
+(`scripts/python/utils/saida.py` nao tem mais nenhuma funcao de MD).
 
 ---
 
@@ -125,9 +134,27 @@ executa tudo internamente. Nao e necessario rodar scripts manualmente.
 Ingerir uma nova Nota Tecnica no repositorio.
 - Move o arquivo para `fontes/<doc>/notas-tecnicas/`
 - Registra no manifest.yaml
-- Extrai marcações de cor (Python)
+- Extrai JSON robusto com secoes tipificadas (Python)
 - Atualiza catalogo, calendario e docs-fiscais
+- Gera o MD automaticamente (IA le o JSON)
 - Lista duvidas encontradas
+
+### `/gerar-md <nt|moc>`
+Gerar (ou regenerar) o MD de uma NT ou MOC a partir do JSON extraido.
+- Le `catalogo/nt/<doc>/*.json` ou `catalogo/moc/<doc>/*.json`
+- Tabelas viram bullets com campo em destaque
+- Regras aparecem com ID, cStat e mensagem destacados
+- Datas em negrito, datas literais preservadas
+- Nao e preciso re-extrair o PDF para ajustar a formatacao
+- Exemplo: `/gerar-md 2025.001`
+
+### `/fiscal-processar [--etapa N]`
+Pipeline completo: organizar `entrada/` -> `fontes/`, extrair JSON de NTs e
+MOCs, atualizar manifest, verificar resultado.
+- Sem argumentos: executa todas as etapas
+- `--etapa N`: executa apenas a etapa N (1 organizar, 2 NTs, 3 MOCs,
+  4 manifest, 5 verificar)
+- Exemplo: `/fiscal-processar --etapa 2`
 
 ### `/consultar <pergunta>`
 Responder uma pergunta sobre documentacao fiscal.
@@ -249,11 +276,19 @@ o calendario e os docs-fiscais.
 
 O que acontece:
 1. Extrai marcações de cor (Python/PyMuPDF)
-2. Gera JSON + MD em `catalogo/nt/<doc>/`
-3. Atualiza legenda de cores
-4. Atualiza calendario de vigencias
-5. Regenera blocos AUTO dos docs-fiscais
-6. Registra duvidas encontradas
+2. Gera JSON robusto em `catalogo/nt/<doc>/` (secoes tipificadas)
+3. A IA gera o MD a partir do JSON (`/gerar-md`)
+4. Atualiza legenda de cores
+5. Atualiza calendario de vigencias
+6. Regenera blocos AUTO dos docs-fiscais
+7. Registra duvidas encontradas
+
+Se quiser so regenerar o MD sem re-extrair o PDF (ex.: para ajustar a
+formatacao), use `/gerar-md <nt>`:
+
+```
+/gerar-md 2026.007
+```
 
 ### Passo 5: Verificar impacto (para desenvolvedores)
 
@@ -291,7 +326,10 @@ No dia a dia, use `/consultar` para tirar duvidas rapidas.
   /catalogar-atualizar       ← Organiza automaticamente
        |
        v
-  /ingerir-nt <arquivo>      ← Extrai marcações, cataloga
+  /ingerir-nt <arquivo>      ← Extrai JSON, cataloga
+       |
+       v
+  /gerar-md <nt>             ← IA gera o MD a partir do JSON
        |
        v
   /impacto <nt>              ← Checklist para dev

@@ -61,8 +61,11 @@ def atualizar_status_manifest(arquivo, novo_status, manifest_path=None):
     entradas = ler_manifest(manifest_path)
     atualizado = False
 
+    # Normalizar separadores: manifest usa '/', Windows gera '\' em os.path.relpath
+    arquivo_norm = arquivo.replace("\\", "/")
+
     for entrada in entradas:
-        if entrada.get("arquivo") == arquivo:
+        if entrada.get("arquivo", "").replace("\\", "/") == arquivo_norm:
             entrada["status_ingestao"] = novo_status
             atualizado = True
             break
@@ -86,9 +89,12 @@ def adicionar_manifest_moc(moc_data, manifest_path=None):
     """
     entradas = ler_manifest(manifest_path)
 
+    # Normalizar separadores: manifest usa '/', Windows gera '\' em os.path.relpath
+    novo_arquivo = moc_data.get("arquivo_origem", "").replace("\\", "/")
+
     # Verificar se ja existe
     for entrada in entradas:
-        if entrada.get("arquivo") == moc_data.get("arquivo_origem"):
+        if entrada.get("arquivo", "").replace("\\", "/") == novo_arquivo:
             return False
 
     # Criar nova entrada
@@ -99,7 +105,7 @@ def adicionar_manifest_moc(moc_data, manifest_path=None):
         "tipo": "moc",
         "versao": moc_data.get("versao", ""),
         "titulo": f"MOC {moc_data.get('secao', '')}",
-        "arquivo": moc_data.get("arquivo_origem", ""),
+        "arquivo": novo_arquivo,
         "sha256": moc_data.get("sha256", ""),
         "status_ingestao": "extraida",
         "confianca": "oficial",

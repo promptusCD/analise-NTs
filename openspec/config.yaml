@@ -59,6 +59,7 @@ context: |
   - /atualizar-fontes: buscar novidades nos portais
   - /catalogar-atualizar: organizar entrada/ automaticamente em fontes/
   - /ingerir-nt <arquivo>: extrair NT com marcações de cor
+  - /gerar-md <nt|moc>: IA gera o MD a partir do JSON extraido
   - /consultar <pergunta>: resposta com fontes citadas
   - /regra <id>: detalhe de regra de validacao
   - /campo <tag>: dados de campo XSD

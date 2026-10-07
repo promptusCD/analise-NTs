@@ -252,11 +252,26 @@ O script `atualizar_docs_fiscais.js` regenera esses blocos.
 ## 5. O Catalogo (Camada "Mastigada")
 
 O catalogo e o coracao do projeto. Ele transforma PDFs brutos em JSON
-estruturado e consultavel.
+estruturado e consultavel. O JSON e a fonte: o MD e gerado pela IA a partir
+delo (command `/gerar-md`), nunca pelo Python.
 
-### 5.1 catalogo/nt/<doc>/<nt>_v<versao>.json
+### 5.1 catalogo/nt/<doc>/<nt>.json
 
-Extracao completa de uma NT com marcações interpretadas.
+Extracao completa de uma NT com secoes tipificadas e marcações interpretadas.
+
+Estrutura (schema em `scripts/python/utils/json_schema.py`):
+
+- `nt`, `versao`, `documento`, `titulo`, `arquivo_origem`, `sha256`,
+  `extraido_em`, `tipo_documento: "NT"` -- metadados obrigatorios
+- `cronograma[]` -- `versao`, `homologacao`, `producao` com datas LITERAIS
+  (ex.: `"Ate 05/10/2026"` nunca e convertido)
+- `secoes[]` -- cada secao tem `numero`, `titulo` e `tipo`:
+  - `tipo: "tabela"` -> `cabecalho[]` + `linhas[]` (objetos por cabecalho)
+  - `tipo: "regras"` -> `regras[]` com `id`, `modelo`, `aplicacao`, `cStat`,
+    `efeito`, `mensagem`, `condicao`, `marcacao`, `pagina`, `notas[]`
+  - `tipo: "texto"` -> `paragrafos[]` com `texto`, `marcacao`, `pagina`
+- `estatisticas` -- `total_secoes`, `total_regras`, `total_tabelas`,
+  `por_marcacao` (AMARELO, VERDE, EXCLUIDO, SEM_MARCA)
 
 ```json
 {
@@ -267,30 +282,67 @@ Extracao completa de uma NT com marcações interpretadas.
   "arquivo_origem": "fontes/nfe/notas-tecnicas/NT_2026_007_v1.10.pdf",
   "sha256": "...",
   "extraido_em": "2026-10-06T...",
+  "tipo_documento": "NT",
   "cronograma": [
-    {
-      "versao": "1.00",
-      "homologacao": "2026-09-01",
-      "producao": "2026-11-03"
-    },
     {
       "versao": "1.10",
       "homologacao": "Ate 05/10/2026",
       "producao": "2026-11-03"
     }
   ],
-  "itens": [
+  "secoes": [
     {
-      "pagina": 6,
-      "texto": "C17-10 - IE do emitente nao informada",
-      "marcacoes": [
-        {"tipo": "EXCLUIDO", "hex": "#FF0000", "versao_inferida": "1.00"}
-      ],
-      "classificacao_cor": "REVISAO"
+      "numero": "4",
+      "titulo": "Regras de validacao",
+      "tipo": "regras",
+      "regras": [
+        {
+          "id": "001",
+          "aplicacao": "Obrig.",
+          "cStat": "311",
+          "efeito": "Rej.",
+          "condicao": "Se CST do IBS/CBS for informado...",
+          "mensagem": "...",
+          "marcacao": "AMARELO",
+          "pagina": 6
+        }
+      ]
+    },
+    {
+      "numero": "1",
+      "titulo": "Introducao",
+      "tipo": "texto",
+      "paragrafos": [
+        {"texto": "...", "marcacao": "SEM_MARCA", "pagina": 1}
+      ]
     }
-  ]
+  ],
+  "estatisticas": {
+    "total_secoes": 12,
+    "total_regras": 45,
+    "total_tabelas": 3,
+    "por_marcacao": {"AMARELO": 10, "VERDE": 4, "EXCLUIDO": 6, "SEM_MARCA": 25}
+  }
 }
 ```
+
+### 5.1.1 catalogo/moc/<doc>/<moc>.json
+
+Extracao completa de um MOC (PDF ou DOCX). Estrutura
+(`scripts/python/utils/json_schema.py`):
+
+- `documento`, `versao`, `secao`, `titulo`, `arquivo_origem`, `sha256`,
+  `extraido_em`, `tipo_documento: "MOC"` -- metadados obrigatorios
+- `secoes[]` -- hierarquicas: `numero`, `titulo`, `subsecoes[]` (recursivo)
+- `regras_validacao[]` -- `id`, `cStat`, `descricao`, `modelo`, `aplicacao`
+- `campos_leiaute[]` -- `tag`, `tipo`, `ocorrencia`, `descricao`
+
+### 5.1.2 catalogo/nt/<doc>/<nt>.md e catalogo/moc/<doc>/<moc>.md
+
+MD gerado pela IA a partir do JSON (command `/gerar-md`). Regras de
+formatacao documentadas no command: tabelas como bullets com campo em
+destaque, regras com ID/cStat/mensagem destacados, datas em negrito e
+literais preservadas. Nao editar o MD manualmente nem gerar por script.
 
 ### 5.2 catalogo/regras/<doc>.json
 
@@ -748,6 +800,8 @@ ou `python scripts/...`. Basta digitar `/comando` e a IA faz tudo.
 | `/atualizar-fontes` | Buscar novidades + versionar | WebFetch (portais) + JS |
 | `/duvidas` | Lista priorizada | Leitura de duvidas-abertas.md |
 | `/catalogar-atualizar` | Organizar entrada/, atualizar manifest e catalogo | Classificacao + movimentacao + escrita |
+| `/gerar-md <nt|moc>` | Gerar MD a partir do JSON extraido | Leitura de catalogo + escrita do MD |
+| `/fiscal-processar [--etapa N]` | Pipeline completo (organizar, extrair NTs/MOCs, manifest, verificar) | Classificacao + Python (extrair_nt/extrair_moc) + JS |
 
 ### Permissoes
 A IA deve ter acesso a:

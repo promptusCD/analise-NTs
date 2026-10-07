@@ -3,520 +3,1021 @@
   "versao": "4.00",
   "secao": "Anexo II DACTE",
   "titulo": "",
-  "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_Anexo_II_DACTE_v4.00.pdf",
+  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\cte\\moc\\MOC_CTe_Anexo_II_DACTE_v4.00.pdf",
   "sha256": "803ab81d83b548fb5279bf3e39b0c629c6f81c19fb601764001d82f19baf554a",
-  "extraido_em": "2026-10-06T22:01:12.456410+00:00",
+  "extraido_em": "2026-10-07T15:48:33.070458+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {
-      "numero": "2",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "3.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "4.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "5.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "6.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "7.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "8.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "9.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "10.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "11.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "12.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "13.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "14.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "15.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "16.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "17.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.17",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.17",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "18.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.18",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "19.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.19",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.19",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "20.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "21.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21",
-      "titulo": "3.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21",
-      "titulo": "4.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21",
-      "titulo": "5.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "3.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "4.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "5.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "6.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "7.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "8.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "9.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "10.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "11.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "12.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "6",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "6",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "4",
-      "titulo": "00",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "4",
-      "titulo": "00",
-      "pagina_inicio": 0
+      "numero": "2.8",
+      "titulo": "Quadro Componentes do Valor da Prestação de Serviço, Informações Relativas ao Imposto,",
+      "paragrafos": [
+        {
+          "texto": "Controle de Versões Versão Publicação Descrição 4.00 04/2022 Criação deste manual como documento anexo do MOC. Corresponde ao Anexo II do MOC 4.00, que trata das especificações técnicas do DACTE.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 4
+        },
+        {
+          "texto": "Histórico de Alterações / Cronograma Versão Histórico de atualizações Implantação Implantação Homologação Produção Alteração do MOC DACTE 4.00 04/2023 06/2023",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        }
+      ]
     },
     {
       "numero": "1",
       "titulo": "Introdução",
-      "pagina_inicio": 0
+      "paragrafos": [
+        {
+          "texto": "Este documento é parte integrante do Manual de Orientação do Contribuinte (MOC) e por objetivo a definição das especificações técnicas do Documento Auxiliar do Conhecimento de Transporte Eletrônico - DACTE.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        },
+        {
+          "texto": "O Manual de Orientação do Contribuinte 4.00 é composto pelos seguintes documentos:",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        },
+        {
+          "texto": " MOC – Visão Geral",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        },
+        {
+          "texto": " MOC – Anexo I – Leiaute e Regras de Validação CT-e MOC – Anexo II – Manual de Especificações Técnicas do DACTE",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        }
+      ]
     },
     {
       "numero": "2",
       "titulo": "Documento Auxiliar de CT-e – DACTE",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "3.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "4.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "5.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "6.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "7.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "8.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2",
-      "titulo": "9.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.10",
-      "titulo": "Bloco de Canhoto",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.11",
-      "titulo": "Verso do DACTE",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.12",
-      "titulo": "Folhas Adicionais",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.13",
-      "titulo": "Formulário",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.14",
-      "titulo": "Tamanho do Papel",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.15",
-      "titulo": "Modelos de DACTE Permitidos",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.16",
-      "titulo": "DACTE em Modo Paisagem",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.17",
-      "titulo": "Código de Barras",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.17.1",
-      "titulo": "Cálculo do dígito verificador do CODE-128C",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.17.2",
-      "titulo": "Representação simbólica do código",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.18",
-      "titulo": "Informações da consulta via QR Code",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.18.1",
-      "titulo": "Dimensões mínimas do QR Code",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.19",
-      "titulo": "Campos de Conteúdo Variável",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.19.1",
-      "titulo": "CT-e emissão Normal",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.19.2",
-      "titulo": "CT-e emissão em contingência – FS-DA",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.20",
-      "titulo": "CT-e emitido em ambiente de homologação",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21",
-      "titulo": "Outros",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21.1",
-      "titulo": "Marca d’Água",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21.2",
-      "titulo": "Impressão do Número da Folha",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21.3",
-      "titulo": "Código de Barras",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21.4",
-      "titulo": "Casos Específicos",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.21.5",
-      "titulo": "Canhoto",
-      "pagina_inicio": 0
+      "paragrafos": [
+        {
+          "texto": "O DACTE é uma representação gráfica resumida do CT-e, podendo ser impresso em papel comum ou disponibilizado em meio eletrônico, com objetivo de:",
+          "marcacao": "SEM_MARCA",
+          "pagina": 7
+        },
+        {
+          "texto": " Acompanhar a prestação do serviço de transporte de mercadorias;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 7
+        },
+        {
+          "texto": " Colher a firma do destinatário/tomador para comprovação de entrega das mercadorias e/ou prestação de serviços;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 7
+        },
+        {
+          "texto": " Auxiliar a escrituração do CT-e para tomadores de serviços não emissores de documentos fiscais eletrônicos.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 7
+        }
+      ],
+      "subsecoes": [
+        {
+          "numero": "2.1",
+          "titulo": "Leiaute de geração/impressão DACTE",
+          "paragrafos": [
+            {
+              "texto": "Este capítulo descreve o leiaute de geração/impressão do Documento Auxiliar do CT-e pelo contribuinte, chamado de DACTE, assim como os requisitos mínimos do que poderá constar do DACTE.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": "Algumas considerações acerca da geração/impressão do DACTE:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": " O DACTE é um documento fiscal auxiliar, sendo apenas uma representação simplificada do CT-e, de forma a acompanhar a carga durante o transporte e facilitar a consulta do documento fiscal eletrônico, no ambiente da SEFAZ;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": " A impressão do DACTE é efetuada diretamente pelo aplicativo do contribuinte em impressora comum (não fiscal), com base nas informações do arquivo eletrônico XML do CT-e;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": " No DACTE não devem ser inseridas informações que não constem do respectivo arquivo eletrônico XML do CT-e, exceto o protocolo de autorização do CT-e;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": " O DACTE poderá ser emitido em mais de uma folha, assim um DACTE poderá ter tantas folhas quantas forem necessárias para a discriminação dos Documentos Originários e Documentos de Transporte Anterior se houver, conforme leiaute dos modelos de DACTE presentes neste Manual;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": " Sempre que o verso do DACTE for utilizado, a informação “CONTINUA NO VERSO” deverá constar no anverso, ao final do quadro “Observação”;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": " O número do Protocolo de Autorização de Uso recebido da SEFAZ deverá ser impresso no DACTE.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            }
+          ]
+        },
+        {
+          "numero": "2.2",
+          "titulo": "Possibilidade da apresentação do DACTE e DACTE OS em meio",
+          "paragrafos": [
+            {
+              "texto": "eletrônico Conforme determina a legislação tributária, exceto no caso de contingência com uso de Formulário de Segurança, ou quando solicitado pelo tomador, o DACTE poderá ser apresentado em meio eletrônico, desde que tenha sido emitido o MDF-e.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "O DACTE OS poderá ser apresentado em meio eletrônico, exceto no caso de contingência com uso de Formulário de Segurança, ou quando solicitado pelo tomador.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "O DACTE/DACTE OS em meio eletrônico deverá ser gerado pelo aplicativo do contribuinte e sua apresentação deverá seguir as especificações técnicas previstas neste MOC.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            }
+          ]
+        },
+        {
+          "numero": "2.3",
+          "titulo": "Campos do DACTE",
+          "paragrafos": [
+            {
+              "texto": "O conteúdo dos campos do DACTE deverá ter a sua origem nas respectivas TAG XML do CT-e, quando conhecidos no momento da solicitação de autorização de uso. Não poderão ser impressas informações que não constem do arquivo do CT-e.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "O conteúdo dos campos poderá ser impresso em mais de uma linha desde que a leitura possa ser feita de forma clara.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "O DACTE deverá conter todos os campos previstos no modelo adotado, com exceção dos campos não obrigatórios, os quais serão definidos pelas empresas e homologados, pelo fisco, quando possível.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "As regras estabelecidas para a impressão dos campos aplicam-se também para a impressão das folhas adicionais do DACTE.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            }
+          ]
+        },
+        {
+          "numero": "2.4",
+          "titulo": "Chave de Acesso",
+          "paragrafos": [
+            {
+              "texto": "A chave de acesso será impressa em onze blocos de quatro dígitos cada, com a seguinte máscara:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "9999 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            }
+          ]
+        },
+        {
+          "numero": "2.5",
+          "titulo": "Dados do CT-e",
+          "paragrafos": [
+            {
+              "texto": "Em caso de contingência com a impressão do DACTE em FS-DA, os dados adicionais do CT-e serão impressos em nove blocos de quatro dígitos cada, com a seguinte máscara:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "9999 9999 9999 9999 9999 9999 9999 9999 9999",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            }
+          ]
+        },
+        {
+          "numero": "2.6",
+          "titulo": "Dados do Emitente",
+          "paragrafos": [
+            {
+              "texto": "Deverá conter a identificação do emitente, composta no mínimo por:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": " Nome ou razão social;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": " Endereço completo (logradouro, número, complemento, bairro, município, UF, CEP);",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": " Telefone.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "Opcionalmente poderá conter logotipo, desde que sua inclusão não prejudique a exibição das informações obrigatórias.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            }
+          ]
+        },
+        {
+          "numero": "2.7",
+          "titulo": "Quadros do Expedidor e Recebedor",
+          "paragrafos": [
+            {
+              "texto": "Caso não haja informações no arquivo do CT-e de Expedidor ou de Recebedor, os respectivos quadros poderão ser dispensados de impressão no DACTE e, caso inexista informação para apenas um deles, o quadro do Tomador do Serviço pode, nesse caso, ser posicionado no lugar do quadro a ser suprimido.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            }
+          ]
+        },
+        {
+          "numero": "2.8",
+          "titulo": "Quadro Componentes do Valor da Prestação de Serviço,",
+          "paragrafos": [
+            {
+              "texto": "Informações Relativas ao Imposto, Documentos Originários e Observações.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "Sempre que o conteúdo de um mesmo item for gerado/impresso utilizando-se mais de uma linha, deverá ser aplicado um destaque divisório que identifique quais linhas foram utilizadas para cada item, a fim de distinguir com clareza um item do outro. Pode-se, para tanto, utilizar uma linha tracejada ou pontilhada. Essa exigência também se aplica no caso da utilização de uma mesma coluna para aposição de outro campo.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            }
+          ]
+        },
+        {
+          "numero": "2.9",
+          "titulo": "Reservado ao Fisco",
+          "paragrafos": [
+            {
+              "texto": "O contribuinte não deverá preencher esse quadro, sendo seu preenchimento de uso exclusivo do fisco. Em caso de utilização de formulário de segurança provido de estampa fiscal, esse quadro não estará presente.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            }
+          ]
+        },
+        {
+          "numero": "2.10",
+          "titulo": "Bloco de Canhoto",
+          "paragrafos": [
+            {
+              "texto": "Para a impressão de DACTE que não utilizar formulário de segurança, ou geração do DACTE em meio eletrônico, o bloco de canhoto poderá ser deslocado para a extremidade inferior do papel, sem alterações nas demais dimensões e disposições de campos e quadros. Essas alterações serão admitidas somente no formato retrato.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            }
+          ]
+        },
+        {
+          "numero": "2.11",
+          "titulo": "Verso do DACTE",
+          "paragrafos": [
+            {
+              "texto": "O verso de qualquer folha do DACTE poderá ser utilizado para continuação dos dados dos quadros do DACTE ou exclusivamente para outras informações de interesse da empresa.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "Sempre que o verso do DACTE for utilizado, a informação “CONTINUA NO VERSO” deverá constar no anverso, ao final dos quadros que foram continuados, conforme a utilização.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            }
+          ]
+        },
+        {
+          "numero": "2.12",
+          "titulo": "Folhas Adicionais",
+          "paragrafos": [
+            {
+              "texto": "O DACTE poderá ser emitido em mais de uma folha. Cada uma das folhas adicionais deverá conter, na parte superior, no mínimo as seguintes informações, impressas na mesma disposição e tamanhos definidos para a primeira folha:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": " Dados de Identificação do Emitente;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": " As descrições “DACTE” em destaque, e “Documento Auxiliar do Conhecimento de Transporte Eletrônico”;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": " O número e a série da CT-e, além do número total de folhas e o número de ordem de cada folha;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": " Código (s) de Barras;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": " Campos Natureza da Operação e Chave de Acesso; e",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": " Demais campos de identificação do Emitente: Inscrição Estadual e CNPJ.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "A área restante das folhas adicionais poderá ser utilizada exclusivamente para apor:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": " Os demais itens do CT-e que não couberem na primeira folha do DACTE, mantendo-se as mesmas colunas com a mesma disposição e largura utilizadas na primeira folha; e/ou",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": " As demais informações complementares do CT-e que não couberem no campo próprio da primeira folha do DACTE.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            }
+          ]
+        },
+        {
+          "numero": "2.13",
+          "titulo": "Formulário",
+          "paragrafos": [
+            {
+              "texto": "Para a impressão do DACTE poderá ser utilizado qualquer tipo de papel, com exceção de papel jornal, desde que seja garantido o contraste necessário para assegurar leitura dos códigos de barras.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            }
+          ]
+        },
+        {
+          "numero": "2.14",
+          "titulo": "Tamanho do Papel",
+          "paragrafos": [
+            {
+              "texto": "A impressão do DACTE poderá ser efetuada tanto em modo retrato quanto em paisagem, utilizando- se formulários de tamanho mínimo A-5 (210mmX148mm) e máximo Ofício II (230x330 mm).",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "Em caso de uso de folha de tamanho superior ao tamanho A-4 o espaço excedente deverá ser alocado da seguinte maneira:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": " Na horizontal, para aumentar a largura dos campos; e",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": " Na vertical, somente para aumentar a altura dos quadros Componentes do valor da prestação de serviço, informações relativas ao imposto, documentos originários e observações”.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            }
+          ]
+        },
+        {
+          "numero": "2.15",
+          "titulo": "Modelos de DACTE Permitidos",
+          "paragrafos": [
+            {
+              "texto": "É opção do contribuinte a utilização em folhas soltas ou formulário contínuo, pré-impresso ou em branco. Poderão ser utilizados os formatos a seguir, devendo a disposição de campos obrigatoriamente obedecer ao disposto neste anexo:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": " Tamanho A5 em modo paisagem;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": " Tamanho A4 em modo retrato ou paisagem;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": " Tamanho oficio em modo retrato ou paisagem.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            }
+          ]
+        },
+        {
+          "numero": "2.16",
+          "titulo": "DACTE em Modo Paisagem",
+          "paragrafos": [
+            {
+              "texto": "A disposição dos quadros do DACTE na orientação paisagem, quando de preferência do contribuinte, deverá obedecer a mesma disposição do formato retrato, com os consequentes e proporcionais aumento da largura e redução da altura dos campos, exceção feita à área destinada aos códigos de barras cujas alturas não poderão ser reduzidas, observados os limites mínimos dos tamanhos dos caracteres.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            }
+          ]
+        },
+        {
+          "numero": "2.17",
+          "titulo": "Código de Barras",
+          "paragrafos": [
+            {
+              "texto": "O padrão de código de barras a ser impresso no DACTE é o CODE-128C. O código de barras deverá representar a chave de acesso do CT-e em emissão normal ou contingência.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "A impressão do código de barras no DACTE tem a finalidade de facilitar e agilizar a captura de dados para consulta nos portais estaduais e da Receita Federal do Brasil. Com a chave de acesso é possível realizar a consulta integral ou resumida de um CT-e e sua situação, bem como visualizar a autorização de uso do mesmo.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "O conjunto de caracteres representativos do Código de Barras CODE-128C segue ao final deste manual.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "O código de barras deverá representar apenas a chave de acesso do CT-e de 44 posições. Para a impressão do mesmo será considerada a seguinte estrutura de simbolização:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Margem Clara : Espaço claro, que não contém nenhuma marca legível por máquina, existente à esquerda e à direita do código para evitar interferência na decodificação da simbologia. A margem clara também é chamada de \"área livre\", \"zona de silêncio\" ou \"margem de silêncio\".",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Start C: inicia a codificação dos dados CODE-128C de acordo com o conjunto de caracteres. O Start C não representa nenhum caractere.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Chave de acesso do CT-e: representa conjunto de 44 caracteres da chave de acesso do CT-e.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "DV: dígito verificador da simbologia.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Stop: caractere de parada, indica o final do código ao leitor óptico.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "O código de barras deverá ser impresso com resolução mínima de 300 dpi, devendo ser observada a área reservada no DACTE de 3 x 9 cm.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Altura da barra: no intuito de propiciar melhor área de leitura, a altura da barra não poderá ser inferior a 1,5 cm e nem superior a 2,5 cm.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Largura da barra: considerando que para cada símbolo da barra são codificados dois caracteres, então teremos:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": " Tamanho do campo chave de acesso = 44 (caracteres) / 2 = 22 (símbolos)",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": " Considerando que cada símbolo possui 11 (módulos) * 22 (símbolos) = 242 posições",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": " Margem clara = deve ter no mínimo a dimensão de 10 (módulos) * 2 = 20 posições",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": " Start C = 11 (módulos) = 11 posições",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": " DV = 11 (módulos) = 11 posições",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": " Stop = 13 (módulos) = 13 posições",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": " Tamanho total da simbologia = 242 + 20 + 11 + 11 + 13 = 297 (posições)",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": " Largura máxima de cada módulo da barra = 9 cm / 297 (posições) = 0,03 cm",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            }
+          ],
+          "subsecoes": [
+            {
+              "numero": "2.17.1",
+              "titulo": "Cálculo do dígito verificador do CODE-128C",
+              "paragrafos": [
+                {
+                  "texto": "O dígito verificador é baseado em um cálculo do módulo 103 considerando a soma ponderada dos valores de cada um dos dígitos na mensagem que está sendo codificada, incluindo o valor do caractere de início (start).",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                },
+                {
+                  "texto": "Exemplo: consideremos que a chave de acesso fosse apenas de oito caracteres e contivesse o seguinte número: 09758364 Chave de acesso START 09 75 83 64 Sequência A 1 2 3 4 Valor do caractere B 105 9 75 83 64 Valor Ponderado (A X B) C 105 9 150 249 256",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                },
+                {
+                  "texto": " Na linha valor do caractere foi incluso o valor 105 que corresponde ao valor do caractere de início (start) para o padrão Code C.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                },
+                {
+                  "texto": " Excetuando o caractere de start, os demais valores dos caracteres coincidem com os valores da chave de acesso, isto porque estamos utilizando o padrão Code C de codificação que é exclusivamente numérico.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                },
+                {
+                  "texto": " O dígito verificador do código será o resto da divisão da somatória dos valores ponderados dividido por 103 (módulo 103).",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                },
+                {
+                  "texto": "Assim o dígito verificador será:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                },
+                {
+                  "texto": " Valor da soma ponderada = (1x105) +(1x9) +(2x75) +(3x83) +(4x64) = 769",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                },
+                {
+                  "texto": " 769/103 = 7 resta 48, assim o DV é 48",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                }
+              ]
+            },
+            {
+              "numero": "2.17.2",
+              "titulo": "Representação simbólica do código",
+              "paragrafos": [
+                {
+                  "texto": "START 09 75 83 64 DV = 48 STOP B S B S B S B S B S B S B S B S B S B S B S B S B S B S B S B S B S B S B S B S B S B 2 1 1 2 3 2 2 2 1 2 1 3 2 4 1 2 1 1 1 1 4 2 1 2 1 1 1 4 2 2 3 1 3 1 2 1 2 3 3 1 1 1 2 B = barra preta S = espaço ou barra branca A numeração acima indica quantas vezes a barra deverá ser impressa no símbolo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "2.18",
+          "titulo": "Informações da consulta via QR Code",
+          "paragrafos": [
+            {
+              "texto": "A imagem do QR Code gerada/impressa no DACTE deve ter tamanho mínimo 25 mm x 25 mm, sendo 22mm de conteúdo para 3mm de margem segura (quiet zone), para dimensões superiores a 25mm, considerar a margem segura de 10% da dimensão total.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "O conteúdo QR Code deverá ser informado no arquivo XML do conhecimento em campo específico, conforme descrito no MOC (tag: qrCodCTe), levando em consideração as especificações para a geração do QR Code para CT-e com emissão normal e as modificações necessárias para a emissão em contingência.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            }
+          ],
+          "subsecoes": [
+            {
+              "numero": "2.18.1",
+              "titulo": "Dimensões mínimas do QR Code",
+              "paragrafos": [
+                {
+                  "texto": "A dimensão mínima para a imagem do QR Code será 25mm X 25mm (sendo 22mm de conteúdo para 3 mm de margem segura (quiet zone)), tendo em vista ter sido a menor dimensão que se conseguiu leitura em dispositivos móveis que não possuem zoom (aproximação de imagem). Para dimensões superiores a 25mm, considerar a margem segura de 10% da dimensão total.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 14
+                },
+                {
+                  "texto": "A margem de segurança é necessária para a melhor leitura do QR Code, caso ela não seja respeitada podem ocorrer erros de leitura.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "2.19",
+          "titulo": "Campos de Conteúdo Variável",
+          "paragrafos": [
+            {
+              "texto": "O leiaute de geração/impressão do DACTE prevê três campos de conteúdo variável logo abaixo do local onde é impressa a chave de acesso, de acordo com a seguinte disposição:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            }
+          ],
+          "subsecoes": [
+            {
+              "numero": "2.19.1",
+              "titulo": "CT-e emissão Normal",
+              "paragrafos": [
+                {
+                  "texto": "A emissão de CT-e normal é forma conclusiva de emissão do CT-e, contendo a autorização de uso para o CT-e. Nesse caso, após a obtenção da autorização de uso do CT-e o emissor poderá imprimir o DACTE em papel comum ou gerar o DACTE em meio eletrônico, informando:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 15
+                },
+                {
+                  "texto": " No campo 1: informará a URL onde pode ser consultada a autenticidade do CT-e a partir do valor da chave de acesso;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 15
+                },
+                {
+                  "texto": " No campo 2: informará o número do protocolo de autorização de uso, a data e a hora de autorização;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 15
+                },
+                {
+                  "texto": " No campo 3: informará o QR Code, conforme definido no MOC para a emissão Normal.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 15
+                }
+              ]
+            },
+            {
+              "numero": "2.19.2",
+              "titulo": "CT-e emissão em contingência – FS-DA",
+              "paragrafos": [
+                {
+                  "texto": "O uso do formulário de segurança FS-DA, para impressão do DACTE, é a forma de contingência mais simples. Os CT-e devem ser transmitidos posteriormente para a SEFAZ quando cessados os problemas técnicos que impediam a transmissão.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 15
+                },
+                {
+                  "texto": "Nesse caso, o emissor deverá gerar o Código de Barras Adicional no Campo 1 e a representação numérica desse Código de Barras Adicional no Campo 2.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 15
+                },
+                {
+                  "texto": "No campo 3 deverá gerar o QR Code conforme as regras do MOC para geração de QR Code em contingência.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "Observação: O DACTE emitido em contingência na modalidade de impressão em FS-DA deverá conter impresso o Código de Barras Adicional dos Dados do CT-e e será formado pelo seguinte conteúdo, em um total de 36 caracteres:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "cUF = Código da UF do destinatário ou remetente do Documento Fiscal, informar 99 quando a operação for de comércio exterior;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "tpEmis = Forma de Emissão do CT-e, informar 5-Contingência FS-DA;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "CNPJ = CNPJ do destinatário ou do remetente, informar zeros no caso de operação com o exterior ou o CPF caso o destinatário ou remetente seja pessoa física;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "vCT = Valor Total da CT-e (sem ponto decimal, informar sempre os centavos), correspondendo à tag vTPrest, de vPrest;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "ICMSp = Destaque de ICMS próprio no CT-e no seguinte formato:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "1 = há destaque de ICMS próprio. Este caso ocorre quando se tiver a tag vICMS, a qual aparece quando esta é tag de:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": " ICMS00 (Prestação sujeito à tributação normal do ICMS), ou;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": " ICMS20 (Prestação sujeito à tributação com redução de BC do ICMS), ou ;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": " ICMS90 (ICMS Outros) 2 = não há destaque de ICMS próprio. Esse caso ocorre quando não se tiver a tag vICMS, o que acontece quando se tem tag de:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": " ICMSOutraUF (ICMS devido à UF de origem da prestação, quando diferente da UF do emitente), ou;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": " ICMS45 (ICMS Isento, não Tributado ou diferido), ou;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": " ICMSSN (Simples Nacional) e demais casos em que não haja destaque do ICMS próprio.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "ICMSs = Destaque de ICMS por substituição tributária no CT-e, no seguinte formato:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "1 = há destaque de ICMS por substituição tributária. Neste caso se terá a tag vICMSSTRet, de ICMS60 (Tributação pelo ICMS60 – ICMS cobrado por substituição tributária.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "Responsabilidade do recolhimento do ICMS atribuído ao tomador ou 3º por ST);",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "2 = não há destaque de ICMS por substituição tributária. Nos demais casos, que não se tenha ICMS60;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "DD = Dia da emissão do CT-e;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "DV = Dígito Verificador, calculado de forma igual ao DV da Chave de Acesso.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "Observação: Todos os campos que formam o código de barras devem ser preenchidos com alinhamento à direita, sem formatação e com os zeros não significativos necessários para alcançar o tamanho do campo .",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "2.20",
+          "titulo": "CT-e emitido em ambiente de homologação",
+          "paragrafos": [
+            {
+              "texto": "Já na hipótese de se tratar de um CT-e emitido em ambiente de homologação é obrigatório gerar/imprimir nesta área, de forma centralizada e em caixa alta, o seguinte texto: “EMITIDO EM AMBIENTE DE HOMOLOGAÇÃO – SEM VALOR FISCAL”.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 17
+            }
+          ]
+        },
+        {
+          "numero": "2.21",
+          "titulo": "Outros",
+          "subsecoes": [
+            {
+              "numero": "2.21.1",
+              "titulo": "Marca d’Água",
+              "paragrafos": [
+                {
+                  "texto": "O formulário poderá conter marca d’água desde que não prejudique a legibilidade dos dados impressos.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                }
+              ]
+            },
+            {
+              "numero": "2.21.2",
+              "titulo": "Impressão do Número da Folha",
+              "paragrafos": [
+                {
+                  "texto": "O número de ordem e o número total de folhas deverão ser impressos na parte superior de cada uma das folhas do DACTE, inclusive na primeira, mesmo que se utilize uma única folha.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                }
+              ]
+            },
+            {
+              "numero": "2.21.3",
+              "titulo": "Código de Barras",
+              "paragrafos": [
+                {
+                  "texto": "É permitida a impressão de código de barras de informações existentes no CT-e de interesse do emissor no quadro observações, no rodapé ou no verso do DACTE.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                }
+              ]
+            },
+            {
+              "numero": "2.21.4",
+              "titulo": "Casos Específicos",
+              "paragrafos": [
+                {
+                  "texto": "Os casos específicos complementam informações sobre o transporte e/ou mercadoria transportada devendo ser informados no verso ou na continuação das folhas em diminuição ou substituição ao campo de documentação originária, nesse último caso, quando a documentação originária já tiver sido informada em páginas anteriores, conforme abaixo e os DACTE a seguir apresentados nos quais foram inseridos a título de exemplo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                },
+                {
+                  "texto": "No caso de veículos novos transportados, informar com os campos, conforme exemplo abaixo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                },
+                {
+                  "texto": "No caso de produto perigoso, informar com os campos, conforme exemplo abaixo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                },
+                {
+                  "texto": "No caso de modal aquaviário, fica dispensada a geração/impressão do quadro DOCUMENTOS ORIGINÁRIOS, no que se refere às informações advindas do grupo infNF – informações das NF ou, infNFe – informações das NF-e ou, infOutros – informações dos demais documentos, desde que, em sua substituição, seja impresso na parte do DACTE que trata especificamente do modal aquaviário o conteúdo das informações requeridas no grupo detCont – Grupo de informações de detalhamento dos contêiner, conforme quadro exemplificativo abaixo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                }
+              ]
+            },
+            {
+              "numero": "2.21.5",
+              "titulo": "Canhoto",
+              "paragrafos": [
+                {
+                  "texto": "O canhoto não é obrigatório e poderá ser gerado/impresso nas extremidades da folha, observado o leiaute dos modelos de DACTE presentes neste Manual.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 19
+                },
+                {
+                  "texto": "Devem ser feitos os ajustes necessários para que não existam campos impressos no verso do DACTE na região do canhoto.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 19
+                },
+                {
+                  "texto": "O leiaute das informações geradas/impressas no canhoto é de livre escolha e disposição da empresa, sendo que os modelos apresentados neste Anexo são a título de exemplo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "numero": "3",
       "titulo": "Correlação dos campos do XML do CT-e x DACTE",
-      "pagina_inicio": 0
+      "paragrafos": [
+        {
+          "texto": "Quadro do DACTE Campo do DACTE Tag XML, do CT e Identificação do Emitente Nome ou razão social xNome ou xFant, de emit CNPJ CNPJ, de emit Inscrição Estadual IE, de emit Endereço xLgr -nro -xCpl, de enderEmit Bairro xBairro, de enderEmit Município xMun, de enderEmit UF UF, de enderEmit Telefone fone, de enderEmit CEP CEP, de enderEmit Caso o modal, de ide, seja: 01: Rodoviário;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 20
+        },
+        {
+          "texto": "Modal Modal 02: Aéreo; 03: Aquaviário; 04: Ferroviário;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 20
+        },
+        {
+          "texto": "05: Dutoviário; 06: Multimodal Modelo Modelo mod, de ide Série Série serie, de ide Número Número nCT, de ide Data e hora de emissão Data e hora de emissão dhEmi, de ide (HH.MM.SS) MOC 4.00 Inscrição SUFRAMA Destinatário Inscrição SUFRAMA Destinatário ISUF, de dest Chave de acesso Chave de acesso Id, de infCte, sem as 3 primeiras letras Quando com cStat = 100 (uso autorizado), Protocolo de Autorização de Uso Protocolo de Autorização de Uso nProt + \" \" + dhRecbto, de infProt, em protCTe Tipo do CT-e Tipo do CT-e tpCTe, de ide Tipo do Serviço Tipo do Serviço tpServ, de ide Se toma, de toma4 (CNPJ, CPF, IE, xNome, Tomador do Serviço Tomador do Serviço xFant, fone) Se tom, de toma3 informado pegar estes campos da pessoa referenciada CT-e Globalizado Indicador do CT-e Globalizado indGlobalizado, de ide Inform. do CT-e Globalizado xObs, de infGlobalizado Código Fiscal de Operações e CFOP - Natureza da Operação CFOP - natOp, de ide Prestações - Natureza da Operação Início da Prestação Início da prestação UFIni -xMunIni, de ide Término da Prestação Término da prestação UFFim -cMunFim – xMunFim, de ide Remetente Remetente xNome, de rem Endereço xLgr -nro -xCpl -xBairro, de enderReme Município xMun, de enderReme CEP CEP, de enderReme CNPJ/CPF CNPJ/CPF de rem Inscrição Estadual IE , de rem UF UF, de enderReme País xPais, de enderReme Fone fone, de rem Destinatário Destinatário xNome, de dest Endereço xLgr -nro -xCpl -xBairro, de enderDest Município xMun, de enderDest CEP CEP, de enderDest CNPJ/CPF CNPJ/ CPF, de dest Inscrição Estadual IE, de dest UF UF, de enderDest País xPais, de enderDest Fone Fone, de dest Expedidor Expedidor xNome, de exped Endereço xLgr -nro -xCpl -xBairro, de enderExped Município xMun, de enderExped CEP CEP, de enderExped CNPJ/CPF CNPJ/ CPF, de exped Inscrição Estadual IE, de exped UF UF, de enderExped País xPais, de enderExped Fone Fone, de exped Recebedor Recebedor xNome, de receb Endereço xLgr -nro -xCpl -xBairro, de enderReceb Município xMun, de enderReceb CEP CEP , de enderReceb CNPJ/CPF CNPJ/ CPF,de receb Inscrição Estadual IE ,de receb UF UF , de enderReceb País xPais, de enderReceb Fone Fone, de receb Tomador do Serviço Se toma, de toma4 (CNPJ, CPF, IE, xNome Tomador do Serviço ou xFant). Se toma, de toma3 informado pegar estes campos da pessoa referenciada Se existir toma4, xLgr – nro -xCpl -xBairro, Endereço de enderToma, ou dos campos da pessoa referenciada XMun, de enderToma, ou dos campos da Município pessoa referenciada CEP CEP, de enderToma CNPJ/ CPF, de toma4, ou dos campos da CNPJ/CPF pessoa referenciada IE, de toma4, ou dos campos da pessoa Inscrição Estadual referenciada UF UF, de enderToma xPais, de toma4 ou dos campos da pessoa País referenciada Fone, de Toma4 ou dos campos da pessoa Fone referenciada Produto Predominante Produto Predominante proPred, de infCarga Outras características da carga Outras características da carga xOutCat, de infCarga Valor total da carga Valor total da carga vCarga, em infCarga qCarga x fator de conversão para KG, Peso Bruto (KG) Peso Bruto (KG) quando Peso Bruto, onde o fator = 1, para cUnid=01, fator = 1000, para cUnid=02 qCarga x fator de conversão para KG, quando Peso Base de Cálculo, onde o fator Peso Base Cálculo (Kg) Peso Base Cálculo (Kg) = 1, para cUnid=01, fator = 1000, para cUnid=02 qCarga x fator de conversão para KG, Peso Aferido (Kg) Peso Aferido (Kg) quando for peso auferido, onde o fator = 1, para cUnid=01, fator = 1000, para cUnid=02 Cubagem (m3) Cubagem (m3) qCarga, quando cUnid = 00 Quantidade de Volumes (und) Quantidade de Volumes (und) qCarga Componentes do valor da prestação de serviço Nome xNome, de Comp Valor vComp, de Comp Valor Total da Prestação do Serviço vTPrest, de vPrest Valor a receber vRec, de vPrest Informações relativas ao imposto Classificação Tributária do Serviço CST, em ICMS Base de Cálculo vBC, vBCSTRet ou vBCOutraUF, em ICMS pICMS, pICMSSTRet ou pICMSOutraUF, Alíquota do ICMS em ICMS vICMS, vICMSSTRet ou vICMSOutraUF, em Valor do ICMS ICMS % RED BC. CALC. pRedBC ou pRedBCOutraUF, em ICMS Documentos Originários Tp Doc. mod, de infNF CNPJ/CPF Emitente CNPJ/ CPF, em rem Série/N° Documento serie, em infNF Previsão do fluxo da carga Sigla ou código interno da Filial/Porto/Estação/ Aeroporto de xOrig, em fluxo Origem Sigla ou código interno da Filial/Porto/Estação/Aeroporto de xPass, em pass Passagem Sigla ou código interno da Filial/Porto/Estação/Aeroporto de xDest, em fluxo Destino Observações Gerais Observações Gerais xObs, de compl INFORMAÇÕES ESPECÍFICAS DO RNTRC da Empresa RNTRC, em rodo MODAL RODOVIÁRIO INFORMAÇÕES ESPECÍFICAS DO Número Operacional do Conhecimento MODAL AÉREO nOCA, em aereo Aéreo Classe CL, em Tarifa Código da Tarifa cTar, em Tarifa Valor da Tarifa vTar, em Tarifa Número da Minuta nMinu, em aereo Retira( SIM NÃO ) retira, em ide Dados Relativos a Retirada da Carga xDetRetira, em ide Característica Adicional do Serviço xCaracSer Data Prevista de Entrega dPrevAereo,  de aéreo Natureza da carga (AÉREO) Dimensão xDime, de natCarga Informações do Manuseio cInfManu, de natCarga INFORMAÇÕES ESPECÍFICAS DO MODAL AQUAVIÁRIO Identificação do Navio/Rebocador xNavio, em aquav VLR. DO AFRMM vAFRMM, em aquav Identificação da Balsa xBalsa, em Balsa Lacre nLacre, em detCont Identificação do Container nCont, em detCont INFORMAÇÕES ESPECÍFICAS DO MODAL FERROVIÁRIO Tipo de tráfego tpTraf, em ferrov Fluxo Ferroviário fluxo, em ferrov Preencher com: 1-Ferrovia de origem se Ferrovia Responsável pelo respFat = 1 ou 2Ferrovia de destino se Faturamento respFat = 2 Ferrovia Emitente do CT-e ferrEmi, em trafMut Valor do Frete vFrete, em ferrov INFORMAÇÕES DAS FERROVIAS ENVOLVIDAS CNPJ CNPJ, em ferroEnv Inscrição Estadual IE, em ferroEnv Cod. Interno cInt, em ferroEnv Razão Social xNome, em ferroEnv INFORMAÇÕES ESPECÍFICAS DO Valor Unitário não ficou clara a DUTOVIÁRIO expressão a ser utilizado no futuro para (A ser utilizado no futuro) os campos do dutoviário Valor do Frete (A ser utilizado no futuro) Outros (A ser utilizado no futuro) Base de Cálculo vBC Alíquota pICMS Valor do Imposto vICMS Valor Total do Frete (A ser utilizado no futuro) Observações xObs Emitente CNPJ/ CPF, em rem Série Serie, em infNF Número Num, em infNF INFORMAÇÕES ESPECÍFICAS DO Número do Certificado do Operador de TRANSPORTE MULTIMODAL DE COTM, em multimodal Transporte Multimodal CARGAS Indicador Negociável indNegociavel, em multimodal Informações de Seguro do Multimodal Nome da Seguradora xSeg, em infSeg CNPJ da seguradora CNPJ, em infSeg Número da Apólice nApol,  em seg Número da Averbação nAver, em seg Uso Exclusivo do Emissor de CT-e Uso Exclusivo do Emissor de CT-e xTexto, em ObsCont Reservado ao Fisco Reservado ao Fisco xTexto, em ObsFisco",
+          "marcacao": "SEM_MARCA",
+          "pagina": 20
+        }
+      ]
     },
     {
       "numero": "4",
       "titulo": "Correlação dos campos do XML do CT-e OS x DACTE OS",
-      "pagina_inicio": 0
+      "paragrafos": [
+        {
+          "texto": "Quadro do DACTE OS Campo do DACTE OS Tag XML, do CT-e OS Identificação do Emitente Nome ou razão social xNome ou xFant, de emit CNPJ CNPJ, de emit Inscrição Estadual IE, de emit Endereço xLgr -nro -xCpl, de enderEmit Bairro xBairro, de enderEmit Município xMun, de enderEmit UF UF, de enderEmit Telefone fone, de enderEmit CEP CEP, de enderEmit Modal Modal 01-Rodoviário, de ide Modelo Modelo mod, de ide Série Série serie, de ide Número Número nCT, de ide Data e hora de emissão Data e hora de emissão dhEmi, de ide (HH.MM.SS) Chave de acesso Chave de acesso Id, de infCte, sem as 3 primeiras letras Quando com cStat = 100 (uso Protocolo de Autorização de Uso Protocolo de Autorização de Uso autorizado), nProt + \" \" + dhRecbto, de infProt, em protCTe Tipo do CT-e Tipo do CT-e tpCTe, de ide Tipo do Serviço Tipo do Serviço tpServ, de ide Código Fiscal de Operações e Prestações CFOP - Natureza da Operação CFOP - natOp, de ide",
+          "marcacao": "SEM_MARCA",
+          "pagina": 25
+        },
+        {
+          "texto": "- Natureza da Operação Início da Prestação UF do início da prestação UFIni -xMunIni, de ide Percurso do veículo UF do percurso do veículo UFPer, de infPercurso Término da Prestação UF do término da prestação UFFim -cMunFim – xMunFim, de ide Tomador/ Usuário do Serviço Tomador/Usuário do Serviço xNome ou xFant, de toma CNPJ/CPF CNPJ/ CPF, de toma Inscrição Estadual IE, de toma Endereço xLgr – nro -xCpl -xBairro, de enderToma Município xMun, de enderToma UF UF, de enderToma Fone Fone, de toma Informações da Prestação do Descrição do Serviço prestado xDescServ, de infServico Serviço Informações da quantidade do qCarga, de qCarga Quantidade Serviço Componentes do valor da prestação de serviço Nome xNome, de Comp Valor vComp, de Comp Valor Total da Prestação do Serviço vTPrest, de vPrest Valor a receber vRec, de vPrest Informações relativas ao imposto Classificação Tributária do Serviço CST, em ICMS vBC, vBCSTRet ou vBCOutraUF, em Base de Cálculo ICMS pICMS, pICMSSTRet ou Alíquota do ICMS pICMSOutraUF, em ICMS vICMS, vICMSSTRet ou vICMSOutraUF, Valor do ICMS em ICMS, em ICMS % RED BC. CALC. pRedBC ou pRedBCOutraUF, em ICMS Observações Gerais Observações Gerais xObs, de compl Seguro da viagem Caso respSeg , de seg seja: 4 -Emitente Responsável do CT-e; 5 -Tomador de Serviço.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 25
+        },
+        {
+          "texto": "Nome da Seguradora xSeg, de seg Número da Apólice nApol, de seg INFORMAÇÕES ESPECÍFICAS DO Termo de Autorização de Fretamento – TAF, de rodoOS MODAL RODOVIÁRIO TAF Número do Registro Estadual NroRegEstadualm, de rodoOS Placa do veículo placa, em veic RENAVAM do veículo RENAVAM, em veic CPF CPF, em prop CNPJ CNPJ, de prop Termo de Autorização de Fretamento – TAF, de prop TAF Número do Registro Estadual NroRegEstadual, de prop Uso Exclusivo do Emissor de CT-e Uso Exclusivo do Emissor de CT-e xTexto, em ObsCont Reservado ao Fisco Reservado ao Fisco xTexto, em ObsFisco",
+          "marcacao": "SEM_MARCA",
+          "pagina": 26
+        }
+      ]
     },
     {
       "numero": "5",
       "titulo": "Modelos de geração/impressão do DACTE",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "2.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "3.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "4.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "5.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "6.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "7.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "8.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5",
-      "titulo": "9.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5.10",
-      "titulo": "Modal Dutoviário (emissão em contingência)",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5.11",
-      "titulo": "Multimodal (emissão normal)",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "5.12",
-      "titulo": "Multimodal (emissão em contingência)",
-      "pagina_inicio": 0
+      "subsecoes": [
+        {
+          "numero": "5.1",
+          "titulo": "Modal Rodoviário (emissão normal)"
+        },
+        {
+          "numero": "5.2",
+          "titulo": "Modal Rodoviário (emissão em contingência)"
+        },
+        {
+          "numero": "5.3",
+          "titulo": "Modal Aéreo (emissão normal)"
+        },
+        {
+          "numero": "5.4",
+          "titulo": "Modal Aéreo (emissão em contingência)"
+        },
+        {
+          "numero": "5.5",
+          "titulo": "Modal Aquaviário (emissão normal)"
+        },
+        {
+          "numero": "5.6",
+          "titulo": "Modal Aquaviário (emissão em contingência)"
+        },
+        {
+          "numero": "5.7",
+          "titulo": "Modal Ferroviário (emissão normal)"
+        },
+        {
+          "numero": "5.8",
+          "titulo": "Modal Ferroviário (emissão em contingência)"
+        },
+        {
+          "numero": "5.9",
+          "titulo": "Modal Dutoviário (emissão normal)"
+        },
+        {
+          "numero": "5.10",
+          "titulo": "Modal Dutoviário (emissão em contingência)"
+        },
+        {
+          "numero": "5.11",
+          "titulo": "Multimodal (emissão normal)"
+        },
+        {
+          "numero": "5.12",
+          "titulo": "Multimodal (emissão em contingência)"
+        }
+      ]
     },
     {
       "numero": "6",
       "titulo": "Modelo de geração/impressão do DACTE OS",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "6",
-      "titulo": "1.",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "6",
-      "titulo": "2.",
-      "pagina_inicio": 0
+      "subsecoes": [
+        {
+          "numero": "6.1",
+          "titulo": "CT-e OS (emissão normal)"
+        },
+        {
+          "numero": "6.2",
+          "titulo": "CT-e OS (emissão em contingência)"
+        }
+      ]
     },
     {
       "numero": "7",
       "titulo": "Conjunto de caracteres Código de Barras CODE-128C",
-      "pagina_inicio": 0
+      "paragrafos": [
+        {
+          "texto": "Conjunto de caracteres representativos do Código de Barras CODE-128C Combinação de barras: B = barra preta e S = e spaço (barra branca) Valor Combinação de Barras Valor Combinação de Barras Valor Combinação de Barras CODE C B S B S B S CODE C B S B S B S CODE C B S B S B S 00 2 1 2 2 2 2 50 2 3 1 1 3 1 100 1 1 4 1 3 1 01 2 2 2 1 2 2 51 2 1 3 1 1 3 101 3 1 1 1 4 1 02 2 2 2 2 2 1 52 2 1 3 3 1 1 102 4 1 1 1 3 1 03 1 2 1 2 2 3 53 2 1 3 1 3 1 103 2 1 1 4 1 2 04 1 2 1 3 2 2 54 3 1 1 1 2 3 104 2 1 1 2 1 4 05 1 3 1 2 2 2 55 3 1 1 3 2 1 06 1 2 2 2 1 3 56 3 3 1 1 2 1 07 1 2 2 3 1 2 57 3 1 2 1 1 3 08 1 3 2 2 1 2 58 3 1 2 3 1 1 09 2 2 1 2 1 3 59 3 3 2 1 1 1 10 2 2 1 3 1 2 60 3 1 4 1 1 1 11 2 3 1 2 1 2 61 2 2 1 4 1 1 12 1 1 2 2 3 2 62 4 3 1 1 1 1 13 1 2 2 1 3 2 63 1 1 1 2 2 4 14 1 2 2 2 3 1 64 1 1 1 4 2 2 15 1 1 3 2 2 2 65 1 2 1 1 2 4 16 1 2 3 1 2 2 66 1 2 1 4 2 1 17 1 2 3 2 2 1 67 1 4 1 1 2 2 18 2 2 3 2 1 1 68 1 4 1 2 2 1 19 2 2 1 1 3 2 69 1 1 2 2 1 4 20 2 2 1 2 3 1 70 1 1 2 4 1 2 21 2 1 3 2 1 2 61 1 2 2 1 1 4 22 2 2 3 1 1 2 72 1 2 2 4 1 1 23 3 1 2 1 3 1 73 1 4 2 1 1 2 24 3 1 1 2 2 2 74 1 4 2 2 1 1 25 3 2 1 1 2 2 75 2 4 1 2 1 1 26 3 2 1 2 2 1 76 2 2 1 1 1 4 27 3 1 2 2 1 2 77 4 1 3 1 1 1 28 3 2 2 1 1 2 78 2 4 1 1 1 2 29 3 2 2 2 1 1 79 1 3 4 1 1 1 30 2 1 2 1 2 3 80 1 1 1 2 4 2 31 2 1 2 3 2 1 81 1 2 1 1 4 2 32 2 3 2 1 2 1 82 1 2 1 2 4 1 33 1 1 1 3 2 3 83 1 1 4 2 1 2 34 1 3 1 1 2 3 84 1 2 4 1 1 2 35 1 3 1 3 2 1 85 1 2 4 2 1 1 36 1 1 2 3 1 3 86 4 1 1 2 1 2 37 1 3 2 1 1 3 87 4 2 1 1 1 2 38 1 3 2 3 1 1 88 4 2 1 2 1 1 39 2 1 1 3 1 3 89 2 1 2 1 4 1 40 2 3 1 1 1 3 90 2 1 4 1 2 1 41 2 3 1 3 1 1 91 4 1 2 1 2 1 42 1 1 2 1 3 3 92 1 1 1 1 4 3 43 1 1 2 3 3 1 93 1 1 1 3 4 1 44 1 3 2 1 3 1 94 1 3 1 1 4 1 45 1 1 3 1 2 3 95 1 1 4 1 1 3 46 1 1 3 3 2 1 96 1 1 4 3 1 1 47 1 3 3 1 2 1 97 4 1 1 1 1 3 48 3 1 3 1 2 1 98 4 1 1 3 1 1 49 2 1 1 3 3 1 99 1 1 3 1 4 1 Valor Caractere de Início (START) Caractere de Fim (STOP) B S B S B S B S B S B S B 105 2 1 1 2 3 2 2 3 3 1 1 1 2",
+          "marcacao": "SEM_MARCA",
+          "pagina": 53
+        }
+      ]
     }
   ],
-  "regras": [
-    {
-      "id": "9999",
-      "cStat": "",
-      "descricao": "9999 9999 9999 9999 9999 9999 9999 9999 9999 9999",
-      "secao": ""
-    },
-    {
-      "id": "9999",
-      "cStat": "",
-      "descricao": "9999 9999 9999 9999 9999 9999 9999 9999",
-      "secao": ""
+  "regras_validacao": [],
+  "campos_leiaute": [],
+  "estatisticas": {
+    "total_secoes": 53,
+    "total_regras": 0,
+    "total_campos": 0,
+    "por_marcacao": {
+      "AMARELO": 0,
+      "VERDE": 0,
+      "EXCLUIDO": 0,
+      "SEM_MARCA": 140
     }
-  ],
-  "campos": []
+  }
 }

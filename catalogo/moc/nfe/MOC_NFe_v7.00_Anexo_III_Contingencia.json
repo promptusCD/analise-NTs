@@ -1,0 +1,1073 @@
+{
+  "documento": "NF-e",
+  "versao": "7.00",
+  "secao": "Anexo III Contingencia",
+  "titulo": "",
+  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\nfe\\moc\\MOC_NFe_v7.00_Anexo_III_Contingencia.pdf",
+  "sha256": "e1cfb9b6c5adc6a67062f66fd1699495fdec5dfdb93025768f87fe3782918dde",
+  "extraido_em": "2026-10-07T15:45:34.825110+00:00",
+  "tipo_documento": "MOC",
+  "secoes": [
+    {
+      "numero": "2.1.2",
+      "titulo": "Contingência em Formulário de Segurança para impressão de Documento Auxiliar de"
+    },
+    {
+      "numero": "2.1.4",
+      "titulo": "Contingência Eletrônica com o uso do Evento Prévio de Emissão em Contingência – EPEC . 13",
+      "paragrafos": [
+        {
+          "texto": "Controle de Versões Versão Publicação Descrição Criação deste manual como documento anexo do MOC. Corresponde ao capítulo 8 7.00 Novembro/2020 do MOC 6.0, que trata da especificação técnica da emissão em Contingência.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 3
+        },
+        {
+          "texto": "Histórico de Alterações / Cronograma Versão Histórico de atualizações Implantação Implantação Homologação Produção",
+          "marcacao": "SEM_MARCA",
+          "pagina": 4
+        },
+        {
+          "texto": "• Separação do capítulo 8 - Contingência do MOC 6.0, para este manual 7.00 específico.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 4
+        }
+      ]
+    },
+    {
+      "numero": "1",
+      "titulo": "Introdução",
+      "paragrafos": [
+        {
+          "texto": "Este documento é parte integrante do Manual de Orientação do Contribuinte (MOC) e por objetivo a definição do leiaute da NF-e, modelos 55 e 65.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "O Manual de Orientação do Contribuinte 7.0 é composto pelos seguintes documentos:",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "• MOC – Visão Geral",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "• MOC – Anexo I – Leiaute NF-e/NFC-e e Regras de Validação",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "• MOC – Anexo II – Manual de Especificações Técnicas do DANFE e Código de Barras",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "• MOC – Anexo III – Manual de Contingência NF-e",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "• MOC – Anexo IV – Manual de Contingência NFC-e As informações do DANFE NFC-e estão publicadas no Manual de Especificações Técnicas do DANFE NFC-e e QR Code, disponível no Portal Nacional da NFC-e Ao longo deste documento o acrônimo NF-e é utilizado para todas as situações que se aplicam indistintamente a ambos os modelos de NF-e (55 e 65). Sempre que é necessário identificar um dos dois modelos em particular, a diferenciação é feita pela expressão respectiva: NF-e modelo 55 ou NFC-e modelo 65.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Contingência da NF-e (modelo 55)",
+      "paragrafos": [
+        {
+          "texto": "O Sistema da NF-e é baseado no conceito de documento fiscal eletrônico: um arquivo eletrônico com as informações fiscais da operação comercial que tenha a assinatura digital do emissor.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "A validade de uma NF-e está condicionada à existência da respectiva autorização de uso concedida pela Secretaria de Fazenda de localização do emissor ou pelo órgão por ela designado para autorizar a NF-e em seu nome, como são os casos da SEFAZ Virtual do Ambiente Nacional, da SEFAZ Virtual do Rio Grande do Sul e das Sefaz Virtuais de Contingência (SVC).",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "A obtenção da autorização de uso da NF-e é um processo que envolve diversos recursos de infraestrutura, hardware e software. O mau funcionamento ou a indisponibilidade de qualquer um destes recursos pode prejudicar o processo de autorização da NF-e, com reflexos nos negócios do emissor da NF-e, que fica impossibilitado de obter a prévia autorização de uso da NF-e exigida na legislação para a emissão do DANFE para acompanhar a circulação da mercadoria.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "A alta disponibilidade é uma das premissas básicas do sistema da NF-e e os sistemas de recepção de NF-e das UF foram construídos para funcionar em regime de 24x7. Contudo, existem diversos outros componentes do sistema que podem apresentar falhas e comprometer a disponibilidade dos serviços, exigindo alternativas de emissão da NF-e em contingência.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 5
+        },
+        {
+          "texto": "Atualmente existem as seguintes modalidades de emissão de NF-e:",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        },
+        {
+          "texto": "Normal EPEC EMISSÃO FS-DA SVC a) Normal – é o procedimento padrão de emissão da NF-e com transmissão da NF-e para a Secretaria de Fazenda da unidade federada onde o emissor está estabelecido para obter a autorização de uso. O DANFE será impresso em papel comum após o recebimento da autorização de uso da NF-e;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        },
+        {
+          "texto": "b) FS-DA – Contingência com uso do Formulário de Segurança para impressão de Documento Auxiliar do Documento Fiscal eletrônico – é a alternativa mais simples para a situação em que exista algum impedimento para obtenção da autorização de uso da NF-e, como por exemplo, um problema no acesso à internet ou a indisponibilidade da SEFAZ de origem do emissor. Neste caso, o emissor pode optar pela emissão da NF-e em contingência com a impressão do DANFE em Formulário de Segurança. O envio das NF-e emitidas nesta situação para SEFAZ de origem será realizado quando cessarem os problemas técnicos que impediam a sua transmissão. Cabe ressaltar que a esta modalidade de contingência ainda é possível utilizando-se formulários de segurança para impressor autônomo, nos termos da legislação vigente até 2010, até o final do estoque daqueles formulários;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        },
+        {
+          "texto": "c) EPEC – Evento Prévio de Emissão em Contingência – é alternativa de emissão de NF-e em contingência com o registro prévio do resumo das NF-e emitidas. O registro prévio das NF-e permite a impressão do DANFE em papel comum. A validade do DANFE está condicionada à posterior transmissão da NF-e para a SEFAZ de Origem;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        },
+        {
+          "texto": "d) SVC – Sefaz Virtual de Contingência – é alternativa de emissão de NF-e em contingência com transmissão da NF-e para uma das Sefaz Virtuais de Contingência. Nesta modalidade de contingência o DANFE pode ser impresso em papel comum e não existe necessidade de transmissão da NF-e para a SEFAZ de origem quando cessarem os problemas técnicos que impediam a transmissão. A utilização da SVC depende de ativação da SEFAZ de origem, o que significa dizer que a SVC só entra em operação quando a SEFAZ de origem estiver com problemas técnicos que impossibilitam a recepção da NF-e.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 6
+        }
+      ],
+      "subsecoes": [
+        {
+          "numero": "2.1",
+          "titulo": "Modalidades de Emissão de NF-e",
+          "paragrafos": [
+            {
+              "texto": "O AJUSTE SINIEF 07/05 e as legislações específicas de cada UF disciplinam e detalham as modalidades de emissão de NF-e que serão descritos de forma simplificada a seguir.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": "Em um cenário de falha que impossibilite a emissão da NF-e na modalidade normal, o emissor deve escolher a modalidade de emissão de contingência que lhe for mais conveniente, ou até mesmo aguardar a normalização da situação para voltar a emitir a NF-e na modalidade normal, caso a emissão da NF-e não seja premente.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": "Como não existe precedência ou hierarquia nas modalidades de emissão da NF-e em contingência, o emissor pode adotar uma, algumas ou todas as modalidades que tiver à sua disposição, ou não adotá-las.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            }
+          ],
+          "subsecoes": [
+            {
+              "numero": "2.1.1",
+              "titulo": "Emissão Normal",
+              "paragrafos": [
+                {
+                  "texto": "O processo de emissão normal é a situação desejada e mais adequada para o emissor, pois é a situação em que todos os recursos necessários para a emissão da NF-e estão operacionais e a autorização de uso da NF-e é concedida normalmente pela SEFAZ.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 7
+                },
+                {
+                  "texto": "Nesta situação a emissão das NF-e é realizada normalmente com a impressão do DANFE em papel comum, após o recebimento da autorização de uso da NF-e.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 7
+                },
+                {
+                  "texto": "Emissão de NF-e – modalidade normal Contribuinte SEFAZ Autorizadora",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 7
+                },
+                {
+                  "texto": "(1) (2)",
+                  "marcacao": "RISCADO_SEM_COR",
+                  "pagina": 7
+                },
+                {
+                  "texto": "(3)",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 7
+                },
+                {
+                  "texto": "1. Gerar NF-e;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Transmitir NF-e;",
+      "paragrafos": [
+        {
+          "texto": "3. Imprimir DANFE.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 7
+        },
+        {
+          "texto": "DANFE impresso em PAPEL COMUM",
+          "marcacao": "SEM_MARCA",
+          "pagina": 7
+        }
+      ],
+      "subsecoes": [
+        {
+          "numero": "2.1.2",
+          "titulo": "Contingência em Formulário de Segurança para impressão de",
+          "paragrafos": [
+            {
+              "texto": "Documento Auxiliar de Documento Fiscal Eletrônico – FS-DA A contingência com o uso do formulário de segurança é o processo mais simples de implementar, sendo o processo de contingência que tem a menor dependência de recursos de infraestrutura, hardware e software para ser utilizado.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": "Sendo identificada a existência de qualquer incidente que prejudique ou impossibilite a transmissão das NF-e e/ou obtenção da autorização de uso da SEFAZ, a empresa pode adotar a Contingência com formulário de segurança que requer os seguintes procedimentos do emissor:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": "• atribuir novo número de NF-e para as NF-e transmitidas que estão pendentes de retorno;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 7
+            },
+            {
+              "texto": "• alterar o campo tpEmis para “5” 1 ;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "• informar o motivo de entrada em contingência com data, hora com minutos e segundos do seu início, que devem ser impressas no DANFE;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "• regerar o XML da NF-e com outro número e, eventualmente, outra série, caso já tenha transmitido a NF-e com o campo tpEmis com valor “1”;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "• impressão de pelo menos duas vias do DANFE em formulário de segurança constando no corpo a expressão “ DANFE em Contingência - impresso em decorrência de problemas técnicos ”, tendo as vias a seguinte destinação:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "o uma das vias permitirá o trânsito das mercadorias e deverá ser mantida em arquivo pelo destinatário pelo prazo estabelecido na legislação tributária para a guarda de documentos fiscais;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "o a outra via deverá ser mantida em arquivo pelo emitente pelo prazo estabelecido na legislação tributária para a guarda dos documentos fiscais.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "• transmitir as NF-e imediatamente após a cessação dos problemas técnicos que impediam a transmissão da NF-e, observando o prazo limite de transmissão na legislação;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "• a Chave de Acesso da NF-e é a mesma Chave de Acesso do DANFE emitido em Formulário  de Segurança;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "• tratar as NF-e transmitidas por ocasião da ocorrência dos problemas técnicos que estão pendentes de retorno.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "Contingência FS-DA Contribuinte SEFAZ Autorizadora (1) (3) (2)",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "1. Gerar NF-e;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "2. Imprimir DANFE;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "3. transmitir NF-e após superados os DANFE problemas técnicos.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            },
+            {
+              "texto": "Impresso em FS-DA",
+              "marcacao": "SEM_MARCA",
+              "pagina": 8
+            }
+          ]
+        },
+        {
+          "numero": "2.1.3",
+          "titulo": "Ambiente de Autorização – SVC",
+          "subsecoes": [
+            {
+              "numero": "2.1.3.1",
+              "titulo": "Ambiente de Contingência Alternativo",
+              "paragrafos": [
+                {
+                  "texto": "O ambiente de autorização da SVC, SEFAZ Virtual de Contingência, poderá assumir a recepção e autorização de NF-e de outra unidade da federação, quando solicitado pela SEFAZ de origem.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 8
+                },
+                {
+                  "texto": "Existirão dois locais alternativos de autorização em contingência, operados pelas estruturas das SEFAZ VIRTUAIS atuais:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 8
+                },
+                {
+                  "texto": "• SVAN – SEFAZ Virtual do Ambiente Nacional;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 8
+                },
+                {
+                  "texto": "• SVRS – SEFAZ Virtual do Rio Grande do Sul.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "1",
+      "titulo": "Se a empresa estiver utilizando seu estoque de FS-IA nos termos do Convênio ICMS 58/95, deverá utilizar o",
+      "paragrafos": [
+        {
+          "texto": "campo tpEmis com valor  “2” 1 Portanto, de forma natural, mesmo as estruturas de autorização das SEFAZ VIRTUAIS passarão a ter a contingência da SVC, utilizando a infraestrutura de autorização uma da outra.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 8
+        },
+        {
+          "texto": "As SEFAZ autorizadoras adotarão uma das duas SVC, conforme definido no Ato COTEPE 39, de 04/09/2012:",
+          "marcacao": "SEM_MARCA",
+          "pagina": 9
+        },
+        {
+          "texto": "Art. 1º O Serviço de Sefaz Virtual de Contingência, previsto no Ajuste SINIEF 07/05 , de 30 de setembro de 2005, e disciplinado pelo Convênio ICMS 32/12 , de 30 de março de 2012, será oferecido:",
+          "marcacao": "SEM_MARCA",
+          "pagina": 9
+        },
+        {
+          "texto": "I - pela Sefaz Virtual do Ambiente Nacional, disponibilizada pela Secretaria da Receita Federal do Brasil, para os Estados do Acre, Alagoas, Amapá, Minas Gerais, Paraíba, Rio de Janeiro, Rio Grande do Sul, Rondônia, Roraima, Santa Catarina, Sergipe, São Paulo e Tocantins e para o Distrito Federal; e II - pela Sefaz Virtual do Rio Grande do Sul, disponibilizada pelo Estado do Rio Grande do Sul, para os estados do Amazonas, Bahia, Ceará, Espírito Santo, Goiás, Maranhão, Mato Grosso, Mato Grosso do Sul, Pará, Pernambuco, Piauí, Paraná e Rio Grande do Norte.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 9
+        }
+      ],
+      "subsecoes": [
+        {
+          "numero": "2.1.3.2",
+          "titulo": "Ambiente de Produção e Ambiente de Teste",
+          "paragrafos": [
+            {
+              "texto": "A SVC deverá manter um ambiente de produção e um ambiente de teste (homologação) disponíveis para as empresas. O ambiente de testes (homologação) deverá estar sempre ativo para todas as UF e o ambiente de produção será disponibilizado conforme ativação da SEFAZ de origem da circunscrição do contribuinte.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            }
+          ]
+        },
+        {
+          "numero": "2.1.3.3",
+          "titulo": "Ativação da SVC-XX",
+          "paragrafos": [
+            {
+              "texto": "O ambiente de autorização da SVC é ativado pela UF interessada e uma vez acionado passa a recepcionar as NF-e enviadas pelas empresas credenciadas para emitir NF-e na UF. O ambiente da SVC deverá manter controle sobre os contribuintes credenciados para emissão de NF-e para todas as UF, através do sincronismo automático com o Cadastro Centralizado de Contribuintes (CCC), mantido na SEFAZ-RS.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "Ocorrendo a indisponibilidade do ambiente de autorização normal, seja de forma programada ou não, a SEFAZ de origem acionará a SVC para que ative o serviço de recepção e autorização de NF-e para utilização dos contribuintes da sua circunscrição. Esta ativação será realizada na área de acesso restrito do Portal Nacional da NF-e ou na Extranet da SVC-RS, conforme o caso.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "Finda a indisponibilidade, a SEFAZ de origem acionará novamente a SVC, agora para desativar o serviço. A desativação do serviço de recepção e autorização de NF-e pela SVC será precedida por um período de 15 minutos, em que ambos os ambientes estarão simultaneamente disponíveis, de forma a minimizar o impacto da mudança para as Empresas.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "Inicialmente, a ativação / desativação será baseada em interação humana de um representante da SEFAZ de origem, acionando o ambiente de autorização da SVC específica para a sua UF.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "Esta operação de ativação prevê o registro prévio da informação de Data-Hora de início e fim de funcionamento do ambiente da SVC, servindo, portanto, para as situações que a indisponibilidade da recepção de NF-e no ambiente normal de autorização da SEFAZ de origem seja previsível e de longa duração. É o caso das interrupções programadas para manutenção preventiva da infraestrutura de recepção e autorização da SEFAZ de origem.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            }
+          ]
+        },
+        {
+          "numero": "2.1.3.4",
+          "titulo": "Serviços Disponibilizados pela SVC",
+          "paragrafos": [
+            {
+              "texto": "Serão disponibilizados pela SVC os mesmos serviços do ambiente normal de autorização, com as características que seguem:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "a) Serviço de Recepção O serviço de recepção e autorização de NF-e pela SVC (Web Service: NFeAutorizacao) somente estará disponível conforme decisão sobre a ativação ou não da SVC para uma determinada SEFAZ de origem.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 9
+            },
+            {
+              "texto": "b) Serviço de Retorno da Recepção O serviço de retorno da recepção do lote de NF-e pela SVC (Web Service: NFeRetAutorizacao) sempre estará disponível para consultar o resultado do processamento dos Lotes enviados para a SVC.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "c) Serviço de Registro de Eventos: Cancelamento O Serviço de Registro de Eventos (Web Service: RecepcaoEvento, seção 5.9 da Visão Geral do MOC 7.00), para o evento de Cancelamento (Tipo Evento=110111), sempre estará disponível somente para as NF-e autorizadas pela própria SVC, dentro das regras definidas para a operação normal de cancelamento.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "Quando da utilização da SVC pela empresa, uma eventual necessidade de cancelamento de uma NF-e autorizada no ambiente normal deverá ser represada para comando posterior no ambiente de autorização normal da SEFAZ de origem da circunscrição do contribuinte.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "Nota:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "Futuramente, poderá ser analisada a possibilidade de cancelamento na SVC de uma NF-e emitida no ambiente de autorização normal da SEFAZ e/ou o cancelamento no ambiente de autorização normal da SEFAZ de uma NF-e autorizada pela SVC. Neste caso, somente será possível o cancelamento no outro ambiente, caso o documento autorizado já tenha sido automaticamente compartilhado entre o ambiente normal de autorização e o ambiente da SVC (e vice-versa).",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "d) Serviço de Registro de Eventos: CC-e e outros O registro dos demais tipos de evento, tais como a Carta de Correção Eletrônica e outros, inicialmente não será disponibilizado para atendimento pela SVC.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "e) Serviço de Inutilização O Serviço de Inutilização (Web Service: NFeInutilizacao) não deverá ser oferecido pela SVC.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "Quando da utilização da SVC pela empresa, uma eventual necessidade de inutilização de numeração identificada pela aplicação da empresa deverá ser represada para comando posterior no ambiente de autorização normal da SEFAZ de origem da circunscrição do contribuinte.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "f) Serviço de Consulta da Situação da NF-e O Serviço de Consulta da Situação atual da NF-e (Web Service: NFeConsultaProtocolo) sempre estará disponível somente para as NF-e autorizadas pela própria SVC, dentro das regras definidas para a operação normal desta consulta.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "A Consulta da Situação da NF-e retorna toda a estrutura de autorização da NF-e, portanto com informações inexistentes na SVC para uma NF-e autorizada pela SEFAZ de origem.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "g) Serviço de Consulta do Status dos Serviços da SVC O Serviço de Consulta do Status dos Serviços (Web Service: NFeStatusServico) sempre deverá estar disponível na SVC. No caso de indisponibilidade do ambiente normal de autorização da SEFAZ de origem da circunscrição do contribuinte, a aplicação da empresa consultará este Web Service e identificará a oportunidade de trocar seu ambiente normal de autorização para utilização da SVC-XX.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "O Serviço de Consulta ao Status da SVC poderá retornar os seguintes códigos de situação:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 10
+            },
+            {
+              "texto": "• 107 - Serviço SVC em Operação;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "• 113 - SVC em processo de desativação. SVC será desabilitada para a SEFAZ-XX em dd/mm/aa às hh:mm horas;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "• 114 – SVC desabilitada pela SEFAZ Origem.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "A empresa somente deverá efetuar a consulta ao Status do Serviço da SVC no caso de indisponibilidade do ambiente de autorização normal da SEFAZ.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "Acessando a Consulta Status da SVC, a empresa somente poderá utilizar os serviços de recepção e autorização de NF-e da SVC quando obtiver o Status “107 - Serviço SVC em Operação”.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "h) Compartilhamento das NF-e autorizadas pela SVC Todas as NF-e autorizadas pela SVC serão automaticamente disponibilizadas para o Ambiente Nacional da NF-e e, consequentemente, distribuídas para as Sefaz envolvidas na operação. A princípio, quando o ambiente de autorização normal da UF retornar ao seu funcionamento normal, os documentos autorizados no ambiente da SVC já constarão na sua base de dados.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            }
+          ]
+        },
+        {
+          "numero": "2.1.3.5",
+          "titulo": "Uso da SVC Pela Empresa",
+          "paragrafos": [
+            {
+              "texto": "a) Operação “Em Contingência” A aplicação da empresa atualmente já mantém um controle sobre a disponibilidade do ambiente normal de autorização da sua SEFAZ de circunscrição, identificando o seu status de operação como “Normal” ou “Em Contingência”.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "No caso da indisponibilidade do ambiente normal de autorização, para uso dos serviços de recepção e autorização da SVC-XX, a empresa deve adotar os seguintes procedimentos:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "• Identificação que a SVC-XX foi ativada pela SEFAZ de origem da sua circunscrição, conforme resultado do Web Service de Consulta Status do Serviço, descrito anteriormente;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "• Geração de novo arquivo XML da NF-e com as seguintes alterações:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "o Campo tpEmis alterado para “6” (SVC-AN) ou para “7” (SVC-RS), conforme legislação que define qual UF está vinculada a cada uma das SVC;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "o Informação do motivo da adoção da contingência (campo xJust) e da data e hora de início de utilização da SVC (campo dhCont), que também devem ser impressos no DANFE, conforme definido na legislação.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "• Transmissão do Lote de NF-e para a SVC-XX e obtenção da autorização de uso;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "• Impressão do DANFE em papel comum;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "• Tratamento dos arquivos de NF-e transmitidos para a SEFAZ de origem antes da ocorrência dos problemas técnicos e que estão pendentes de retorno, cancelando aquelas NF-e autorizadas e que foram substituídas por NF-e autorizada na SVC, ou inutilizando a numeração de arquivos não recebidos ou processados.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 11
+            },
+            {
+              "texto": "Nota: No momento que a empresa detecta a indisponibilidade do ambiente de autorização normal, pode ser que tenha enviado uma NF-e e não tenha obtido o resultado deste pedido de autorização de uso. Neste caso, deve gerar outro número de NF-e, evitando que seja autorizado o mesmo número e série de NF-e no ambiente da SEFAZ autorizadora e da SVC.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "b) Controle do campo Tipo de Emissão (tpEmis) O campo “tpEmis” faz parte da Chave de Acesso desde a versão 2.0 do leiaute da NF-e e isso garante que duas Chaves de Acesso exatamente iguais não conseguirão ser autorizadas na SEFAZ autorizadora normal e na SEFAZ Virtual de Contingência.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Algumas regras de validação foram implementadas garantindo a integridade do funcionamento da SVC, da forma que segue:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "Ambiente de Autorização Campo tpEmis Normal SVC-AN SVC-RS 1-Emissão Normal OK -x- -x- 2-Contingência em Formulário de Segurança OK -x- -x- 4-Contingência EPEC OK -x- -x- 5-Contingência em Formulário de Segurança FS-DA OK -x- -x- 6-Contingência SVC-AN -x- OK -x- 7-Contingência SVC-RS -x- -x- OK",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            }
+          ]
+        },
+        {
+          "numero": "2.1.3.6",
+          "titulo": "Chave Natural da NF-e",
+          "paragrafos": [
+            {
+              "texto": "a) Numeração da Nota Fiscal A numeração da Nota Fiscal modelo 1/1A é disciplinada por legislação nacional e existem controles das SEFAZ sobre esta sequência de numeração. O advento da NF-e liberou o uso do AIDF, mas não desobrigou as empresas do controle da numeração. Ou seja, as empresas continuam sem poder emitir NF-e diferentes, com o mesmo CNPJ/CPF do emitente, Série e Número da Nota Fiscal.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "b) Chave Natural e Chave de Acesso A Chave Natural da NF-e é composta pelos campos de UF, CNPJ/CPF do Emitente, Série e Número da NF-e, além do modelo do documento fiscal eletrônico. O sistema de recepção e autorização da SEFAZ valida a existência de uma NF-e previamente autorizada com uma determinada Chave Natural e rejeita novos pedidos de autorização de uso para NF-e com duplicidade da Chave Natural.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 12
+            },
+            {
+              "texto": "A existência de mais de um ambiente de autorização para a mesma SEFAZ de origem, e a impossibilidade técnica de manutenção de um sincronismo em tempo real entre estes dois ambientes, traz como consequência a possibilidade de autorização de Notas Fiscais Eletrônicas com a mesma Chave Natural, uma em cada ambiente de autorização.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "Para evitar que estas duas NF-e com a mesma Chave Natural tivessem também a mesma Chave de Acesso, foi alterada a composição da Chave de Acesso, incluindo a informação do Tipo de Emissão, que passa a ter os valores:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "• “6” – Autorização pela SVC-AN;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "• “7” - Autorização pela SVC-RS.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "A Chave de Acesso de uma NF-e contém todos os campos da Chave Natural, complementados com o Código Numérico (chave de segurança gerada pela empresa), Ano-Mês da emissão da NFe e o dígito de controle desta Chave de Acesso. A partir da versão 2.0, faz parte da Chave de Acesso a informação do Tipo de Emissão, conforme citado anteriormente.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "c) Chave Natural em Duplicidade Para evitar problemas futuros, tendo ciência que fatalmente ocorrerão erros nos aplicativos utilizados pelas empresas, a legislação que trata especificamente da numeração da Nota Fiscal Eletrônica será alterada para conviver com uma possível duplicidade da Chave Natural nas situações de autorização em ambientes operacionais diferentes, já que as duas NF-e terão uma autorização de uso fornecida pelo Fisco.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "Conforme definição a ser considerada em legislação, as duas NF-e são válidas, embora também caracterizem uma inconformidade da aplicação da empresa na utilização da mesma numeração para NF-e diferentes. Nestes casos, a empresa emitente deve providenciar o imediato cancelamento da NF-e que não acobertou o trânsito físico da mercadoria, nem foi enviada para o destinatário.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "Será disponibilizada uma consulta no Portal Nacional e no Portal das SEFAZ mostrando a Chave de Natural autorizada em duplicidade no ambiente normal da SEFAZ e no ambiente de contingência da SVC-XX.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "A relação de web services dos ambientes de produção e homologação da SVC-AN e da SVC-RS pode ser consultada no Portal Nacional da Nota Fiscal Eletrônica ( http://www.nfe.fazenda.gov.br para o ambiente de produção e http://hom.nfe.fazenda.gov.br para o ambiente de homologação).",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            }
+          ]
+        },
+        {
+          "numero": "2.1.4",
+          "titulo": "Contingência Eletrônica com o uso do Evento Prévio de Emissão em",
+          "paragrafos": [
+            {
+              "texto": "Contingência – EPEC Esta modalidade de contingência é baseada no conceito de Evento Prévio de Emissão em Contingência – EPEC, que contém as principais informações da NF-e que serão emitidas em contingência, que será prestada pelo emissor para SEFAZ.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 13
+            },
+            {
+              "texto": "EPEC – visão geral NF-e Impossibilidade de transmissão SEFAZ SEFAZ Autorizadora Empresa para a UF Emitente de NF-e Gerar EPEC EPEC Web Service de Registro de Transmissão do evento EPEC Eventos – Ambiente Nacional A emissão do EPEC poderá ser adotada por qualquer emissor que esteja impossibilitado de transmissão e/ou recepção das autorizações de uso de suas NF-e, adotando os seguintes passos:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "• Gerar a NF-e com “tpEmis = 4”, mantendo também a informação do motivo de entrada em contingência com data e hora do início da contingência, com número diferente de qualquer NF-e que tenha sido transmitida com outro “tpEmis”;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "• Gerar o arquivo XML do EPEC com as seguintes informações da NF-e:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "o UF, CNPJ/CPF e Inscrição Estadual do emitente;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "o Chave de Acesso;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "o UF e CNPJ ou CPF do destinatário;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "o Valor Total da NF-e, Valor Total do ICMS e Valor Total do ICMS-ST;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "o Outras informações constantes no leiaute.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "• Assinar o arquivo com o certificado digital do emitente;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "• Enviar o arquivo XML do EPEC para o Web Service de Registro de Eventos do AN;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "• Impressão do DANFE da NF-e que consta do EPEC, em papel comum, constando no corpo a expressão “DANFE impresso em contingência - EPEC regularmente recebida pela Receita Federal do Brasil”.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "Obtida a autorização do Evento (Número do Protocolo: 891xxxxxxxxxxxx), a exemplo do que ocorre com outros eventos da NF-e, este evento também será distribuído para as UF envolvidas na operação, inclusive para a própria UF do emitente.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "Após a cessação dos problemas técnicos que impediam a transmissão da NF-e para UF de origem, a NF-e que deu origem a necessidade de uso da Contingência Eletrônica “EPEC” deverá ser transmitida para a SEFAZ de origem, observando o prazo limite de transmissão na legislação, bem como outros procedimentos constantes na legislação caso ocorra rejeição na autorização de uso.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "Nota: A Chave de Acesso desta NF-e é exatamente a mesma Chave de Acesso do EPEC autorizado anteriormente.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 14
+            },
+            {
+              "texto": "Contingência EPEC – Evento Prévio de Emissão em Contingência Contribuinte SEFAZ Autorizadora (1) (4) EPEC (2) (3)",
+              "marcacao": "SEM_MARCA",
+              "pagina": 15
+            },
+            {
+              "texto": "1. Gerar NF-e;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 15
+            },
+            {
+              "texto": "EPEC (RFB)",
+              "marcacao": "SEM_MARCA",
+              "pagina": 15
+            },
+            {
+              "texto": "2. Gerar e Transmitir EPEC;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 15
+            },
+            {
+              "texto": "3. Imprimir DANFE;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "4",
+      "titulo": "Transmitir NF-e após",
+      "paragrafos": [
+        {
+          "texto": "superados os problemas técnicos DANFE impresso em PAPEL COMUM",
+          "marcacao": "SEM_MARCA",
+          "pagina": 15
+        }
+      ],
+      "subsecoes": [
+        {
+          "numero": "2.1.5",
+          "titulo": "Quadro Resumo das modalidades de emissão da NF-e",
+          "paragrafos": [
+            {
+              "texto": "A seguir resumimos os principais procedimentos necessários para adequar a NF-e para a modalidade de emissão desejada.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 16
+            }
+          ]
+        },
+        {
+          "numero": "2.2",
+          "titulo": "Documento Auxiliar da Nota Fiscal Eletrônica - DANFE",
+          "paragrafos": [
+            {
+              "texto": "O DANFE é um documento fiscal auxiliar que tem a finalidade de acobertar a circulação da mercadoria e não se confunde com a NF-e da qual é mera representação gráfica, obedecendo ao disposto no Capítulo 3 do Anexo II do MOC 7. A sua validade está condicionada à existência da NF-e que representa devidamente autorizada na SEFAZ de origem.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 16
+            },
+            {
+              "texto": "As folhas soltas, formulário contínuo ou formulário pré-impresso são considerados papel comum e a sua aquisição ou confecção não está sujeito ao controle do fisco como ocorre com o formulário de segurança que é um impresso fiscal com normas rígidas de aquisição, controle e utilização.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 16
+            }
+          ],
+          "subsecoes": [
+            {
+              "numero": "2.2.1",
+              "titulo": "Formulários de Segurança para Impressão do DANFE",
+              "paragrafos": [
+                {
+                  "texto": "Atualmente existem os seguintes tipos de formulários de segurança:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "• Formulário de Segurança – FS : disciplinado pelos Convênios ICMS 58/95 e 131/95;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "• Formulário de Segurança para Impressão de Documento Auxiliar de Documento Fiscal Eletrônico - FS-DA : disciplinado pelo Convênio ICMS 110/08 e Ato COTEPE 35/08.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "O uso do formulário de segurança - FS será permitido apenas para consumir os estoques existentes, pois sua aquisição para impressão de DANFE não é mais autorizada.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "O FS e o FS-DA podem ser fabricados por estabelecimento industrial gráfico previamente credenciado junto à COTEPE/ICMS, porém somente aquele último tem a possibilidade de ser distribuído através de estabelecimento gráfico credenciado como distribuidor junto à UF de interesse, mediante a obtenção de credenciamento, concedido por regime especial.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 16
+                },
+                {
+                  "texto": "Os formulários de segurança são confeccionados com requisitos de segurança com o objetivo de dificultar falsificação e fraudes. Estes requisitos são adicionados ou por ocasião da fabricação do papel de segurança produzido pelo processo mould made ou por ocasião da impressão no caso do FS fabricado com papel dotado de estampa fiscal, com recursos de segurança impressos. Assim, a legislação tributária permite o uso de formulários de segurança que atendam os seguintes requisitos:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "• FS com Estampa Fiscal – impresso com calcografia com microtexto e imagem latente na área reservado ao fisco, o impresso deverá ter fundo numismático com tinta reagente a produtos químicos combinado com as Armas da República;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "• FS em Papel de Segurança - com filigrana (marca d’água) produzida pelo processo \"mould made\", fibras coloridas e luminescentes, papel não fluorescente, microcápsulas de reagente químico e microporos que aumentem a aderência do toner ao papel.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "Todos os formulários de segurança terão o número de controle do formulário com numeração sequencial de 000.000.001 a 999.999.999 e seriação de \"AA\" a \"ZZ\", impresso no quadro reservado ao fisco.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "A identificação do formulário de segurança com calcografia é mais simples pela existência da estampa fiscal localizada no quadro reservado ao fisco e pelo fundo numismático com cor característica associada ao brasão das Armas da República no corpo do formulário.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "A diferenciação entre o FS-IA e FS-DA produzidos por calcografia é estabelecida simultaneamente pela cor utilizada no fundo numismático, pela estampa fiscal, pelas Armas da República e pelo logotipo característico de formulário destinado a impressão de documento fiscal eletrônico.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "O FS-IA tem o fundo numismático impresso na cor de tonalidade predominante esverdeada combinada com as Armas da República e estampa fiscal na cor azul pantone. O FS-DA tem o fundo numismático impresso na cor de tonalidade predominante Salmão pantone nº 155 combinada com as Armas da República ao lado do logotipo que caracteriza o Documento Auxiliar de Documento Fiscal Eletrônico e estampa fiscal na cor Vinho Pantone, conforme exemplos visualizados na figura abaixo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "Exemplo de FS Exemplo de FS-DA A identificação do formulário de segurança fabricado em papel de segurança não é tão evidente como é o formulário com calcografia, pois a primeira vista é um papel branco facilmente confundido com um papel comum.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "A distinção deste papel de segurança deve ser feito pela filigrana (marca d’água) existente no seu corpo; pela seriação composta por duas letras e numeração sequencial de nove números aposta no espaço normalmente reservado ao fisco; pela impressão da identificação do adquirente e pelo códigos de barras impressos no rodapé inferior.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "O FS–IA possui filigrana caracterizada com o brasão de Armas da República intercalada com a expressão “NOTA FISCAL”, enquanto que o FS-DA possui filigrana caracterizada pelo brasão das Armas da República intercalada com o logotipo do Documento Auxiliar de Documentos Fiscais Eletrônicos. Estas filigranas somente se tornam visíveis contra a luz, conformes exemplos e modelos reproduzidos nas figuras abaixo.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 17
+                },
+                {
+                  "texto": "Ex. FS com os detalhes da filigrana que só é visível contra luz. No FS-DA teremos o logotipo do Documento Auxiliar de Documentos Fiscais Eletrônicos no lugar da expressão “NOTA FISCAL”.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                },
+                {
+                  "texto": "Modelo da filigrana característica do papel de segurança exclusivo para o FS-DA",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                }
+              ]
+            },
+            {
+              "numero": "2.2.2",
+              "titulo": "Localização da Estampa Fiscal no FS -DA",
+              "paragrafos": [
+                {
+                  "texto": "A estampa fiscal é impressa na área reservado ao fisco que está localizada no canto inferior direito do formulário de segurança.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                },
+                {
+                  "texto": "Nesta mesma área também é impresso a série e o número de controle do impresso. Assim, o emissor deve tomar os cuidados necessários para que o recibo do canhoto de entrega não utilize o espaço de 40 mm x 85 mm do canto inferior do impresso, deslocando-o para a parte superior do formulário.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 18
+                },
+                {
+                  "texto": "Modelo das dimensões e posicionamento das filigranas no papel de segurança para FS-DA Ex. de DANFE com recibo deslocado para a parte superior.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 19
+                },
+                {
+                  "texto": "Importante destacar que o FS-DA tem um código de barras com a identificação da sua origem e seu usuário pré-impresso no rodapé inferior, que deve ser preservado, pois será utilizado na fiscalização de trânsito.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 19
+                }
+              ]
+            },
+            {
+              "numero": "2.2.3",
+              "titulo": "Impressão do DANFE em Contingência com Formulário de",
+              "paragrafos": [
+                {
+                  "texto": "Segurança Quando a modalidade emissão de contingência for baseada no uso de formulário de segurança, o DANFE deve ser impresso no mesmo tipo de formulário de segurança declarado no campo tpEmis da NF-e.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "Nos casos de contingência com uso de formulário de segurança, a impressão do DANFE em papel comum contraria a legislação e ocasiona graves consequências ao emitente, pelo descumprimento de obrigação acessória, caracterizando ainda a inidoneidade do DANFE para efeito de circulação da mercadoria e de escrituração e aproveitamento do crédito pelo seu destinatário.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "O formulário de segurança pode ser utilizado para impressão do DANFE em qualquer modalidade de emissão, contudo, o emissor deverá formalizar a opção pelo uso do formulário de segurança em todas as operações no livro Registro de Documentos Fiscais e Termos de Ocorrência – RUDFTO, modelo 6.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "Modalidade de emissão da NF-e Impressão do DANFE Normal FS-IA FS-DA SVC EPEC em papel comum em FS-IA (Convênio ICMS 58/57) em FS-DA (Convênio ICMS 110/08) DANFE regular / DANFE irregular / DANFE regular, mas requer opção do emissor",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "2.3",
+          "titulo": "Ações que devem ser tomadas após a recuperação da falha",
+          "paragrafos": [
+            {
+              "texto": "A emissão de NF-e em contingência é um procedimento de exceção e existem algumas ações que devem ser tomadas após a recuperação da falha, a principal delas é a transmissão das NF-e emitidas em contingência para que sejam autorizadas.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 20
+            }
+          ],
+          "subsecoes": [
+            {
+              "numero": "2.3.1",
+              "titulo": "Transmissão das NF-e emitidas em Contingência",
+              "paragrafos": [
+                {
+                  "texto": "As notas fiscais emitidas em contingência FS-IA, FS-DA e EPEC devem ser transmitidas imediatamente após a cessação dos problemas técnicos que impediam a transmissão da NF-e, observando o prazo limite de transmissão estabelecido na legislação.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "As NF-e emitidas com uma das SVC não precisam ser transmitidas para a SEFAZ de origem.",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                }
+              ]
+            },
+            {
+              "numero": "2.3.2",
+              "titulo": "Rejeição de NF-e emitidas em Contingência",
+              "paragrafos": [
+                {
+                  "texto": "Caso ocorra a rejeição de alguma NF-e emitida em contingência, o contribuinte deverá:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "(1) Gerar novamente o arquivo com a mesma numeração e série 2 , sanando a irregularidade desde que não se altere:",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "(a) as variáveis que determinam o valor do imposto tais como: base de cálculo, alíquota, diferença de preço, quantidade, valor da operação ou da prestação;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "(b) a correção de dados cadastrais que implique mudança do remetente ou do destinatário; nem (c) a data de emissão ou de saída;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                },
+                {
+                  "texto": "(2) Solicitar Autorização de Uso da NF-e;",
+                  "marcacao": "SEM_MARCA",
+                  "pagina": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Observar que a manutenção do número e série somente se aplica para os casos de rejeição da NF-e que foi",
+      "paragrafos": [
+        {
+          "texto": "emitida em contingência, e nunca para os casos em que a NF-e foi normalmente emitida mas o contribuinte não obteve êxito na consulta sobre o resultado da autorização de uso de uma NF-e emitida com tpEmis = “1”",
+          "marcacao": "SEM_MARCA",
+          "pagina": 20
+        },
+        {
+          "texto": "(as NF-e pendentes de retorno, conforme item 2.3.3).",
+          "marcacao": "VERDE",
+          "pagina": 20
+        },
+        {
+          "texto": "(3) Imprimir o DANFE correspondente à NF-e autorizada, no mesmo tipo de papel utilizado para imprimir o DANFE original;",
+          "marcacao": "SEM_MARCA",
+          "pagina": 21
+        },
+        {
+          "texto": "(4) Providenciar, junto ao destinatário, a entrega da NF-e autorizada bem como do novo DANFE impresso nos termos do item 3, caso a geração saneadora da irregularidade da NF-e tenha promovido alguma alteração no DANFE.",
+          "marcacao": "SEM_MARCA",
+          "pagina": 21
+        }
+      ],
+      "subsecoes": [
+        {
+          "numero": "2.3.3",
+          "titulo": "NF-e Pendentes de Retorno",
+          "paragrafos": [
+            {
+              "texto": "Quando ocorrer uma falha, seja ela no ambiente do Contribuinte, no ambiente da SEFAZ origem ou no ambiente da SVC, há a probabilidade de existirem NF-e transmitidas pelo contribuinte e para as quais ele ainda não obteve o resultado do processamento. Estas NF-e são denominadas de “NF-e Pendentes de Retorno”.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            },
+            {
+              "texto": "As NF-e Pendentes de Retorno podem não ter sido recebidas pela SEFAZ origem, estar na fila aguardando processamento, estar em processamento ou o processamento pode já ter sido concluído.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            },
+            {
+              "texto": "Caso a falha tenha ocorrido na SEFAZ origem, ao retornar à operação normal, é possível que as NF- e em processamento sejam perdidas, e que as que estavam na fila tenham o seu processamento concluído normalmente.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            },
+            {
+              "texto": "Todas as NF-e Pendentes de Retorno devem receber nova numeração para serem emitidas em contingência, este procedimento é necessário para evitar a rejeição da NF-e emitida em contingência que pode ocorrer caso a NF-e transmitida incialmente tenha sido autorizada.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            },
+            {
+              "texto": "Cabe à aplicação do contribuinte tratar adequadamente a situação das NF-e Pendentes de Retorno e executar, imediatamente após o retorno à operação normal, as ações necessárias à regularização da situação destas NF-e, a saber:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            },
+            {
+              "texto": "• Cancelar as NF-e Pendentes de Retorno que tenham sido autorizadas pela SEFAZ origem, mas que tiveram as operações comerciais correspondentes registradas em NF-e emitidas em contingência.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            },
+            {
+              "texto": "• Inutilizar a numeração das NF-e Pendentes de Retorno que não foram autorizadas ou denegadas.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 21
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "regras_validacao": [],
+  "campos_leiaute": [],
+  "estatisticas": {
+    "total_secoes": 28,
+    "total_regras": 0,
+    "total_campos": 0,
+    "por_marcacao": {
+      "AMARELO": 0,
+      "VERDE": 1,
+      "EXCLUIDO": 0,
+      "SEM_MARCA": 171,
+      "RISCADO_SEM_COR": 1
+    }
+  }
+}

@@ -31,13 +31,21 @@ Ingerir uma nova Nota Tecnica (NT) no repositorio.
 - Adicionar entrada em `manifest.yaml`
 - Campos: id, documento, tipo, nt, versao, titulo, arquivo, sha256, status_ingestao, confianca
 
-### 5. Extrair com marcações
+### 5. Extrair JSON robusto
 - Rodar `python scripts/python/extrair_nt.py <arquivo>`
-- Saida: `catalogo/nt/<doc>/<nt>_v<versao>.json` + `.md`
+- Saida: `catalogo/nt/<doc>/<arquivo>.json` (somente JSON - sem MD)
+- O JSON tem secoes tipificadas: `tabela` (cabecalho + linhas),
+  `regras` (id, aplicacao, cStat, efeito, mensagem), `texto` (paragrafos)
 - Erros possiveis:
   - `ERRO_COR_NAO_MAPEADA` - cor sem legenda -> listar cores encontradas
   - `ERRO_PDF_ESCANEADO` - pagina sem texto -> marcar para OCR
   - `ERRO_TABELA_QUEBRADA` - colunas inconsistentes
+
+### 5.1 Gerar o MD (IA)
+- A partir do JSON, a IA gera `catalogo/nt/<doc>/<arquivo>.md`
+  seguindo o command `/gerar-md` (tabelas em bullets, regras com
+  ID/cStat/mensagem destacados, datas em negrito e literais)
+- O Python NAO gera MD - formatacao e responsabilidade da IA
 
 ### 6. Atualizar legenda
 - Gerar/atualizar `catalogo/legendas/<doc>.yaml`
@@ -59,7 +67,7 @@ Ingerir uma nova Nota Tecnica (NT) no repositorio.
 ### 10. Resumo
 Exibir:
 - NT ingerida (numero, versao, documento)
-- Quantidade de itens extraidos
+- Quantidade de secoes, tabelas e regras extraidas
 - Cores encontradas e mapeadas
 - Duvidas registradas
 - Proximo passo sugerido

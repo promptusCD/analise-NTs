@@ -25,28 +25,28 @@
 
 ## 4. Command `/gerar-md`
 
-- [ ] 4.1 Criar `.opencode/commands/fiscal-gerar-md.md` com instrucoes para IA gerar MD. Verificacao: arquivo existe.
-- [ ] 4.2 Definir fluxo: IA le JSON, identifica secoes, gera MD com formatacao adequada. Verificacao: command documentado.
-- [ ] 4.3 Testar command com CT-e 2025.001. Verificacao: MD gerado e legivel.
+- [x] 4.1 Criar `.opencode/commands/fiscal-gerar-md.md` com instrucoes para IA gerar MD. Verificacao: arquivo existe.
+- [x] 4.2 Definir fluxo: IA le JSON, identifica secoes, gera MD com formatacao adequada. Verificacao: command documentado.
+- [x] 4.3 Testar command com CT-e 2025.001. Verificacao: MD gerado e legivel.
 
 ## 5. Atualizar documentacao
 
-- [ ] 5.1 Atualizar `README.md` com novo fluxo de trabalho (extrair JSON -> IA gera MD). Verificacao: README mostra fluxo atualizado.
-- [ ] 5.2 Atualizar `docs/REFERENCIA.md` secao 5 (catalogo) com nova estrutura JSON. Verificacao: REFERENCIA.md descreve nova estrutura.
-- [ ] 5.3 Atualizar `openspec/config.yaml` com novo command `/gerar-md`. Verificacao: config.yaml lista command.
-- [ ] 5.4 Atualizar command `/ingerir-nt` para gerar JSON robusto. Verificacao: command documenta novo fluxo.
+- [x] 5.1 Atualizar `README.md` com novo fluxo de trabalho (extrair JSON -> IA gera MD). Verificacao: README mostra fluxo atualizado.
+- [x] 5.2 Atualizar `docs/REFERENCIA.md` secao 5 (catalogo) com nova estrutura JSON. Verificacao: REFERENCIA.md descreve nova estrutura.
+- [x] 5.3 Atualizar `openspec/config.yaml` com novo command `/gerar-md`. Verificacao: config.yaml lista command.
+- [x] 5.4 Atualizar command `/ingerir-nt` para gerar JSON robusto. Verificacao: command documenta novo fluxo.
 
 ## 6. Re-extrair tudo
 
-- [ ] 6.1 Limpar `catalogo/` (exceto README.md). Verificacao: diretorios vazios.
-- [ ] 6.2 Re-extrair todas as 9 NTs com nova logica. Verificacao: JSON gerado tem estrutura robusta.
-- [ ] 6.3 Re-extrair todos os 10 MOCs com nova logica. Verificacao: JSON gerado tem estrutura robusta.
-- [ ] 6.4 Verificar que manifest.yaml foi atualizado. Verificacao: todas as NTs e MOCs com status `extraida`.
-- [ ] 6.5 Gerar MD de exemplo para CT-e 2025.001 via `/gerar-md`. Verificacao: MD gerado e legivel.
+- [x] 6.1 Limpar `catalogo/` (exceto README.md). Verificacao: diretorios vazios.
+- [x] 6.2 Re-extrair todas as 9 NTs com nova logica. Verificacao: JSON gerado tem estrutura robusta.
+- [x] 6.3 Re-extrair todos os 10 MOCs com nova logica. Verificacao: JSON gerado tem estrutura robusta.
+- [x] 6.4 Verificar que manifest.yaml foi atualizado. Verificacao: todas as NTs e MOCs com status `extraida`.
+- [x] 6.5 Gerar MD de exemplo para CT-e 2025.001 via `/gerar-md`. Verificacao: MD gerado e legivel.
 
 ## 7. Command `/fiscal-processar`
 
-- [ ] 7.1 Criar `.opencode/commands/fiscal-processar.md` com pipeline completo. Verificacao: arquivo existe.
-- [ ] 7.2 Implementar opcao `--etapa N` para executar etapas individuais. Verificacao: command documenta opcoes.
-- [ ] 7.3 Testar command com entrada/ vazia. Verificacao: command executa sem erro.
-- [ ] 7.4 Testar command com arquivos em entrada/. Verificacao: arquivos organizados e extraidos.
+- [x] 7.1 Criar `.opencode/commands/fiscal-processar.md` com pipeline completo. Verificacao: arquivo existe.
+- [x] 7.2 Implementar opcao `--etapa N` para executar etapas individuais. Verificacao: command documenta opcoes.
+- [x] 7.3 Testar command com entrada/ vazia. Verificacao: command executa sem erro.
+- [x] 7.4 Testar command com arquivos em entrada/. Verificacao: arquivos organizados e extraidos.
