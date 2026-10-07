@@ -3,7 +3,7 @@
 **Secao:** Anexo II DAMDFE
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_Anexo_II_DAMDFE_v3.00b.docx
 **SHA256:** a3febb3447be96bf059001532208e9dc026ac50199cc03a2bf3f3f877cd0855f
-**Extraido em:** 2026-10-06T21:36:23.558139+00:00
+**Extraido em:** 2026-10-06T22:01:14.307679+00:00
 
 ## Secoes
 

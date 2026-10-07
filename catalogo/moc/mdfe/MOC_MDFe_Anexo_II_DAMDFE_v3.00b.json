@@ -5,120 +5,334 @@
   "titulo": "",
   "arquivo_origem": "/Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_Anexo_II_DAMDFE_v3.00b.docx",
   "sha256": "a3febb3447be96bf059001532208e9dc026ac50199cc03a2bf3f3f877cd0855f",
-  "extraido_em": "2026-10-06T21:36:23.558139+00:00",
+  "extraido_em": "2026-10-07T02:03:20.596884+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {
       "numero": "1",
-      "titulo": "Introdução\t5",
-      "pagina_inicio": 0
+      "titulo": "Introdução 5"
     },
     {
       "numero": "2",
-      "titulo": "Documento Auxiliar de MDF-e – DAMDFE\t6",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.1",
-      "titulo": "Leiaute de Impressão DAMDFE\t6",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.2",
-      "titulo": "Código de Barras\t7",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.2.1",
-      "titulo": "Cálculo do dígito verificador do CODE-128C\t8",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.2.2",
-      "titulo": "Representação simbólica do código\t9",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.3",
-      "titulo": "Informações da consulta via QR Code\t9",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.4",
-      "titulo": "MDF-e emitido em contingência\t9",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.5",
-      "titulo": "MDF-e emitido em ambiente de homologação\t10",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.6",
-      "titulo": "Configurações da Impressão\t10",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.6.1",
-      "titulo": "Requisitos do Papel do DAMDFE\t10",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.6.2",
-      "titulo": "Dimensões mínimas do QR Code\t10",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7",
-      "titulo": "Modelos de Impressão do DAMDFE\t11",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.1",
-      "titulo": "Modal rodoviário (emissão normal)\t11",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.2",
-      "titulo": "Modal Rodoviário (emissão em contingência)\t12",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.3",
-      "titulo": "Modal aéreo (emissão normal)\t13",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.4",
-      "titulo": "Modal aéreo (emissão em contingência)\t14",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.5",
-      "titulo": "Modal Aquaviário (emissão normal)\t15",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.6",
-      "titulo": "Modal Aquaviário (emissão contingência)\t16",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.7",
-      "titulo": "Modal Ferroviário (emissão normal)\t17",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.7.8",
-      "titulo": "Modal Ferroviário (emissão contingência)\t18",
-      "pagina_inicio": 0
-    },
-    {
-      "numero": "2.8",
-      "titulo": "Conjunto de caracteres Código de Barras CODE-128C\t19",
-      "pagina_inicio": 0
+      "titulo": "Documento Auxiliar de MDF-e – DAMDFE 6",
+      "subsecoes": [
+        {
+          "numero": "2.1",
+          "titulo": "Leiaute de Impressão DAMDFE 6"
+        },
+        {
+          "numero": "2.2",
+          "titulo": "Código de Barras 7",
+          "subsecoes": [
+            {
+              "numero": "2.2.1",
+              "titulo": "Cálculo do dígito verificador do CODE-128C 8"
+            },
+            {
+              "numero": "2.2.2",
+              "titulo": "Representação simbólica do código 9"
+            }
+          ]
+        },
+        {
+          "numero": "2.3",
+          "titulo": "Informações da consulta via QR Code 9"
+        },
+        {
+          "numero": "2.4",
+          "titulo": "MDF-e emitido em contingência 9"
+        },
+        {
+          "numero": "2.5",
+          "titulo": "MDF-e emitido em ambiente de homologação 10"
+        },
+        {
+          "numero": "2.6",
+          "titulo": "Configurações da Impressão 10",
+          "subsecoes": [
+            {
+              "numero": "2.6.1",
+              "titulo": "Requisitos do Papel do DAMDFE 10"
+            },
+            {
+              "numero": "2.6.2",
+              "titulo": "Dimensões mínimas do QR Code 10"
+            }
+          ]
+        },
+        {
+          "numero": "2.7",
+          "titulo": "Modelos de Impressão do DAMDFE 11",
+          "subsecoes": [
+            {
+              "numero": "2.7.1",
+              "titulo": "Modal rodoviário (emissão normal) 11"
+            },
+            {
+              "numero": "2.7.2",
+              "titulo": "Modal Rodoviário (emissão em contingência) 12"
+            },
+            {
+              "numero": "2.7.3",
+              "titulo": "Modal aéreo (emissão normal) 13"
+            },
+            {
+              "numero": "2.7.4",
+              "titulo": "Modal aéreo (emissão em contingência) 14"
+            },
+            {
+              "numero": "2.7.5",
+              "titulo": "Modal Aquaviário (emissão normal) 15"
+            },
+            {
+              "numero": "2.7.6",
+              "titulo": "Modal Aquaviário (emissão contingência) 16"
+            },
+            {
+              "numero": "2.7.7",
+              "titulo": "Modal Ferroviário (emissão normal) 17"
+            },
+            {
+              "numero": "2.7.8",
+              "titulo": "Modal Ferroviário (emissão contingência) 18"
+            }
+          ]
+        },
+        {
+          "numero": "2.8",
+          "titulo": "Conjunto de caracteres Código de Barras CODE-128C 19",
+          "paragrafos": [
+            {
+              "texto": "Controle de Versões Histórico de Alterações / Cronograma Introdução Este documento é parte integrante do Manual de Orientação do Contribuinte (MOC) e por objetivo a definição das especificações técnicas do Documento Auxiliar do Manifesto Eletrônico de Documentos Fiscais - DAMDFE.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "O Manual de Orientação do Contribuinte 3.00b é composto pelos seguintes documentos:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "MOC – Visão Geral MOC – Anexo I – Leiaute e Regras de Validação do MDF-e MOC – Anexo II – Manual de Especificações Técnicas do DAMDFE Documento Auxiliar de MDF-e – DAMDFE O DAMDFE é uma representação gráfica resumida do MDF-e, impressa em papel comum, para acompanhar o transporte da carga, permitindo o acesso ao arquivo do MDF-e pela fiscalização de mercadorias em trânsito.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "Leiaute de Impressão DAMDFE Este capítulo descreve o leiaute de impressão do Documento Auxiliar do MDF-e pelo contribuinte, chamado de DAMDFE, assim como os requisitos mínimos do que poderá constar do DAMDFE.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "Algumas considerações acerca da impressão do DAMDFE:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "O DAMDFE é um documento fiscal auxiliar, sendo apenas uma representação simplificada em papel do transporte de carga, de forma a facilitar a consulta do documento fiscal eletrônico, no ambiente da SEFAZ, pela fiscalização de trânsito de mercadorias;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "A impressão do DAMDFE é efetuada diretamente pelo aplicativo do contribuinte em impressora comum (não fiscal), com base nas informações do arquivo eletrônico XML do MDF-e;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "No DAMDFE não devem ser inseridas informações que não constem do respectivo arquivo eletrônico XML do MDF-e, exceto o protocolo de autorização de uso do MDF-e;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "A legislação poderá facultar que, por opção do emitente, o DAMDFE não seja impresso, desde que seja possível sua apresentação de forma eletrônica para a fiscalização;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "O DAMDFE poderá ter tantas folhas quantas forem necessárias para discriminação da documentação fiscal eletrônica, conforme leiaute descrito nesse manual;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "Havendo necessidade e interesse por parte do emitente do MDF-e, poderá acrescentar campos no leiaute do DAMDFE, desde que sejam colocados abaixo do leiaute padrão, constante deste manual. Ainda, até 50% do verso de qualquer folha do DAMDFE poderá ser utilizado para continuação destes novos campos ou exclusivamente para outras informações de interesse da empresa. O restante do verso deverá ser deixado sem nenhum tipo de impressão;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "Sempre que o verso do DAMDFE for utilizado, a informação “CONTINUA NO VERSO” deverá constar no anverso, ao final do quadro “Observação”;",
+              "marcacao": "SEM_MARCA",
+              "pagina": 1
+            },
+            {
+              "texto": "A legibilidade do texto impresso no DAMDFE, assim como a durabilidade do papel empregado, deverá ser garantida, no mínimo, pelo prazo de (12) doze meses.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Código de Barras O padrão de código de barras a ser impresso no DAMDFE é o CODE-128C. O código de barras deverá representar a chave de acesso do MDF-e em emissão normal ou contingência.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "A impressão do código de barras no DAMDFE tem a finalidade de facilitar e agilizar a captura de dados para consulta nos portais estaduais e no portal nacional do MDF-e disponibilizado na SVRS. Com a chave de acesso é possível realizar a consulta resumida de um MDF-e e sua situação, bem como visualizar a autorização de uso do mesmo.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Dentre outras finalidades do código, destacam-se o registro do trânsito de mercadorias nos Postos Fiscais e, a critério de cada unidade federada, a disponibilização do arquivo do MDF-e consultado.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "O conjunto de caracteres representativos do Código de Barras CODE-128C segue ao final deste manual.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "O código de barras deverá representar apenas a chave de acesso do MDF-e de 44 posições. Para a impressão do mesmo será considerada a seguinte estrutura de simbolização:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Margem Clara: Espaço claro, que não contém nenhuma marca legível por máquina, existente à esquerda e à direita do código para evitar interferência na decodificação da simbologia. A margem clara também é chamada de \"área livre\", \"zona de silêncio\" ou \"margem de silêncio\".",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Start C: inicia a codificação dos dados CODE-128C de acordo com o conjunto de caracteres. O Start C não representa nenhum caractere.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Chave de acesso do MDF-e: representa conjunto de 44 caracteres da chave de acesso do MDF-e.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "DV: dígito verificador da simbologia.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Stop: caractere de parada, indica o final do código ao leitor óptico.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "O código de barras deverá ser impresso com resolução mínima de 300 dpi, devendo ser observada a área reservada no DAMDFE de 3 x 9 cm.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Altura da barra: no intuito de propiciar melhor área de leitura, a altura da barra não poderá ser inferior a 1,5 cm e nem superior a 2,5 cm.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Largura da barra: considerando que para cada símbolo da barra são codificados dois caracteres, então teremos:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Tamanho do campo chave de acesso = 44 (caracteres) / 2 = 22 (símbolos) Considerando que cada símbolo possui 11 (módulos) * 22 (símbolos) = 242 posições Margem clara = deve ter no mínimo a dimensão de 10 (módulos) * 2 = 20 posições Start C = 11 (módulos) = 11 posições DV = 11 (módulos) = 11 posições Stop = 13 (módulos) = 13 posições Tamanho total da simbologia = 242 + 20 + 11 + 11 + 13 = 297 (posições) Largura máxima de cada módulo da barra = 9 cm / 297 (posições) = 0,03 cm Cálculo do dígito verificador do CODE-128C O dígito verificador é baseado em um cálculo do módulo 103 considerando a soma ponderada dos valores de cada um dos dígitos na mensagem que está sendo codificada, incluindo o valor do caractere de início (start).",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Exemplo: consideremos que a chave de acesso fosse apenas de oito caracteres e contivesse o seguinte número: 09758364 Na linha valor do caractere foi incluso o valor 105 que corresponde ao valor do caractere de início (start) para o padrão Code C.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Excetuando o caractere de start, os demais valores dos caracteres coincidem com os valores da chave de acesso, isto porque estamos utilizando o padrão Code C de codificação que é exclusivamente numérico.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "O dígito verificador do código será o resto da divisão da somatória dos valores ponderados dividido por 103 (módulo 103).",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Assim o dígito verificador será:",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Valor da soma ponderada = (1x105) +(1x9) +(2x75) +(3x83) +(4x64) = 769 769/103 = 7 resta 48, assim o DV é 48 Representação simbólica do código B = barra preta S = espaço ou barra branca A numeração acima indica quantas vezes a barra deverá ser impressa no símbolo.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Informações da consulta via QR Code A imagem do QR Code impressa no DAMDFE deve ter tamanho mínimo 25 mm x 25 mm, sendo 22mm de conteúdo para 3mm de margem segura (quiet zone), para dimensões superiores a 25mm, considerar a margem segura de 10% da dimensão total.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "O conteúdo QR Code deverá ser informado no arquivo XML do manifesto em campo específico, conforme descrito no MOC (tag: qrCodMDFe), levando em consideração as especificações para a geração do QR Code para MDF-e com emissão normal e as modificações necessárias para a emissão em contingência.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "MDF-e emitido em contingência Quando em decorrência de problemas técnicos não for possível a emissão do MDF-e, o emitente do MDF-e deve imprimir o DAMDFE em papel comum, observando que o documento foi emitido em contingência, sendo que nesse documento obrigatoriamente conterá a chave de acesso dos documentos eletrônicos que o manifesto agrega ou informações pertinentes aos documentos em papel.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "A transmissão para o Ambiente Autorizador deverá ser feita logo que esteja cessada a contingência, observando o prazo limite de 168 horas a partir da emissão do documento.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Na hipótese de emissão de MDF-e em contingência é obrigatório imprimir em destaque o texto: “EMISSÃO EM CONTINGÊNCIA”. O texto deve ser exibido no local destinado a impressão do Protocolo de Autorização do MDF-e.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "MDF-e emitido em ambiente de homologação Já na hipótese de se tratar de um MDF-e emitido em ambiente de homologação é obrigatório imprimir nesta área, de forma centralizada e em caixa alta, o seguinte texto: “EMITIDO EM AMBIENTE DE HOMOLOGAÇÃO – SEM VALOR FISCAL”.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Configurações da Impressão Requisitos do Papel do DAMDFE Na impressão do DAMDFE deve ser utilizado papel comum nas orientações retrato ou paisagem. O papel utilizado deve garantir a legibilidade das informações impressas por, no mínimo, doze meses.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "Dimensões mínimas do QR Code A dimensão mínima para a imagem do QR Code será 25mm X 25mm (sendo 22mm de conteúdo para 3 mm de margem segura (quiet zone)), tendo em vista ter sido a menor dimensão que se conseguiu leitura em dispositivos móveis que não possuem zoom (aproximação de imagem). Para dimensões superiores a 25mm, considerar a margem segura de 10% da dimensão total.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 2
+            },
+            {
+              "texto": "A margem de segurança é necessária para a melhor leitura do QR Code, caso ela não seja respeitada podem ocorrer erros de leitura.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 3
+            },
+            {
+              "texto": "Modelos de Impressão do DAMDFE Modal rodoviário (emissão normal) Modal Rodoviário (emissão em contingência) Modal aéreo (emissão normal) Modal aéreo (emissão em contingência) Modal Aquaviário (emissão normal) Modal Aquaviário (emissão contingência) Modal Ferroviário (emissão normal) Modal Ferroviário (emissão contingência) Conjunto de caracteres Código de Barras CODE-128C Versão Publicação Descrição 3.00a 04/2019 Criação deste manual como documento anexo do MOC. Corresponde ao Anexo II do MOC 3.00a, que trata das especificações técnicas do DAMDFE.",
+              "marcacao": "SEM_MARCA",
+              "pagina": 3
+            },
+            {
+              "texto": "3.00b 08/2021 Consolidação do MOC Versão Histórico de atualizações Implantação Homologação Implantação Produção 3.00a Criação do MOC DAMDFE 3.00b Consolidação MOC XX/2021 XX/2021 Chave de acesso Chave de acesso START Sequência Valor do caractere 105 Valor Ponderado (A X B) 105 150 249 256",
+              "marcacao": "SEM_MARCA",
+              "pagina": 3
+            }
+          ]
+        }
+      ]
     }
   ],
-  "regras": [],
-  "campos": []
+  "regras_validacao": [],
+  "campos_leiaute": [],
+  "estatisticas": {
+    "total_secoes": 22,
+    "total_regras": 0,
+    "total_campos": 0,
+    "por_marcacao": {
+      "AMARELO": 0,
+      "VERDE": 0,
+      "EXCLUIDO": 0,
+      "SEM_MARCA": 43
+    }
+  }
 }

@@ -3,7 +3,7 @@
 **Secao:** Anexo II DACTE
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_Anexo_II_DACTE_v4.00.pdf
 **SHA256:** 803ab81d83b548fb5279bf3e39b0c629c6f81c19fb601764001d82f19baf554a
-**Extraido em:** 2026-10-06T21:36:21.102911+00:00
+**Extraido em:** 2026-10-06T22:01:12.456410+00:00
 
 ## Secoes
 

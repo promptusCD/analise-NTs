@@ -3,7 +3,7 @@
 extrair_nt.py - Extrai informacoes de NTs fiscais com marcações de cor.
 
 Uso:
-    python extrair_nt.py <arquivo.pdf> [--output json|md|both] [--manifest <path>]
+    python extrair_nt.py <arquivo.pdf> [--manifest <path>]
 
 Dependencias:
     pip install pymupdf>=1.24.0 pyyaml
@@ -26,11 +26,10 @@ from utils.parsing import (
     detect_documento_from_filename,
     parse_nt_metadata,
     parse_cronograma,
-    parse_sections,
-    parse_items_from_section,
     calculate_sha256,
 )
-from utils.saida import gerar_json_nt, gerar_md_nt, salvar_saida
+from utils.classificacao import montar_secoes_typed, calcular_estatisticas
+from utils.saida import gerar_json_nt, salvar_json
 from utils.manifest import atualizar_status_manifest
 
 
@@ -57,13 +56,12 @@ def setup_logger(doc_name, nt_versao, log_dir):
     return logger
 
 
-def extrair_nt(pdf_path, output_format="both", manifest_path=None):
+def extrair_nt(pdf_path, manifest_path=None):
     """
     Orquestra extracao completa de uma NT.
 
     Args:
         pdf_path: caminho para o PDF
-        output_format: "json", "md" ou "both"
         manifest_path: caminho do manifest.yaml (opcional)
 
     Returns:
@@ -120,6 +118,7 @@ def extrair_nt(pdf_path, output_format="both", manifest_path=None):
             item["pagina"] = page_num + 1
         all_items.extend(page_items)
 
+    num_paginas = len(doc)
     doc.close()
 
     # Parsear metadados
@@ -130,12 +129,7 @@ def extrair_nt(pdf_path, output_format="both", manifest_path=None):
     cronograma = parse_cronograma(page_texts)
     logger.info(f"Cronograma: {len(cronograma)} blocos encontrados")
 
-    # Parsear secoes do texto completo
-    sections = parse_sections(page_texts)
-    logger.info(f"Secoes: {len(sections)} encontradas")
-
-    # Usar linhas agregadas diretamente como itens
-    # Filtrar linhas vazias ou muito curtas
+    # Filtrar linhas vazias, ruido e cabecalhos repetitivos
     itens_filtrados = []
     for item in all_items:
         text = item.get("text", "").strip()
@@ -154,79 +148,37 @@ def extrair_nt(pdf_path, output_format="both", manifest_path=None):
         if re.match(r'^[\.\-]{10,}$', text):
             continue
         # Ignorar marcadores de lista soltos
-        if text in ("•", "", ">", ">>", "-"):
+        if text in ("•", "", ">", ">>", "-"):
             continue
         # Ignorar sumario (linhas com muitos pontos)
-        if re.match(r'^[\w\s]+\.{20,}\d+$', text):
+        if re.search(r"\.{15,}\s*\d*$", text):
             continue
         itens_filtrados.append(item)
 
-    # Associar itens a secoes com base no conteudo
-    itens_com_secao = []
-    secao_atual = "0"
-    secao_titulo_atual = "Geral"
-
-    # Padroes de secao para NTs fiscais
-    # "1 Resumo", "2 Regras solicitadas...", "3 Alteração no leiaute..."
-    secao_patterns = [
-        re.compile(r'^(\d{1,2})\s+([A-Z][\w\s]{3,80})$'),  # "1 Resumo"
-        re.compile(r'^(\d{1,2})\s+([A-Z][\w\s]{3,80})\s*$'),  # "1 Resumo "
+    # Ignorar cabecalhos/rodapes que se repetem em varias paginas
+    paginas_por_texto = {}
+    for item in itens_filtrados:
+        t = item.get("text", "").strip()
+        paginas_por_texto.setdefault(t, set()).add(item.get("pagina"))
+    min_repeticoes = max(3, int(num_paginas * 0.4)) if num_paginas >= 3 else 3
+    itens_filtrados = [
+        item
+        for item in itens_filtrados
+        if item.get("text", "").strip().startswith("#")
+        or len(paginas_por_texto.get(item.get("text", "").strip(), ())) < min_repeticoes
     ]
 
-    for item in itens_filtrados:
-        text = item.get("text", "").strip()
-
-        # Detectar secoes
-        secao_encontrada = False
-        for pattern in secao_patterns:
-            m = pattern.match(text)
-            if m:
-                num = m.group(1)
-                titulo = m.group(2).strip()
-                # So aceitar secoes com titulos significativos
-                if not titulo.isdigit() and len(titulo) > 3:
-                    secao_atual = num
-                    secao_titulo_atual = titulo
-                    secao_encontrada = True
-                    break
-
-        if secao_encontrada:
-            continue
-
-        item["secao"] = secao_atual
-        item["secao_titulo"] = secao_titulo_atual
-        item["id"] = ""
-        item["tipo"] = "item"
-        itens_com_secao.append(item)
-
-    # Se nao encontrou itens, usar todos os itens filtrados
-    if not itens_com_secao and itens_filtrados:
-        logger.warning("Nenhuma secao encontrada, usando todos os itens como lista plana")
-        for i, item in enumerate(itens_filtrados):
-            item["secao"] = "0"
-            item["secao_titulo"] = "Geral"
-            item["id"] = str(i)
-            item["tipo"] = "item"
-            itens_com_secao.append(item)
+    # Classificar linhas em secoes tipificadas (tabela/regras/texto)
+    secoes = montar_secoes_typed(itens_filtrados, logger=logger)
 
     # Log de diagnostico
-    stats = {}
-    for item in itens_com_secao:
-        m = item.get("marcacao", "SEM_MARCA")
-        stats[m] = stats.get(m, 0) + 1
-
+    stats = calcular_estatisticas(secoes)
     logger.info(f"Estatisticas: {stats}")
 
-    if stats.get("SEM_MARCA", 0) == len(itens_com_secao) and len(itens_com_secao) > 0:
-        logger.warn("ALERTA: 100% dos itens estao SEM_MARCA - possivel falha na deteccao de cor")
-
-    # Log de itens problematicos
-    for item in itens_com_secao:
-        if item.get("marcacao") == "SEM_MARCA" and any(
-            kw in item.get("secao_titulo", "").lower()
-            for kw in ["altera", "exclu", "modific", "inclu"]
-        ):
-            logger.warning(f"Item '{item.get('id', '?')}' na secao '{item.get('secao_titulo', '')}' sem marcacao (possivel regra nova inteira)")
+    if stats["por_marcacao"].get("SEM_MARCA", 0) > 0:
+        total = sum(stats["por_marcacao"].values())
+        if stats["por_marcacao"]["SEM_MARCA"] == total and total > 0:
+            logger.warn("ALERTA: 100% das unidades estao SEM_MARCA - possivel falha na deteccao de cor")
 
     # Calcular SHA256
     sha256 = calculate_sha256(pdf_path)
@@ -236,26 +188,17 @@ def extrair_nt(pdf_path, output_format="both", manifest_path=None):
     json_data = gerar_json_nt(
         metadata=metadata,
         cronograma=cronograma,
-        itens=itens_com_secao,
+        secoes=secoes,
         arquivo_origem=pdf_path,
         sha256=sha256,
     )
 
-    # Gerar MD
-    md_content = gerar_md_nt(json_data)
-
-    # Salvar
+    # Salvar JSON
     output_dir = os.path.join("catalogo", "nt", doc_lower)
     json_filename = f"{Path(filename).stem}.json"
-    md_filename = f"{Path(filename).stem}.md"
 
-    if output_format in ("json", "both"):
-        json_path, _ = salvar_saida(json_data, md_content, output_dir, json_filename, md_filename)
-        logger.info(f"JSON salvo em: {json_path}")
-
-    if output_format in ("md", "both"):
-        _, md_path = salvar_saida(json_data, md_content, output_dir, json_filename, md_filename)
-        logger.info(f"MD salvo em: {md_path}")
+    json_path = salvar_json(json_data, output_dir, json_filename)
+    logger.info(f"JSON salvo em: {json_path}")
 
     # Atualizar manifest
     if manifest_path is None:
@@ -269,7 +212,10 @@ def extrair_nt(pdf_path, output_format="both", manifest_path=None):
         else:
             logger.warn(f"Nao encontrou entrada no manifest para: {rel_path}")
 
-    logger.info(f"Extracao concluida: {len(itens_com_secao)} itens extraidos")
+    logger.info(
+        f"Extracao concluida: {len(secoes)} secoes, "
+        f"{stats['total_regras']} regras, {stats['total_tabelas']} tabelas"
+    )
 
     return json_data
 
@@ -283,12 +229,6 @@ def main():
     )
     parser.add_argument("arquivo", help="Caminho para o PDF da NT")
     parser.add_argument(
-        "--output",
-        choices=["json", "md", "both"],
-        default="both",
-        help="Formato de saida (default: both)",
-    )
-    parser.add_argument(
         "--manifest",
         default="manifest.yaml",
         help="Caminho para manifest.yaml",
@@ -300,15 +240,15 @@ def main():
         print(f"ERRO: Arquivo nao encontrado: {args.arquivo}", file=sys.stderr)
         sys.exit(1)
 
-    result = extrair_nt(args.arquivo, args.output, args.manifest)
+    result = extrair_nt(args.arquivo, args.manifest)
 
     if "erro" in result:
         print(f"ERRO: {result['erro']}", file=sys.stderr)
         sys.exit(1)
 
     print(f"\nConcluido: {result['nt']} v{result['versao']} ({result['documento']})")
-    print(f"Itens: {result['estatisticas']['total_itens']}")
-    print(f"MARCACOES: {result['estatisticas']['por_marcacao']}")
+    print(f"Secoes: {len(result.get('secoes', []))}")
+    print(f"Estatisticas: {result.get('estatisticas', {})}")
 
 
 if __name__ == "__main__":

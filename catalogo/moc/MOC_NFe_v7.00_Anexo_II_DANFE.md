@@ -3,7 +3,7 @@
 **Secao:** 
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/nfe/moc/MOC_NFe_v7.00_Anexo_II_DANFE.pdf
 **SHA256:** 729c04fd1374188c29eb21ca60342741b24a014003d4c2ff1bbb455bb1a6a60e
-**Extraido em:** 2026-10-06T21:36:18.381624+00:00
+**Extraido em:** 2026-10-06T22:01:09.956932+00:00
 
 ## Secoes
 

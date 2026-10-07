@@ -3,7 +3,7 @@
 **Secao:** VisaoGeral
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_VisaoGeral_v4.00.pdf
 **SHA256:** aa06733d7b45cac1ab31864a1ac14e9eb376409fb938e5d9065c3ce88356aac4
-**Extraido em:** 2026-10-06T21:36:21.879270+00:00
+**Extraido em:** 2026-10-06T22:01:13.052935+00:00
 
 ## Secoes
 

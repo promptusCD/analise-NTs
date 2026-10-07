@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-extrair_moc.py - Extrai informacoes de MOCs (PDF e DOCX).
+extrair_moc.py - Extrai informacoes estruturadas de MOCs (PDF e DOCX).
 
 Uso:
     python extrair_moc.py <arquivo.pdf|docx> [--manifest <path>]
@@ -11,61 +11,119 @@ Dependencias:
 
 import sys
 import os
+import re
 from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import pymupdf
 
+from utils.cores import extract_page_content, aggregate_spans_into_lines
 from utils.parsing import (
-    detect_documento_from_filename,
-    detect_is_moc,
     parse_moc_metadata,
-    parse_moc_sections,
-    parse_moc_regras,
-    parse_moc_campos,
     calculate_sha256,
 )
-from utils.saida import gerar_json_moc, gerar_md_moc, salvar_saida
+from utils.moc import montar_moc_estrutura
+from utils.saida import gerar_json_moc, salvar_json
 from utils.manifest import adicionar_manifest_moc
 
 
-def extrair_moc_pdf(pdf_path):
-    """Extrai conteudo de um MOC em PDF."""
+def itens_from_pdf(pdf_path):
+    """Extrai linhas do PDF com marcacao/pagina."""
     doc = pymupdf.open(pdf_path)
+    all_items = []
     page_texts = []
-
     for page_num in range(len(doc)):
         page = doc[page_num]
+        raw_items = extract_page_content(page)
+        page_items = aggregate_spans_into_lines(raw_items)
         text = page.get_text()
         page_texts.append(text)
-
+        for item in page_items:
+            item["pagina"] = page_num + 1
+        all_items.extend(page_items)
+    num_paginas = len(doc)
     doc.close()
-    return page_texts
+    return all_items, page_texts, num_paginas
 
 
-def extrair_moc_docx(docx_path):
-    """Extrai conteudo de um MOC em DOCX."""
+def itens_from_docx(docx_path):
+    """Extrai linhas do DOCX (sem cor: SEM_MARCA), incluindo celulas de tabelas."""
     try:
-        import docx
-        doc = docx.Document(docx_path)
-        page_texts = []
-        current_page = []
-
-        for para in doc.paragraphs:
-            current_page.append(para.text)
-            # Simular quebra de pagina a cada 50 paragrafos
-            if len(current_page) >= 50:
-                page_texts.append("\n".join(current_page))
-                current_page = []
-
-        if current_page:
-            page_texts.append("\n".join(current_page))
-
-        return page_texts
+        import docx as python_docx
     except ImportError:
         print("ERRO: python-docx nao instalado. Execute: pip install python-docx", file=sys.stderr)
-        return []
+        return [], [], 0
+
+    doc = python_docx.Document(docx_path)
+    all_items = []
+    page_texts = []
+    current_page = []
+    pagina = 1
+
+    def _emitir(texto):
+        nonlocal pagina
+        if texto is None:
+            return
+        texto = texto.replace("\t", " ")
+        for linha in texto.splitlines():
+            s = linha.strip()
+            if s:
+                all_items.append({"text": s, "marcacao": "SEM_MARCA", "pagina": pagina})
+            current_page.append(linha)
+            if len(current_page) >= 50:
+                page_texts.append("\n".join(current_page))
+                current_page.clear()
+                pagina += 1
+
+    def _walk_tables(tables):
+        for table in tables:
+            for row in table.rows:
+                for cell in row.cells:
+                    for p in cell.paragraphs:
+                        _emitir(p.text)
+                    _walk_tables(cell.tables)
+
+    for para in doc.paragraphs:
+        _emitir(para.text)
+    _walk_tables(doc.tables)
+
+    if current_page:
+        page_texts.append("\n".join(current_page))
+
+    return all_items, page_texts, pagina
+
+
+def filtrar_ruido(all_items, num_paginas):
+    """Remove linhas curtas, paginacao, cabecalhos repetitivos e pontilhados."""
+    itens = []
+    for item in all_items:
+        text = item.get("text", "").strip()
+        if len(text) < 3:
+            continue
+        if re.match(r"^Página \d+ / \d+$", text):
+            continue
+        if re.match(r"^[\.\-•—]{16,}$", text):
+            continue
+        if text in ("•", "", ">", ">>", "-"):
+            continue
+        if re.search(r"\.{15,}\s*\d*$", text):
+            continue
+        itens.append(item)
+
+    # Cabecalhos/rodapes que se repetem em varias paginas
+    paginas_por_texto = {}
+    for item in itens:
+        t = item.get("text", "").strip()
+        paginas_por_texto.setdefault(t, set()).add(item.get("pagina"))
+    min_repeticoes = max(3, int(num_paginas * 0.4)) if num_paginas >= 3 else 3
+    itens = [
+        item
+        for item in itens
+        if item.get("text", "").strip().startswith("#")
+        or len(paginas_por_texto.get(item.get("text", "").strip(), ())) < min_repeticoes
+    ]
+    return itens
 
 
 def extrair_moc(file_path, manifest_path=None):
@@ -85,42 +143,40 @@ def extrair_moc(file_path, manifest_path=None):
 
     print(f"Processando MOC: {filename}")
 
-    # Extrair texto
     if ext == ".docx":
-        page_texts = extrair_moc_docx(file_path)
+        all_items, page_texts, num_paginas = itens_from_docx(file_path)
     else:
-        page_texts = extrair_moc_pdf(file_path)
+        all_items, page_texts, num_paginas = itens_from_pdf(file_path)
 
-    if not page_texts:
+    if not all_items:
         return {"erro": "Nao foi possivel extrair conteudo do arquivo"}
 
-    # Parsear metadados
     metadata = parse_moc_metadata(page_texts, filename)
     print(f"Documento: {metadata['documento']}, Versao: {metadata['versao']}")
+    print(f"Secao: {metadata['secao']}")
 
-    # Extrair secoes, regras e campos
-    secoes = parse_moc_sections(page_texts)
-    regras = parse_moc_regras(page_texts)
-    campos = parse_moc_campos(page_texts)
+    linhas = filtrar_ruido(all_items, num_paginas)
 
-    print(f"Secoes: {len(secoes)}, Regras: {len(regras)}, Campos: {len(campos)}")
+    resultado = montar_moc_estrutura(linhas, permitir_numero_ponto=(ext == ".docx"))
+    secoes = resultado["secoes"]
+    regras = resultado["regras_validacao"]
+    campos = resultado["campos_leiaute"]
+    stats = resultado["estatisticas"]
 
-    # Calcular SHA256
+    print(f"Secoes: {len(secoes)} | Regras: {len(regras)} | Campos: {len(campos)}")
+
     sha256 = calculate_sha256(file_path)
 
-    # Gerar JSON e MD
     json_data = gerar_json_moc(
         metadata=metadata,
         secoes=secoes,
-        regras=regras,
-        campos=campos,
+        regras_validacao=regras,
+        campos_leiaute=campos,
         arquivo_origem=file_path,
         sha256=sha256,
     )
+    json_data["estatisticas"] = stats
 
-    md_content = gerar_md_moc(json_data)
-
-    # Determinar diretorio de saida
     doc_lower = metadata["documento"].lower().replace("-", "").replace("e", "")
     if doc_lower == "nf":
         doc_lower = "nfe"
@@ -131,13 +187,9 @@ def extrair_moc(file_path, manifest_path=None):
     output_dir = os.path.join("catalogo", "moc", doc_lower)
 
     json_filename = f"{Path(filename).stem}.json"
-    md_filename = f"{Path(filename).stem}.md"
-
-    json_path, md_path = salvar_saida(json_data, md_content, output_dir, json_filename, md_filename)
+    json_path = salvar_json(json_data, output_dir, json_filename)
     print(f"JSON: {json_path}")
-    print(f"MD: {md_path}")
 
-    # Atualizar manifest
     if manifest_path is None:
         manifest_path = "manifest.yaml"
 
@@ -184,8 +236,8 @@ def main():
 
     print(f"\nConcluido: MOC {result['documento']} v{result['versao']}")
     print(f"Secoes: {len(result.get('secoes', []))}")
-    print(f"Regras: {len(result.get('regras', []))}")
-    print(f"Campos: {len(result.get('campos', []))}")
+    print(f"Regras: {len(result.get('regras_validacao', []))}")
+    print(f"Campos: {len(result.get('campos_leiaute', []))}")
 
 
 if __name__ == "__main__":

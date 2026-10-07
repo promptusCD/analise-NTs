@@ -149,7 +149,11 @@ def parse_nt_metadata(page_texts, filename=None):
 
 def parse_moc_metadata(page_texts, filename=None):
     """
-    Extrai metadados do MOC do cabecalho do PDF.
+    Extrai metadados do MOC do nome do arquivo (e eventualmente do cabecalho).
+
+    Suporta dois formatos de nome:
+      - MOC_CTe_VisaoGeral_v4.00.pdf        (secao antes da versao)
+      - MOC_NFe_v7.00_Anexo_I_Leiaute.pdf   (versao antes da secao)
 
     Returns:
         dict com 'documento', 'versao', 'secao', 'titulo'
@@ -163,7 +167,7 @@ def parse_moc_metadata(page_texts, filename=None):
 
     if filename:
         name = Path(filename).stem
-        m = PATTERN_MOC.search(name)
+        m = re.match(r"MOC[_\s](NFe|CTe|MDFe)[_\s]*(.*)$", name, re.IGNORECASE)
         if m:
             doc_prefix = m.group(1).upper()
             if doc_prefix == "NFE":
@@ -172,8 +176,21 @@ def parse_moc_metadata(page_texts, filename=None):
                 metadata["documento"] = "CT-e"
             elif doc_prefix == "MDFE":
                 metadata["documento"] = "MDF-e"
-            metadata["secao"] = m.group(2).replace("_", " ")
-            metadata["versao"] = m.group(3)
+
+            rest = m.group(2).strip()
+            # Forma A: "v7.00_Anexo_I_Leiaute" (versao primeiro)
+            m2 = re.match(r"v(\d[\d.a-z]*)[_\s]+(.+)$", rest, re.IGNORECASE)
+            if m2:
+                metadata["versao"] = m2.group(1)
+                metadata["secao"] = m2.group(2).replace("_", " ").strip()
+            else:
+                # Forma B: "VisaoGeral_v4.00" (secao primeiro)
+                m3 = re.match(r"(.+?)[_\s]+v(\d[\d.a-z]*)\.?$", rest, re.IGNORECASE)
+                if m3:
+                    metadata["secao"] = m3.group(1).replace("_", " ").strip()
+                    metadata["versao"] = m3.group(2)
+                else:
+                    metadata["secao"] = rest.replace("_", " ").strip()
 
     return metadata
 

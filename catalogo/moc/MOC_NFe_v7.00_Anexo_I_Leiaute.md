@@ -3,7 +3,7 @@
 **Secao:** 
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/nfe/moc/MOC_NFe_v7.00_Anexo_I_Leiaute.pdf
 **SHA256:** 5eb4cf2010b10b0b62f78197c4eb64025f24535d4c6e61158bc7806dd008f55d
-**Extraido em:** 2026-10-06T21:36:18.012991+00:00
+**Extraido em:** 2026-10-06T22:01:09.589773+00:00
 
 ## Secoes
 

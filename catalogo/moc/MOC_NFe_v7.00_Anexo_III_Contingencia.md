@@ -3,7 +3,7 @@
 **Secao:** 
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/nfe/moc/MOC_NFe_v7.00_Anexo_III_Contingencia.pdf
 **SHA256:** e1cfb9b6c5adc6a67062f66fd1699495fdec5dfdb93025768f87fe3782918dde
-**Extraido em:** 2026-10-06T21:36:18.676584+00:00
+**Extraido em:** 2026-10-06T22:01:10.245671+00:00
 
 ## Secoes
 

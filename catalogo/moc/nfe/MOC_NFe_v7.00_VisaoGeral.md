@@ -3,7 +3,7 @@
 **Secao:** v7.00
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/nfe/moc/MOC_NFe_v7.00_VisaoGeral.pdf
 **SHA256:** f664dcf94b77cabb32311620d85a7eb02cdf86adb2d4632ce178af2572dd2ad1
-**Extraido em:** 2026-10-06T21:36:19.880016+00:00
+**Extraido em:** 2026-10-06T22:01:11.447579+00:00
 
 ## Secoes
 

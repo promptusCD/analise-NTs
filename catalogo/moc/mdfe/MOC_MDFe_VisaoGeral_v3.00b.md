@@ -3,7 +3,7 @@
 **Secao:** VisaoGeral
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/mdfe/moc/MOC_MDFe_VisaoGeral_v3.00b.pdf
 **SHA256:** f8501acf8880c6b6705d286ee56acf59657de491c92e9d45aba7c666119932d7
-**Extraido em:** 2026-10-06T21:36:23.188755+00:00
+**Extraido em:** 2026-10-06T22:01:14.008748+00:00
 
 ## Secoes
 

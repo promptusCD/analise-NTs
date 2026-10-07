@@ -3,7 +3,7 @@
 **Secao:** Anexo I Leiaute
 **Arquivo:** /Users/gustavorodcosta/Documents/analise-NTs/fontes/cte/moc/MOC_CTe_Anexo_I_Leiaute_v4.00.pdf
 **SHA256:** 344089906615a2a4d93f6e0ffdafe6cb957c1bb04a57514438de95b58bc00fd2
-**Extraido em:** 2026-10-06T21:36:20.726494+00:00
+**Extraido em:** 2026-10-06T22:01:12.157168+00:00
 
 ## Secoes
 
