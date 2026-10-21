@@ -1,0 +1,66 @@
+{
+  "_comentario": "Expectativas escritas a mao a partir da CAPA (pagina 1) de cada NT. 'titulo' = titulo impresso na capa, sem o nome do projeto ('Projeto ...'), sem a linha 'Nota Tecnica N' e sem a linha 'Versao'. Linhas quebradas da capa sao unidas com um espaco.",
+  "CTe_NT_2025_001_RTC_v1.14b": {
+    "nt": "2025.001",
+    "documento": "CT-e",
+    "versao": "1.14b",
+    "titulo": "Reforma Tributária do Consumo",
+    "fonte": {"pagina": 1, "trecho": "Nota Técnica 2025.001 – Reforma Tributária do Consumo | Versão 1.14b de 01 de maio de 2026"}
+  },
+  "CTe_NT_2026_002_v1.01": {
+    "nt": "2026.002",
+    "documento": "CT-e",
+    "versao": "1.01",
+    "titulo": "Reforma Tributária do Consumo",
+    "fonte": {"pagina": 1, "trecho": "Nota Técnica 2026.002 – Reforma Tributária do Consumo | Versão 1.01 de 16 de julho de 2026"}
+  },
+  "CTe_NT_2026_004_v1.00": {
+    "nt": "2026.004",
+    "documento": "CT-e",
+    "versao": "1.00",
+    "titulo": "Reforma Tributária do Consumo",
+    "fonte": {"pagina": 1, "trecho": "Nota Técnica 2026.004 – Reforma Tributária do Consumo | Versão 1.00 de setembro de 2026"}
+  },
+  "MDFe_NT_2025_001_v1.03": {
+    "nt": "2025.001",
+    "documento": "MDF-e",
+    "versao": "1.03",
+    "titulo": "Altera Schema e regras de validação do MDFe",
+    "fonte": {"pagina": 1, "trecho": "Nota Técnica 2025.001 | Altera Schema e regras de validação do MDFe | Versão 1.03 – agosto de 2025"}
+  },
+  "MDFe_NT_2026_001_v1.00": {
+    "nt": "2026.001",
+    "documento": "MDF-e",
+    "versao": "1.00",
+    "titulo": "Altera Regras de validação do MDFe",
+    "fonte": {"pagina": 1, "trecho": "Nota Técnica 2026.001 | Altera Regras de validação do MDFe | Versão 1.00 – maio de 2026"}
+  },
+  "NT_2026_002_v1.11_DANFE_Simplificado": {
+    "nt": "2026.002",
+    "documento": "NF-e",
+    "versao": "1.11",
+    "titulo": "Operações de vendas presenciais e não presenciais com impressão do DANFE Simplificado Tipo 2",
+    "fonte": {"pagina": 1, "trecho": "Operações de vendas presenciais e não presenciais | com impressão do DANFE Simplificado Tipo 2 | Nota Técnica 2026.002 Versão 1.11"}
+  },
+  "NT_2026_007_v1.10": {
+    "nt": "2026.007",
+    "documento": "NF-e",
+    "versao": "1.10",
+    "titulo": "Emissão por Contribuinte exclusivo do IBS/CBS",
+    "fonte": {"pagina": 1, "trecho": "Nota Técnica 2026.007 | Emissão por Contribuinte exclusivo do IBS/CBS | Versão 1.10 – Setembro 2026 (cabeçalho das págs. 2+: NT 2026.007 - Emissão por Contribuinte exclusivo do IBS/CBS)"}
+  },
+  "NT_2026_008_v1.00_Valor_Liquido": {
+    "nt": "2026.008",
+    "documento": "NF-e",
+    "versao": "1.00",
+    "titulo": "Reforma Tributária do Consumo – Valor Líquido do Produto",
+    "fonte": {"pagina": 1, "trecho": "Reforma Tributária do | Consumo – Valor Líquido do Produto | Nota Técnica 2026.008 - Versão 1.00"}
+  },
+  "NT_2026_010_v1.00_DANFE_impressao": {
+    "nt": "2026.010",
+    "documento": "NF-e",
+    "versao": "1.00",
+    "titulo": "DANFE Reforma Tributária",
+    "fonte": {"pagina": 1, "trecho": "Nota Técnica 2026.010 | DANFE Reforma Tributária | Versão 1.00 – Outubro 2026"}
+  }
+}

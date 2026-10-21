@@ -3,9 +3,9 @@
   "versao": "3.00b",
   "secao": "VisaoGeral",
   "titulo": "",
-  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\mdfe\\moc\\MOC_MDFe_VisaoGeral_v3.00b.pdf",
+  "arquivo_origem": "fontes/mdfe/moc/MOC_MDFe_VisaoGeral_v3.00b.pdf",
   "sha256": "f8501acf8880c6b6705d286ee56acf59657de491c92e9d45aba7c666119932d7",
-  "extraido_em": "2026-10-07T15:50:20.119806+00:00",
+  "extraido_em": "2026-10-20T15:36:38.305219+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {
@@ -3486,7 +3486,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Certificado de Transmissor Inválido:"
+      "descricao": "Certificado de Transmissor Inválido:",
+      "id_unico": "4.1.1:A01"
     },
     {
       "id": "A02",
@@ -3494,7 +3495,7 @@
       "aplicacao": "Obrig",
       "cStat": "281",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Transmissor Data",
+      "mensagem": "Rejeição: Certificado Transmissor Data Validade",
       "marcacao": "SEM_MARCA",
       "pagina": 32,
       "grupo": "",
@@ -3502,13 +3503,9 @@
         "numero": "4.1.1",
         "titulo": "Grupo A: Validação do Certificado de Transmissão (protocolo TLS)"
       },
-      "notas": [
-        {
-          "texto": "Validade",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Validade do Certificado (data início e data fim)"
+      "notas": [],
+      "descricao": "Validade do Certificado (data início e data fim)",
+      "id_unico": "4.1.1:A02"
     },
     {
       "id": "A03",
@@ -3516,7 +3513,7 @@
       "aplicacao": "Obrig",
       "cStat": "283",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Transmissor - erro",
+      "mensagem": "Rejeição: Certificado Transmissor - erro Cadeia de Certificação",
       "marcacao": "SEM_MARCA",
       "pagina": 32,
       "grupo": "",
@@ -3526,7 +3523,7 @@
       },
       "notas": [
         {
-          "texto": "- Certificado da AC emissora não cadastrado na Cadeia de Certificação",
+          "texto": "- Certificado da AC emissora não cadastrado na",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -3546,7 +3543,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar a Cadeia de Certificação:"
+      "descricao": "Verificar a Cadeia de Certificação:",
+      "id_unico": "4.1.1:A03"
     },
     {
       "id": "A04",
@@ -3554,7 +3552,7 @@
       "aplicacao": "Obrig",
       "cStat": "286",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Transmissor erro no",
+      "mensagem": "Rejeição: Certificado Transmissor erro no acesso a LCR",
       "marcacao": "SEM_MARCA",
       "pagina": 32,
       "grupo": "",
@@ -3564,7 +3562,7 @@
       },
       "notas": [
         {
-          "texto": "- Falta o endereço da LCR (CRL DistributionPoint) acesso a LCR",
+          "texto": "- Falta o endereço da LCR (CRL DistributionPoint)",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -3576,7 +3574,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "LCR do Certificado de Transmissor"
+      "descricao": "LCR do Certificado de Transmissor",
+      "id_unico": "4.1.1:A04"
     },
     {
       "id": "A05",
@@ -3584,7 +3583,7 @@
       "aplicacao": "Obrig",
       "cStat": "284",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Transmissor",
+      "mensagem": "Rejeição: Certificado Transmissor revogado",
       "marcacao": "SEM_MARCA",
       "pagina": 32,
       "grupo": "",
@@ -3592,13 +3591,9 @@
         "numero": "4.1.1",
         "titulo": "Grupo A: Validação do Certificado de Transmissão (protocolo TLS)"
       },
-      "notas": [
-        {
-          "texto": "revogado",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Certificado do Transmissor revogado"
+      "notas": [],
+      "descricao": "Certificado do Transmissor revogado",
+      "id_unico": "4.1.1:A05"
     },
     {
       "id": "A06",
@@ -3606,7 +3601,7 @@
       "aplicacao": "Obrig",
       "cStat": "285",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Transmissor difere",
+      "mensagem": "Rejeição: Certificado Transmissor difere ICP-Brasil",
       "marcacao": "SEM_MARCA",
       "pagina": 32,
       "grupo": "",
@@ -3614,13 +3609,9 @@
         "numero": "4.1.1",
         "titulo": "Grupo A: Validação do Certificado de Transmissão (protocolo TLS)"
       },
-      "notas": [
-        {
-          "texto": "ICP-Brasil",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Certificado Raiz difere da \"ICP-Brasil\""
+      "notas": [],
+      "descricao": "Certificado Raiz difere da \"ICP-Brasil\"",
+      "id_unico": "4.1.1:A06"
     },
     {
       "id": "A07",
@@ -3628,7 +3619,7 @@
       "aplicacao": "Obrig",
       "cStat": "282",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Transmissor sem",
+      "mensagem": "Rejeição: Certificado Transmissor sem CNPJ / CPF",
       "marcacao": "SEM_MARCA",
       "pagina": 32,
       "grupo": "",
@@ -3638,7 +3629,7 @@
       },
       "notas": [
         {
-          "texto": "(OtherName - OID=2.16.76.1.3.3) ou a extensão de CNPJ / CPF",
+          "texto": "(OtherName - OID=2.16.76.1.3.3) ou a extensão de",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -3662,7 +3653,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Falta a extensão de CNPJ no Certificado"
+      "descricao": "Falta a extensão de CNPJ no Certificado",
+      "id_unico": "4.1.1:A07"
     },
     {
       "id": "A08",
@@ -3670,7 +3662,7 @@
       "aplicacao": "Obrig",
       "cStat": "900",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe do Regime Especial da",
+      "mensagem": "Rejeição: MDFe do Regime Especial da Nota fiscal fácil deve ser transmitido exclusivamente pelo e-CNPJ da SVRS",
       "marcacao": "SEM_MARCA",
       "pagina": 32,
       "grupo": "",
@@ -3680,11 +3672,11 @@
       },
       "notas": [
         {
-          "texto": "Especial da Nota Fiscal Fácil (3): Nota fiscal fácil deve ser transmitido",
+          "texto": "Especial da Nota Fiscal Fácil (3):",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "Rejeitar se o certificado de transmissor for diferente exclusivamente pelo e-CNPJ da SVRS",
+          "texto": "Rejeitar se o certificado de transmissor for diferente",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -3692,7 +3684,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se a forma de emissão (tpEmis) do MDFe for Regime"
+      "descricao": "Se a forma de emissão (tpEmis) do MDFe for Regime",
+      "id_unico": "4.1.2:A08"
     },
     {
       "id": "A09",
@@ -3700,7 +3693,7 @@
       "aplicacao": "Obrig",
       "cStat": "904",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Evento de emitente do MDFe",
+      "mensagem": "Rejeição: Evento de emitente do MDFe do Regime Especial da Nota fiscal fácil deve ser transmitido exclusivamente pelo e-CNPJ da SVRS",
       "marcacao": "SEM_MARCA",
       "pagina": 33,
       "grupo": "",
@@ -3710,15 +3703,15 @@
       },
       "notas": [
         {
-          "texto": "do MDFe for Regime Especial da Nota Fiscal Fácil do Regime Especial da Nota fiscal fácil",
+          "texto": "do MDFe for Regime Especial da Nota Fiscal Fácil",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "(3): deve ser transmitido exclusivamente pelo",
+          "texto": "(3):",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "Rejeitar se o certificado de transmissor for diferente e-CNPJ da SVRS",
+          "texto": "Rejeitar se o certificado de transmissor for diferente",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -3734,7 +3727,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se a forma de emissão (tpEmis) da chave de acesso"
+      "descricao": "Se a forma de emissão (tpEmis) da chave de acesso",
+      "id_unico": "4.1.3:A09"
     },
     {
       "id": "B00",
@@ -3742,7 +3736,7 @@
       "aplicacao": "Obrig",
       "cStat": "244",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Falha na descompactação da",
+      "mensagem": "Rejeição: Falha na descompactação da área de dados",
       "marcacao": "SEM_MARCA",
       "pagina": 33,
       "grupo": "",
@@ -3752,11 +3746,12 @@
       },
       "notas": [
         {
-          "texto": "dados área de dados",
+          "texto": "dados",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar compactação da mensagem da área de"
+      "descricao": "Verificar compactação da mensagem da área de",
+      "id_unico": "4.1.4:B00"
     },
     {
       "id": "B01",
@@ -3764,7 +3759,7 @@
       "aplicacao": "Obrig",
       "cStat": "214",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Tamanho da mensagem",
+      "mensagem": "Rejeição: Tamanho da mensagem excedeu o limite estabelecido",
       "marcacao": "SEM_MARCA",
       "pagina": 33,
       "grupo": "",
@@ -3774,15 +3769,12 @@
       },
       "notas": [
         {
-          "texto": "excedeu o limite estabelecido",
-          "marcacao": "SEM_MARCA"
-        },
-        {
           "texto": "previsto",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Tamanho do XML de Dados superior ao limite"
+      "descricao": "Tamanho do XML de Dados superior ao limite",
+      "id_unico": "4.1.5:B01"
     },
     {
       "id": "B02",
@@ -3799,7 +3791,8 @@
         "titulo": "Grupo B: Validação Inicial da Mensagem no Web Service"
       },
       "notas": [],
-      "descricao": "XML de Dados Malformado"
+      "descricao": "XML de Dados Malformado",
+      "id_unico": "4.1.5:B02"
     },
     {
       "id": "B03",
@@ -3807,7 +3800,7 @@
       "aplicacao": "Obrig",
       "cStat": "108",
       "efeito": "Rej",
-      "mensagem": "Serviço Paralisado Momentaneamente",
+      "mensagem": "Serviço Paralisado Momentaneamente (curto prazo)",
       "marcacao": "SEM_MARCA",
       "pagina": 33,
       "grupo": "",
@@ -3817,11 +3810,12 @@
       },
       "notas": [
         {
-          "texto": "Paralisado Momentaneamente (curto prazo)",
+          "texto": "Paralisado Momentaneamente",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o Serviço de processamento está"
+      "descricao": "Verificar se o Serviço de processamento está",
+      "id_unico": "4.1.5:B03"
     },
     {
       "id": "B04",
@@ -3879,7 +3873,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o Serviço de processamento está"
+      "descricao": "Verificar se o Serviço de processamento está",
+      "id_unico": "4.1.5:B04"
     },
     {
       "id": "C01",
@@ -3896,7 +3891,8 @@
         "titulo": "Grupo C: Validação da área de dados da mensagem"
       },
       "notas": [],
-      "descricao": "Verificar Schema XML da Área de Dados"
+      "descricao": "Verificar Schema XML da Área de Dados",
+      "id_unico": "4.1.6:C01"
     },
     {
       "id": "C02",
@@ -3904,7 +3900,7 @@
       "aplicacao": "Obrig",
       "cStat": "598",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Usar somente o namespace",
+      "mensagem": "Rejeição: Usar somente o namespace padrão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 33,
       "grupo": "",
@@ -3914,7 +3910,7 @@
       },
       "notas": [
         {
-          "texto": "do namespace padrão do projeto padrão do MDFe",
+          "texto": "do namespace padrão do projeto",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -3922,7 +3918,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar a existência de qualquer namespace diverso"
+      "descricao": "Verificar a existência de qualquer namespace diverso",
+      "id_unico": "4.1.6:C02"
     },
     {
       "id": "C03",
@@ -3930,7 +3927,7 @@
       "aplicacao": "Obrig",
       "cStat": "599",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Não é permitida a presença de",
+      "mensagem": "Rejeição: Não é permitida a presença de caracteres de edição no início/fim da mensagem ou entre as tags da mensagem",
       "marcacao": "SEM_MARCA",
       "pagina": 33,
       "grupo": "",
@@ -3940,19 +3937,12 @@
       },
       "notas": [
         {
-          "texto": "início ou fim da mensagem ou entre as tags caracteres de edição no início/fim da",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "mensagem ou entre as tags da",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "mensagem",
+          "texto": "início ou fim da mensagem ou entre as tags",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar a existência de caracteres de edição no"
+      "descricao": "Verificar a existência de caracteres de edição no",
+      "id_unico": "4.1.6:C03"
     },
     {
       "id": "C04",
@@ -3960,7 +3950,7 @@
       "aplicacao": "Obrig",
       "cStat": "404",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Uso de prefixo de namespace",
+      "mensagem": "Rejeição: Uso de prefixo de namespace não permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -3968,13 +3958,9 @@
         "numero": "4.1.6",
         "titulo": "Grupo C: Validação da área de dados da mensagem"
       },
-      "notas": [
-        {
-          "texto": "não permitido",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar o uso de prefixo no namespace"
+      "notas": [],
+      "descricao": "Verificar o uso de prefixo no namespace",
+      "id_unico": "4.1.6:C04"
     },
     {
       "id": "C05",
@@ -3982,7 +3968,7 @@
       "aplicacao": "Obrig",
       "cStat": "402",
       "efeito": "Rej",
-      "mensagem": "Rejeição: XML da área de dados com",
+      "mensagem": "Rejeição: XML da área de dados com codificação diferente de UTF-8",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -3992,11 +3978,12 @@
       },
       "notas": [
         {
-          "texto": "UTF-8 codificação diferente de UTF-8",
+          "texto": "UTF-8",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o XML utiliza codificação diferente de"
+      "descricao": "Verificar se o XML utiliza codificação diferente de",
+      "id_unico": "4.1.6:C05"
     },
     {
       "id": "C06",
@@ -4004,7 +3991,7 @@
       "aplicacao": "Obrig",
       "cStat": "239",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Versão informada para o MDFe",
+      "mensagem": "Rejeição: Versão informada para o MDFe não suportada",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4013,10 +4000,6 @@
         "titulo": "Grupo C: Validação da área de dados da mensagem"
       },
       "notas": [
-        {
-          "texto": "não suportada",
-          "marcacao": "SEM_MARCA"
-        },
         {
           "texto": "A existência de qualquer erro na validação de forma da área de dados implica a rejeição do MDFe.",
           "marcacao": "SEM_MARCA"
@@ -4042,7 +4025,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se a versão do XML é suportada"
+      "descricao": "Verificar se a versão do XML é suportada",
+      "id_unico": "4.1.6:C06"
     },
     {
       "id": "D01",
@@ -4080,7 +4064,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Certificado de Assinatura Inválido:"
+      "descricao": "Certificado de Assinatura Inválido:",
+      "id_unico": "4.1.7:D01"
     },
     {
       "id": "D02",
@@ -4088,7 +4073,7 @@
       "aplicacao": "Obrig",
       "cStat": "291",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Assinatura Data",
+      "mensagem": "Rejeição: Certificado Assinatura Data Validade",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4096,13 +4081,9 @@
         "numero": "4.1.7",
         "titulo": "Grupo D: Validações do Certificado de Assinatura Digital"
       },
-      "notas": [
-        {
-          "texto": "Validade",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Validade do Certificado (data início e data fim)"
+      "notas": [],
+      "descricao": "Validade do Certificado (data início e data fim)",
+      "id_unico": "4.1.7:D02"
     },
     {
       "id": "D03",
@@ -4110,7 +4091,7 @@
       "aplicacao": "Obrig",
       "cStat": "292",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Assinatura sem",
+      "mensagem": "Rejeição: Certificado Assinatura sem CNPJ / CPF",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4120,7 +4101,7 @@
       },
       "notas": [
         {
-          "texto": "(OtherName - OID=2.16.76.1.3.3 ou a extensão de CNPJ / CPF",
+          "texto": "(OtherName - OID=2.16.76.1.3.3 ou a extensão de",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4128,7 +4109,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Falta a extensão de CNPJ no Certificado"
+      "descricao": "Falta a extensão de CNPJ no Certificado",
+      "id_unico": "4.1.7:D03"
     },
     {
       "id": "D04",
@@ -4136,7 +4118,7 @@
       "aplicacao": "Obrig",
       "cStat": "293",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Assinatura - erro",
+      "mensagem": "Rejeição: Certificado Assinatura - erro Cadeia de Certificação",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4146,7 +4128,7 @@
       },
       "notas": [
         {
-          "texto": "- Certificado da AC emissora não cadastrado na Cadeia de Certificação",
+          "texto": "- Certificado da AC emissora não cadastrado na",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4166,7 +4148,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar a Cadeia de Certificação:"
+      "descricao": "Verificar a Cadeia de Certificação:",
+      "id_unico": "4.1.7:D04"
     },
     {
       "id": "D05",
@@ -4174,7 +4157,7 @@
       "aplicacao": "Obrig",
       "cStat": "296",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Assinatura erro no",
+      "mensagem": "Rejeição: Certificado Assinatura erro no acesso a LCR",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4184,7 +4167,7 @@
       },
       "notas": [
         {
-          "texto": "- Falta o endereço da LCR (CRL DistributionPoint) acesso a LCR",
+          "texto": "- Falta o endereço da LCR (CRL DistributionPoint)",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4192,7 +4175,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "LCR do Certificado de Assinatura"
+      "descricao": "LCR do Certificado de Assinatura",
+      "id_unico": "4.1.7:D05"
     },
     {
       "id": "D06",
@@ -4200,7 +4184,7 @@
       "aplicacao": "Obrig",
       "cStat": "294",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Assinatura",
+      "mensagem": "Rejeição: Certificado Assinatura revogado",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4208,13 +4192,9 @@
         "numero": "4.1.7",
         "titulo": "Grupo D: Validações do Certificado de Assinatura Digital"
       },
-      "notas": [
-        {
-          "texto": "revogado",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Certificado de Assinatura revogado"
+      "notas": [],
+      "descricao": "Certificado de Assinatura revogado",
+      "id_unico": "4.1.7:D06"
     },
     {
       "id": "D07",
@@ -4222,7 +4202,7 @@
       "aplicacao": "Obrig",
       "cStat": "295",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Certificado Assinatura difere",
+      "mensagem": "Rejeição: Certificado Assinatura difere ICP-Brasil",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4230,13 +4210,9 @@
         "numero": "4.1.7",
         "titulo": "Grupo D: Validações do Certificado de Assinatura Digital"
       },
-      "notas": [
-        {
-          "texto": ". ICP-Brasil",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Certificado Raiz difere da “ICP-Brasil”"
+      "notas": [],
+      "descricao": "Certificado Raiz difere da “ICP-Brasil”",
+      "id_unico": "4.1.7:D07"
     },
     {
       "id": "E01",
@@ -4244,7 +4220,7 @@
       "aplicacao": "Obrig",
       "cStat": "298",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Assinatura difere do padrão do",
+      "mensagem": "Rejeição: Assinatura difere do padrão do Projeto",
       "marcacao": "SEM_MARCA",
       "pagina": 34,
       "grupo": "",
@@ -4254,7 +4230,7 @@
       },
       "notas": [
         {
-          "texto": "- Não assinado o atributo “ID” (falta “Reference URI” Projeto",
+          "texto": "- Não assinado o atributo “ID” (falta “Reference URI”",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4282,7 +4258,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Assinatura difere do padrão do Projeto:"
+      "descricao": "Assinatura difere do padrão do Projeto:",
+      "id_unico": "4.1.8:E01"
     },
     {
       "id": "E02",
@@ -4304,7 +4281,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Valor da assinatura (SignatureValue) difere do valor"
+      "descricao": "Valor da assinatura (SignatureValue) difere do valor",
+      "id_unico": "4.1.8:E02"
     },
     {
       "id": "E03",
@@ -4312,7 +4290,7 @@
       "aplicacao": "Obrig",
       "cStat": "213",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ-Base do Emitente difere",
+      "mensagem": "Rejeição: CNPJ-Base do Emitente difere do CNPJ-Base do Certificado Digital",
       "marcacao": "SEM_MARCA",
       "pagina": 35,
       "grupo": "",
@@ -4322,7 +4300,7 @@
       },
       "notas": [
         {
-          "texto": "CNPJ-Base do Emitente difere do CNPJ-Base do do CNPJ-Base do Certificado Digital",
+          "texto": "CNPJ-Base do Emitente difere do CNPJ-Base do",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4362,7 +4340,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se Certificado conter CNPJ do emitente:"
+      "descricao": "Se Certificado conter CNPJ do emitente:",
+      "id_unico": "4.1.8:E03"
     },
     {
       "id": "E04",
@@ -4370,7 +4349,7 @@
       "aplicacao": "Obrig",
       "cStat": "202",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CPF do Emitente difere do",
+      "mensagem": "Rejeição: CPF do Emitente difere do CPF do Certificado Digital",
       "marcacao": "SEM_MARCA",
       "pagina": 35,
       "grupo": "",
@@ -4380,11 +4359,12 @@
       },
       "notas": [
         {
-          "texto": "CPF do Emitente difere do CPF do Certificado Digital CPF do Certificado Digital",
+          "texto": "CPF do Emitente difere do CPF do Certificado Digital",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se Certificado conter CPF do emitente:"
+      "descricao": "Se Certificado conter CPF do emitente:",
+      "id_unico": "4.1.8:E04"
     },
     {
       "id": "E05",
@@ -4392,7 +4372,7 @@
       "aplicacao": "Obrig",
       "cStat": "901",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe do Regime Especial da",
+      "mensagem": "Rejeição: MDFe do Regime Especial da Nota fiscal fácil deve ser assinado exclusivamente pelo e-CNPJ da SVRS",
       "marcacao": "SEM_MARCA",
       "pagina": 35,
       "grupo": "",
@@ -4402,11 +4382,11 @@
       },
       "notas": [
         {
-          "texto": "Regime Especial da Nota Fiscal Fácil (3): Nota fiscal fácil deve ser assinado",
+          "texto": "Regime Especial da Nota Fiscal Fácil (3):",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "Rejeitar se o certificado de assinatura for diferente do exclusivamente pelo e-CNPJ da SVRS",
+          "texto": "Rejeitar se o certificado de assinatura for diferente do",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4414,7 +4394,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se a forma de emissão (tpEmis) do MDFe for"
+      "descricao": "Se a forma de emissão (tpEmis) do MDFe for",
+      "id_unico": "4.1.9:E05"
     },
     {
       "id": "E06",
@@ -4436,7 +4417,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):"
+      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):",
+      "id_unico": "4.1.10:E06"
     },
     {
       "id": "E07",
@@ -4444,7 +4426,7 @@
       "aplicacao": "Obrig",
       "cStat": "910",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ do PAA difere do CNPJ de",
+      "mensagem": "Rejeição: CNPJ do PAA difere do CNPJ de assinatura",
       "marcacao": "SEM_MARCA",
       "pagina": 35,
       "grupo": "",
@@ -4454,7 +4436,7 @@
       },
       "notas": [
         {
-          "texto": "O CNPJ do certificado de assinatura ICP Brasil deverá ser assinatura",
+          "texto": "O CNPJ do certificado de assinatura ICP Brasil deverá ser",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4462,7 +4444,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):"
+      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):",
+      "id_unico": "4.1.10:E07"
     },
     {
       "id": "E08",
@@ -4470,7 +4453,7 @@
       "aplicacao": "Obrig",
       "cStat": "911",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Provedor de Assinatura e",
+      "mensagem": "Rejeição: Provedor de Assinatura e Autorização não existe na base da SEFAZ",
       "marcacao": "SEM_MARCA",
       "pagina": 35,
       "grupo": "",
@@ -4480,7 +4463,7 @@
       },
       "notas": [
         {
-          "texto": "Verificar se o CNPJ do PAA (tag: CNPJPAA) existe na Autorização não existe na base da SEFAZ",
+          "texto": "Verificar se o CNPJ do PAA (tag: CNPJPAA) existe na",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4492,7 +4475,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):"
+      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):",
+      "id_unico": "4.1.10:E08"
     },
     {
       "id": "E09",
@@ -4526,7 +4510,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA)"
+      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA)",
+      "id_unico": "4.1.10:E09"
     },
     {
       "id": "E10",
@@ -4534,7 +4519,7 @@
       "aplicacao": "Obrig",
       "cStat": "913",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Chave RSA não corresponde a",
+      "mensagem": "Rejeição: Chave RSA não corresponde a relação contribuinte x PAA",
       "marcacao": "SEM_MARCA",
       "pagina": 35,
       "grupo": "",
@@ -4544,7 +4529,7 @@
       },
       "notas": [
         {
-          "texto": "Verificar se a chave pública RSA (grupo: RSAKeyValue) relação contribuinte x PAA",
+          "texto": "Verificar se a chave pública RSA (grupo: RSAKeyValue)",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4556,7 +4541,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):"
+      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA):",
+      "id_unico": "4.1.10:E10"
     },
     {
       "id": "E11",
@@ -4582,7 +4568,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA)"
+      "descricao": "Se MDFe / Evento for gerado por PAA (grupo: infPAA)",
+      "id_unico": "4.1.10:E11"
     },
     {
       "id": "G01",
@@ -4590,7 +4577,7 @@
       "aplicacao": "Obrig",
       "cStat": "252",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Ambiente informado diverge do",
+      "mensagem": "Rejeição: Ambiente informado diverge do Ambiente de recebimento",
       "marcacao": "SEM_MARCA",
       "pagina": 40,
       "grupo": "",
@@ -4600,11 +4587,12 @@
       },
       "notas": [
         {
-          "texto": "Web Service Ambiente de recebimento",
+          "texto": "Web Service",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Tipo do ambiente informado difere do ambiente do"
+      "descricao": "Tipo do ambiente informado difere do ambiente do",
+      "id_unico": "4.3.5:G01"
     },
     {
       "id": "G02",
@@ -4612,7 +4600,7 @@
       "aplicacao": "Obrig",
       "cStat": "460",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Consulta a uma Chave de",
+      "mensagem": "Rejeição: Consulta a uma Chave de Acesso muito antiga",
       "marcacao": "SEM_MARCA",
       "pagina": 40,
       "grupo": "",
@@ -4622,7 +4610,7 @@
       },
       "notas": [
         {
-          "texto": "com atraso superior a 6 meses em relação ao ano – Acesso muito antiga",
+          "texto": "com atraso superior a 6 meses em relação ao ano –",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4630,7 +4618,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o ano – mês da chave de acesso está"
+      "descricao": "Verificar se o ano – mês da chave de acesso está",
+      "id_unico": "4.3.5:G02"
     },
     {
       "id": "G03",
@@ -4638,7 +4627,7 @@
       "aplicacao": "Obrig",
       "cStat": "236",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Chave de Acesso inválida",
+      "mensagem": "Rejeição: Chave de Acesso inválida [Motivo: XXXXXXXXX]",
       "marcacao": "SEM_MARCA",
       "pagina": 40,
       "grupo": "",
@@ -4648,7 +4637,7 @@
       },
       "notas": [
         {
-          "texto": "Retornar motivo da rejeição da Chave de Acesso: [Motivo: XXXXXXXXX]",
+          "texto": "Retornar motivo da rejeição da Chave de Acesso:",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4672,7 +4661,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "- Validar chave de acesso"
+      "descricao": "- Validar chave de acesso",
+      "id_unico": "4.3.5:G03"
     },
     {
       "id": "G04",
@@ -4680,7 +4670,7 @@
       "aplicacao": "Obrig",
       "cStat": "217",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe não consta na base de",
+      "mensagem": "Rejeição: MDFe não consta na base de dados da SEFAZ",
       "marcacao": "SEM_MARCA",
       "pagina": 40,
       "grupo": "",
@@ -4690,7 +4680,7 @@
       },
       "notas": [
         {
-          "texto": "Série, Nro): dados da SEFAZ",
+          "texto": "Série, Nro):",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4698,7 +4688,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Acesso BD MDFe (Chave: CNPJ / CPF Emit, Modelo,"
+      "descricao": "Acesso BD MDFe (Chave: CNPJ / CPF Emit, Modelo,",
+      "id_unico": "4.3.5:G04"
     },
     {
       "id": "G05",
@@ -4706,7 +4697,7 @@
       "aplicacao": "Obrig",
       "cStat": "216",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Chave de Acesso difere da",
+      "mensagem": "Rejeição: Chave de Acesso difere da cadastrada",
       "marcacao": "SEM_MARCA",
       "pagina": 40,
       "grupo": "",
@@ -4716,11 +4707,12 @@
       },
       "notas": [
         {
-          "texto": "Chave de Acesso é diferente do existente no BD cadastrada",
+          "texto": "Chave de Acesso é diferente do existente no BD",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se campo “Código Numérico” informado na"
+      "descricao": "Verificar se campo “Código Numérico” informado na",
+      "id_unico": "4.3.5:G05"
     },
     {
       "id": "G06",
@@ -4728,7 +4720,7 @@
       "aplicacao": "Obrig",
       "cStat": "600",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Chave de Acesso difere da",
+      "mensagem": "Rejeição: Chave de Acesso difere da existente em BD",
       "marcacao": "SEM_MARCA",
       "pagina": 40,
       "grupo": "",
@@ -4738,7 +4730,7 @@
       },
       "notas": [
         {
-          "texto": "(opcionalmente a descrição do erro, campo xMotivo, existente em BD",
+          "texto": "(opcionalmente a descrição do erro, campo xMotivo,",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4750,7 +4742,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Chave de Acesso difere da existente em BD"
+      "descricao": "Chave de Acesso difere da existente em BD",
+      "id_unico": "4.3.5:G06"
     },
     {
       "id": "H01",
@@ -4758,7 +4751,7 @@
       "aplicacao": "Obrig",
       "cStat": "252",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Ambiente informado diverge do",
+      "mensagem": "Rejeição: Ambiente informado diverge do Ambiente de recebimento",
       "marcacao": "SEM_MARCA",
       "pagina": 42,
       "grupo": "",
@@ -4768,11 +4761,12 @@
       },
       "notas": [
         {
-          "texto": "Web Service Ambiente de recebimento",
+          "texto": "Web Service",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Tipo do ambiente informado difere do ambiente do"
+      "descricao": "Tipo do ambiente informado difere do ambiente do",
+      "id_unico": "4.4.5:H01"
     },
     {
       "id": "H02",
@@ -4798,7 +4792,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado CNPJ do emitente:"
+      "descricao": "Se informado CNPJ do emitente:",
+      "id_unico": "4.4.5:H02"
     },
     {
       "id": "H03",
@@ -4824,7 +4819,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado CPF do emitente:"
+      "descricao": "Se informado CPF do emitente:",
+      "id_unico": "4.4.5:H03"
     },
     {
       "id": "H04",
@@ -4832,7 +4828,7 @@
       "aplicacao": "Obrig",
       "cStat": "213",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ-Base do Emitente difere do",
+      "mensagem": "Rejeição: CNPJ-Base do Emitente difere do CNPJ-Base do Certificado Digital",
       "marcacao": "SEM_MARCA",
       "pagina": 42,
       "grupo": "",
@@ -4842,7 +4838,7 @@
       },
       "notas": [
         {
-          "texto": "CNPJ-Base do Emitente difere do CNPJ-Base do CNPJ-Base do Certificado Digital",
+          "texto": "CNPJ-Base do Emitente difere do CNPJ-Base do",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4862,7 +4858,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se Certificado conter CNPJ do emitente:"
+      "descricao": "Se Certificado conter CNPJ do emitente:",
+      "id_unico": "4.4.5:H04"
     },
     {
       "id": "H05",
@@ -4870,7 +4867,7 @@
       "aplicacao": "Obrig",
       "cStat": "202",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CPF do Emitente difere do CPF do",
+      "mensagem": "Rejeição: CPF do Emitente difere do CPF do Certificado Digital",
       "marcacao": "SEM_MARCA",
       "pagina": 42,
       "grupo": "",
@@ -4880,7 +4877,7 @@
       },
       "notas": [
         {
-          "texto": "CPF do Emitente difere do CPF do Certificado Certificado Digital",
+          "texto": "CPF do Emitente difere do CPF do Certificado",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -4888,7 +4885,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se Certificado conter CPF do emitente:"
+      "descricao": "Se Certificado conter CPF do emitente:",
+      "id_unico": "4.4.5:H05"
     },
     {
       "id": "H06",
@@ -4896,7 +4894,7 @@
       "aplicacao": "Obrig",
       "cStat": "203",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Emissor não habilitado para",
+      "mensagem": "Rejeição: Emissor não habilitado para emissão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 42,
       "grupo": "",
@@ -4905,10 +4903,6 @@
         "titulo": "Validação das Regras de Negócio da Consulta Não Encerrados"
       },
       "notas": [
-        {
-          "texto": "emissão do MDFe",
-          "marcacao": "SEM_MARCA"
-        },
         {
           "texto": "Exceção: Esta regra não se aplica a CNPJ",
           "marcacao": "SEM_MARCA"
@@ -4922,7 +4916,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Emitente não credenciado a emissão de MDFe"
+      "descricao": "Emitente não credenciado a emissão de MDFe",
+      "id_unico": "4.4.5:H06"
     },
     {
       "id": "I01",
@@ -4930,7 +4925,7 @@
       "aplicacao": "Obrig",
       "cStat": "252",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Ambiente informado diverge do",
+      "mensagem": "Rejeição: Ambiente informado diverge do Ambiente de recebimento",
       "marcacao": "SEM_MARCA",
       "pagina": 45,
       "grupo": "",
@@ -4940,11 +4935,12 @@
       },
       "notas": [
         {
-          "texto": "Web Service Ambiente de recebimento",
+          "texto": "Web Service",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Tipo do ambiente informado difere do ambiente do"
+      "descricao": "Tipo do ambiente informado difere do ambiente do",
+      "id_unico": "4.5.5:I01"
     },
     {
       "id": "I02",
@@ -4952,7 +4948,7 @@
       "aplicacao": "Obrig",
       "cStat": "108",
       "efeito": "",
-      "mensagem": "- Serviço Paralisado Momentaneamente",
+      "mensagem": "- Serviço Paralisado Momentaneamente (curto prazo)",
       "marcacao": "SEM_MARCA",
       "pagina": 45,
       "grupo": "",
@@ -4962,11 +4958,12 @@
       },
       "notas": [
         {
-          "texto": "Paralisado Momentaneamente (curto prazo)",
+          "texto": "Paralisado Momentaneamente",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verifica se o Servidor de Processamento está"
+      "descricao": "Verifica se o Servidor de Processamento está",
+      "id_unico": "4.5.5:I02"
     },
     {
       "id": "I03",
@@ -4988,7 +4985,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verifica se o Servidor de Processamento está"
+      "descricao": "Verifica se o Servidor de Processamento está",
+      "id_unico": "4.5.5:I03"
     },
     {
       "id": "J01",
@@ -4996,7 +4994,7 @@
       "aplicacao": "Obrig",
       "cStat": "252",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Ambiente informado diverge do",
+      "mensagem": "Rejeição: Ambiente informado diverge do Ambiente de recebimento",
       "marcacao": "SEM_MARCA",
       "pagina": 49,
       "grupo": "",
@@ -5006,11 +5004,12 @@
       },
       "notas": [
         {
-          "texto": "Web Service Ambiente de recebimento",
+          "texto": "Web Service",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Tipo do ambiente informado difere do ambiente do"
+      "descricao": "Tipo do ambiente informado difere do ambiente do",
+      "id_unico": "5.1.5:J01"
     },
     {
       "id": "J02",
@@ -5018,7 +5017,7 @@
       "aplicacao": "Obrig",
       "cStat": "627",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ do autor do evento",
+      "mensagem": "Rejeição: CNPJ do autor do evento inválido",
       "marcacao": "SEM_MARCA",
       "pagina": 49,
       "grupo": "",
@@ -5028,11 +5027,12 @@
       },
       "notas": [
         {
-          "texto": "Validar CNPJ do autor do evento (DV ou zeros) inválido",
+          "texto": "Validar CNPJ do autor do evento (DV ou zeros)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado CNPJ:"
+      "descricao": "Se informado CNPJ:",
+      "id_unico": "5.1.5:J02"
     },
     {
       "id": "J03",
@@ -5054,7 +5054,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado CPF:"
+      "descricao": "Se informado CPF:",
+      "id_unico": "5.1.5:J03"
     },
     {
       "id": "J04",
@@ -5062,7 +5063,7 @@
       "aplicacao": "Obrig",
       "cStat": "628",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Erro Atributo ID do evento não",
+      "mensagem": "Rejeição: Erro Atributo ID do evento não corresponde à concatenação dos campos (“ID” + tpEvento + chMDFe + nSeqEvento)",
       "marcacao": "SEM_MARCA",
       "pagina": 49,
       "grupo": "",
@@ -5072,11 +5073,11 @@
       },
       "notas": [
         {
-          "texto": "dos campos evento (“ID” + tpEvento + chMDFe + corresponde à concatenação dos campos",
+          "texto": "dos campos evento (“ID” + tpEvento + chMDFe +",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "nSeqEvento) (“ID” + tpEvento + chMDFe + nSeqEvento)",
+          "texto": "nSeqEvento)",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5092,7 +5093,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Validar se atributo Id corresponde à concatenação"
+      "descricao": "Validar se atributo Id corresponde à concatenação",
+      "id_unico": "5.1.5:J04"
     },
     {
       "id": "J05",
@@ -5109,7 +5111,8 @@
         "titulo": "Validação das Regras de Negócio do Serviço de Registro de Eventos"
       },
       "notas": [],
-      "descricao": "Verificar se o tpEvento é válido"
+      "descricao": "Verificar se o tpEvento é válido",
+      "id_unico": "5.1.5:J05"
     },
     {
       "id": "J06",
@@ -5117,7 +5120,7 @@
       "aplicacao": "Obrig",
       "cStat": "630",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Falha no Schema XML",
+      "mensagem": "Rejeição: Falha no Schema XML específico para o evento",
       "marcacao": "SEM_MARCA",
       "pagina": 49,
       "grupo": "",
@@ -5127,7 +5130,7 @@
       },
       "notas": [
         {
-          "texto": "OBS: Utilizar o tpEvento + o atributo versaoEvento específico para o evento",
+          "texto": "OBS: Utilizar o tpEvento + o atributo versaoEvento",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5135,7 +5138,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar Schema da parte específica do Evento"
+      "descricao": "Verificar Schema da parte específica do Evento",
+      "id_unico": "5.1.5:J06"
     },
     {
       "id": "J07",
@@ -5143,7 +5147,7 @@
       "aplicacao": "Obrig",
       "cStat": "236",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Chave de Acesso inválida",
+      "mensagem": "Rejeição: Chave de Acesso inválida [Motivo: XXXXXXXXX]",
       "marcacao": "SEM_MARCA",
       "pagina": 49,
       "grupo": "",
@@ -5153,7 +5157,7 @@
       },
       "notas": [
         {
-          "texto": "Retornar motivo da rejeição da Chave de Acesso: [Motivo: XXXXXXXXX]",
+          "texto": "Retornar motivo da rejeição da Chave de Acesso:",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5177,7 +5181,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "- Validar chave de acesso do MDFe"
+      "descricao": "- Validar chave de acesso do MDFe",
+      "id_unico": "5.1.5:J07"
     },
     {
       "id": "J08",
@@ -5185,7 +5190,7 @@
       "aplicacao": "Obrig",
       "cStat": "631",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Duplicidade de evento",
+      "mensagem": "Rejeição: Duplicidade de evento [nProt:999999999999999][ dhRegEvento: AAAA-MM-DDTHH:MM:SS TZD]",
       "marcacao": "SEM_MARCA",
       "pagina": 49,
       "grupo": "",
@@ -5195,15 +5200,12 @@
       },
       "notas": [
         {
-          "texto": "chMDFe + nSeqEvento) [nProt:999999999999999][ dhRegEvento:",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "AAAA-MM-DDTHH:MM:SS TZD]",
+          "texto": "chMDFe + nSeqEvento)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar duplicidade do evento (cOrgao + tpEvento +"
+      "descricao": "Verificar duplicidade do evento (cOrgao + tpEvento +",
+      "id_unico": "5.1.5:J08"
     },
     {
       "id": "J09",
@@ -5211,7 +5213,7 @@
       "aplicacao": "Obrig",
       "cStat": "632",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O autor do evento diverge do",
+      "mensagem": "Rejeição: O autor do evento diverge do emissor do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5221,7 +5223,7 @@
       },
       "notas": [
         {
-          "texto": "Autor diferente do CNPJ / CPF da chave de acesso emissor do MDFe",
+          "texto": "Autor diferente do CNPJ / CPF da chave de acesso",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5245,7 +5247,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se evento do emissor verificar se CNPJ / CPF do"
+      "descricao": "Se evento do emissor verificar se CNPJ / CPF do",
+      "id_unico": "5.1.5:J09"
     },
     {
       "id": "J10",
@@ -5253,7 +5256,7 @@
       "aplicacao": "Obrig",
       "cStat": "701",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Tipo de evento incompatível com",
+      "mensagem": "Rejeição: Tipo de evento incompatível com emitente pessoa física",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5263,11 +5266,12 @@
       },
       "notas": [
         {
-          "texto": "Rejeitar se informado CPF do autor emitente pessoa física",
+          "texto": "Rejeitar se informado CPF do autor",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se evento Fisco / RFB / Outros:"
+      "descricao": "Se evento Fisco / RFB / Outros:",
+      "id_unico": "5.1.5:J10"
     },
     {
       "id": "J11",
@@ -5275,7 +5279,7 @@
       "aplicacao": "Obrig",
       "cStat": "633",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O autor do evento não é um",
+      "mensagem": "Rejeição: O autor do evento não é um órgão autorizado a gerar o evento",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5285,7 +5289,7 @@
       },
       "notas": [
         {
-          "texto": "do Autor consta da tabela de órgãos autorizados a órgão autorizado a gerar o evento",
+          "texto": "do Autor consta da tabela de órgãos autorizados a",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5293,7 +5297,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se evento do Fisco/Outros órgãos, verificar se CNPJ"
+      "descricao": "Se evento do Fisco/Outros órgãos, verificar se CNPJ",
+      "id_unico": "5.1.5:J11"
     },
     {
       "id": "J12",
@@ -5301,7 +5306,7 @@
       "aplicacao": "Obrig",
       "cStat": "217",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe não consta na base de",
+      "mensagem": "Rejeição: MDFe não consta na base de dados da SEFAZ",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5311,7 +5316,7 @@
       },
       "notas": [
         {
-          "texto": "Acesso BD MDFe (Chave: CNP / CPF Emit, Modelo, dados da SEFAZ",
+          "texto": "Acesso BD MDFe (Chave: CNP / CPF Emit, Modelo,",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5323,7 +5328,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se evento exige MDFe:"
+      "descricao": "Se evento exige MDFe:",
+      "id_unico": "5.1.5:J12"
     },
     {
       "id": "J13",
@@ -5331,7 +5337,7 @@
       "aplicacao": "Obrig",
       "cStat": "600",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Chave de Acesso difere da",
+      "mensagem": "Rejeição: Chave de Acesso difere da existente em BD",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5341,7 +5347,7 @@
       },
       "notas": [
         {
-          "texto": "Verificar se a Chave de Acesso difere da existente existente em BD",
+          "texto": "Verificar se a Chave de Acesso difere da existente",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5353,7 +5359,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se existir a MDFe: (Independente do evento exigir)"
+      "descricao": "Se existir a MDFe: (Independente do evento exigir)",
+      "id_unico": "5.1.5:J13"
     },
     {
       "id": "J14",
@@ -5361,7 +5368,7 @@
       "aplicacao": "Obrig",
       "cStat": "634",
       "efeito": "Rej",
-      "mensagem": "Rejeição: A data do evento não pode ser",
+      "mensagem": "Rejeição: A data do evento não pode ser menor que a data de emissão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5371,7 +5378,7 @@
       },
       "notas": [
         {
-          "texto": "emissão do MDFe, se existir. menor que a data de emissão do MDFe",
+          "texto": "emissão do MDFe, se existir.",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5387,7 +5394,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Data do evento não pode ser menor que a data de"
+      "descricao": "Data do evento não pode ser menor que a data de",
+      "id_unico": "5.1.5:J14"
     },
     {
       "id": "J15",
@@ -5395,7 +5403,7 @@
       "aplicacao": "Obrig",
       "cStat": "637",
       "efeito": "Rej",
-      "mensagem": "Rejeição: A data do evento não pode ser",
+      "mensagem": "Rejeição: A data do evento não pode ser menor que a data de autorização do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5405,7 +5413,7 @@
       },
       "notas": [
         {
-          "texto": "autorização do MDFe, se existir menor que a data de autorização do MDFe",
+          "texto": "autorização do MDFe, se existir",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5421,7 +5429,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Data do evento não pode ser menor que a data de"
+      "descricao": "Data do evento não pode ser menor que a data de",
+      "id_unico": "5.1.5:J15"
     },
     {
       "id": "J16",
@@ -5429,7 +5438,7 @@
       "aplicacao": "Obrig",
       "cStat": "635",
       "efeito": "Rej",
-      "mensagem": "Rejeição: A data do evento não pode ser",
+      "mensagem": "Rejeição: A data do evento não pode ser maior que a data do processamento",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5439,7 +5448,7 @@
       },
       "notas": [
         {
-          "texto": "processamento. maior que a data do processamento",
+          "texto": "processamento.",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5455,7 +5464,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Data do evento não pode ser maior que a data de"
+      "descricao": "Data do evento não pode ser maior que a data de",
+      "id_unico": "5.1.5:J16"
     },
     {
       "id": "J17",
@@ -5463,7 +5473,7 @@
       "aplicacao": "Obrig",
       "cStat": "902",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Grupo de informações do pedido",
+      "mensagem": "Rejeição: Grupo de informações do pedido de emissão da NFF deve ser preenchido apenas para forma de emissão NFF",
       "marcacao": "SEM_MARCA",
       "pagina": 50,
       "grupo": "",
@@ -5473,11 +5483,11 @@
       },
       "notas": [
         {
-          "texto": "diferente de Regime Especial da Nota Fiscal Fácil (3): de emissão da NFF deve ser preenchido",
+          "texto": "diferente de Regime Especial da Nota Fiscal Fácil (3):",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "- O grupo de informações do pedido de registro de apenas para forma de emissão NFF",
+          "texto": "- O grupo de informações do pedido de registro de",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5489,7 +5499,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se a forma de emissão do MDFe (tpEmis) for"
+      "descricao": "Se a forma de emissão do MDFe (tpEmis) for",
+      "id_unico": "5.1.5:J17"
     },
     {
       "id": "K01",
@@ -5497,7 +5508,7 @@
       "aplicacao": "Obrig",
       "cStat": "636",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O número sequencial do evento é",
+      "mensagem": "Rejeição: O número sequencial do evento é maior que o permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 52,
       "grupo": "",
@@ -5507,11 +5518,12 @@
       },
       "notas": [
         {
-          "texto": "permitido (=1) maior que o permitido",
+          "texto": "permitido (=1)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o nSeqEvento é maior que o valor"
+      "descricao": "Verificar se o nSeqEvento é maior que o valor",
+      "id_unico": "6.1.1:K01"
     },
     {
       "id": "K02",
@@ -5519,7 +5531,7 @@
       "aplicacao": "Obrig",
       "cStat": "203",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Emissor não habilitado para",
+      "mensagem": "Rejeição: Emissor não habilitado para emissão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 52,
       "grupo": "",
@@ -5529,7 +5541,7 @@
       },
       "notas": [
         {
-          "texto": "dados para emissão do MDFe emissão do MDFe",
+          "texto": "dados para emissão do MDFe",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5557,7 +5569,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Emitente deve estar habilitado na base de"
+      "descricao": "Emitente deve estar habilitado na base de",
+      "id_unico": "6.1.1:K02"
     },
     {
       "id": "K03",
@@ -5565,7 +5578,7 @@
       "aplicacao": "Obrig",
       "cStat": "218",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está cancelado na base de",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 52,
       "grupo": "",
@@ -5573,21 +5586,9 @@
         "numero": "6.1.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ.",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhCanc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe já está cancelado."
+      "notas": [],
+      "descricao": "Verificar se MDFe já está cancelado.",
+      "id_unico": "6.1.1:K03"
     },
     {
       "id": "K04",
@@ -5595,7 +5596,7 @@
       "aplicacao": "Obrig",
       "cStat": "220",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe autorizado há mais de 24",
+      "mensagem": "Rejeição: MDFe autorizado há mais de 24 horas",
       "marcacao": "SEM_MARCA",
       "pagina": 52,
       "grupo": "",
@@ -5604,10 +5605,6 @@
         "titulo": "Validação das Regras Específicas do Evento"
       },
       "notas": [
-        {
-          "texto": "horas",
-          "marcacao": "SEM_MARCA"
-        },
         {
           "texto": "Observação : Exceto se existir evento de",
           "marcacao": "SEM_MARCA"
@@ -5637,7 +5634,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar MDFe autorizado há mais de 24 horas"
+      "descricao": "Verificar MDFe autorizado há mais de 24 horas",
+      "id_unico": "6.1.1:K04"
     },
     {
       "id": "K05",
@@ -5645,7 +5643,7 @@
       "aplicacao": "Obrig",
       "cStat": "222",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Protocolo de Autorização de Uso",
+      "mensagem": "Rejeição: Protocolo de Autorização de Uso difere do cadastrado",
       "marcacao": "SEM_MARCA",
       "pagina": 52,
       "grupo": "",
@@ -5655,11 +5653,12 @@
       },
       "notas": [
         {
-          "texto": "difere do número do Protocolo do MDFe difere do cadastrado",
+          "texto": "difere do número do Protocolo do MDFe",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se número do Protocolo informado"
+      "descricao": "Verificar se número do Protocolo informado",
+      "id_unico": "6.1.1:K05"
     },
     {
       "id": "K06",
@@ -5667,7 +5666,7 @@
       "aplicacao": "Obrig",
       "cStat": "609",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está encerrado na base de",
+      "mensagem": "Rejeição: MDFe já está encerrado na base de dados da SEFAZ [nProt:999999999999999][dhEnc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 52,
       "grupo": "",
@@ -5675,21 +5674,9 @@
         "numero": "6.1.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhEnc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se houve encerramento do manifesto"
+      "notas": [],
+      "descricao": "Verificar se houve encerramento do manifesto",
+      "id_unico": "6.1.1:K06"
     },
     {
       "id": "K07",
@@ -5711,7 +5698,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se houve registro de circulação do"
+      "descricao": "Verificar se houve registro de circulação do",
+      "id_unico": "6.1.1:K07"
     },
     {
       "id": "K08",
@@ -5719,7 +5707,7 @@
       "aplicacao": "Obrig",
       "cStat": "710",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Cancelamento não é permitido para",
+      "mensagem": "Rejeição: Cancelamento não é permitido para MDFe com indicação de carregamento posterior que já realizou inserção de DF-e",
       "marcacao": "SEM_MARCA",
       "pagina": 53,
       "grupo": "",
@@ -5729,11 +5717,11 @@
       },
       "notas": [
         {
-          "texto": "carregamento posterior (indCarregaPosterior=1): MDFe com indicação de carregamento",
+          "texto": "carregamento posterior (indCarregaPosterior=1):",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "- Verificar se existe evento de inclusão de DF-e posterior que já realizou inserção de DF-e",
+          "texto": "- Verificar se existe evento de inclusão de DF-e",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5757,7 +5745,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se MDFe emitido com indicador de"
+      "descricao": "Se MDFe emitido com indicador de",
+      "id_unico": "6.1.1:K08"
     },
     {
       "id": "K01",
@@ -5765,7 +5754,7 @@
       "aplicacao": "Obrig",
       "cStat": "636",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O número sequencial do evento é",
+      "mensagem": "Rejeição: O número sequencial do evento é maior que o permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5775,11 +5764,12 @@
       },
       "notas": [
         {
-          "texto": "permitido (=1) maior que o permitido",
+          "texto": "permitido (=1)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o nSeqEvento é maior que o valor"
+      "descricao": "Verificar se o nSeqEvento é maior que o valor",
+      "id_unico": "6.2.1:K01"
     },
     {
       "id": "K02",
@@ -5787,7 +5777,7 @@
       "aplicacao": "Obrig",
       "cStat": "714",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Município de encerramento",
+      "mensagem": "Rejeição: Município de encerramento inexistente",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5797,11 +5787,12 @@
       },
       "notas": [
         {
-          "texto": "inexistente (tabela de municípios do IBGE) inexistente",
+          "texto": "inexistente (tabela de municípios do IBGE)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Código do município de encerramento"
+      "descricao": "Código do município de encerramento",
+      "id_unico": "6.2.1:K02"
     },
     {
       "id": "K03",
@@ -5809,7 +5800,7 @@
       "aplicacao": "Obrig",
       "cStat": "614",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Código de Município diverge da UF",
+      "mensagem": "Rejeição: Código de Município diverge da UF de encerramento do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5819,7 +5810,7 @@
       },
       "notas": [
         {
-          "texto": "(verificar se as 2 posições da esquerda do de encerramento do MDFe",
+          "texto": "(verificar se as 2 posições da esquerda do",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5831,7 +5822,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Município de encerramento diverge da UF"
+      "descricao": "Município de encerramento diverge da UF",
+      "id_unico": "6.2.1:K03"
     },
     {
       "id": "K04",
@@ -5839,7 +5831,7 @@
       "aplicacao": "Obrig",
       "cStat": "689",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Município de encerramento deve ser",
+      "mensagem": "Rejeição: Município de encerramento deve ser 9999999 para encerramento no exterior",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5849,11 +5841,12 @@
       },
       "notas": [
         {
-          "texto": "município de encerramento deve ser 9999999 9999999 para encerramento no exterior",
+          "texto": "município de encerramento deve ser 9999999",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se UF de encerramento for Exterior (cUF=99), o"
+      "descricao": "Se UF de encerramento for Exterior (cUF=99), o",
+      "id_unico": "6.2.1:K04"
     },
     {
       "id": "K05",
@@ -5861,7 +5854,7 @@
       "aplicacao": "Obrig",
       "cStat": "203",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Emissor não habilitado para",
+      "mensagem": "Rejeição: Emissor não habilitado para emissão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5871,7 +5864,7 @@
       },
       "notas": [
         {
-          "texto": "dados para emissão do MDFe emissão do MDFe",
+          "texto": "dados para emissão do MDFe",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -5899,7 +5892,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Emitente deve estar habilitado na base de"
+      "descricao": "Emitente deve estar habilitado na base de",
+      "id_unico": "6.2.1:K05"
     },
     {
       "id": "K06",
@@ -5907,7 +5901,7 @@
       "aplicacao": "Obrig",
       "cStat": "218",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está cancelado na base de",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5915,21 +5909,9 @@
         "numero": "6.2.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ.",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhCanc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe já está cancelado."
+      "notas": [],
+      "descricao": "Verificar se MDFe já está cancelado.",
+      "id_unico": "6.2.1:K06"
     },
     {
       "id": "K07",
@@ -5937,7 +5919,7 @@
       "aplicacao": "Obrig",
       "cStat": "615",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Data de encerramento anterior à",
+      "mensagem": "Rejeição: Data de encerramento anterior à data de autorização do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5947,11 +5929,12 @@
       },
       "notas": [
         {
-          "texto": "data de emissão do manifesto. data de autorização do MDFe",
+          "texto": "data de emissão do manifesto.",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se a data de encerramento é anterior à"
+      "descricao": "Verificar se a data de encerramento é anterior à",
+      "id_unico": "6.2.1:K07"
     },
     {
       "id": "K08",
@@ -5959,7 +5942,7 @@
       "aplicacao": "Obrig",
       "cStat": "222",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Protocolo de Autorização de Uso",
+      "mensagem": "Rejeição: Protocolo de Autorização de Uso difere do cadastrado",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5969,11 +5952,12 @@
       },
       "notas": [
         {
-          "texto": "difere do número do Protocolo do MDFe difere do cadastrado",
+          "texto": "difere do número do Protocolo do MDFe",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se número do Protocolo informado"
+      "descricao": "Verificar se número do Protocolo informado",
+      "id_unico": "6.2.1:K08"
     },
     {
       "id": "K09",
@@ -5981,7 +5965,7 @@
       "aplicacao": "Obrig",
       "cStat": "609",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está encerrado na base de",
+      "mensagem": "Rejeição: MDFe já está encerrado na base de dados da SEFAZ [nProt:999999999999999][dhEnc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -5989,21 +5973,9 @@
         "numero": "6.2.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhEnc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se houve encerramento do manifesto"
+      "notas": [],
+      "descricao": "Verificar se houve encerramento do manifesto",
+      "id_unico": "6.2.1:K09"
     },
     {
       "id": "K10",
@@ -6011,7 +5983,7 @@
       "aplicacao": "Obrig",
       "cStat": "715",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Não é permitido encerrar MDFe com",
+      "mensagem": "Rejeição: Não é permitido encerrar MDFe com indicação de carregamento posterior sem inclusão de DF-e associada",
       "marcacao": "SEM_MARCA",
       "pagina": 54,
       "grupo": "",
@@ -6021,15 +5993,16 @@
       },
       "notas": [
         {
-          "texto": "carregamento posterior (indCarregaPosterior=1) indicação de carregamento posterior sem",
+          "texto": "carregamento posterior (indCarregaPosterior=1)",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "sem evento de inclusão de DF-e inclusão de DF-e associada",
+          "texto": "sem evento de inclusão de DF-e",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o MDFe possui a indicação de"
+      "descricao": "Verificar se o MDFe possui a indicação de",
+      "id_unico": "6.2.1:K10"
     },
     {
       "id": "K01",
@@ -6037,7 +6010,7 @@
       "aplicacao": "Obrig",
       "cStat": "636",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O número sequencial do evento é",
+      "mensagem": "Rejeição: O número sequencial do evento é maior que o permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 56,
       "grupo": "",
@@ -6047,11 +6020,12 @@
       },
       "notas": [
         {
-          "texto": "permitido (até 99) maior que o permitido",
+          "texto": "permitido (até 99)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o nSeqEvento é maior que o valor"
+      "descricao": "Verificar se o nSeqEvento é maior que o valor",
+      "id_unico": "6.3.1:K01"
     },
     {
       "id": "K02",
@@ -6059,7 +6033,7 @@
       "aplicacao": "Obrig",
       "cStat": "203",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Emissor não habilitado para",
+      "mensagem": "Rejeição: Emissor não habilitado para emissão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 56,
       "grupo": "",
@@ -6069,7 +6043,7 @@
       },
       "notas": [
         {
-          "texto": "dados para emissão de MDFe emissão do MDFe",
+          "texto": "dados para emissão de MDFe",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6085,7 +6059,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Emitente deve estar habilitado na base de"
+      "descricao": "Emitente deve estar habilitado na base de",
+      "id_unico": "6.3.1:K02"
     },
     {
       "id": "K03",
@@ -6093,7 +6068,7 @@
       "aplicacao": "Obrig",
       "cStat": "218",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está cancelado na base de",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA- MM-DDTHH:MM:SS TZD] .",
       "marcacao": "SEM_MARCA",
       "pagina": 56,
       "grupo": "",
@@ -6101,21 +6076,9 @@
         "numero": "6.3.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ.",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhCanc: AAAA-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "MM-DDTHH:MM:SS TZD] .",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe já está cancelado."
+      "notas": [],
+      "descricao": "Verificar se MDFe já está cancelado.",
+      "id_unico": "6.3.1:K03"
     },
     {
       "id": "K04",
@@ -6123,7 +6086,7 @@
       "aplicacao": "Obrig",
       "cStat": "609",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está encerrado na base de",
+      "mensagem": "Rejeição: MDFe já está encerrado na base de dados da SEFAZ [nProt:999999999999999][dhEnc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 56,
       "grupo": "",
@@ -6131,21 +6094,9 @@
         "numero": "6.3.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhEnc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se houve encerramento do manifesto"
+      "notas": [],
+      "descricao": "Verificar se houve encerramento do manifesto",
+      "id_unico": "6.3.1:K04"
     },
     {
       "id": "K05",
@@ -6153,7 +6104,7 @@
       "aplicacao": "Obrig",
       "cStat": "644",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Evento de inclusão de condutor só",
+      "mensagem": "Rejeição: Evento de inclusão de condutor só pode ser registrado para o modal rodoviário",
       "marcacao": "SEM_MARCA",
       "pagina": 56,
       "grupo": "",
@@ -6161,13 +6112,9 @@
         "numero": "6.3.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "pode ser registrado para o modal rodoviário",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe é do modal rodoviário"
+      "notas": [],
+      "descricao": "Verificar se MDFe é do modal rodoviário",
+      "id_unico": "6.3.1:K05"
     },
     {
       "id": "K06",
@@ -6189,7 +6136,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "CPF do condutor: CPF inválido (dígito de"
+      "descricao": "CPF do condutor: CPF inválido (dígito de",
+      "id_unico": "6.3.1:K06"
     },
     {
       "id": "K01",
@@ -6197,7 +6145,7 @@
       "aplicacao": "Obrig",
       "cStat": "636",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O número sequencial do evento é",
+      "mensagem": "Rejeição: O número sequencial do evento é maior que o permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6207,11 +6155,12 @@
       },
       "notas": [
         {
-          "texto": "permitido (até 99) maior que o permitido",
+          "texto": "permitido (até 99)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o nSeqEvento é maior que o valor"
+      "descricao": "Verificar se o nSeqEvento é maior que o valor",
+      "id_unico": "6.4.1:K01"
     },
     {
       "id": "K02",
@@ -6219,7 +6168,7 @@
       "aplicacao": "Obrig",
       "cStat": "203",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Emissor não habilitado para",
+      "mensagem": "Rejeição: Emissor não habilitado para emissão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6229,7 +6178,7 @@
       },
       "notas": [
         {
-          "texto": "dados para emissão de MDFe emissão do MDFe",
+          "texto": "dados para emissão de MDFe",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6245,7 +6194,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Emitente deve estar habilitado na base de"
+      "descricao": "Emitente deve estar habilitado na base de",
+      "id_unico": "6.4.1:K02"
     },
     {
       "id": "K03",
@@ -6253,7 +6203,7 @@
       "aplicacao": "Obrig",
       "cStat": "218",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está cancelado na base de",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA- MM-DDTHH:MM:SS TZD] .",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6261,21 +6211,9 @@
         "numero": "6.4.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ.",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhCanc: AAAA-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "MM-DDTHH:MM:SS TZD] .",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe já está cancelado."
+      "notas": [],
+      "descricao": "Verificar se MDFe já está cancelado.",
+      "id_unico": "6.4.1:K03"
     },
     {
       "id": "K04",
@@ -6283,7 +6221,7 @@
       "aplicacao": "Obrig",
       "cStat": "609",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está encerrado na base de",
+      "mensagem": "Rejeição: MDFe já está encerrado na base de dados da SEFAZ [nProt:999999999999999][dhEnc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6291,21 +6229,9 @@
         "numero": "6.4.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhEnc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se houve encerramento do manifesto"
+      "notas": [],
+      "descricao": "Verificar se houve encerramento do manifesto",
+      "id_unico": "6.4.1:K04"
     },
     {
       "id": "K05",
@@ -6313,7 +6239,7 @@
       "aplicacao": "Obrig",
       "cStat": "708",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe deve possui indicação de",
+      "mensagem": "Rejeição: MDFe deve possui indicação de carregamento posterior para inclusão de DF-e",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6323,11 +6249,12 @@
       },
       "notas": [
         {
-          "texto": "carregamento posterior (indCarregaPosterior=1) carregamento posterior para inclusão de DF-e",
+          "texto": "carregamento posterior (indCarregaPosterior=1)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o MDFe possui a indicação de"
+      "descricao": "Verificar se o MDFe possui a indicação de",
+      "id_unico": "6.4.1:K05"
     },
     {
       "id": "K06",
@@ -6335,7 +6262,7 @@
       "aplicacao": "Obrig",
       "cStat": "456",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Código de Município diverge da UF",
+      "mensagem": "Rejeição: Código de Município diverge da UF de Carregamento do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6345,7 +6272,7 @@
       },
       "notas": [
         {
-          "texto": "carregamento do MDFe (verificar se as 2 de Carregamento do MDFe",
+          "texto": "carregamento do MDFe (verificar se as 2",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6361,7 +6288,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Município de carregamento diverge da UF de"
+      "descricao": "Município de carregamento diverge da UF de",
+      "id_unico": "6.4.1:K06"
     },
     {
       "id": "K07",
@@ -6369,7 +6297,7 @@
       "aplicacao": "Obrig",
       "cStat": "405",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Município de Carregamento",
+      "mensagem": "Rejeição: Município de Carregamento inexistente",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6379,11 +6307,12 @@
       },
       "notas": [
         {
-          "texto": "inexistente (Tabela de Municípios do IBGE) inexistente",
+          "texto": "inexistente (Tabela de Municípios do IBGE)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Código do município de carregamento"
+      "descricao": "Código do município de carregamento",
+      "id_unico": "6.4.1:K07"
     },
     {
       "id": "K08",
@@ -6391,7 +6320,7 @@
       "aplicacao": "Obrig",
       "cStat": "612",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Código de Município diverge da UF",
+      "mensagem": "Rejeição: Código de Município diverge da UF de descarregamento do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 57,
       "grupo": "",
@@ -6401,7 +6330,7 @@
       },
       "notas": [
         {
-          "texto": "de descarregamento do MDFe (verificar se as 2 de descarregamento do MDFe",
+          "texto": "de descarregamento do MDFe (verificar se as 2",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6417,7 +6346,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Município de descarregamento diverge da UF"
+      "descricao": "Município de descarregamento diverge da UF",
+      "id_unico": "6.4.1:K08"
     },
     {
       "id": "K09",
@@ -6425,7 +6355,7 @@
       "aplicacao": "Obrig",
       "cStat": "406",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Município de Descarregamento",
+      "mensagem": "Rejeição: Município de Descarregamento inexistente",
       "marcacao": "SEM_MARCA",
       "pagina": 58,
       "grupo": "",
@@ -6435,11 +6365,12 @@
       },
       "notas": [
         {
-          "texto": "inexistente (Tabela de Municípios do IBGE) inexistente",
+          "texto": "inexistente (Tabela de Municípios do IBGE)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Código do município de descarregamento"
+      "descricao": "Código do município de descarregamento",
+      "id_unico": "6.4.1:K09"
     },
     {
       "id": "K10",
@@ -6447,7 +6378,7 @@
       "aplicacao": "Obrig",
       "cStat": "709",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Chave de acesso de NFe inválida no",
+      "mensagem": "Rejeição: Chave de acesso de NFe inválida no evento de inclusão [Motivo: CNPJ/CPF inválido / Modelo diferente de 55 / Ano inválido (< 2006) / Mês inválido (0 ou > 12) / Tipo de emissão inválido / UF inválida / Número zerado / DV inválido]",
       "marcacao": "SEM_MARCA",
       "pagina": 58,
       "grupo": "",
@@ -6457,23 +6388,23 @@
       },
       "notas": [
         {
-          "texto": "- Validar chave de acesso evento de inclusão",
+          "texto": "- Validar chave de acesso",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "Retornar motivo da rejeição da Chave de [Motivo: CNPJ/CPF inválido / Modelo diferente",
+          "texto": "Retornar motivo da rejeição da Chave de",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "Acesso: CNPJ/CPF zerado ou inválido, Ano < de 55  / Ano inválido (< 2006) / Mês inválido (0",
+          "texto": "Acesso: CNPJ/CPF zerado ou inválido, Ano <",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "2006 ou maior que atual, Mês inválido (0 ou > ou > 12) / Tipo de emissão inválido / UF",
+          "texto": "2006 ou maior que atual, Mês inválido (0 ou >",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "12), Modelo diferente de 55, Número zerado, inválida / Número zerado / DV inválido]",
+          "texto": "12), Modelo diferente de 55, Número zerado,",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6489,7 +6420,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Para cada NFe relacionada:"
+      "descricao": "Para cada NFe relacionada:",
+      "id_unico": "6.4.1:K10"
     },
     {
       "id": "K11",
@@ -6497,7 +6429,7 @@
       "aplicacao": "Obrig",
       "cStat": "675",
       "efeito": "Rej",
-      "mensagem": "Rejeição: NFe informada não existe na base",
+      "mensagem": "Rejeição: NFe informada não existe na base de dados da SEFAZ [chNFe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX]",
       "marcacao": "SEM_MARCA",
       "pagina": 58,
       "grupo": "",
@@ -6507,19 +6439,19 @@
       },
       "notas": [
         {
-          "texto": "Acesso BD NFe da SEFAZ Autorizadora de dados da SEFAZ",
+          "texto": "Acesso BD NFe da SEFAZ Autorizadora",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "(Chave: CNPJ / CPF Emit, Modelo, Serie, Nro.) [chNFe:",
+          "texto": "(Chave: CNPJ / CPF Emit, Modelo, Serie, Nro.)",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "com as informações da chave chNFe indicada. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "texto": "com as informações da chave chNFe indicada.",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "- Verificar se NFe existe XXXXXX]",
+          "texto": "- Verificar se NFe existe",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6539,7 +6471,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Para cada NFe relacionada:"
+      "descricao": "Para cada NFe relacionada:",
+      "id_unico": "6.4.1:K11"
     },
     {
       "id": "K12",
@@ -6547,7 +6480,7 @@
       "aplicacao": "Obrig",
       "cStat": "676",
       "efeito": "Rej",
-      "mensagem": "Rejeição: NFe informada com diferença de",
+      "mensagem": "Rejeição: NFe informada com diferença de chave de acesso [chNFe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX]",
       "marcacao": "SEM_MARCA",
       "pagina": 58,
       "grupo": "",
@@ -6557,19 +6490,15 @@
       },
       "notas": [
         {
-          "texto": "- NFe não pode existir com diferença de chave chave de acesso",
+          "texto": "- NFe não pode existir com diferença de chave",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "de acesso [chNFe:",
+          "texto": "de acesso",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "Observação : Retornar a chave de acesso de XXXXXX]",
+          "texto": "Observação : Retornar a chave de acesso de",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6585,7 +6514,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Para cada NFe relacionada:"
+      "descricao": "Para cada NFe relacionada:",
+      "id_unico": "6.4.1:K12"
     },
     {
       "id": "K13",
@@ -6593,7 +6523,7 @@
       "aplicacao": "Obrig",
       "cStat": "677",
       "efeito": "Rej",
-      "mensagem": "Rejeição: NFe informada não pode estar",
+      "mensagem": "Rejeição: NFe informada não pode estar cancelada/denegada na base da SEFAZ [chNFe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX]",
       "marcacao": "SEM_MARCA",
       "pagina": 58,
       "grupo": "",
@@ -6603,19 +6533,15 @@
       },
       "notas": [
         {
-          "texto": "- Verificar se NFe indicada está cancelada ou cancelada/denegada na base da SEFAZ",
+          "texto": "- Verificar se NFe indicada está cancelada ou",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "denegada [chNFe:",
+          "texto": "denegada",
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "Observação : Retornar a chave da NFe com XXXXXX]",
+          "texto": "Observação : Retornar a chave da NFe com",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6631,7 +6557,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Para cada NFe relacionada:"
+      "descricao": "Para cada NFe relacionada:",
+      "id_unico": "6.4.1:K13"
     },
     {
       "id": "K14",
@@ -6639,7 +6566,7 @@
       "aplicacao": "Obrig",
       "cStat": "711",
       "efeito": "Rej",
-      "mensagem": "Rejeição: NFe já está vinculada ao MDFe por",
+      "mensagem": "Rejeição: NFe já está vinculada ao MDFe por outro evento",
       "marcacao": "SEM_MARCA",
       "pagina": 58,
       "grupo": "",
@@ -6649,7 +6576,7 @@
       },
       "notas": [
         {
-          "texto": "- Verificar se a chave de acesso da NFe já outro evento",
+          "texto": "- Verificar se a chave de acesso da NFe já",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6669,7 +6596,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Para cada NFe relacionada:"
+      "descricao": "Para cada NFe relacionada:",
+      "id_unico": "6.4.1:K14"
     },
     {
       "id": "K01",
@@ -6677,7 +6605,7 @@
       "aplicacao": "Obrig",
       "cStat": "636",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O número sequencial do evento é",
+      "mensagem": "Rejeição: O número sequencial do evento é maior que o permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6687,11 +6615,12 @@
       },
       "notas": [
         {
-          "texto": "permitido (=1) maior que o permitido",
+          "texto": "permitido (=1)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o nSeqEvento é maior que o valor"
+      "descricao": "Verificar se o nSeqEvento é maior que o valor",
+      "id_unico": "6.5.1:K01"
     },
     {
       "id": "K02",
@@ -6699,7 +6628,7 @@
       "aplicacao": "Obrig",
       "cStat": "203",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Emissor não habilitado para",
+      "mensagem": "Rejeição: Emissor não habilitado para emissão do MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6709,7 +6638,7 @@
       },
       "notas": [
         {
-          "texto": "dados para emissão de MDFe emissão do MDFe",
+          "texto": "dados para emissão de MDFe",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6725,7 +6654,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Emitente deve estar habilitado na base de"
+      "descricao": "Emitente deve estar habilitado na base de",
+      "id_unico": "6.5.1:K02"
     },
     {
       "id": "K03",
@@ -6733,7 +6663,7 @@
       "aplicacao": "Obrig",
       "cStat": "222",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Protocolo de Autorização de Uso",
+      "mensagem": "Rejeição: Protocolo de Autorização de Uso difere do cadastrado",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6743,11 +6673,12 @@
       },
       "notas": [
         {
-          "texto": "difere do número do Protocolo do MDFe difere do cadastrado",
+          "texto": "difere do número do Protocolo do MDFe",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se número do Protocolo informado"
+      "descricao": "Verificar se número do Protocolo informado",
+      "id_unico": "6.5.1:K03"
     },
     {
       "id": "K04",
@@ -6755,7 +6686,7 @@
       "aplicacao": "Obrig",
       "cStat": "218",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está cancelado na base de",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6763,21 +6694,9 @@
         "numero": "6.5.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ.",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhCanc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe já está cancelado."
+      "notas": [],
+      "descricao": "Verificar se MDFe já está cancelado.",
+      "id_unico": "6.5.1:K04"
     },
     {
       "id": "K05",
@@ -6785,7 +6704,7 @@
       "aplicacao": "Obrig",
       "cStat": "722",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe deve ser do modal rodoviário",
+      "mensagem": "Rejeição: MDFe deve ser do modal rodoviário para o evento Pagamento de MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6793,13 +6712,9 @@
         "numero": "6.5.1",
         "titulo": "Validação das Regras Específicas do Evento"
       },
-      "notas": [
-        {
-          "texto": "para o evento Pagamento de MDFe",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se o MDFe é do modal Rodoviário"
+      "notas": [],
+      "descricao": "Verificar se o MDFe é do modal Rodoviário",
+      "id_unico": "6.5.1:K05"
     },
     {
       "id": "K06",
@@ -6807,7 +6722,7 @@
       "aplicacao": "Obrig",
       "cStat": "723",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O tipo do proprietário do MDFe deve",
+      "mensagem": "Rejeição: O tipo do proprietário do MDFe deve ser do tipo TAC Agregado",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6817,7 +6732,7 @@
       },
       "notas": [
         {
-          "texto": "proprietário do veículo de tração informado com ser do tipo TAC Agregado",
+          "texto": "proprietário do veículo de tração informado com",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6829,7 +6744,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o MDFe informado possui"
+      "descricao": "Verificar se o MDFe informado possui",
+      "id_unico": "6.5.1:K06"
     },
     {
       "id": "K07",
@@ -6837,7 +6753,7 @@
       "aplicacao": "Obrig",
       "cStat": "724",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Grupo de informações do",
+      "mensagem": "Rejeição: Grupo de informações do pagamento a prazo deve ser informado",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6847,7 +6763,7 @@
       },
       "notas": [
         {
-          "texto": "(tag:indPag=1), o grupo de informações a prazo pagamento a prazo deve ser informado",
+          "texto": "(tag:indPag=1), o grupo de informações a prazo",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6855,7 +6771,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se indicador de pagamento for a prazo"
+      "descricao": "Se indicador de pagamento for a prazo",
+      "id_unico": "6.5.1:K07"
     },
     {
       "id": "K08",
@@ -6863,7 +6780,7 @@
       "aplicacao": "Obrig",
       "cStat": "729",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Grupo de informações do",
+      "mensagem": "Rejeição: Grupo de informações do pagamento a prazo não deve ser informado",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6873,7 +6790,7 @@
       },
       "notas": [
         {
-          "texto": "(tag:indPag=0), o grupo de informações a prazo pagamento a prazo não deve ser informado",
+          "texto": "(tag:indPag=0), o grupo de informações a prazo",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6881,7 +6798,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se indicador de pagamento for a vista"
+      "descricao": "Se indicador de pagamento for a vista",
+      "id_unico": "6.5.1:K08"
     },
     {
       "id": "K09",
@@ -6889,7 +6807,7 @@
       "aplicacao": "Obrig",
       "cStat": "727",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ/CPF do responsável pelo",
+      "mensagem": "Rejeição: CNPJ/CPF do responsável pelo pagamento do frete inválido",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6899,7 +6817,7 @@
       },
       "notas": [
         {
-          "texto": "CNPJ/CPF do responsável pelo pagamento pagamento do frete inválido",
+          "texto": "CNPJ/CPF do responsável pelo pagamento",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6907,7 +6825,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado grupo de pagamento, rejeitar se"
+      "descricao": "Se informado grupo de pagamento, rejeitar se",
+      "id_unico": "6.5.1:K09"
     },
     {
       "id": "K10",
@@ -6915,7 +6834,7 @@
       "aplicacao": "Obrig",
       "cStat": "728",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ da instituição de pagamento",
+      "mensagem": "Rejeição: CNPJ da instituição de pagamento eletrônico do frete inválido",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6925,11 +6844,12 @@
       },
       "notas": [
         {
-          "texto": "CNPJ do IPEF estiver inválido eletrônico do frete inválido",
+          "texto": "CNPJ do IPEF estiver inválido",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado grupo de pagamento, rejeitar se"
+      "descricao": "Se informado grupo de pagamento, rejeitar se",
+      "id_unico": "6.5.1:K10"
     },
     {
       "id": "K11",
@@ -6937,7 +6857,7 @@
       "aplicacao": "Obrig",
       "cStat": "746",
       "efeito": "Rej",
-      "mensagem": "Rejeição: A soma dos componentes do",
+      "mensagem": "Rejeição: A soma dos componentes do pagamento deve ser igual ao valor do contrato",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6948,10 +6868,6 @@
       "notas": [
         {
           "texto": "O somatório dos componentes (tag:",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "pagamento deve ser igual ao valor do contrato",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -6971,7 +6887,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": ""
+      "descricao": "",
+      "id_unico": "6.5.1:K11"
     },
     {
       "id": "K12",
@@ -6979,7 +6896,7 @@
       "aplicacao": "Obrig",
       "cStat": "735",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Número da parcela inválido",
+      "mensagem": "Rejeição: Número da parcela inválido [nParcela:999]",
       "marcacao": "SEM_MARCA",
       "pagina": 60,
       "grupo": "",
@@ -6990,10 +6907,6 @@
       "notas": [
         {
           "texto": "Se o pagamento estiver informado com",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nParcela:999]",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7021,7 +6934,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": ""
+      "descricao": "",
+      "id_unico": "6.5.1:K12"
     },
     {
       "id": "K13",
@@ -7029,7 +6943,7 @@
       "aplicacao": "Obrig",
       "cStat": "736",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Data de vencimento da parcela",
+      "mensagem": "Rejeição: Data de vencimento da parcela menor que a data de emissão [nParcela:999]",
       "marcacao": "SEM_MARCA",
       "pagina": 61,
       "grupo": "",
@@ -7040,10 +6954,6 @@
       "notas": [
         {
           "texto": "Se o pagamento estiver informado com",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "menor que a data de emissão [nParcela:999]",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7067,7 +6977,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": ""
+      "descricao": "",
+      "id_unico": "6.5.1:K13"
     },
     {
       "id": "K14",
@@ -7075,7 +6986,7 @@
       "aplicacao": "Obrig",
       "cStat": "737",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Data de vencimento da parcela",
+      "mensagem": "Rejeição: Data de vencimento da parcela menor que a data da parcela anterior [nParcela: 999]",
       "marcacao": "SEM_MARCA",
       "pagina": 61,
       "grupo": "",
@@ -7089,11 +7000,7 @@
           "marcacao": "SEM_MARCA"
         },
         {
-          "texto": "menor que a data da parcela anterior",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "pagamento a prazo (tag: indPag=1): [nParcela: 999]",
+          "texto": "pagamento a prazo (tag: indPag=1):",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7113,7 +7020,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": ""
+      "descricao": "",
+      "id_unico": "6.5.1:K14"
     },
     {
       "id": "K15",
@@ -7121,7 +7029,7 @@
       "aplicacao": "Obrig",
       "cStat": "738",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Somatório do valor das parcelas",
+      "mensagem": "Rejeição: Somatório do valor das parcelas diferente do valor do contrato",
       "marcacao": "SEM_MARCA",
       "pagina": 61,
       "grupo": "",
@@ -7132,10 +7040,6 @@
       "notas": [
         {
           "texto": "Se o pagamento estiver informado com",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "diferente do valor do contrato",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7167,7 +7071,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": ""
+      "descricao": "",
+      "id_unico": "6.5.1:K15"
     },
     {
       "id": "K16",
@@ -7175,7 +7080,7 @@
       "aplicacao": "Obrig",
       "cStat": "739",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Valor do adiantamento não pode ser",
+      "mensagem": "Rejeição: Valor do adiantamento não pode ser informado para pagamento a vista",
       "marcacao": "SEM_MARCA",
       "pagina": 61,
       "grupo": "",
@@ -7186,10 +7091,6 @@
       "notas": [
         {
           "texto": "Se o pagamento estiver informado com",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "informado para pagamento a vista",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7205,7 +7106,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": ""
+      "descricao": "",
+      "id_unico": "6.5.1:K16"
     },
     {
       "id": "K01",
@@ -7213,7 +7115,7 @@
       "aplicacao": "Obrig",
       "cStat": "636",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O número sequencial do evento é",
+      "mensagem": "Rejeição: O número sequencial do evento é maior que o permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 62,
       "grupo": "",
@@ -7223,11 +7125,12 @@
       },
       "notas": [
         {
-          "texto": "permitido (1 até 99) maior que o permitido",
+          "texto": "permitido (1 até 99)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o nSeqEvento é maior que o valor"
+      "descricao": "Verificar se o nSeqEvento é maior que o valor",
+      "id_unico": "6.6:K01"
     },
     {
       "id": "K02",
@@ -7235,7 +7138,7 @@
       "aplicacao": "Obrig",
       "cStat": "222",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Protocolo de Autorização de Uso",
+      "mensagem": "Rejeição: Protocolo de Autorização de Uso difere do cadastrado",
       "marcacao": "SEM_MARCA",
       "pagina": 62,
       "grupo": "",
@@ -7245,11 +7148,12 @@
       },
       "notas": [
         {
-          "texto": "difere do número do Protocolo do MDFe difere do cadastrado",
+          "texto": "difere do número do Protocolo do MDFe",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se número do Protocolo informado"
+      "descricao": "Verificar se número do Protocolo informado",
+      "id_unico": "6.6:K02"
     },
     {
       "id": "K03",
@@ -7257,7 +7161,7 @@
       "aplicacao": "Obrig",
       "cStat": "218",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está cancelado na base de",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 62,
       "grupo": "",
@@ -7265,21 +7169,9 @@
         "numero": "6.6",
         "titulo": "Evento de Confirmação do Serviço de Transporte"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ.",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhCanc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe já está cancelado."
+      "notas": [],
+      "descricao": "Verificar se MDFe já está cancelado.",
+      "id_unico": "6.6:K03"
     },
     {
       "id": "K04",
@@ -7287,7 +7179,7 @@
       "aplicacao": "Obrig",
       "cStat": "747",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe deve ser do modal rodoviário",
+      "mensagem": "Rejeição: MDFe deve ser do modal rodoviário para o evento Confirmação da operação de transporte",
       "marcacao": "SEM_MARCA",
       "pagina": 62,
       "grupo": "",
@@ -7295,17 +7187,9 @@
         "numero": "6.6",
         "titulo": "Evento de Confirmação do Serviço de Transporte"
       },
-      "notas": [
-        {
-          "texto": "para o evento Confirmação da operação de",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "transporte",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se o MDFe é do modal Rodoviário"
+      "notas": [],
+      "descricao": "Verificar se o MDFe é do modal Rodoviário",
+      "id_unico": "6.6:K04"
     },
     {
       "id": "K05",
@@ -7313,7 +7197,7 @@
       "aplicacao": "Obrig",
       "cStat": "748",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Contratante não relacionado no",
+      "mensagem": "Rejeição: Contratante não relacionado no MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 62,
       "grupo": "",
@@ -7323,7 +7207,7 @@
       },
       "notas": [
         {
-          "texto": "do MDFe MDFe",
+          "texto": "do MDFe",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7347,7 +7231,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Autor do Evento deve ser um dos contratantes"
+      "descricao": "Autor do Evento deve ser um dos contratantes",
+      "id_unico": "6.6:K05"
     },
     {
       "id": "K01",
@@ -7355,7 +7240,7 @@
       "aplicacao": "Obrig",
       "cStat": "636",
       "efeito": "Rej",
-      "mensagem": "Rejeição: O número sequencial do evento é",
+      "mensagem": "Rejeição: O número sequencial do evento é maior que o permitido",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7365,11 +7250,12 @@
       },
       "notas": [
         {
-          "texto": "permitido (1 até 99) maior que o permitido",
+          "texto": "permitido (1 até 99)",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se o nSeqEvento é maior que o valor"
+      "descricao": "Verificar se o nSeqEvento é maior que o valor",
+      "id_unico": "6.7:K01"
     },
     {
       "id": "K02",
@@ -7377,7 +7263,7 @@
       "aplicacao": "Obrig",
       "cStat": "222",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Protocolo de Autorização de Uso",
+      "mensagem": "Rejeição: Protocolo de Autorização de Uso difere do cadastrado",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7387,11 +7273,12 @@
       },
       "notas": [
         {
-          "texto": "difere do número do Protocolo do MDFe difere do cadastrado",
+          "texto": "difere do número do Protocolo do MDFe",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Verificar se número do Protocolo informado"
+      "descricao": "Verificar se número do Protocolo informado",
+      "id_unico": "6.7:K02"
     },
     {
       "id": "K03",
@@ -7399,7 +7286,7 @@
       "aplicacao": "Obrig",
       "cStat": "218",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe já está cancelado na base de",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA-MM- DDTHH:MM:SS TZD].",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7407,21 +7294,9 @@
         "numero": "6.7",
         "titulo": "Evento de Alteração do Pagamento do Serviço de Transporte"
       },
-      "notas": [
-        {
-          "texto": "dados da SEFAZ.",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nProt:999999999999999][dhCanc: AAAA-MM-",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "DDTHH:MM:SS TZD].",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se MDFe já está cancelado."
+      "notas": [],
+      "descricao": "Verificar se MDFe já está cancelado.",
+      "id_unico": "6.7:K03"
     },
     {
       "id": "K04",
@@ -7429,7 +7304,7 @@
       "aplicacao": "Obrig",
       "cStat": "749",
       "efeito": "Rej",
-      "mensagem": "Rejeição: MDFe deve ser do modal rodoviário",
+      "mensagem": "Rejeição: MDFe deve ser do modal rodoviário para o evento de Alteração do Pagamento de MDFe",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7437,17 +7312,9 @@
         "numero": "6.7",
         "titulo": "Evento de Alteração do Pagamento do Serviço de Transporte"
       },
-      "notas": [
-        {
-          "texto": "para o evento de Alteração do Pagamento de",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "MDFe",
-          "marcacao": "SEM_MARCA"
-        }
-      ],
-      "descricao": "Verificar se o MDFe é do modal Rodoviário"
+      "notas": [],
+      "descricao": "Verificar se o MDFe é do modal Rodoviário",
+      "id_unico": "6.7:K04"
     },
     {
       "id": "K05",
@@ -7455,7 +7322,7 @@
       "aplicacao": "Obrig",
       "cStat": "724",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Grupo de informações do",
+      "mensagem": "Rejeição: Grupo de informações do pagamento a prazo deve ser informado",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7465,7 +7332,7 @@
       },
       "notas": [
         {
-          "texto": "(tag:indPag=1), o grupo de informações a prazo pagamento a prazo deve ser informado",
+          "texto": "(tag:indPag=1), o grupo de informações a prazo",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7473,7 +7340,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se indicador de pagamento for a prazo"
+      "descricao": "Se indicador de pagamento for a prazo",
+      "id_unico": "6.7:K05"
     },
     {
       "id": "K06",
@@ -7481,7 +7349,7 @@
       "aplicacao": "Obrig",
       "cStat": "729",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Grupo de informações do",
+      "mensagem": "Rejeição: Grupo de informações do pagamento a prazo não deve ser informado",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7491,7 +7359,7 @@
       },
       "notas": [
         {
-          "texto": "(tag:indPag=0), o grupo de informações a prazo pagamento a prazo não deve ser informado",
+          "texto": "(tag:indPag=0), o grupo de informações a prazo",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7499,7 +7367,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se indicador de pagamento for a vista"
+      "descricao": "Se indicador de pagamento for a vista",
+      "id_unico": "6.7:K06"
     },
     {
       "id": "K07",
@@ -7507,7 +7376,7 @@
       "aplicacao": "Obrig",
       "cStat": "727",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ/CPF do responsável pelo",
+      "mensagem": "Rejeição: CNPJ/CPF do responsável pelo pagamento do frete inválido",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7517,7 +7386,7 @@
       },
       "notas": [
         {
-          "texto": "CNPJ/CPF do responsável pelo pagamento pagamento do frete inválido",
+          "texto": "CNPJ/CPF do responsável pelo pagamento",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7525,7 +7394,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado grupo de pagamento, rejeitar se"
+      "descricao": "Se informado grupo de pagamento, rejeitar se",
+      "id_unico": "6.7:K07"
     },
     {
       "id": "K08",
@@ -7533,7 +7403,7 @@
       "aplicacao": "Obrig",
       "cStat": "728",
       "efeito": "Rej",
-      "mensagem": "Rejeição: CNPJ da instituição de pagamento",
+      "mensagem": "Rejeição: CNPJ da instituição de pagamento eletrônico do frete inválido",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7543,11 +7413,12 @@
       },
       "notas": [
         {
-          "texto": "CNPJ do IPEF estiver inválido eletrônico do frete inválido",
+          "texto": "CNPJ do IPEF estiver inválido",
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se informado grupo de pagamento, rejeitar se"
+      "descricao": "Se informado grupo de pagamento, rejeitar se",
+      "id_unico": "6.7:K08"
     },
     {
       "id": "K09",
@@ -7555,7 +7426,7 @@
       "aplicacao": "Obrig",
       "cStat": "746",
       "efeito": "Rej",
-      "mensagem": "Rejeição: A soma dos componentes do",
+      "mensagem": "Rejeição: A soma dos componentes do pagamento deve ser igual ao valor do contrato",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7565,7 +7436,7 @@
       },
       "notas": [
         {
-          "texto": "infPag/Comp/vComp) deve ser igual ao valor do pagamento deve ser igual ao valor do contrato",
+          "texto": "infPag/Comp/vComp) deve ser igual ao valor do",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7581,7 +7452,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "O somatório dos componentes (tag:"
+      "descricao": "O somatório dos componentes (tag:",
+      "id_unico": "6.7:K09"
     },
     {
       "id": "K10",
@@ -7589,7 +7461,7 @@
       "aplicacao": "Obrig",
       "cStat": "735",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Número da parcela inválido",
+      "mensagem": "Rejeição: Número da parcela inválido [nParcela:999]",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7599,7 +7471,7 @@
       },
       "notas": [
         {
-          "texto": "pagamento a prazo (tag: indPag=1): [nParcela:999]",
+          "texto": "pagamento a prazo (tag: indPag=1):",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7623,7 +7495,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se o pagamento estiver informado com"
+      "descricao": "Se o pagamento estiver informado com",
+      "id_unico": "6.7:K10"
     },
     {
       "id": "K11",
@@ -7631,7 +7504,7 @@
       "aplicacao": "Obrig",
       "cStat": "736",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Data de vencimento da parcela",
+      "mensagem": "Rejeição: Data de vencimento da parcela menor que a data de emissão [nParcela:999]",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7641,7 +7514,7 @@
       },
       "notas": [
         {
-          "texto": "pagamento a prazo (tag: indPag=1): menor que a data de emissão [nParcela:999]",
+          "texto": "pagamento a prazo (tag: indPag=1):",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7661,7 +7534,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se o pagamento estiver informado com"
+      "descricao": "Se o pagamento estiver informado com",
+      "id_unico": "6.7:K11"
     },
     {
       "id": "K12",
@@ -7669,7 +7543,7 @@
       "aplicacao": "Obrig",
       "cStat": "737",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Data de vencimento da parcela",
+      "mensagem": "Rejeição: Data de vencimento da parcela menor que a data da parcela anterior [nParcela: 999]",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7679,15 +7553,11 @@
       },
       "notas": [
         {
-          "texto": "pagamento a prazo (tag: indPag=1): menor que a data da parcela anterior",
+          "texto": "pagamento a prazo (tag: indPag=1):",
           "marcacao": "SEM_MARCA"
         },
         {
           "texto": "A data informada em cada parcela deve ser",
-          "marcacao": "SEM_MARCA"
-        },
-        {
-          "texto": "[nParcela: 999]",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7703,7 +7573,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se o pagamento estiver informado com"
+      "descricao": "Se o pagamento estiver informado com",
+      "id_unico": "6.7:K12"
     },
     {
       "id": "K13",
@@ -7711,7 +7582,7 @@
       "aplicacao": "Obrig",
       "cStat": "738",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Somatório do valor das parcelas",
+      "mensagem": "Rejeição: Somatório do valor das parcelas diferente do valor do contrato",
       "marcacao": "SEM_MARCA",
       "pagina": 64,
       "grupo": "",
@@ -7721,7 +7592,7 @@
       },
       "notas": [
         {
-          "texto": "pagamento a prazo (tag: indPag=1): diferente do valor do contrato",
+          "texto": "pagamento a prazo (tag: indPag=1):",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7749,7 +7620,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se o pagamento estiver informado com"
+      "descricao": "Se o pagamento estiver informado com",
+      "id_unico": "6.7:K13"
     },
     {
       "id": "K14",
@@ -7757,7 +7629,7 @@
       "aplicacao": "Obrig",
       "cStat": "739",
       "efeito": "Rej",
-      "mensagem": "Rejeição: Valor do adiantamento não pode ser",
+      "mensagem": "Rejeição: Valor do adiantamento não pode ser informado para pagamento a vista",
       "marcacao": "SEM_MARCA",
       "pagina": 65,
       "grupo": "",
@@ -7767,7 +7639,7 @@
       },
       "notas": [
         {
-          "texto": "pagamento a vista (tag: indPag=0): informado para pagamento a vista",
+          "texto": "pagamento a vista (tag: indPag=0):",
           "marcacao": "SEM_MARCA"
         },
         {
@@ -7779,7 +7651,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Se o pagamento estiver informado com"
+      "descricao": "Se o pagamento estiver informado com",
+      "id_unico": "6.7:K14"
     },
     {
       "id": "CI01",
@@ -7845,7 +7718,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Observação 2: A verificação do contribuinte para receber a rejeição 678 poderá ser"
+      "descricao": "Observação 2: A verificação do contribuinte para receber a rejeição 678 poderá ser",
+      "id_unico": "8.2:CI01"
     },
     {
       "id": "CI02",
@@ -7911,7 +7785,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Observação 2: A verificação do contribuinte para receber a rejeição 678 poderá ser"
+      "descricao": "Observação 2: A verificação do contribuinte para receber a rejeição 678 poderá ser",
+      "id_unico": "8.2:CI02"
     },
     {
       "id": "CI03",
@@ -7977,7 +7852,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Observação 2: A verificação do contribuinte para receber a rejeição 678 poderá ser"
+      "descricao": "Observação 2: A verificação do contribuinte para receber a rejeição 678 poderá ser",
+      "id_unico": "8.2:CI03"
     },
     {
       "id": "CI04",
@@ -8019,7 +7895,8 @@
           "marcacao": "SEM_MARCA"
         }
       ],
-      "descricao": "Observação 1: A verificação do contribuinte para receber a rejeição 678 poderá ser"
+      "descricao": "Observação 1: A verificação do contribuinte para receber a rejeição 678 poderá ser",
+      "id_unico": "8.2:CI04"
     }
   ],
   "campos_leiaute": [

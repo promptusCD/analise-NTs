@@ -1,58 +1,34 @@
 ---
-description: "Mostrar dados de um campo do leiaute: tipo, ocorrencia, tamanho, regras ligadas, NT de origem"
+description: Mostrar dados de um campo do leiaute (tipo, ocorrência, tamanho, regras ligadas, NT de origem)
+argument-hint: <tag ou caminho/da/tag> [NF-e|CT-e|MDF-e]
 ---
 
-# /campo <tag> [doc]
+# /fiscal-campo
 
-Mostrar dados completos de um campo do leiaute (tag XML).
+**Argumentos**: $ARGUMENTS (tag, ex. `vTPrestLiq`, ou caminho, ex. `infCte/vPrest/vTPrestLiq`; documento opcional)
 
-## Argumentos
-- `<tag>`: nome da tag (ex: vTPrestLiq) ou caminho (ex: infCte/vPrest/vTPrestLiq) (obrigatorio)
-- `[doc]`: documento fiscal (NF-e, CT-e, MDF-e) - opcional, tenta detectar automaticamente
+## Fluxo
 
-**Argumentos fornecidos**: $ARGUMENTS
+1. Rode `date`.
+2. Siga a skill **ler-catalogo-xsd** (catálogo se existir; senão Grep nos XSDs de `fontes/<doc>/xsd/`
+   e nos `campos_leiaute` de `catalogo/moc/<doc>/*.json`).
+3. **Tag ambígua** (mesmo nome em vários caminhos): liste todos os caminhos e detalhe cada um.
+4. **Regras relacionadas**: `catalogo/regras/<doc>.json` (se existir) ou Grep da tag nas regras dos
+   MOCs/NTs extraídos.
+5. **Origem**: NT que criou/alterou (NT vX, pág.), arquivo XSD e pacote, classificação
+   NOVO/ALTERADO/EXCLUIDO/INALTERADO, vigência (com data de hoje).
 
-## Fluxo de execucao
-
-### 1. Buscar o campo
-- Consultar `catalogo/campos/<doc>.json`
-- Buscar por nome da tag ou caminho completo
-
-### 2. Buscar regras relacionadas
-- Consultar `catalogo/regras/<doc>.json`
-- Filtrar por campo/tag relacionada
-
-### 3. Formatar resposta
+## Formato
 
 ```
-[RESUMO]
-Campo <tag> - <tipo> - <ocorrencia> - <classificacao>
-
-[DADOS DO XSD]
-- Caminho: <caminho_completo>
-- Tipo: <tipo XSD>
-- minOccurs: <N>
-- maxOccurs: <N>
-- Tamanho: <N,N>
-- Pattern: <regex> (se houver)
-- Enumeration: <valores> (se houver)
-- Documentacao: <texto>
-
-[ORIGEM]
-- NT: <NT> v<versao>
-- Arquivo XSD: <arquivo>
-- Classificacao: <NOVO/ALTERADO/EXCLUIDO/INALTERADO>
-
-[REGRAS RELACIONADAS]
-- <ID> (cStat <codigo>) - <resumo> - <status>
-
-[FONTES]
-- <documento> - <NT/MOC/XSD> v<versao> - <arquivo_xsd>
+[RESUMO]  Campo <tag> - <tipo> - <ocorrência> - <classificação>
+[DADOS DO XSD] Caminho / Tipo / minOccurs / maxOccurs / Tamanho / Pattern / Enumeration / Documentação
+[ORIGEM] NT vX / Arquivo XSD (pacote vN) / Classificação / Situação
+[REGRAS RELACIONADAS] <ID> (cStat) - resumo - status
+[IMPACTO NO EMISSOR]
+[FONTES] <documento> - <NT/MOC/XSD> v<versão> - <arquivo ou pág.>
 ```
 
-## Erros tratados
-
-| Erro | Acao |
-|---|---|
-| `ERRO_CAMPO_NAO_ENCONTRADO` | Sugerir verificar nome ou ingerir XSD |
-| `ERRO_PARAMETRO_INVALIDO` | Avisar formato incorreto do argumento |
+## Erros
+- `ERRO_CAMPO_NAO_ENCONTRADO` → `NAO ENCONTRADO NAS FONTES`; sugerir verificar o nome ou ingerir o XSD
+- `ERRO_PARAMETRO_INVALIDO`

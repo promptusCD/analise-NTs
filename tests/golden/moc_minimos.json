@@ -1,0 +1,16 @@
+{
+  "_comentario": [
+    "Quantidades da extracao ANTERIOR a fase 2b (catalogo_bak de 2026-10-20), usadas como PISO: re-extrair um MOC nunca pode ter menos secoes, regras ou campos do que isso.",
+    "'secoes' e estatisticas.total_secoes (conta subsecoes). 'regras' = len(regras_validacao); 'campos' = len(campos_leiaute)."
+  ],
+  "MOC_CTe_Anexo_II_DACTE_v4.00": {"secoes": 53, "regras": 0, "campos": 0},
+  "MOC_CTe_Anexo_I_Leiaute_v4.00": {"secoes": 18, "regras": 402, "campos": 832},
+  "MOC_CTe_VisaoGeral_v4.00": {"secoes": 172, "regras": 164, "campos": 222},
+  "MOC_MDFe_Anexo_II_DAMDFE_v3.00b": {"secoes": 22, "regras": 0, "campos": 0},
+  "MOC_MDFe_Anexo_I_Leiaute_v3.00b": {"secoes": 22, "regras": 0, "campos": 260},
+  "MOC_MDFe_VisaoGeral_v3.00b": {"secoes": 144, "regras": 147, "campos": 147},
+  "MOC_NFe_v7.00_Anexo_III_Contingencia": {"secoes": 28, "regras": 0, "campos": 0},
+  "MOC_NFe_v7.00_Anexo_II_DANFE": {"secoes": 62, "regras": 0, "campos": 0},
+  "MOC_NFe_v7.00_Anexo_I_Leiaute": {"secoes": 36, "regras": 238, "campos": 796},
+  "MOC_NFe_v7.00_VisaoGeral": {"secoes": 161, "regras": 214, "campos": 321}
+}

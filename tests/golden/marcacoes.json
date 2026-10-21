@@ -1,0 +1,26 @@
+{
+  "_comentario": [
+    "Marcacoes (cor) escritas a mao a partir das paginas renderizadas dos PDFs.",
+    "tipo 'regra': marcacao da regra (id + pagina; regra sem ID por cStat). tipo 'nota': nota de uma regra que comeca com o texto dado. tipo 'linha': linha de tabela de leiaute (comeca_com o texto achatado da linha), com 'trecho' opcional = trecho que deve existir com aquela marcacao.",
+    "Cor nunca prova sozinha (regra 6 do AGENTS.md): aqui so se testa que a marcacao VISIVEL no PDF foi capturada no trecho/linha certo."
+  ],
+  "NT_2026_007_v1.10": [
+    {"tipo": "regra", "id": "C17-10", "pagina": 6, "marcacao": "EXCLUIDO", "obs": "linha riscada em vermelho"},
+    {"tipo": "nota", "regra": {"id": "C12-10", "pagina": 6}, "comeca_com": "Exceção: Na SVRS", "marcacao": "AMARELO"},
+    {"tipo": "nota", "regra": {"id": "B25-90", "pagina": 6}, "comeca_com": "Exceção 2:", "marcacao": "AMARELO"},
+    {"tipo": "nota", "regra": {"id": "B25-90", "pagina": 6}, "comeca_com": "Exceção 1:", "marcacao": "SEM_MARCA"},
+    {"tipo": "nota", "regra": {"id": "B02-10", "pagina": 6}, "comeca_com": "Exceção: Na SVRS", "marcacao": "SEM_MARCA"},
+    {"tipo": "nota", "regra": {"id": "12C02-10", "pagina": 9}, "comeca_com": "Exceção: Em Homologação", "marcacao": "VERDE"},
+    {"tipo": "nota", "regra": {"id": "12C02-10", "pagina": 9}, "comeca_com": "(*1)", "marcacao": "VERDE"},
+    {"tipo": "linha", "pagina": 6, "comeca_com": "46 C17 IE", "marcacao": "AMARELO", "trecho": {"marcacao": "AMARELO", "contem": "Observação 1:"}}
+  ],
+  "CTe_NT_2026_004_v1.00": [
+    {"tipo": "linha", "pagina": 5, "comeca_com": "vTPrestLiq", "marcacao": "AMARELO"},
+    {"tipo": "regra", "id": "", "cStat": "326", "pagina": 7, "marcacao": "SEM_MARCA"},
+    {"tipo": "nota", "regra": {"id": "", "cStat": "326", "pagina": 7}, "comeca_com": "EXCEÇÂO: Até que seja publicada", "marcacao": "AMARELO", "obs": "o PDF imprime EXCEÇÂO (circunflexo) - typo do documento"},
+    {"tipo": "regra", "id": "01", "cStat": "365", "pagina": 8, "marcacao": "EXCLUIDO"},
+    {"tipo": "regra", "id": "", "cStat": "1055", "pagina": 8, "marcacao": "AMARELO"},
+    {"tipo": "regra", "id": "G008a", "cStat": "928", "pagina": 9, "marcacao": "EXCLUIDO"},
+    {"tipo": "nota", "regra": {"id": "G103", "cStat": "228", "pagina": 9}, "comeca_com": "Exceção : CTe com Data de Emissão muito atrasada", "marcacao": "AMARELO", "obs": "o PDF imprime 'Exceção :' com espaco antes dos dois pontos"}
+  ]
+}

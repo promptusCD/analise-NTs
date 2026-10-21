@@ -1,83 +1,50 @@
 ---
 name: resumo-impacto-dev
-description: Como transformar uma NT em checklist de implementacao para desenvolvedores. Lista de campos novos/alterados/removidos, regras novas, rejeicoes, eventos, ambientes e datas.
-allowed-tools: Bash(node:*), Read
+description: Transforma uma NT em checklist de implementação para desenvolvedores (campos, regras, rejeições, eventos, datas, impacto no emissor). Use para "o que muda no sistema" de uma NT. É a lógica por trás de /fiscal-impacto.
+allowed-tools: Read, Grep, Glob, Bash(date:*), Bash(node:*)
 ---
 
 # Skill: Resumo de Impacto para Desenvolvedor
 
 ## Quando usar
-- Quando precisar gerar um checklist de implementacao a partir de uma NT
-- Quando o time de desenvolvimento precisar saber o que mudar no sistema
-- Quando precisar listar campos, regras e eventos novos/alterados/excluidos
+- Checklist de implementação a partir de uma NT
+- Time de dev precisa saber o que mudar
+- Listar campos/regras/eventos novos, alterados, excluídos
 
-## Formato de saida
+## Fontes
+1. `catalogo/nt/<doc>/<arquivo>.json` (NT extraída; `secoes[]`, `cronograma[]`)
+2. `catalogo/campos/<doc>.json` e `catalogo/regras/<doc>.json` **(se existirem)** para cruzar com XSD/regras
+3. `calendario/calendario.yaml` **(se existir)**; senão use `cronograma[]` do JSON da NT
+4. `catalogo/legendas/<doc>.yaml` para interpretar marcações
 
-O command `/impacto <nt>` gera um resumo com:
+Se os catálogos 2–3 não existirem, extraia do próprio JSON da NT e avise quais cruzamentos
+não foram feitos (ex.: "campo não verificado contra XSD").
 
+## Escolha da versão
+Uma NT pode ter várias versões (v1.00, v1.10…). Use a **mais recente** e compare com a anterior
+quando existir: liste o que mudou entre versões ("v1.00 → v1.10"). Informe qual versão foi usada.
+
+## Saída
 ```
-CAMPOS NOVOS:
-- <tag> (<grupo pai>) [<modelos>] - descricao
-
-CAMPOS ALTERADOS:
-- <tag> (<grupo pai>) [<modelos>] - o que mudou
-
-CAMPOS EXCLUIDOS:
-- <tag> (<grupo pai>) [<modelos>] - motivo
-
-REGRAS NOVAS:
-- <ID> (cStat <codigo>) - descricao - quem aplica
-
-REGRAS ALTERADAS:
-- <ID> (cStat <codigo>) - o que mudou
-
-REGRAS EXCLUIDAS:
-- <ID> (cStat <codigo>) - motivo da exclusao
-
-EVENTOS NOVOS:
-- <tpEvento> - <nome> - autorizador - schema
-
-REJEICOES NOVAS:
-- <cStat> - <mensagem> - quando ocorre
-
-DATAS:
-- Homologacao: <data>
-- Producao: <data>
-
-IMPACTO NO EMISSOR:
-- O que o sistema precisa implementar
-- O que precisa ser removido
-- O que precisa ser testado
+CAMPOS NOVOS / ALTERADOS (antes → depois) / EXCLUÍDOS
+  - <tag> (<grupo pai>) [<modelos>] - descrição  (XSD: <arquivo>)
+REGRAS NOVAS / ALTERADAS / EXCLUÍDAS
+  - <ID> (cStat <código>) - descrição - quem aplica - modelo
+EVENTOS NOVOS
+  - <tpEvento> - nome - autorizador - schema
+REJEIÇÕES NOVAS
+  - <cStat> - mensagem - quando ocorre
+DATAS (por item/bloco; literais preservados)
+  - Homologação / Produção / Situação hoje
+IMPACTO NO EMISSOR
+  1. Implementar  2. Remover  3. Testar (cenários)  4. Atenção (armadilhas)
+FONTES
+  - <documento> - <NT> v<versão> - pág. <N> - <marcação>
 ```
 
-## Como gerar
-
-### 1. Ler a NT extraida
-Consulte `catalogo/nt/<doc>/<nt>_v<versao>.json`
-
-### 2. Ler o catalogo de campos
-Consulte `catalogo/campos/<doc>.json` para cruzar tags com XSD
-
-### 3. Ler o catalogo de regras
-Consulte `catalogo/regras/<doc>.json` para regras de validacao
-
-### 4. Ler o calendario
-Consulte `calendario/calendario.yaml` para datas de vigencia
-
-### 5. Compilar o resumo
-Combine todas as fontes em um checklist acionavel.
-
-## Exemplo de uso
-
-```
-/impacto NT-CT-e-2026.004
-```
-
-Saida: checklist completo do que o time de desenvolvimento precisa
-implementar para a NT CT-e 2026.004, incluindo campos, regras,
-eventos, rejeicoes e datas.
-
-## Importante
-- Sempre citar a fonte (NT, versao, pagina)
-- Indicar a situacao de cada item (futura/homologacao/producao)
-- Separar por modelo quando aplicavel (CT-e, CT-e OS, GTV-e, CT-e Simp.)
+## Regras
+- Todo item cita NT, versão, página e **marcação** (AMARELO/VERDE/EXCLUIDO/SEM_MARCA)
+- Indique a situação de cada item (futura/em_homologacao/em_producao/excluida) com a data de hoje
+- Separe por modelo quando aplicável (NF-e 55, NFC-e 65, CT-e 57, CT-e OS 67, GTV-e 64, CT-e Simp., MDF-e 58)
+- Não invente campo, regra, cStat ou data: se não estiver no JSON → "NAO ENCONTRADO NAS FONTES"
+- Resultado pronto para virar tarefas (Jira/Linear/Asana)

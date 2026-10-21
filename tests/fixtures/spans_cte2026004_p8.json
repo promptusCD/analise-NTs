@@ -1,0 +1,1911 @@
+{
+ "pdf": "fontes/cte/notas-tecnicas/CTe_NT_2026_004_v1.00.pdf",
+ "pagina": 8,
+ "largura": 595.3200073242188,
+ "spans": [
+  {
+   "text": "Projeto",
+   "bbox": [
+    71.04,
+    35.68,
+    100.9,
+    44.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "Conhecimento de Transporte Eletrônico - Reforma Tributária do Consumo",
+   "bbox": [
+    71.04,
+    44.87,
+    426.62,
+    55.98
+   ],
+   "size": 9.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "NT 2026.004 v1.00",
+   "bbox": [
+    71.04,
+    56.32,
+    139.73,
+    65.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#808080"
+  },
+  {
+   "text": "Página",
+   "bbox": [
+    471.48,
+    783.73,
+    502.01,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "8",
+   "bbox": [
+    502.08,
+    783.73,
+    507.08,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "/",
+   "bbox": [
+    507.12,
+    783.73,
+    514.61,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "16",
+   "bbox": [
+    514.56,
+    783.73,
+    524.57,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se informado o indicador de Doação (indDoacao=1), o",
+   "bbox": [
+    48.0,
+    85.0,
+    244.02,
+    93.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "CNPJ-Base/CPF do emitente deve ser diferente do",
+   "bbox": [
+    48.0,
+    94.24,
+    229.6,
+    103.22
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "CNPJ-Base/CPF do tomador do serviço",
+   "bbox": [
+    48.0,
+    103.48,
+    189.52,
+    112.46
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    258.72,
+    85.0,
+    282.74,
+    93.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1055",
+   "bbox": [
+    294.84,
+    85.0,
+    314.81,
+    93.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    330.36,
+    85.0,
+    347.22,
+    93.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Doação com CNPJ/CPF do emitente igual",
+   "bbox": [
+    360.84,
+    85.0,
+    548.09,
+    93.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "do tomador do serviço",
+   "bbox": [
+    360.84,
+    94.24,
+    442.25,
+    103.22
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se o cClassTrib informado possuir indicador que VEDA",
+   "bbox": [
+    48.0,
+    119.56,
+    244.64,
+    128.54
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "uso de doação, o campo indDoacao não pode ser",
+   "bbox": [
+    48.0,
+    128.8,
+    227.2,
+    137.78
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "informado.",
+   "bbox": [
+    48.0,
+    138.04,
+    85.83,
+    147.02
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig",
+   "bbox": [
+    259.8,
+    119.68,
+    279.41,
+    128.66
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1056",
+   "bbox": [
+    294.84,
+    119.68,
+    314.81,
+    128.66
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    330.36,
+    119.68,
+    347.22,
+    128.66
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: O cClassTrib é incompatível com o campo",
+   "bbox": [
+    360.84,
+    119.56,
+    549.06,
+    128.54
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "de indicador de doação preenchido",
+   "bbox": [
+    360.84,
+    128.8,
+    488.08,
+    137.78
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se o cClassTrib informado possuir indicador que",
+   "bbox": [
+    48.0,
+    154.24,
+    220.7,
+    163.22
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "EXIGE indicação de doação, o campo indDoacao",
+   "bbox": [
+    48.0,
+    163.36,
+    226.0,
+    172.34
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "DEVE ser informado.",
+   "bbox": [
+    48.0,
+    172.6,
+    123.2,
+    181.58
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig",
+   "bbox": [
+    259.8,
+    154.24,
+    279.41,
+    163.22
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1057",
+   "bbox": [
+    294.84,
+    154.24,
+    314.81,
+    163.22
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    330.36,
+    154.24,
+    347.22,
+    163.22
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: O cClassTrib informado necessita que o",
+   "bbox": [
+    360.84,
+    154.24,
+    541.02,
+    163.22
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "indicador de doação seja preenchido",
+   "bbox": [
+    360.84,
+    163.48,
+    491.65,
+    172.46
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "5",
+   "bbox": [
+    70.92,
+    200.94,
+    80.92,
+    214.33
+   ],
+   "size": 12.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "Total Geral do Documento Fiscal Eletrônico",
+   "bbox": [
+    92.47,
+    200.94,
+    345.19,
+    214.33
+   ],
+   "size": 12.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "#",
+   "bbox": [
+    53.88,
+    222.52,
+    60.53,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Campo",
+   "bbox": [
+    82.2,
+    222.52,
+    113.69,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Ele",
+   "bbox": [
+    154.32,
+    222.52,
+    168.58,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Pai",
+   "bbox": [
+    188.04,
+    222.52,
+    202.27,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Tipo",
+   "bbox": [
+    278.52,
+    222.52,
+    297.7,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Ocor.",
+   "bbox": [
+    307.44,
+    222.52,
+    330.55,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Tam.",
+   "bbox": [
+    339.24,
+    222.52,
+    360.2,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Descrição/Observação",
+   "bbox": [
+    373.32,
+    222.52,
+    461.85,
+    231.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "01",
+   "bbox": [
+    52.08,
+    239.44,
+    63.15,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "vTotDFe",
+   "bbox": [
+    83.2,
+    239.44,
+    116.12,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "E",
+   "bbox": [
+    154.34,
+    239.44,
+    161.79,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "imp (CTe/CTeOS) e",
+   "bbox": [
+    191.72,
+    239.44,
+    265.13,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "total (CTeSimp)",
+   "bbox": [
+    191.76,
+    248.68,
+    250.0,
+    257.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "E",
+   "bbox": [
+    285.0,
+    239.44,
+    292.53,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "0-1",
+   "bbox": [
+    314.75,
+    239.44,
+    328.5,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "13,2",
+   "bbox": [
+    346.53,
+    239.44,
+    364.41,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Valor total do documento fiscal",
+   "bbox": [
+    381.64,
+    239.44,
+    495.45,
+    248.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "vTPrest",
+   "bbox": [
+    381.6,
+    254.68,
+    411.41,
+    263.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#4F6228"
+  },
+  {
+   "text": "+ total do IBS + total da CBS",
+   "bbox": [
+    411.48,
+    254.68,
+    513.78,
+    263.66
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "#",
+   "bbox": [
+    35.16,
+    281.68,
+    41.81,
+    290.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de Validação",
+   "bbox": [
+    66.36,
+    281.68,
+    138.9,
+    290.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Aplic.",
+   "bbox": [
+    261.48,
+    281.68,
+    283.29,
+    290.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "cStat",
+   "bbox": [
+    298.08,
+    281.68,
+    318.56,
+    290.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Efeito",
+   "bbox": [
+    337.08,
+    281.68,
+    361.5,
+    290.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Mensagem",
+   "bbox": [
+    372.36,
+    281.68,
+    416.0,
+    290.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "01",
+   "bbox": [
+    35.16,
+    297.88,
+    46.23,
+    306.86
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "O total geral do DFe deverá ser INFORMADO com",
+   "bbox": [
+    66.36,
+    297.88,
+    246.94,
+    306.86
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "a soma do total da prestação + IBS + CBS",
+   "bbox": [
+    66.36,
+    307.12,
+    219.42,
+    316.1
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "vTotDFe = vPrest/vTPrest + gIBSCBS/vIBS +",
+   "bbox": [
+    66.36,
+    322.24,
+    229.72,
+    331.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "gCBS/vCBS",
+   "bbox": [
+    66.36,
+    331.48,
+    109.97,
+    340.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Exceção:",
+   "bbox": [
+    66.36,
+    346.72,
+    103.72,
+    355.7
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": true,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Em 2026 não somar IBS e CBS, usando",
+   "bbox": [
+    104.28,
+    346.72,
+    252.9,
+    355.7
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "a fórmula:",
+   "bbox": [
+    66.36,
+    355.96,
+    104.22,
+    364.94
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "vTotDFe = vPrest/vTPrest",
+   "bbox": [
+    66.36,
+    371.08,
+    158.72,
+    380.06
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "O total geral do DFe deverá ser informado",
+   "bbox": [
+    66.36,
+    386.32,
+    218.44,
+    395.3
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "REPETINDO",
+   "bbox": [
+    66.36,
+    395.56,
+    113.2,
+    404.54
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "o valor de vTPrest",
+   "bbox": [
+    113.04,
+    395.56,
+    180.18,
+    404.54
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    261.48,
+    297.88,
+    285.5,
+    306.86
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "365",
+   "bbox": [
+    297.35,
+    297.88,
+    312.89,
+    306.86
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    332.76,
+    297.88,
+    349.62,
+    306.86
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Total do DFe inválido",
+   "bbox": [
+    363.84,
+    297.88,
+    477.18,
+    306.86
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "6",
+   "bbox": [
+    70.92,
+    423.9,
+    80.92,
+    437.29
+   ],
+   "size": 12.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "Alteração nas Formas de Emissão do CTe, CTeOS e CTe Simplificado",
+   "bbox": [
+    92.47,
+    423.9,
+    492.73,
+    437.29
+   ],
+   "size": 12.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "O tipo de emissão (tpEmis) deixa de aceitar o valor 4 – EPEC e 5 – Contingência FSDA, por consequência, todas",
+   "bbox": [
+    70.92,
+    456.97,
+    527.03,
+    467.02
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "as regras de validação relacionadas a FSDA e a EPEC, incluindo a própria recepção do evento EPEC deixam de",
+   "bbox": [
+    70.92,
+    472.57,
+    527.01,
+    482.62
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "ser aceitas pelo ambiente de autorização.",
+   "bbox": [
+    70.92,
+    488.05,
+    240.07,
+    498.1
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Novo tipo de emissão Contingência OffLine (tpEmis=2) passa a ser aceito no CTe de forma imediata.",
+   "bbox": [
+    70.92,
+    503.65,
+    479.97,
+    513.7
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Campo",
+   "bbox": [
+    62.04,
+    520.12,
+    93.53,
+    529.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Ele",
+   "bbox": [
+    145.08,
+    520.12,
+    159.34,
+    529.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Pai",
+   "bbox": [
+    168.0,
+    520.12,
+    182.23,
+    529.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Tipo",
+   "bbox": [
+    258.6,
+    520.12,
+    277.78,
+    529.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Ocor.",
+   "bbox": [
+    287.4,
+    520.12,
+    310.51,
+    529.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Tam.",
+   "bbox": [
+    319.2,
+    520.12,
+    340.16,
+    529.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "Descrição/Observação",
+   "bbox": [
+    353.04,
+    520.12,
+    441.57,
+    529.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#FFFFFF"
+  },
+  {
+   "text": "tpEmis",
+   "bbox": [
+    62.04,
+    537.04,
+    88.76,
+    546.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "E",
+   "bbox": [
+    147.64,
+    537.04,
+    155.09,
+    546.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Ide",
+   "bbox": [
+    170.63,
+    537.04,
+    183.99,
+    546.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "E",
+   "bbox": [
+    263.76,
+    537.04,
+    271.29,
+    546.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1-1",
+   "bbox": [
+    293.67,
+    537.04,
+    307.42,
+    546.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1",
+   "bbox": [
+    325.29,
+    537.04,
+    331.99,
+    546.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Preencher com:",
+   "bbox": [
+    360.4,
+    537.04,
+    419.12,
+    546.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1 - Normal;",
+   "bbox": [
+    360.36,
+    546.28,
+    402.18,
+    555.26
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "3 - Regime Especial NFF;",
+   "bbox": [
+    360.36,
+    555.4,
+    456.45,
+    564.38
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "2 - Contingência Offline;",
+   "bbox": [
+    360.36,
+    564.64,
+    446.24,
+    573.62
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "4 - EPEC pela SVC;",
+   "bbox": [
+    360.36,
+    573.88,
+    434.21,
+    582.86
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "5 - Contingência FSDA;",
+   "bbox": [
+    360.36,
+    583.0,
+    444.45,
+    591.98
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "7 - Autorização pela SVC-RS;",
+   "bbox": [
+    360.36,
+    592.24,
+    468.39,
+    601.22
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "8 - Autorização pela SVC-SP",
+   "bbox": [
+    360.36,
+    601.48,
+    463.6,
+    610.46
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Os eventos EPEC (110113) e Liberação de EPEC (24160) deixam de fazer parte da listagem de eventos aceitos",
+   "bbox": [
+    70.92,
+    624.37,
+    527.05,
+    634.42
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "no ambiente de autorização, se eventos destes tipos forem enviados, deverá ocorrer a rejeição de 629 - Rejeição:",
+   "bbox": [
+    70.92,
+    639.85,
+    527.0,
+    649.9
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "O tpEvento informado inválido.",
+   "bbox": [
+    70.92,
+    655.33,
+    196.51,
+    665.38
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Todo bloco de especificação destes eventos fica revogado do MOC do CTe.",
+   "bbox": [
+    70.92,
+    670.93,
+    377.58,
+    680.98
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Alteração em Regras de validação (Grupo G CTe / Grupo H CTeOS)",
+   "bbox": [
+    70.92,
+    686.49,
+    424.42,
+    698.81
+   ],
+   "size": 11.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "G008",
+   "bbox": [
+    40.8,
+    699.52,
+    62.55,
+    708.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "H004",
+   "bbox": [
+    40.8,
+    708.76,
+    62.1,
+    717.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for diferente de 2",
+   "bbox": [
+    76.2,
+    699.52,
+    245.21,
+    708.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "(Contingência OffLine)",
+   "bbox": [
+    76.2,
+    708.76,
+    156.4,
+    717.74
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "5 (FS-DA)",
+   "bbox": [
+    158.64,
+    708.76,
+    194.51,
+    717.74
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": ":",
+   "bbox": [
+    194.52,
+    708.76,
+    196.75,
+    717.74
+   ],
+   "size": 8.04,
+   "marcacao": "RISCADO_SEM_COR",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#000000"
+  },
+  {
+   "text": "dhCont e xJust não devem ser informados",
+   "bbox": [
+    76.2,
+    718.0,
+    228.69,
+    726.98
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    281.88,
+    699.52,
+    305.9,
+    708.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "586",
+   "bbox": [
+    317.26,
+    699.52,
+    332.81,
+    708.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej",
+   "bbox": [
+    344.65,
+    699.52,
+    356.66,
+    708.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": ".",
+   "bbox": [
+    344.64,
+    708.76,
+    349.1,
+    717.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Data e Justificativa de entrada em",
+   "bbox": [
+    367.68,
+    699.52,
+    526.53,
+    708.5
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "contingência não devem ser informadas para",
+   "bbox": [
+    367.68,
+    708.76,
+    530.12,
+    717.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "tipo de emissão diferente",
+   "bbox": [
+    367.68,
+    718.0,
+    459.27,
+    726.98
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "de Contingência",
+   "bbox": [
+    459.38,
+    718.0,
+    519.4,
+    726.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Offline",
+   "bbox": [
+    367.68,
+    727.12,
+    390.96,
+    736.1
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "FS-DA",
+   "bbox": [
+    393.12,
+    727.12,
+    417.12,
+    736.1
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": ".",
+   "bbox": [
+    417.12,
+    727.12,
+    419.35,
+    736.1
+   ],
+   "size": 8.04,
+   "marcacao": "RISCADO_SEM_COR",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#000000"
+  },
+  {
+   "text": "G009",
+   "bbox": [
+    40.8,
+    736.84,
+    62.55,
+    745.82
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "H005",
+   "bbox": [
+    40.8,
+    746.08,
+    62.1,
+    755.06
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for igual a 2",
+   "bbox": [
+    76.2,
+    736.84,
+    226.61,
+    745.82
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "(Contingência OffLine)",
+   "bbox": [
+    76.2,
+    746.08,
+    156.4,
+    755.06
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "5 (FS-DA):",
+   "bbox": [
+    158.64,
+    746.08,
+    196.74,
+    755.06
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "dhCont e xJust devem ser informados",
+   "bbox": [
+    76.2,
+    755.2,
+    210.9,
+    764.18
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    281.88,
+    736.84,
+    305.9,
+    745.82
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "587",
+   "bbox": [
+    317.26,
+    736.84,
+    332.81,
+    745.82
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej",
+   "bbox": [
+    344.65,
+    736.84,
+    356.66,
+    745.82
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": ".",
+   "bbox": [
+    344.64,
+    746.08,
+    349.1,
+    755.06
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Data e Justificativa de entrada em",
+   "bbox": [
+    367.68,
+    736.84,
+    526.53,
+    745.82
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "contingência devem ser informadas",
+   "bbox": [
+    367.68,
+    746.08,
+    496.11,
+    755.06
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  }
+ ]
+}

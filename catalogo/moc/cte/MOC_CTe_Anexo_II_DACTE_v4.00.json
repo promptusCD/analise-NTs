@@ -3,9 +3,9 @@
   "versao": "4.00",
   "secao": "Anexo II DACTE",
   "titulo": "",
-  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\cte\\moc\\MOC_CTe_Anexo_II_DACTE_v4.00.pdf",
+  "arquivo_origem": "fontes/cte/moc/MOC_CTe_Anexo_II_DACTE_v4.00.pdf",
   "sha256": "803ab81d83b548fb5279bf3e39b0c629c6f81c19fb601764001d82f19baf554a",
-  "extraido_em": "2026-10-07T15:48:33.070458+00:00",
+  "extraido_em": "2026-10-20T15:35:44.728136+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {

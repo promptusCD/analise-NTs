@@ -1,0 +1,56 @@
+{
+  "_comentario": [
+    "Expectativas escritas a mao a partir das paginas renderizadas dos PDFs (campo 'pagina' de cada regra).",
+    "'ids_completos' = TODOS os IDs de regra impressos na NT (igualdade exata com o JSON).",
+    "'regras' = amostra conferida com cStat e MENSAGEM COMPLETA (quebras de linha da coluna 'Descricao Erro' unidas por espaco).",
+    "Em NTs de CT-e o numero da regra reinicia por tabela: a busca e por (id, pagina). Tabelas SEM coluna de ID (CT-e 1054/1055/326, MDF-e 684) tem id vazio: a busca e por (cStat, pagina)."
+  ],
+  "NT_2026_008_v1.00_Valor_Liquido": {
+    "ids_completos": [
+      "B25-80", "I11c-10", "I11c-20", "NB01-10", "NB01-20", "NB01-30",
+      "UB16-10", "VB01-10", "VB01-20", "W01a-10", "W01a-20"
+    ],
+    "regras": [
+      {"id": "B25-80", "pagina": 7, "cStat": "1001", "mensagem": "Rejeição: NF-e com finalidade de débito ou crédito somente para IBS/CBS"},
+      {"id": "I11c-10", "pagina": 7, "cStat": "1278", "mensagem": "Rejeição: Valor Líquido do Produto não informado [nItem: 999]"},
+      {"id": "I11c-20", "pagina": 7, "cStat": "1279", "mensagem": "Rejeição: Valor Líquido do Produto difere do calculado [nItem: 999]"},
+      {"id": "NB01-10", "pagina": 7, "cStat": "1280", "mensagem": "Rejeição: Grupo do ICMS Previsto no Pagamento Antecipado informado indevidamente [nItem: 999]"},
+      {"id": "NB01-30", "pagina": 8, "cStat": "1281", "mensagem": "Rejeição: Grupo do ICMS Previsto no Pagamento Antecipado não informado [nItem: 999]"},
+      {"id": "UB16-10", "pagina": 8, "cStat": "1104", "mensagem": "Rejeição: Valor da Base de cálculo do IBS e CBS difere do somatório dos valores que a compõem [nItem: 999]"},
+      {"id": "VB01-10", "pagina": 8, "cStat": "1105", "mensagem": "Rejeição: Valor total do Item (vItem) difere do somatório dos valores que o compõem [nItem: 999]"},
+      {"id": "W01a-10", "pagina": 10, "cStat": "1282", "mensagem": "Rejeição: Total Líquido não informado"},
+      {"id": "W01a-20", "pagina": 10, "cStat": "1283", "mensagem": "Rejeição: Total Líquido difere do somatório dos itens"}
+    ]
+  },
+  "NT_2026_007_v1.10": {
+    "regras": [
+      {"id": "B02-10", "pagina": 6, "cStat": "226", "mensagem": "Rejeição: Código da UF do Emitente diverge da UF autorizadora"},
+      {"id": "B25-90", "pagina": 6, "cStat": "1002", "mensagem": "Rejeição: NF-e sem informação de ICMS / ISSQN"},
+      {"id": "C12-10", "pagina": 6, "cStat": "247", "mensagem": "Rejeição: Sigla da UF do Emitente diverge da UF autorizadora"},
+      {"id": "C17-10", "pagina": 6, "cStat": "229", "mensagem": "Rejeição: IE do emitente não informada"},
+      {"id": "5BG15-10", "pagina": 9, "cStat": "171", "mensagem": "Rejeição: IE do local de entrega não cadastrada"},
+      {"id": "12C02-10", "pagina": 9, "cStat": "178", "mensagem": "Rejeição: CNPJ [XX.XXX.XXX/XXXX-DV] do emitente não cadastrado na Receita Federal"}
+    ]
+  },
+  "NT_2026_002_v1.11_DANFE_Simplificado": {
+    "regras": [
+      {"id": "K01-10", "pagina": 13, "cStat": "840"}
+    ]
+  },
+  "CTe_NT_2026_004_v1.00": {
+    "regras": [
+      {"id": "001", "pagina": 13, "cStat": "348", "mensagem": "Rejeição: Total de IBS/CBS só deve ser informado se existir IBS/CBS declarado nos itens do DFe"},
+      {"id": "002", "pagina": 13, "cStat": "349", "mensagem": "Rejeição: Total de IBS/CBS deve ser informado se existir IBS/CBS declarado nos itens do DFe"},
+      {"id": "009", "pagina": 13, "cStat": "356", "mensagem": "Rejeição: Total do IBS difere da soma do IBS UF e IBS Municipal"},
+      {"id": "013", "pagina": 13, "cStat": "305", "mensagem": "Rejeição: Total de IBS estornado difere da soma dos itens"},
+      {"id": "", "pagina": 5, "cStat": "1054", "mensagem": "Rejeição: Total Líquido da prestação sem tributos difere do somatório dos itens"},
+      {"id": "", "pagina": 7, "cStat": "326", "mensagem": "Rejeição: Alíquota da CBS inválida"},
+      {"id": "", "pagina": 8, "cStat": "1055", "mensagem": "Rejeição: Doação com CNPJ/CPF do emitente igual do tomador do serviço"}
+    ]
+  },
+  "MDFe_NT_2026_001_v1.00": {
+    "regras": [
+      {"id": "", "pagina": 4, "cStat": "684", "mensagem": "Rejeição: CIOT deverá ser informado"}
+    ]
+  }
+}

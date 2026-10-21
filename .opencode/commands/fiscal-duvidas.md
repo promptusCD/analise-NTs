@@ -1,74 +1,42 @@
 ---
-description: "Listar e priorizar duvidas abertas do projeto"
+description: Listar, priorizar e registrar dúvidas abertas do projeto (docs/duvidas-abertas.md)
+argument-hint: [NF-e|CT-e|MDF-e] [--prioridade alta|media|baixa] [--registrar]
 ---
 
-# /duvidas
+# /fiscal-duvidas
 
-Listar e priorizar as duvidas abertas do projeto.
+**Argumentos**: $ARGUMENTS
 
-## Argumentos
-- `[doc]`: documento fiscal (NF-e, CT-e, MDF-e) - opcional, mostra todos se omitido
-- `--prioridade <alta|media|baixa>`: filtrar por prioridade - opcional
+Fonte: `docs/duvidas-abertas.md` (formato definido no próprio arquivo). Se não existir, crie-o
+a partir do modelo em `docs/duvidas-abertas.md` do repositório ou avise que está vazio.
 
-**Argumentos fornecidos**: $ARGUMENTS
+## Modo listar (padrão)
 
-## Fluxo de execucao
-
-### 1. Ler duvidas
-- Consultar `docs/duvidas-abertas.md`
-- Filtrar por documento e prioridade se especificado
-
-### 2. Classificar prioridade
-
-| Prioridade | Criterio |
-|---|---|
-| ALTA | Impede implementacao ou gera erro em producao |
-| MEDIA | Afeta qualidade mas tem workaround |
-| BAIA | Inconveniente, nao bloqueia |
-
-### 3. Formatar resposta
+1. Rode `date`. Leia o arquivo; filtre por documento/prioridade se informados.
+2. Prioridade: **ALTA** = impede implementação ou gera erro em produção · **MEDIA** = afeta qualidade,
+   há workaround · **BAIXA** = inconveniente.
+3. Formato:
 
 ```
-DUVIDAS ABERTAS - <data>
-Filtro: <documento ou "todas">
-Total: <N> (ALTA: X, MEDIA: Y, BAIA: Z)
-
-========================================
-PRIORIDADE ALTA
-========================================
-
-[#001] <titulo>
-- Documento: <doc>
-- NT/MOC: <referencia>
-- Pagina: <N>
-- Trecho: <trecho problematico>
-- O que parece errado: <descricao>
-- Impacto: <por que e alta prioridade>
-- Status: pendente
-
-========================================
-PRIORIDADE MEDIA
-========================================
-
-[#002] <titulo>
-...
-
-========================================
-PRIORIDADE BAIA
-========================================
-
-[#003] <titulo>
-...
-
-========================================
-RESUMO
-========================================
-- Duvidas que impedem implementacao: <N>
-- Duvidas com workaround: <N>
-- Duvidas academicas: <N>
+DÚVIDAS ABERTAS - <data>   Filtro: <doc|todas>   Total: N (ALTA x, MEDIA y, BAIXA z)
+== PRIORIDADE ALTA ==
+[#001] <título>
+- Documento / NT-MOC / Página / Trecho / O que parece errado / Impacto / Status
+== MEDIA == ... == BAIXA == ...
+RESUMO: impedem implementação N · com workaround N · acadêmicas N
 ```
 
-### 4. Sugestoes
-Para cada duvida ALTA, sugerir:
-- Como resolver (buscar em outra fonte, testar em homologacao, etc.)
-- Quem pode responder (SEFAZ, fornecedor, forum)
+4. Para cada ALTA sugira como resolver (outra fonte, testar em homologação) e quem responde
+   (SEFAZ, fornecedor, fórum — rotular não oficial).
+5. Termine com `FONTES` (as NT/MOC citadas em cada dúvida).
+
+## Modo `--registrar`
+
+Registra uma dúvida nova (regras 8 e 9 do AGENTS.md: contradição entre fontes, cor sem item na
+descrição, campo de NT ausente no XSD, extração suspeita). Pergunte/infira os campos, atribua o
+próximo `#NNN`, **acrescente** ao fim do arquivo (nunca reescreva as existentes) com `Status: pendente`
+e a data de hoje. Evite duplicatas: Grep antes por NT/regra/trecho.
+
+## Resolver
+
+Mudança de status (`pendente` → `resolvida`) só com confirmação do usuário; registre a fonte que resolveu.

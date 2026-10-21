@@ -1,79 +1,58 @@
 ---
 name: atualizar-calendario
-description: Como extrair datas de vigencia das NTs, atualizar calendario.yaml e gerar MD/HTML. Granularidade por item. Nunca inventar data. Calcular situacao automaticamente.
-allowed-tools: Bash(node:*), Read
+description: Como extrair datas de vigência das NTs, atualizar calendario/calendario.yaml e gerar MD/HTML. Granularidade por item, nunca inventar data, situação calculada pela data de hoje. Use ao ingerir NT ou consultar vigência.
+allowed-tools: Read, Edit, Grep, Bash(node:*), Bash(date:*)
 ---
 
-# Skill: Atualizar Calendario
+# Skill: Atualizar Calendário
 
 ## Quando usar
-- Ao ingerir uma NT nova (extrair datas do cronograma)
-- Quando precisar saber a situacao atual de um item
-- Quando precisar gerar o calendario em MD ou HTML
+- Ingerir NT nova (extrair datas do cronograma)
+- Saber a situação atual de um item
+- Gerar calendário em MD/HTML
 
-## Fonte Unica
+## Fonte única
+`calendario/calendario.yaml` é a FONTE ÚNICA; `CALENDARIO.md` e `calendario.html` são gerados
+(e ignorados pelo git). **Nunca edite o .md/.html** — edite o .yaml e rode o gerador.
 
-`calendario/calendario.yaml` e a FONTE UNICA. Os arquivos:
-- `calendario/CALENDARIO.md` (gerado)
-- `calendario/calendario.html` (gerado)
-
-NUNCA edite .md ou .html diretamente. Edite o .yaml e rode o script.
+> Estado atual: `calendario.yaml` e `scripts/js/gerar_calendario.js` **ainda não existem**.
+> Se faltarem, não invente: crie o yaml só com datas lidas das NTs (formato abaixo), avise
+> que o gerador não existe e **não** escreva MD/HTML à mão.
 
 ## Granularidade por item
+Uma NT tem vários itens com datas DIFERENTES. Exemplo (CT-e NT 2026.004 v1.00, conferir no JSON):
+- Bloco A: homologação 13/10/2026, produção 16/11/2026 (campos de valor líquido, etc.)
+- Bloco B: homologação 16/11/2026, produção 14/12/2026 (CT-e Simplificado)
+- Bloco C: homologação 01/02/2027, produção 01/03/2027 (ICMS previsto, regras 1051-1053)
 
-Uma NT pode ter multiplos itens com datas DIFERENTES.
+## De onde extrair datas
+1. **Tabela de cronograma** da NT (geralmente pág. 3): versão, homologação, produção.
+2. **Observações nas regras**: "Implantação: homologação …, produção …" (não estão no cronograma).
+3. **Exceções**: "Até 05/10/2026" → guardar em `texto_original`, nunca reinterpretar.
+   Para calcular situação, trate "Até DD/MM/AAAA" como data-limite, mas mostre o literal.
+4. Leia do JSON em `catalogo/nt/<doc>/*.json` (`cronograma[]`), não do PDF.
 
-Exemplo - NT CT-e 2026.004 v1.00:
-```
-Bloco A: homologacao 13/10/2026, producao 16/11/2026
-  - campos de valor liquido, excecao aliquotas, ajuste vTotDFe,
-    eliminacao EPEC/FSDA, emissao offline, evento credito presumido
+## Regras
+1. **Nunca inventar data**: `homologacao: PENDENTE` quando a NT não informa.
+2. Nova versão da mesma NT → atualiza a linha e move a anterior para `historico_versoes`.
+3. **Situação pela data de hoje** (rode `date`; não assuma):
+   - `futura` — homologação não começou
+   - `em_homologacao` — entre início da homologação e início da produção
+   - `prazo_homologacao_encerrado` — janela de homologação fechou (data-limite passou) e produção ainda não começou
+   - `em_producao` — produção já começou
+   - `excluida` — item revogado por NT posterior
+   - `indefinida` — datas PENDENTE (não calcular)
+4. Datas em ISO no yaml (`2026-10-13`) + `texto_original` quando houver texto literal.
 
-Bloco B: homologacao 16/11/2026, producao 14/12/2026
-  - mudanca estrutura CT-e Simplificado
-
-Bloco C: homologacao 01/02/2027, producao 01/03/2027
-  - validacao ICMS previsto (regras 1051-1053)
-```
-
-## Como extrair datas
-
-### 1. Da tabela de cronograma (geralmente pagina 3)
-- Versao, data de homologacao, data de producao
-
-### 2. De observacoes dentro das regras
-- Ex: "Implantacao: homologacao 01/02/2027, producao 01/03/2027"
-- Essas datas NAO estao na tabela de cronograma
-
-### 3. De excecoes
-- Ex: "Ate 05/10/2026" (texto literal, nao reinterpretar)
-
-## Regras de atualizacao
-
-1. **Nunca inventar data.** Se a NT nao informa: `homologacao: PENDENTE`
-2. **Atualizar linha existente** quando sair nova versao da mesma NT
-3. **Guardar historico** em `historico_versoes`
-4. **Calcular situacao** pela data de hoje:
-   - `futura` - homologacao nao comecou
-   - `em_homologacao` - entre inicio e fim
-   - `prazo_homologacao_encerrado` - homologacao encerrou
-   - `em_producao` - producao ja comecou
-5. **Texto literal**: "Ate 05/10/2026" guardar como `texto_original`
-
-## Gerar saida
-
+## Gerar saída
 ```bash
 node scripts/js/gerar_calendario.js
 ```
-
-Gera:
-- `calendario/CALENDARIO.md` - com emojis 🟦 🟧
-- `calendario/calendario.html` - com celulas coloridas
+Gera `calendario/CALENDARIO.md` e `calendario/calendario.html`.
 
 ## Erros
+- `ERRO_DATA_NAO_ENCONTRADA` → `PENDENTE`, não inventar
+- `ERRO_DATAS_CONFLITANTES` → mostrar as duas, marcar revisão, registrar em `docs/duvidas-abertas.md`
 
-- `ERRO_DATA_NAO_ENCONTRADA` - criar "pendente", nao inventar
-- `ERRO_DATAS_CONFLITANTES` - mostrar as duas, marcar revisao
-
-## Referencia
-Leia `docs/REFERENCIA.md` secao 6 para detalhes do calendario.
+## Referência
+`docs/REFERENCIA.md` seção 6.

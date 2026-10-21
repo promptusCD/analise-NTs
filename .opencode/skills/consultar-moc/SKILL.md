@@ -1,51 +1,51 @@
 ---
 name: consultar-moc
-description: Como achar regras no MOC (Manual de Orientacao do Contribuinte) vigente. Qual versao vale em cada data. Como conciliar MOC x NT (NT altera o MOC ate ser consolidada).
-allowed-tools: Bash(node:*), Read
+description: Como achar regras e leiaute no MOC (Manual de Orientação do Contribuinte) vigente, qual versão vale em cada data e como conciliar MOC x NT. Use para perguntas sobre regras de validação, cStat ou campos de NF-e, CT-e e MDF-e.
+allowed-tools: Read, Grep, Glob, Bash(node:*), Bash(date:*)
 ---
 
 # Skill: Consultar MOC
 
 ## Quando usar
-- Quando precisar saber qual MOC e a versao vigente de um documento fiscal
-- Quando precisar encontrar uma regra de validacao no MOC
-- Quando precisar conciliar informacoes do MOC com NTs
+- Saber qual MOC é o vigente de um documento
+- Encontrar regra de validação / campo de leiaute no MOC
+- Conciliar MOC com NTs mais novas
 
-## Sobre os MOCs
+## Fontes locais (nesta ordem)
 
-Cada documento fiscal tem seu MOC:
-- **NF-e**: MOC v7.00 (Visao Geral + Anexo I Leiaute + Anexo II DANFE + Anexo III Contingencia)
-- **CT-e**: MOC v4.00 (Visao Geral + Anexo I Leiaute + Anexo II DACTE)
-- **MDF-e**: MOC v3.00b (Visao Geral + Anexo I Leiaute + Anexo II DAMDFE)
+1. `catalogo/moc/<doc>/<arquivo>.json` — MOC extraído. Chaves úteis:
+   `secoes[]` (hierárquicas), `regras_validacao[]`, `campos_leiaute[]`.
+   Use Grep por ID/cStat/tag nesses JSONs antes de abrir qualquer PDF.
+2. `manifest.yaml` — descobre **a versão vigente de cada MOC** (não assuma números de
+   cabeça: hoje NF-e v7.00, CT-e v4.00, MDF-e v3.00b, mas confirme no manifest).
+3. `docs-fiscais/<DOC>.md` seção "Fontes vigentes" (quando existir).
+4. PDF/DOCX em `fontes/<doc>/moc/` — só para conferir citação.
 
-## Como consultar
+## Estrutura dos MOCs
+- NF-e (inclui NFC-e): Visão Geral + Anexo I Leiaute + Anexo II DANFE + Anexo III Contingência
+- CT-e: Visão Geral + Anexo I Leiaute + Anexo II DACTE
+- MDF-e: Visão Geral + Anexo I Leiaute + Anexo II DAMDFE
+- `fontes/externas/MOC_NFe_ABI_*_minuta.pdf` é **minuta** (não oficial/vigente) — rotular como tal.
 
-### 1. Identificar o MOC correto
-Leia `docs-fiscais/<DOC>.md` secao "Fontes vigentes" para saber qual
-MOC e a versao atual.
+## Conciliar MOC x NT
+- O MOC é a versão consolidada **até a data dele**; NTs posteriores alteram regras sem
+  atualizar o MOC.
+- Para saber se uma NT mexeu na regra: buscar o ID da regra em `catalogo/nt/<doc>/*.json`
+  (e em `catalogo/regras/<doc>.json` quando existir).
+- Status: criada pelo MOC (ativa) → alterada por NT (citar NT/versão) → excluída por NT
+  (citar NT/versão). Cor nunca prova sozinha (regra 6).
+- Se MOC e NT divergirem: mostrar as duas, prevalece a mais recente **oficial** vigente na
+  data de hoje, registrar em `docs/duvidas-abertas.md`.
 
-### 2. Encontrar a regra
-- O Anexo I do MOC contem o leiaute (campos) e as regras de validacao
-- Cada regra tem: ID, descricao, cStat (codigo de rejeicao), efeito
-
-### 3. Conciliar MOC x NT
-- O MOC e a versao CONSOLIDADA (inclui todas as NTs ja aplicadas)
-- NTs mais recentes podem alterar regras do MOC sem atualizar o MOC
-- Para saber se uma regra foi alterada por NT, consulte:
-  - `catalogo/regras/<doc>.json` - campo "nt_origem"
-  - `docs-fiscais/<DOC>.md` secao "Regras de validacao"
-
-### 4. Verificar vigencia
-Uma regra pode ter sido:
-- Criada pelo MOC original (status: ativa, a menos que NT tenha excluido)
-- Alterada por NT (status: alterada, com versao de origem)
-- Excluida por NT (status: excluida, com versao de exclusao)
-
-## MOC Online
-O portal do SPED oferece MOC online:
-- NF-e: http://moc.sped.fazenda.pr.gov.br/NFe_NFCe/VisaoGeral.html
+## MOC online (conferência)
+- NF-e/NFC-e: http://moc.sped.fazenda.pr.gov.br/NFe_NFCe/VisaoGeral.html
 - CT-e: http://moc.sped.fazenda.pr.gov.br/CTe/index.html
+- A versão online pode estar à frente da local → rotule a diferença e sugira `/fiscal-atualizar-fontes`.
 
-## Referencia
-Leia `docs/REFERENCIA.md` secao 7 para o template dos docs-fiscais.
-Leia `docs/ARQUIVOS_NECESSARIOS.md` para saber quais MOCs precisam ser baixados.
+## Resposta
+Siga o formato padrão do AGENTS.md, sempre com **Fontes** (MOC, anexo, versão, página/seção) e vigência.
+Se não achar: "NAO ENCONTRADO NAS FONTES".
+
+## Referências
+- `docs/REFERENCIA.md` seção 7 (template dos docs-fiscais)
+- `docs/ARQUIVOS_NECESSARIOS.md` (o que falta baixar)

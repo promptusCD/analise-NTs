@@ -8,8 +8,27 @@ O MD nao e gerado por Python: a IA le o JSON e produz o MD
 import json
 import os
 from datetime import datetime, timezone
+from pathlib import Path
 
 from utils.classificacao import calcular_estatisticas
+
+# Raiz do repositorio: scripts/python/utils/saida.py -> ../../..
+RAIZ_REPOSITORIO = Path(__file__).resolve().parents[3]
+
+
+def caminho_relativo(caminho, raiz=None):
+    """
+    Converte um caminho para relativo a raiz do repositorio, com '/' como separador.
+
+    O JSON e compartilhado entre maquinas: nao pode conter letra de unidade nem
+    nome de usuario. Fora da raiz, grava so o nome do arquivo.
+    """
+    raiz = Path(raiz).resolve() if raiz else RAIZ_REPOSITORIO
+    p = Path(caminho).resolve()
+    try:
+        return p.relative_to(raiz).as_posix()
+    except ValueError:
+        return p.name
 
 
 def gerar_json_nt(metadata, cronograma, secoes, arquivo_origem, sha256):
@@ -31,7 +50,7 @@ def gerar_json_nt(metadata, cronograma, secoes, arquivo_origem, sha256):
         "versao": metadata.get("versao", ""),
         "documento": metadata.get("documento", ""),
         "titulo": metadata.get("titulo", ""),
-        "arquivo_origem": str(arquivo_origem),
+        "arquivo_origem": caminho_relativo(arquivo_origem),
         "sha256": sha256,
         "extraido_em": datetime.now(timezone.utc).isoformat(),
         "tipo_documento": "NT",
@@ -61,7 +80,7 @@ def gerar_json_moc(metadata, secoes, regras_validacao, campos_leiaute, arquivo_o
         "versao": metadata.get("versao", ""),
         "secao": metadata.get("secao", ""),
         "titulo": metadata.get("titulo", ""),
-        "arquivo_origem": str(arquivo_origem),
+        "arquivo_origem": caminho_relativo(arquivo_origem),
         "sha256": sha256,
         "extraido_em": datetime.now(timezone.utc).isoformat(),
         "tipo_documento": "MOC",

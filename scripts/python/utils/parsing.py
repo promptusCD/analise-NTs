@@ -12,7 +12,10 @@ Responsabilidades:
 
 import re
 import hashlib
+import logging
 from pathlib import Path
+
+LOG = logging.getLogger(__name__)
 
 
 # Nomenclatura: <DOC>_NT_<numero>_v<versao>.pdf ou CTe_NT_<numero>_v<versao>.pdf
@@ -89,60 +92,111 @@ def calculate_sha256(filepath):
     return h.hexdigest()
 
 
+# Versao no nome do arquivo: "..._v1.14b", "..._v1.00_Valor_Liquido" (sufixo alfabetico faz parte da versao)
+PATTERN_VERSAO_NOME = re.compile(r"_v(\d+(?:\.\d+)*[a-z]?)(?=$|[_\s.])", re.IGNORECASE)
+PATTERN_NT_NOME = re.compile(r"NT[_\s](\d{4})[_\s](\d{3})", re.IGNORECASE)
+# Linha da capa: "Nota Tecnica 2025.001 - Titulo" | "Nota Tecnica 2026.002 Versao 1.11"
+PATTERN_CAPA_NT = re.compile(r"^Nota\s+T[eé]cnica\s+(\d{4}\.\d{3})\s*(.*)$", re.IGNORECASE)
+PATTERN_CAPA_VERSAO = re.compile(r"^Vers[aã]o\s+(\d+(?:\.\d+)*[a-z]?)\b", re.IGNORECASE)
+
+
+def parse_titulo_capa(capa_texto):
+    """
+    Extrai o titulo impresso na capa (pagina 1) de uma NT.
+
+    Layouts conhecidos (as linhas do titulo quebram em 1-2 linhas):
+      - CT-e:   "Nota Tecnica N - <titulo>" na mesma linha
+      - MDF-e / NF-e (2026.007, 2026.010): titulo entre "Nota Tecnica N" e "Versao ..."
+      - NF-e (2026.002, 2026.008): titulo ANTES da linha "Nota Tecnica N ..."
+    O nome do projeto ("Projeto ...", quebrado em 2-3 linhas) nunca e titulo.
+
+    Returns:
+        str: titulo (linhas unidas por espaco) ou "" se nao identificado
+    """
+    linhas = [l.strip() for l in capa_texto.splitlines() if l.strip()]
+    idx = next((i for i, l in enumerate(linhas) if PATTERN_CAPA_NT.match(l)), None)
+    if idx is None:
+        return ""
+
+    # 1. Titulo na propria linha: "Nota Tecnica 2025.001 - Reforma Tributaria do Consumo"
+    resto = PATTERN_CAPA_NT.match(linhas[idx]).group(2).strip()
+    resto = re.sub(r"^[-–—]\s*", "", resto).strip()
+    if resto and not re.match(r"^Vers[aã]o\b", resto, re.IGNORECASE):
+        return resto
+
+    # 2. Linhas entre "Nota Tecnica N" e "Versao ..."
+    depois = []
+    for l in linhas[idx + 1:]:
+        if PATTERN_CAPA_VERSAO.match(l):
+            break
+        depois.append(l)
+    else:
+        depois = []  # sem linha "Versao": nao da para delimitar o titulo
+    if depois:
+        return " ".join(depois)
+
+    # 3. Linhas antes de "Nota Tecnica N" (sem bloco "Projeto ...")
+    antes = linhas[:idx]
+    if antes and not antes[0].lower().startswith("projeto"):
+        return " ".join(antes)
+    return ""
+
+
 def parse_nt_metadata(page_texts, filename=None):
     """
-    Extrai metadados da NT do cabecalho do PDF.
+    Extrai metadados da NT do nome do arquivo e da capa do PDF.
 
     Args:
         page_texts: lista de textos das paginas (strings)
         filename: nome do arquivo (opcional, para detect_documento)
 
     Returns:
-        dict com 'nt', 'versao', 'documento', 'titulo'
+        dict com 'nt', 'versao', 'documento', 'titulo' e 'avisos' (lista de str)
     """
     metadata = {
         "nt": "",
         "versao": "",
         "documento": "",
         "titulo": "",
+        "avisos": [],
     }
 
-    # Tentar detectar pelo nome do arquivo
+    versao_nome = ""
     if filename:
         metadata["documento"] = detect_documento_from_filename(filename)
         name = Path(filename).stem
-        for doc, pattern in PATTERNS_FILENAME.items():
-            m = pattern.search(name)
-            if m:
-                metadata["nt"] = f"{m.group(1)}.{m.group(2)}"
-                metadata["versao"] = m.group(3)
-                # Nao sobrescrever documento se ja detectado pelo prefixo
-                if not metadata["documento"]:
-                    metadata["documento"] = doc
-                break
+        m = PATTERN_NT_NOME.search(name)
+        if m:
+            metadata["nt"] = f"{m.group(1)}.{m.group(2)}"
+        m = PATTERN_VERSAO_NOME.search(name)
+        if m:
+            versao_nome = m.group(1)
 
-    # Tentar extrair do conteudo das primeiras paginas
-    first_pages = page_texts[:3] if len(page_texts) >= 3 else page_texts
-    full_text = "\n".join(first_pages)
+    capa = page_texts[0] if page_texts else ""
+    primeiras = "\n".join(page_texts[:3])
 
-    # Pattern: "Nota Tecnica 2026.007" ou "NT 2026.007"
-    m = re.search(r"(?:Nota\s+T[eé]cnica|NT)\s+(\d{4}\.\d{3})", full_text, re.IGNORECASE)
-    if m and not metadata["nt"]:
-        metadata["nt"] = m.group(1)
+    # NT: do nome; se faltar, da capa/primeiras paginas
+    if not metadata["nt"]:
+        m = re.search(r"(?:Nota\s+T[eé]cnica|NT)\s+(\d{4}\.\d{3})", primeiras, re.IGNORECASE)
+        if m:
+            metadata["nt"] = m.group(1)
 
-    # Pattern: "versao 1.10" ou "v1.10"
-    m = re.search(r"v(?:ers[aã]o)?\s*([\d.]+)", full_text, re.IGNORECASE)
-    if m and not metadata["versao"]:
-        metadata["versao"] = m.group(1)
-
-    # Pattern: titulo geralmente na primeira linha nao vazia
-    for line in full_text.split("\n"):
-        line = line.strip()
-        if len(line) > 10 and not line.startswith(("Nota", "NT ", "Ministerio")):
-            # Provavelmente e o titulo
-            if not metadata["titulo"]:
-                metadata["titulo"] = line[:200]
+    # Versao: do nome (com sufixo alfabetico), conferida com a capa
+    versao_capa = ""
+    for linha in (l.strip() for l in capa.splitlines()):
+        m = PATTERN_CAPA_VERSAO.match(linha) or re.search(r"Vers[aã]o\s+(\d+(?:\.\d+)*[a-z]?)\b", linha, re.IGNORECASE)
+        if m:
+            versao_capa = m.group(1)
             break
+    metadata["versao"] = versao_nome or versao_capa
+    if versao_nome and versao_capa and versao_nome.lower() != versao_capa.lower():
+        metadata["avisos"].append(
+            f"versao do nome do arquivo ({versao_nome}) difere da capa ({versao_capa})"
+        )
+
+    metadata["titulo"] = parse_titulo_capa(capa)
+    if not metadata["titulo"]:
+        metadata["avisos"].append("titulo nao identificado na capa")
 
     return metadata
 
@@ -195,96 +249,26 @@ def parse_moc_metadata(page_texts, filename=None):
     return metadata
 
 
-def parse_cronograma(page_texts):
+def parse_cronograma(page_texts, spans_por_pagina=None):
     """
-    Extrai datas de homologacao/producao do cronograma da NT.
+    Extrai o cronograma da tabela 'Historico de Alteracoes / Cronograma' da NT.
 
-    Mantem literais como "Ate 05/10/2026" (nao converte para data).
+    Le a tabela por coluna (utils/colunas.py) e mantem as celulas literais
+    ("Ate 05/10/2026", "Ja implantado", "07/2025"). Nunca inventa versao nem data:
+    sem tabela reconhecida devolve [] e avisa ERRO_DATA_NAO_ENCONTRADA.
+
+    Args:
+        page_texts: textos das paginas (nao usado para extrair; mantido por compatibilidade)
+        spans_por_pagina: lista (uma por pagina) de spans com bbox (cores.extract_page_content)
 
     Returns:
-        lista de dicts com 'versao', 'homologacao', 'producao'
+        lista de dicts com 'versao', 'homologacao', 'producao', 'descricao'
     """
-    full_text = "\n".join(page_texts)
-    cronograma = []
+    from utils.colunas import extrair_cronograma_tabela
 
-    # Procurar secao de cronograma
-    cronograma_section = ""
-    lines = full_text.split("\n")
-    in_cronograma = False
-
-    for line in lines:
-        lower = line.lower().strip()
-        if any(kw in lower for kw in ["cronograma", "prazo", "homologa", "produção", "producao"]):
-            in_cronograma = True
-        if in_cronograma:
-            cronograma_section += line + "\n"
-            # Parar quando encontrar proxima secao numerada
-            if re.match(r"^\d+\.\s+", line.strip()) and "cronograma" not in lower:
-                if len(cronograma_section) > 200:  # Ja temos conteudo suficiente
-                    break
-
-    # Se nao encontrou secao especifica, usar todo o texto
-    if not cronograma_section.strip():
-        cronograma_section = full_text
-
-    # Procurar blocos de versao com datas
-    # Pattern: "1.00" ou "v1.00" seguido de datas
-    version_blocks = re.split(r"(?:vers[aã]o|v)\s*([\d.]+)", cronograma_section)
-
-    current_versao = ""
-    for i, block in enumerate(version_blocks):
-        if re.match(r"^[\d.]+$", block.strip()):
-            current_versao = block.strip()
-            continue
-
-        if not current_versao:
-            continue
-
-        # Procurar datas no bloco
-        dates = PATTERN_DATA.findall(block)
-        ate_dates = PATTERN_ATE.findall(block)
-
-        homologacao = ""
-        producao = ""
-
-        # Tentar identificar qual e homologacao e qual e producao
-        for j, date in enumerate(dates):
-            # Geralmente: primeira data = homologacao, segunda = producao
-            if j == 0 and not homologacao:
-                # Verificar se tem "Ate" antes
-                for ate in ate_dates:
-                    if ate in date:
-                        homologacao = f"Ate {date}"
-                        break
-                if not homologacao:
-                    homologacao = date
-            elif j == 1 and not producao:
-                producao = date
-
-        if homologacao or producao:
-            cronograma.append({
-                "versao": current_versao,
-                "homologacao": homologacao,
-                "producao": producao,
-            })
-
-    # Fallback: procurar datas avulsas se nao encontrou blocos
+    cronograma = extrair_cronograma_tabela(spans_por_pagina) if spans_por_pagina else []
     if not cronograma:
-        all_dates = PATTERN_DATA.findall(full_text)
-        ate_dates = PATTERN_ATE.findall(full_text)
-
-        if len(all_dates) >= 2:
-            homologacao = all_dates[0]
-            producao = all_dates[1]
-            for ate in ate_dates:
-                if ate == homologacao:
-                    homologacao = f"Ate {ate}"
-            cronograma.append({
-                "versao": "1.00",
-                "homologacao": homologacao,
-                "producao": producao,
-            })
-
+        LOG.warning("ERRO_DATA_NAO_ENCONTRADA: tabela de cronograma nao reconhecida; cronograma = []")
     return cronograma
 
 

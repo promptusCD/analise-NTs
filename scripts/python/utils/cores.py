@@ -355,6 +355,37 @@ def extract_page_content(page):
     return items
 
 
+def marcacao_dominante(marcacoes):
+    """Marcacao mais relevante de um conjunto: EXCLUIDO > AMARELO > VERDE > demais > SEM_MARCA."""
+    marcacoes = list(marcacoes)
+    for prioridade in ("EXCLUIDO", "AMARELO", "VERDE"):
+        if prioridade in marcacoes:
+            return prioridade
+    for m in marcacoes:
+        if m != "SEM_MARCA":
+            return m
+    return "SEM_MARCA"
+
+
+def trechos_de_spans(spans):
+    """
+    Agrupa spans consecutivos de mesma marcacao em trechos [{texto, marcacao}].
+
+    Preserva a cor por trecho (ex.: so a 'Excecao 2' da linha esta em amarelo).
+    """
+    trechos = []
+    for s in spans:
+        t = s["text"].strip()
+        if not t:
+            continue
+        m = s.get("marcacao", "SEM_MARCA")
+        if trechos and trechos[-1]["marcacao"] == m:
+            trechos[-1]["texto"] += " " + t
+        else:
+            trechos.append({"texto": t, "marcacao": m})
+    return trechos
+
+
 def aggregate_spans_into_lines(items):
     """
     Agrega spans individuais em linhas coesas.
@@ -403,12 +434,9 @@ def _merge_line(line_items):
 
     text = " ".join(text_parts)
 
-    # Marcacao: se qualquer span tem marcacao, a linha inteira tem
-    marcacao = "SEM_MARCA"
-    for item in sorted_items:
-        if item["marcacao"] != "SEM_MARCA":
-            marcacao = item["marcacao"]
-            break
+    # Marcacao da linha = a mais relevante entre os trechos (EXCLUIDO > AMARELO > VERDE > ...)
+    trechos = trechos_de_spans(sorted_items)
+    marcacao = marcacao_dominante([t["marcacao"] for t in trechos])
 
     # Bold: se qualquer span e bold
     bold = any(item["bold"] for item in sorted_items)
@@ -425,6 +453,7 @@ def _merge_line(line_items):
     return {
         "text": text,
         "marcacao": marcacao,
+        "trechos": trechos,
         "bold": bold,
         "size": size,
         "bbox": [x0, y0, x1, y1],

@@ -157,6 +157,19 @@ def _parse_linha_campo(texto, eh_formato_a):
     return _parse_linha_campo_b(texto)
 
 
+def _atribuir_id_unico(regras):
+    """
+    'id_unico' = '<numero da secao>:<id>' ('#2', '#3'... se repetir). O mesmo ID de regra aparece em mais de
+    uma secao do MOC (ex.: 104 IDs unicos em 164 regras na Visao Geral do CT-e). Sem ID: usa o cStat.
+    """
+    vistos = {}
+    for r in regras:
+        chave = r["id"] or f"cStat{r.get('cStat', '')}"
+        base = f"{(r.get('secao') or {}).get('numero', '')}:{chave}"
+        vistos[base] = vistos.get(base, 0) + 1
+        r["id_unico"] = base if vistos[base] == 1 else f"{base}#{vistos[base]}"
+
+
 def montar_moc_estrutura(linhas, logger=None, permitir_numero_ponto=False):
     """
     Monta a estrutura hierarquica + regras + campos de um MOC.
@@ -242,7 +255,8 @@ def montar_moc_estrutura(linhas, logger=None, permitir_numero_ponto=False):
             # Formato "N. Titulo" so vale fora de tabela: dentro de blocos de
             # leiaute/regras, linhas "N. ..." sao conteudo (grupos, notas),
             # nao secoes - virar secao reseta o modo e perde regras/campos.
-            permitir_numero_ponto=permitir_numero_ponto and not em_tabela,
+            # Excecao: linha com fonte de TITULO (>= 11 pt, marcada pelo linearizador) e secao de fato.
+            permitir_numero_ponto=permitir_numero_ponto and (not em_tabela or bool(item.get("eh_titulo"))),
         )
         if numero is not None:
             fechar_modo()
@@ -269,7 +283,11 @@ def montar_moc_estrutura(linhas, logger=None, permitir_numero_ponto=False):
             continue
 
         if modo == "regras":
-            regra = parse_regra(texto)
+            if item.get("continuacao_mensagem") and regra_atual is not None:
+                # Mensagem da regra anterior que quebrou entre paginas (coluna da direita)
+                regra_atual["mensagem"] = (regra_atual.get("mensagem", "") + " " + texto).strip()
+                continue
+            regra = parse_regra(texto, permitir_sem_id=True)
             if regra is not None and regra.get("cStat"):
                 regra["marcacao"] = marc
                 regra["pagina"] = pagina
@@ -318,6 +336,7 @@ def montar_moc_estrutura(linhas, logger=None, permitir_numero_ponto=False):
             linhas_avulsas.append(item)
 
     fechar_modo()
+    _atribuir_id_unico(regras_validacao)
 
     total_secoes = _contar_secoes(secoes)
     stats = {

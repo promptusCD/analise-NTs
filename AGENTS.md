@@ -51,8 +51,11 @@ Voce consulta documentacao tecnica de NF-e, CT-e e MDF-e. Siga SEMPRE:
     depois detalhe (campo, regra, cStat, quem aplica, vigencia, impacto
     no emissor).
 
-11. **Nunca edite arquivos em `fontes/`**. Nunca edite blocos `AUTO`
-    dos docs-fiscais; use os scripts.
+11. **Nunca edite, crie, copie ou apague nada dentro de `fontes/`.** A IA
+    apenas ORGANIZA: o usuario coloca os arquivos em `entrada/` e a IA
+    MOVE (identificando tipo/documento) para o lugar certo em `fontes/`.
+    Nao ha excecao (nem notas, resumos ou fontes externas em `fontes/`).
+    Nunca edite blocos `AUTO` dos docs-fiscais; use os scripts.
 
 ---
 
@@ -69,6 +72,10 @@ Voce consulta documentacao tecnica de NF-e, CT-e e MDF-e. Siga SEMPRE:
 - Arquitetura hibrida: Python (extracao de PDF com PyMuPDF) + JavaScript
   (orquestracao, CLI, calendario, HTML)
 - Scripts Python em `scripts/python/`, scripts JS em `scripts/js/`
+- Ferramentas de IA suportadas: Claude Code (`.claude/`) e OpenCode (`.opencode/`).
+  A fonte dos commands/skills fiscais e `.claude/`; apos editar, rode
+  `npm run sincronizar-ia` para espelhar em `.opencode/` (`node scripts/js/sincronizar_ia.js --check` verifica).
+  Permissoes: `.claude/settings.json` e `opencode.json` (ambos negam edicao em `fontes/`).
 - Para detalhes completos, leia `docs/REFERENCIA.md`
 - Para saber o que falta baixar, leia `docs/ARQUIVOS_NECESSARIOS.md`
 

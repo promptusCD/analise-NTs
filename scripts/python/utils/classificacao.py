@@ -32,7 +32,9 @@ PAT_NUMERO_PONTO_LISTA = re.compile(
 )
 
 # Linha de tabela: token avulso E/G seguido de pai e ocorrencia (ex: "G A01 1-1")
-PAT_ROW_SHAPE = re.compile(r"\s[EG]\s+\S+\s+(?:[A-Za-z0-9]+\s+)?\d+-\d+")
+# Elemento: E (elemento), G (grupo), CG/CE (grupo/elemento de escolha do CT-e), ES (elemento simples)
+ELE = r"(?:CG|CE|ES|E|G)"
+PAT_ROW_SHAPE = re.compile(r"\s" + ELE + r"\s+\S+\s+(?:[A-Za-z0-9]+\s+)?\d+-\d+")
 # Linha de leiaute de MOC: "... Ele [Pai] [Tipo] Ocor"
 # (ex: "7 CFOP 2 ... E C 1 - 1 4 ER51", "93 ICMS00 ... do CG 1 - 1")
 PAT_MOC_ROW = re.compile(
@@ -50,9 +52,10 @@ PAT_ELLIPSIS = re.compile(r"^[\s.\-…]+$")
 # ---------------------------------------------------------------------------
 PAT_REGRA_INICIO = re.compile(r"^([A-Za-z]{0,3}\d[\w-]*)\s+(.*)$")
 PAT_MODELO = re.compile(r"^(\d{2}(?:/\d{2})+)\s+(.*)$")
-PAT_APLICACAO = re.compile(r"\b(Obrig\.?|Facult\.?|Facultativa|Futura|Opcional)\b")
+PAT_APLICACAO = re.compile(r"\b(Obrig\.?|Facult\.?|Facul\.?|Facultativa|Futura|Opcional)\b")
 PAT_CSTAT = re.compile(r"\b(\d{3,4})\b")
-PAT_EFEITO = re.compile(r"^\s*(Rej\.?|Aceito\.?|Aceitar)?\s*", re.IGNORECASE)
+# Token completo: "Rej." / "Rej " e efeito; "Rejeicao: ..." NAO (a coluna Efeito pode nem existir)
+PAT_EFEITO = re.compile(r"^\s*(?:(Rej\.?|Aceito\.?|Aceitar)(?=\s|$))?\s*", re.IGNORECASE)
 
 # Continuacoes que sao notas (vao para 'notas', nao para condicao/mensagem)
 PAT_NOTA = re.compile(
@@ -162,11 +165,17 @@ def _tipo_header(texto):
     return "tabela"
 
 
-def parse_regra(linha):
+def parse_regra(linha, permitir_sem_id=False):
     """
     Faz parse de uma linha achatada de regra de validacao.
 
     Ex: "002 Se CST do IBS/CBS for informado... Obrig. 311 Rej. Rejeição: CST..."
+
+    Args:
+        linha: texto da linha
+        permitir_sem_id: aceita regra de tabela SEM coluna de ID (so condicao + Aplic. + cStat),
+            como na CT-e 2026.004 (cStat 1054, 1055...); nesse caso o 'id' fica vazio e o cStat
+            DEVE vir logo depois da aplicacao. So use dentro de tabela de regras.
 
     Returns:
         dict com id, modelo, aplicacao, cStat, efeito, condicao, mensagem
@@ -174,10 +183,14 @@ def parse_regra(linha):
     """
     texto = linha.strip().replace("•", " ")
     m = PAT_REGRA_INICIO.match(texto)
-    if not m:
+    if m:
+        regra_id = m.group(1)
+        resto = m.group(2)
+    elif permitir_sem_id:
+        regra_id = ""
+        resto = texto
+    else:
         return None
-    regra_id = m.group(1)
-    resto = m.group(2)
 
     modelo = ""
     m2 = PAT_MODELO.match(resto)
@@ -192,7 +205,12 @@ def parse_regra(linha):
     condicao = resto[: m3.start()].strip()
     cauda = resto[m3.end() :]
 
-    m4 = PAT_CSTAT.search(cauda)
+    if regra_id == "" and permitir_sem_id:
+        m4 = re.match(r"\W*?(\d{3,4})\b", cauda)  # sem ID, o cStat tem que vir colado na aplicacao
+        if not m4:
+            return None
+    else:
+        m4 = PAT_CSTAT.search(cauda)
     cstat = m4.group(1) if m4 else ""
     depois = cauda[m4.end() :] if m4 else cauda
 
@@ -211,9 +229,9 @@ def parse_regra(linha):
     }
 
 
-def _eh_nova_regra(linha):
-    """Uma linha inicia nova regra se tem id + aplicacao + cStat."""
-    r = parse_regra(linha)
+def _eh_nova_regra(linha, permitir_sem_id=False):
+    """Uma linha inicia nova regra se tem id (ou, em tabela sem ID, so condicao) + aplicacao + cStat."""
+    r = parse_regra(linha, permitir_sem_id=permitir_sem_id)
     if r is None:
         return None
     if not r["cStat"]:
@@ -243,7 +261,7 @@ def parse_linha_tabela(linha, cabecalho):
 
     # Tentar match completo: pre + ele + pai + tipo + ocor + tam + obs
     m = re.match(
-        r"^(?P<pre>.*?)\s+(?P<ele>[EG])\s+(?P<pai>\S+)\s+"
+        r"^(?P<pre>.*?)\s+(?P<ele>CG|CE|ES|E|G)\s+(?P<pai>\S+)\s+"
         r"(?P<tipo>[\w.()-]+)\s+(?P<ocor>\d+-\d+)\s+(?P<tam>[\d.,/-]+)\s*(?P<obs>.*)$",
         texto,
     )
@@ -264,7 +282,7 @@ def parse_linha_tabela(linha, cabecalho):
 
     # Fallback sem tipo/tam: pre + ele + pai + ocor + obs
     m = re.match(
-        r"^(?P<pre>.*?)\s+(?P<ele>[EG])\s+(?P<pai>\S+)\s+"
+        r"^(?P<pre>.*?)\s+(?P<ele>CG|CE|ES|E|G)\s+(?P<pai>\S+)\s+"
         r"(?P<ocor>\d+-\d+)\s*(?P<obs>.*)$",
         texto,
     )
@@ -316,6 +334,14 @@ def _marcacao_dominante(marcacoes):
         if m != "SEM_MARCA":
             return m
     return "SEM_MARCA"
+
+
+def _trechos_mistos(item):
+    """Trechos [{texto, marcacao}] do item, mas so se misturarem marcacoes (senao None)."""
+    trechos = item.get("trechos")
+    if trechos and len({t["marcacao"] for t in trechos}) > 1:
+        return trechos
+    return None
 
 
 def _montar_paragrafos(linhas):
@@ -396,6 +422,9 @@ def montar_secoes_typed(linhas, logger=None):
                         "text": p.strip(),
                         "marcacao": item.get("marcacao", "SEM_MARCA"),
                         "pagina": item.get("pagina"),
+                        # trechos so valem quando o texto nao foi dividido
+                        "trechos": item.get("trechos") if len(partes) == 1 else None,
+                        "continuacao_mensagem": bool(item.get("continuacao_mensagem")),
                     }
                 )
 
@@ -445,6 +474,9 @@ def montar_secoes_typed(linhas, logger=None):
                     }
                 )
             elif tipo_tabela == "tabela" and linhas_tabela:
+                for ln in linhas_tabela:  # trechos so quando a linha mistura marcacoes
+                    if len({t["marcacao"] for t in ln.get("trechos", [])}) <= 1:
+                        ln.pop("trechos", None)
                 secoes.append(
                     {
                         "numero": numero,
@@ -523,17 +555,30 @@ def montar_secoes_typed(linhas, logger=None):
             continue
 
         if tipo_tabela == "regras":
-            nova = _eh_nova_regra(texto)
+            if item.get("continuacao_mensagem") and regras:
+                # Mensagem da regra anterior que quebrou entre paginas (coluna da direita)
+                anterior = regras[-1]
+                anterior["mensagem"] = (anterior.get("mensagem", "") + " " + texto).strip()
+                anterior["texto_completo"] += " " + texto
+                continue
+            nova = _eh_nova_regra(texto, permitir_sem_id=True)
             if nova:
                 nova["marcacao"] = marc
                 nova["pagina"] = pagina
                 nova["grupo"] = grupo_atual
                 nova["notas"] = []
                 nova["texto_completo"] = texto
+                trechos = _trechos_mistos(item)
+                if trechos:
+                    nova["trechos"] = trechos
                 regras.append(nova)
             elif regras:
                 r = regras[-1]
-                r["notas"].append({"texto": texto, "marcacao": marc})
+                nota = {"texto": texto, "marcacao": marc}
+                trechos = _trechos_mistos(item)
+                if trechos:
+                    nota["trechos"] = trechos
+                r["notas"].append(nota)
                 r["texto_completo"] += "\n" + texto
             else:
                 # Linha antes da primeira regra: rotulo de grupo / texto
@@ -545,14 +590,18 @@ def montar_secoes_typed(linhas, logger=None):
             if linha_parse:
                 linha_parse["marcacao"] = marc
                 linha_parse["pagina"] = pagina
+                linha_parse["trechos"] = list(item.get("trechos") or [])  # acumula as continuacoes
                 linhas_tabela.append(linha_parse)
             elif linhas_tabela:
-                # Continuacao da linha anterior (quebra de celula)
+                # Continuacao da linha anterior (quebra de celula): a marcacao da linha passa a ser a
+                # mais relevante entre TODAS as suas linhas (ex.: Observacao 1/2 em amarelo)
                 anterior = linhas_tabela[-1]
                 anterior["texto"] += " " + texto
                 anterior["observacao"] = (
                     anterior.get("observacao", "") + " " + texto
                 ).strip()
+                anterior["marcacao"] = _marcacao_dominante([anterior["marcacao"], marc])
+                anterior["trechos"].extend(item.get("trechos") or [{"texto": texto, "marcacao": marc}])
             elif re.match(r"^#", texto):
                 # Outro "# ..." apos invalidacao: novo cabecalho
                 voltar_texto()
@@ -563,6 +612,7 @@ def montar_secoes_typed(linhas, logger=None):
                 voltar_texto()
 
     fechar_secao()
+    atribuir_id_unico(secoes)
 
     if logger:
         tipos = {}
@@ -571,6 +621,25 @@ def montar_secoes_typed(linhas, logger=None):
         logger.info(f"Secoes tipificadas: {len(secoes)} ({tipos})")
 
     return secoes
+
+
+def atribuir_id_unico(secoes):
+    """
+    Acrescenta 'id_unico' a cada regra: '<numero da secao>:<id>' (com '#2', '#3'... se ainda repetir).
+
+    O 'id' continua como impresso no PDF; nas NTs de CT-e ele e so o numero da linha e reinicia a
+    cada tabela ('001', '002'...), entao nao identifica a regra no documento todo.
+    """
+    vistos = {}
+    for secao in secoes:
+        if secao.get("tipo") != "regras":
+            continue
+        for regra in secao.get("regras", []):
+            # Regra de tabela sem coluna de ID: o cStat identifica a regra
+            chave = regra["id"] or f"cStat{regra.get('cStat', '')}"
+            base = f"{secao['numero']}:{chave}"
+            vistos[base] = vistos.get(base, 0) + 1
+            regra["id_unico"] = base if vistos[base] == 1 else f"{base}#{vistos[base]}"
 
 
 def calcular_estatisticas(secoes):

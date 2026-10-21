@@ -17,7 +17,7 @@ context: |
   ## Stack Tecnica
   - Python: pymupdf, python-docx, lxml, pyyaml, pytest, jinja2
   - Node.js: js-yaml, ejs, node-fetch
-  - CLI: opencode (commands em .opencode/commands/, skills em .opencode/skills/)
+  - CLI: Claude Code (commands em .claude/commands/, skills em .claude/skills/); legado OpenCode em .opencode/
   - Versionamento: git com commits semanticos
 
   ## Documentos Fiscais Cobertos

@@ -21,7 +21,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import pymupdf
 
-from utils.cores import extract_page_content, aggregate_spans_into_lines
+from utils.colunas import linearizar_pagina
+from utils.cores import extract_page_content
 from utils.parsing import (
     detect_documento_from_filename,
     parse_nt_metadata,
@@ -100,6 +101,8 @@ def extrair_nt(pdf_path, manifest_path=None):
     # Extrair texto de todas as paginas
     page_texts = []
     all_items = []
+    spans_por_pagina = []
+    estado_colunas = {}  # fronteira de colunas e "dentro de regra", compartilhados entre paginas
 
     for page_num in range(len(doc)):
         page = doc[page_num]
@@ -107,7 +110,9 @@ def extrair_nt(pdf_path, manifest_path=None):
 
         # Extrair conteudo visual com marcacoes e agregar em linhas
         raw_items = extract_page_content(page)
-        page_items = aggregate_spans_into_lines(raw_items)
+        spans_por_pagina.append(raw_items)
+        # Linhas por pagina; em tabelas de regras separa as colunas (mensagem x notas)
+        page_items = linearizar_pagina(raw_items, page.rect.width, estado_colunas)
 
         # Extrair texto puro
         text = page.get_text()
@@ -124,10 +129,14 @@ def extrair_nt(pdf_path, manifest_path=None):
     # Parsear metadados
     metadata = parse_nt_metadata(page_texts, filename)
     logger.info(f"Metadados: NT={metadata['nt']}, v={metadata['versao']}, doc={metadata['documento']}")
+    for aviso in metadata.get("avisos", []):
+        logger.warning(f"Metadados: {aviso}")
 
     # Parsear cronograma
-    cronograma = parse_cronograma(page_texts)
-    logger.info(f"Cronograma: {len(cronograma)} blocos encontrados")
+    cronograma = parse_cronograma(page_texts, spans_por_pagina)
+    logger.info(f"Cronograma: {len(cronograma)} linhas encontradas")
+    if not cronograma:
+        logger.warning("ERRO_DATA_NAO_ENCONTRADA: tabela de cronograma nao reconhecida (cronograma = [])")
 
     # Filtrar linhas vazias, ruido e cabecalhos repetitivos
     itens_filtrados = []

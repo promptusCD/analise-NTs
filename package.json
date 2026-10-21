@@ -8,7 +8,8 @@
     "docs-fiscais": "node scripts/js/atualizar_docs_fiscais.js",
     "manifest": "node scripts/js/verificar_manifest.js",
     "novidades": "node scripts/js/detectar_novidades.js",
-    "consultar": "node scripts/js/consultar.js"
+    "consultar": "node scripts/js/consultar.js",
+    "sincronizar-ia": "node scripts/js/sincronizar_ia.js"
   },
   "dependencies": {
     "ejs": "^3.1.10",

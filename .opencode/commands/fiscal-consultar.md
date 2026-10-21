@@ -1,64 +1,44 @@
 ---
-description: "Consultar informacao fiscal com resposta mastigada, vigencia e fontes citadas"
+description: Consultar informação fiscal (NF-e, CT-e, MDF-e) com resposta mastigada, vigência e fontes citadas
+argument-hint: <pergunta em linguagem natural>
 ---
 
-# /consultar <pergunta>
+# /fiscal-consultar
 
-Responder uma pergunta sobre documentacao fiscal com resposta mastigada,
-vigencia calculada e fontes citadas.
+Responda a pergunta abaixo seguindo as regras do AGENTS.md (CLAUDE.md).
 
-## Argumentos
-- `<pergunta>`: pergunta em linguagem natural (obrigatorio)
+**Pergunta**: $ARGUMENTS
 
-**Argumentos fornecidos**: $ARGUMENTS
+## Fluxo
 
-## Fluxo de execucao
+1. **Documento**: NF-e/NFC-e, CT-e (inclui CT-e OS, GTV-e, Simplificado) ou MDF-e. Se a pergunta
+   cruzar documentos, responda por documento. Se não der para saber, pergunte.
+2. **Data de hoje**: rode `date` (Bash) ou `Get-Date`. Informe-a na resposta.
+3. **Leia** `docs-fiscais/<DOC>.md` e `docs-fiscais/_COMUM.md`. **Se não existirem** (hoje não
+   existem), avise em uma linha e siga com o catálogo.
+4. **Busque** (Grep antes de Read; os JSON são grandes):
+   - `catalogo/regras/<doc>.json`, `catalogo/campos/<doc>.json` (se existirem)
+   - `catalogo/nt/<doc>/*.json` — NTs extraídas
+   - `catalogo/moc/<doc>/*.json` — MOCs extraídos (`regras_validacao`, `campos_leiaute`)
+   - `calendario/calendario.yaml` (se existir) ou `cronograma[]` do JSON da NT
+   - `catalogo/legendas/<doc>.yaml` para interpretar marcações
+5. **Vigência** de cada regra/campo: `futura | em_homologacao | em_producao | excluida`, com datas.
+   Regra marcada EXCLUÍDO nunca é explicada como vigente.
+6. **Fontes externas** só se o acervo não responder (skill `pesquisar-fontes-externas`) e sempre com o selo "não oficial".
+7. **Contradição** entre fontes: mostre as duas, prevalece a oficial, registre em
+   `docs/duvidas-abertas.md` (`/fiscal-duvidas --registrar`).
+8. **Não achou**: responda `NAO ENCONTRADO NAS FONTES` e sugira `/fiscal-atualizar-fontes` ou
+   ingestão. Nunca responda de memória.
 
-### 1. Identificar o documento fiscal
-- Determinar se a pergunta e sobre NF-e, CT-e ou MDF-e
-- Se nao conseguir: perguntar ao usuario
-
-### 2. Ler docs-fiscais
-- Ler `docs-fiscais/<DOC>.md` (visao geral + armadilhas)
-- Ler `docs-fiscais/_COMUM.md` (conceitos transversais)
-
-### 3. Buscar no catalogo
-- `catalogo/regras/<doc>.json` - regras de validacao
-- `catalogo/campos/<doc>.json` - campos do leiaute
-- `catalogo/nt/<doc>/*.json` - extracoes de NTs
-
-### 4. Calcular vigencia
-- Para cada regra/campo encontrado, calcular situacao:
-  - `futura` | `em_homologacao` | `em_producao` | `excluida`
-- Usar data de hoje (rode `date` ou `Get-Date`)
-
-### 5. Formatar resposta
+## Formato (obrigatório)
 
 ```
 [RESUMO - 2-3 linhas]
-
 [DETALHE]
-- Campo/regra: <nome>
-- cStat: <codigo> (se aplicavel)
-- Quem aplica: <SEFAZ/todas>
-- NT de origem: <NT> v<versao>, pág. <N>
-- Marcação: <AMARELO/VERDE/EXCLUIDO/SEM_MARCA>
-- Situacao: <futura/em_homologacao/em_producao/excluida>
-
+- Campo/regra / cStat / Quem aplica / NT de origem (NT vX, pág. N) / Marcação / Situação (+ data de hoje)
 [IMPACTO NO EMISSOR]
-- O que precisa mudar no sistema
-
 [FONTES]
-- <documento> - <NT/MOC/XSD> v<versao> - pág. <N> - <marcação>
+- <documento> - <NT/MOC/XSD> v<versão> - pág. <N> - <marcação>
 ```
 
-### 6. Se nao encontrar
-- Responder "NAO ENCONTRADO NAS FONTES"
-- Sugerir `/atualizar-fontes` ou ingerir NT/MOC/XSD
-
-## Erros tratados
-
-| Erro | Acao |
-|---|---|
-| `ERRO_FONTE_AUSENTE` | Documento fora do manifest -> avisar, nao responder de memoria |
-| `ERRO_SEM_CITACAO` | Resposta sem fonte/versao/pagina -> invalida |
+Resposta sem "Fontes" é inválida (`ERRO_SEM_CITACAO`).

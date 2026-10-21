@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(openspec:*)",
+      "Bash(sha256sum:*)",
+      "Bash(date:*)",
+      "Bash(ls:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "PowerShell(Get-Date:*)",
+      "PowerShell(Get-ChildItem:*)",
+      "PowerShell(Get-FileHash:*)",
+      "WebFetch(domain:www.nfe.fazenda.gov.br)",
+      "WebFetch(domain:www.cte.fazenda.gov.br)",
+      "WebFetch(domain:dfe-portal.svrs.rs.gov.br)",
+      "WebFetch(domain:moc.sped.fazenda.pr.gov.br)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [
+      "Edit(/fontes/**)",
+      "Write(/fontes/**)"
+    ]
+  }
+}

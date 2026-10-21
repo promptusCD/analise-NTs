@@ -1,0 +1,1113 @@
+{
+ "pdf": "fontes/nfe/notas-tecnicas/NT_2026_008_v1.00_Valor_Liquido.pdf",
+ "pagina": 7,
+ "largura": 841.9199829101562,
+ "spans": [
+  {
+   "text": "Nota Fiscal Eletrônica - NF-e",
+   "bbox": [
+    49.68,
+    35.75,
+    188.07,
+    46.85
+   ],
+   "size": 9.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "NF-e / NFC-e – Valor Líquido do Produto",
+   "bbox": [
+    49.68,
+    47.27,
+    243.51,
+    58.37
+   ],
+   "size": 9.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "NT 2026.008",
+   "bbox": [
+    49.68,
+    58.62,
+    96.05,
+    67.59
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#808080"
+  },
+  {
+   "text": "Página",
+   "bbox": [
+    746.5,
+    537.23,
+    777.06,
+    547.27
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "7",
+   "bbox": [
+    777.1,
+    537.23,
+    782.1,
+    547.27
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "/",
+   "bbox": [
+    782.14,
+    537.23,
+    789.68,
+    547.27
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "10",
+   "bbox": [
+    789.58,
+    537.23,
+    799.62,
+    547.27
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "3. Regras de Validação",
+   "bbox": [
+    49.68,
+    80.62,
+    232.22,
+    98.41
+   ],
+   "size": 15.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "Grupo B. Identificação da Nota Fiscal eletrônica",
+   "bbox": [
+    49.68,
+    110.79,
+    371.87,
+    126.45
+   ],
+   "size": 14.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Campo",
+   "bbox": [
+    56.52,
+    127.36,
+    89.5,
+    137.39
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Modelo",
+   "bbox": [
+    97.1,
+    127.36,
+    131.04,
+    137.39
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de Validação",
+   "bbox": [
+    271.61,
+    127.36,
+    357.15,
+    137.39
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Aplic. Msg",
+   "bbox": [
+    497.83,
+    127.36,
+    550.49,
+    137.39
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Descrição Erro",
+   "bbox": [
+    633.7,
+    127.36,
+    700.28,
+    137.39
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "B25-80",
+   "bbox": [
+    57.0,
+    138.16,
+    89.02,
+    148.19
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "55",
+   "bbox": [
+    107.9,
+    138.16,
+    120.36,
+    148.19
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se finalidade da NF-e igual a crédito ou débito (tag: finNFe=5 ou 6) ou tpOperGov=2-",
+   "bbox": [
+    132.74,
+    138.16,
+    473.11,
+    148.19
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Recebimento do pagamento:",
+   "bbox": [
+    146.9,
+    148.47,
+    264.96,
+    158.51
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- Informado ICMS (tag: ICMS), ISSQN (tag: ISSQN), IPI (tag: IPI), II (tag: II), PIS (tag:",
+   "bbox": [
+    132.74,
+    158.91,
+    483.23,
+    168.95
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "PIS), PIS ST (tag: PISST), COFINS (tag: COFINS), COFINS ST (tag: COFINSST),",
+   "bbox": [
+    146.9,
+    169.24,
+    478.37,
+    179.27
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "ICMS UF Destino (tag: ICMSUFDest) ou Imposto Devolvido (tag: impostoDevol).",
+   "bbox": [
+    146.9,
+    179.56,
+    470.57,
+    189.59
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção 1:",
+   "bbox": [
+    132.74,
+    189.91,
+    179.85,
+    199.94
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "a regra acima não se aplica para:",
+   "bbox": [
+    179.9,
+    189.91,
+    318.39,
+    199.94
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- tpNFCredito=03-Retorno por Recusa Total na Entrega ou Por Não Localização do",
+   "bbox": [
+    132.74,
+    200.35,
+    475.1,
+    210.38
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Destinatário na Tentativa de Entrega;",
+   "bbox": [
+    146.9,
+    210.66,
+    298.59,
+    220.7
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- tpNFCredito=04-Redução de valores;",
+   "bbox": [
+    132.74,
+    220.99,
+    297.63,
+    231.02
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- tpNFCredito=06-Retorno por recusa parcial na entrega;",
+   "bbox": [
+    132.74,
+    231.31,
+    369.15,
+    241.34
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- tpNFDebito=07-Perda em estoque;",
+   "bbox": [
+    132.74,
+    241.75,
+    288.15,
+    251.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção 2:",
+   "bbox": [
+    132.74,
+    252.07,
+    179.85,
+    262.1
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "tpNFDebito=”06-Pagamento Antecipado” permite a informação do PIS,",
+   "bbox": [
+    179.9,
+    252.07,
+    467.07,
+    262.1
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "PISST, COFINS e COFINSST em NF-e com data de emissão em 2026.",
+   "bbox": [
+    146.9,
+    262.39,
+    435.51,
+    272.42
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção 3:",
+   "bbox": [
+    132.74,
+    272.71,
+    179.85,
+    282.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "tpNFDebito=”06-Pagamento Antecipado” permite a informação do IPI.",
+   "bbox": [
+    179.9,
+    272.71,
+    463.73,
+    282.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção 4:",
+   "bbox": [
+    132.74,
+    283.15,
+    182.4,
+    293.18
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "tpNFDebito=”06-Pagamento Antecipado” permite a informação do grupo",
+   "bbox": [
+    182.42,
+    283.15,
+    473.31,
+    293.18
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "ICMS/ICMSPrevistoPagtoAntecip (id: NB0",
+   "bbox": [
+    146.9,
+    294.31,
+    315.61,
+    304.34
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1).",
+   "bbox": [
+    315.65,
+    293.13,
+    325.12,
+    304.54
+   ],
+   "size": 9.96,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig. 1001 Rejeição: NF-e com finalidade de débito ou crédito",
+   "bbox": [
+    497.83,
+    138.16,
+    757.94,
+    148.19
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "somente para IBS/CBS",
+   "bbox": [
+    553.27,
+    148.47,
+    648.8,
+    158.51
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Grupo I. Produtos e Serviços da NF-e",
+   "bbox": [
+    49.68,
+    318.2,
+    301.91,
+    333.86
+   ],
+   "size": 14.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Campo Modelo",
+   "bbox": [
+    54.48,
+    334.65,
+    125.64,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de Validação",
+   "bbox": [
+    265.34,
+    334.65,
+    350.91,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Aplic. Msg",
+   "bbox": [
+    491.47,
+    334.65,
+    543.29,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Descrição Erro",
+   "bbox": [
+    639.7,
+    334.65,
+    706.28,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "I11c-10",
+   "bbox": [
+    50.76,
+    345.57,
+    83.26,
+    355.6
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "55/65 Se vProdLiq (id:I11c) não informado:",
+   "bbox": [
+    96.14,
+    345.57,
+    275.31,
+    355.6
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- vProdLiq (id:I11c) não informado",
+   "bbox": [
+    126.26,
+    355.89,
+    272.43,
+    365.92
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    126.26,
+    366.21,
+    183.36,
+    376.24
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Implementação futura.",
+   "bbox": [
+    183.38,
+    366.21,
+    275.43,
+    376.24
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig. 1278",
+   "bbox": [
+    489.19,
+    345.57,
+    542.69,
+    355.6
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Valor Líquido do Produto não informado [nItem: 999]",
+   "bbox": [
+    545.11,
+    345.57,
+    797.36,
+    355.6
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "I11c-20",
+   "bbox": [
+    50.76,
+    377.13,
+    83.26,
+    387.16
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "55/65 Se informado vProdLiq (id:I11c) e NF-e Normal (tag: finNFe=1):",
+   "bbox": [
+    96.14,
+    377.13,
+    382.11,
+    387.16
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- vProdLiq (id:I11c) difere de vUnComLiq (id:I11b) * qCom (id:I10)",
+   "bbox": [
+    126.26,
+    387.45,
+    397.83,
+    397.48
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    126.26,
+    397.77,
+    180.8,
+    407.8
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Aceitar uma tolerância de 0,01 a mais ou a menos.",
+   "bbox": [
+    180.86,
+    397.77,
+    388.95,
+    407.8
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig. 1279",
+   "bbox": [
+    489.19,
+    377.13,
+    542.69,
+    387.16
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Valor Líquido do Produto difere do calculado [nItem:",
+   "bbox": [
+    545.11,
+    377.13,
+    795.04,
+    387.16
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "999]",
+   "bbox": [
+    545.11,
+    387.45,
+    565.13,
+    397.48
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Grupo NB. ICMS Previsto no Pagamento Antecipado",
+   "bbox": [
+    49.68,
+    421.4,
+    402.23,
+    437.06
+   ],
+   "size": 14.04,
+   "marcacao": "VERDE",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Campo Modelo",
+   "bbox": [
+    54.48,
+    437.88,
+    125.64,
+    447.91
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de Validação",
+   "bbox": [
+    265.34,
+    437.88,
+    350.91,
+    447.91
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Aplic. Msg",
+   "bbox": [
+    491.47,
+    437.88,
+    543.29,
+    447.91
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Descrição Erro",
+   "bbox": [
+    639.7,
+    437.88,
+    706.28,
+    447.91
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "NB01-10",
+   "bbox": [
+    50.76,
+    448.8,
+    88.78,
+    458.83
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "65",
+   "bbox": [
+    102.5,
+    448.8,
+    114.96,
+    458.83
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se grupo ICMSPrevistoPagtoAntecip (id:NB01) informado:",
+   "bbox": [
+    126.26,
+    448.8,
+    361.95,
+    458.83
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- Modelo igual a 65",
+   "bbox": [
+    126.26,
+    459.12,
+    212.76,
+    469.15
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig. 1280 Rejeição: Grupo do ICMS Previsto no Pagamento Antecipado",
+   "bbox": [
+    489.19,
+    448.8,
+    793.76,
+    458.83
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "informado indevidamente [nItem: 999]",
+   "bbox": [
+    545.11,
+    459.12,
+    698.72,
+    469.15
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "NB01-20",
+   "bbox": [
+    50.76,
+    469.92,
+    88.78,
+    479.95
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "55",
+   "bbox": [
+    102.5,
+    469.92,
+    114.96,
+    479.95
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se tpNFDebito diferente de “06-Pagamento Antecipado” (tag: tpNFDebito <> 06)",
+   "bbox": [
+    126.26,
+    469.92,
+    450.17,
+    479.95
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "e",
+   "bbox": [
+    450.07,
+    469.92,
+    455.07,
+    479.95
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "tpOperGov diferente de “4-Recebimento do pagamento com fornecimento posterior” (tag:",
+   "bbox": [
+    126.26,
+    480.36,
+    484.58,
+    490.39
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "tpOperGov <> 4):",
+   "bbox": [
+    126.26,
+    490.67,
+    198.84,
+    500.71
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- Grupo ICMSPrevistoPagtoAntecip (id:NB01) informado indevidamente",
+   "bbox": [
+    126.26,
+    500.99,
+    421.83,
+    511.03
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig. 1280 Rejeição: Grupo do ICMS Previsto no Pagamento Antecipado",
+   "bbox": [
+    489.19,
+    469.92,
+    793.76,
+    479.95
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "informado indevidamente [nItem: 999]",
+   "bbox": [
+    545.11,
+    480.36,
+    698.72,
+    490.39
+   ],
+   "size": 9.0,
+   "marcacao": "VERDE",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  }
+ ]
+}

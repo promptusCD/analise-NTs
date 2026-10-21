@@ -1,0 +1,2541 @@
+{
+ "pdf": "fontes/cte/notas-tecnicas/CTe_NT_2026_004_v1.00.pdf",
+ "pagina": 9,
+ "largura": 595.3200073242188,
+ "spans": [
+  {
+   "text": "Projeto",
+   "bbox": [
+    71.04,
+    35.68,
+    100.9,
+    44.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "Conhecimento de Transporte Eletrônico - Reforma Tributária do Consumo",
+   "bbox": [
+    71.04,
+    44.87,
+    426.62,
+    55.98
+   ],
+   "size": 9.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "NT 2026.004 v1.00",
+   "bbox": [
+    71.04,
+    56.32,
+    139.73,
+    65.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#808080"
+  },
+  {
+   "text": "Página",
+   "bbox": [
+    471.48,
+    783.73,
+    502.01,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "9",
+   "bbox": [
+    502.08,
+    783.73,
+    507.08,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "/",
+   "bbox": [
+    507.12,
+    783.73,
+    514.61,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "16",
+   "bbox": [
+    514.56,
+    783.73,
+    524.57,
+    793.78
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "G008a",
+   "bbox": [
+    40.8,
+    84.52,
+    67.02,
+    93.5
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "H004a",
+   "bbox": [
+    40.8,
+    93.64,
+    66.52,
+    102.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Com a mudança de schema impedindo FSDA a regra",
+   "bbox": [
+    76.2,
+    84.52,
+    266.7,
+    93.5
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "fica obsoleta",
+   "bbox": [
+    76.2,
+    93.64,
+    121.26,
+    102.62
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": ":",
+   "bbox": [
+    121.21,
+    93.64,
+    125.61,
+    102.62
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeitar tipo de emissão (tag:tpEmis) igual a 5 (FS-",
+   "bbox": [
+    76.2,
+    102.88,
+    257.79,
+    111.86
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "DA)",
+   "bbox": [
+    76.2,
+    112.12,
+    90.05,
+    121.1
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Exceção: A exceção permite-se uso do FS-DA para",
+   "bbox": [
+    76.2,
+    121.24,
+    259.51,
+    130.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "CTe emitidos da SEFAZ Minas Gerais",
+   "bbox": [
+    76.2,
+    130.48,
+    211.87,
+    139.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig",
+   "bbox": [
+    281.88,
+    84.52,
+    301.49,
+    93.5
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "928",
+   "bbox": [
+    317.28,
+    84.52,
+    332.82,
+    93.5
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej",
+   "bbox": [
+    344.64,
+    84.52,
+    356.65,
+    93.5
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": ".",
+   "bbox": [
+    344.64,
+    93.64,
+    349.1,
+    102.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: Tipo de emissão FS-DA não é",
+   "bbox": [
+    367.68,
+    84.52,
+    510.55,
+    93.5
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "permitido",
+   "bbox": [
+    367.68,
+    93.64,
+    400.72,
+    102.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G103",
+   "bbox": [
+    40.8,
+    140.2,
+    62.55,
+    149.18
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "H077",
+   "bbox": [
+    40.8,
+    149.44,
+    62.1,
+    158.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se tipo de emissão for diferente",
+   "bbox": [
+    76.2,
+    140.2,
+    191.48,
+    149.18
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "de Contingência",
+   "bbox": [
+    191.49,
+    140.2,
+    249.4,
+    149.18
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "OffLine (tpEmis=2)",
+   "bbox": [
+    76.2,
+    149.44,
+    143.18,
+    158.42
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "EPEC (tpEmis=4):",
+   "bbox": [
+    145.44,
+    149.44,
+    210.45,
+    158.42
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Data-Hora de Emissão com atraso superior a 168",
+   "bbox": [
+    76.2,
+    158.56,
+    254.59,
+    167.54
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "horas em relação ao horário de recepção na SEFAZ",
+   "bbox": [
+    76.2,
+    167.8,
+    263.97,
+    176.78
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Autorizadora.",
+   "bbox": [
+    76.2,
+    177.04,
+    126.07,
+    186.02
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção: Esta regra mantem a redação somente para",
+   "bbox": [
+    76.2,
+    186.16,
+    268.39,
+    195.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "SEFAZ MG",
+   "bbox": [
+    76.2,
+    195.4,
+    119.33,
+    204.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Exceção",
+   "bbox": [
+    76.2,
+    204.52,
+    108.68,
+    213.5
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": ": CTe com Data de Emissão muito atrasada",
+   "bbox": [
+    108.72,
+    204.52,
+    266.21,
+    213.5
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "será aceito, desde que tenha sido emitido em",
+   "bbox": [
+    76.2,
+    213.76,
+    237.7,
+    222.74
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "contingência Off-Line (tag:tpEmis=2). O CTe",
+   "bbox": [
+    76.2,
+    223.0,
+    236.58,
+    231.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "transmitido para a SEFAZ Autorizadora após o prazo",
+   "bbox": [
+    76.2,
+    232.12,
+    266.55,
+    241.1
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "de 168 horas deve retornar: cStat=”150- Autorizado",
+   "bbox": [
+    76.2,
+    241.36,
+    259.35,
+    250.34
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Uso de CTe, autorização fora de prazo”.",
+   "bbox": [
+    76.2,
+    250.6,
+    218.98,
+    259.58
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    281.88,
+    140.2,
+    305.9,
+    149.18
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "228",
+   "bbox": [
+    317.26,
+    140.2,
+    332.81,
+    149.18
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej",
+   "bbox": [
+    344.65,
+    140.2,
+    356.66,
+    149.18
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": ".",
+   "bbox": [
+    344.64,
+    149.44,
+    349.1,
+    158.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Data de Emissão muito atrasada",
+   "bbox": [
+    367.68,
+    140.2,
+    521.48,
+    149.18
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "G215",
+   "bbox": [
+    40.8,
+    260.32,
+    62.55,
+    269.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "H131",
+   "bbox": [
+    40.8,
+    269.44,
+    62.1,
+    278.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se tipo de emissão for igual a",
+   "bbox": [
+    76.2,
+    260.32,
+    183.89,
+    269.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Contingência OffLine",
+   "bbox": [
+    183.99,
+    260.32,
+    258.65,
+    269.3
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "(tpEmis=2)",
+   "bbox": [
+    76.2,
+    269.44,
+    115.23,
+    278.42
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "EPEC (tpEmis=4)",
+   "bbox": [
+    117.36,
+    269.44,
+    180.43,
+    278.42
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": ":",
+   "bbox": [
+    180.24,
+    269.44,
+    182.47,
+    278.42
+   ],
+   "size": 8.04,
+   "marcacao": "RISCADO_SEM_COR",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#000000"
+  },
+  {
+   "text": "O parâmetro sign deve informado no QR-Code",
+   "bbox": [
+    76.2,
+    278.68,
+    244.75,
+    287.66
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção: Esta regra mantem a redação somente para",
+   "bbox": [
+    76.2,
+    287.92,
+    268.39,
+    296.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "SEFAZ MG",
+   "bbox": [
+    76.2,
+    297.04,
+    117.24,
+    306.02
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    281.88,
+    260.32,
+    305.9,
+    269.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "853",
+   "bbox": [
+    317.26,
+    260.32,
+    332.81,
+    269.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej",
+   "bbox": [
+    344.65,
+    260.32,
+    356.66,
+    269.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": ".",
+   "bbox": [
+    344.64,
+    269.44,
+    349.1,
+    278.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Parâmetro sign não informado no QR",
+   "bbox": [
+    367.68,
+    260.32,
+    538.53,
+    269.3
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Code para emissão em contingência",
+   "bbox": [
+    367.68,
+    269.44,
+    499.71,
+    278.42
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "G217",
+   "bbox": [
+    40.8,
+    306.76,
+    62.55,
+    315.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "H133",
+   "bbox": [
+    40.8,
+    316.0,
+    62.1,
+    324.98
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se tipo de emissão for igual",
+   "bbox": [
+    76.2,
+    306.76,
+    177.18,
+    315.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Contingência OffLine",
+   "bbox": [
+    177.19,
+    306.76,
+    254.19,
+    315.74
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "(tpEmis=2)",
+   "bbox": [
+    76.2,
+    316.0,
+    115.23,
+    324.98
+   ],
+   "size": 8.04,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "EPEC (tpEmis=4)",
+   "bbox": [
+    117.36,
+    316.0,
+    180.43,
+    324.98
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": ":",
+   "bbox": [
+    180.24,
+    316.0,
+    182.47,
+    324.98
+   ],
+   "size": 8.04,
+   "marcacao": "RISCADO_SEM_COR",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Valor da assinatura (sign) do QR-Code difere do valor",
+   "bbox": [
+    76.2,
+    325.12,
+    269.77,
+    334.1
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "calculado",
+   "bbox": [
+    76.2,
+    334.36,
+    112.23,
+    343.34
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção: Esta regra mantem a redação somente para",
+   "bbox": [
+    76.2,
+    343.6,
+    268.39,
+    352.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "SEFAZ MG",
+   "bbox": [
+    76.2,
+    352.72,
+    117.24,
+    361.7
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    281.88,
+    306.76,
+    305.9,
+    315.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "855",
+   "bbox": [
+    317.26,
+    306.76,
+    332.81,
+    315.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej",
+   "bbox": [
+    344.65,
+    306.76,
+    356.66,
+    315.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": ".",
+   "bbox": [
+    344.64,
+    316.0,
+    349.1,
+    324.98
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Assinatura do QR-Code difere do",
+   "bbox": [
+    367.68,
+    306.76,
+    523.88,
+    315.74
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "calculado",
+   "bbox": [
+    367.68,
+    316.0,
+    403.71,
+    324.98
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exclusão das Regras de Validação Específicas da EPEC na Autorização do CTe (mod57)",
+   "bbox": [
+    70.92,
+    374.61,
+    527.68,
+    386.93
+   ],
+   "size": 11.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Validações do EPEC",
+   "bbox": [
+    249.72,
+    391.12,
+    327.68,
+    400.1
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": true,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G184",
+   "bbox": [
+    40.8,
+    407.32,
+    62.55,
+    416.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeitar se forma de emissão do CTe for 4 (EPEC) e",
+   "bbox": [
+    76.32,
+    407.32,
+    263.19,
+    416.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Tipo de CTe DIFERENTE de Normal",
+   "bbox": [
+    76.32,
+    416.56,
+    207.13,
+    425.54
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    407.32,
+    298.82,
+    416.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "720",
+   "bbox": [
+    310.2,
+    407.32,
+    325.74,
+    416.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    407.32,
+    355.12,
+    416.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: CTe EPEC deve ser do tipo Normal",
+   "bbox": [
+    367.68,
+    407.32,
+    529.69,
+    416.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G185",
+   "bbox": [
+    40.8,
+    426.16,
+    62.55,
+    435.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for diferente de 4",
+   "bbox": [
+    76.32,
+    426.16,
+    245.33,
+    435.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "(EPEC): Acessar BD CTe-EVENTOS (Chave: UF,",
+   "bbox": [
+    76.32,
+    435.4,
+    255.98,
+    444.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "CNPJ Emit, Modelo, Série, Nro obtidos na chave de",
+   "bbox": [
+    76.32,
+    444.64,
+    260.53,
+    453.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "acesso dos eventos registrados).",
+   "bbox": [
+    76.32,
+    453.76,
+    193.74,
+    462.74
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- Verificar se existe EPEC para a chave natural do",
+   "bbox": [
+    76.32,
+    463.0,
+    254.79,
+    471.98
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "CTe",
+   "bbox": [
+    76.32,
+    472.24,
+    91.51,
+    481.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    76.32,
+    481.36,
+    127.06,
+    490.34
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": true,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Concatenar a chave de acesso do",
+   "bbox": [
+    127.08,
+    481.36,
+    250.72,
+    490.34
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "CTe da EPEC na resposta",
+   "bbox": [
+    76.32,
+    490.6,
+    170.75,
+    499.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    426.16,
+    298.82,
+    435.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "640",
+   "bbox": [
+    310.2,
+    426.16,
+    325.74,
+    435.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    426.16,
+    355.12,
+    435.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: Tipo de emissão do CTe difere de",
+   "bbox": [
+    367.68,
+    426.16,
+    523.93,
+    435.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "EPEC com EPEC autorizado na SVC-XX para",
+   "bbox": [
+    367.68,
+    435.4,
+    531.79,
+    444.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "este documento.",
+   "bbox": [
+    367.68,
+    444.64,
+    426.9,
+    453.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G186",
+   "bbox": [
+    40.8,
+    500.32,
+    62.55,
+    509.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for 4 (EPEC):",
+   "bbox": [
+    76.32,
+    500.32,
+    232.38,
+    509.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Acessar BD CTe-EVENTOS pela chave de acesso:",
+   "bbox": [
+    76.32,
+    509.56,
+    258.67,
+    518.54
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- Verificar se existe Evento EPEC autorizado na",
+   "bbox": [
+    76.32,
+    518.68,
+    248.58,
+    527.66
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "SVC-[XX].",
+   "bbox": [
+    76.32,
+    527.92,
+    115.02,
+    536.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    76.32,
+    537.16,
+    127.06,
+    546.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": true,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "O processo de sincronização entre as",
+   "bbox": [
+    127.08,
+    537.16,
+    261.28,
+    546.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "SEFAZ poderá sofrer algum atraso. Em caso de",
+   "bbox": [
+    76.32,
+    546.28,
+    249.43,
+    555.26
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "receber essa rejeição, a empresa emitente deverá",
+   "bbox": [
+    76.32,
+    555.52,
+    254.83,
+    564.5
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "tentar a transmissão do CTe até que o EPEC esteja",
+   "bbox": [
+    76.32,
+    564.64,
+    262.71,
+    573.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "sincronizado com a SEFAZ Autorizadora.",
+   "bbox": [
+    76.32,
+    573.88,
+    223.02,
+    582.86
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    500.32,
+    298.82,
+    509.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "641",
+   "bbox": [
+    310.2,
+    500.32,
+    325.74,
+    509.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    500.32,
+    355.12,
+    509.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: O evento prévio deste CTe não foi",
+   "bbox": [
+    367.68,
+    500.32,
+    525.22,
+    509.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "autorizado na SVC ou ainda não foi",
+   "bbox": [
+    367.68,
+    509.56,
+    496.26,
+    518.54
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "sincronizado.",
+   "bbox": [
+    367.68,
+    518.68,
+    414.91,
+    527.66
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "[OBS: Em caso de atraso na sincronização,",
+   "bbox": [
+    367.68,
+    527.92,
+    524.67,
+    536.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "favor aguardar alguns instantes para nova",
+   "bbox": [
+    367.68,
+    537.16,
+    519.91,
+    546.14
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "tentativa de transmissão]",
+   "bbox": [
+    367.68,
+    546.28,
+    458.82,
+    555.26
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G187",
+   "bbox": [
+    40.8,
+    583.6,
+    62.55,
+    592.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for 4 (EPEC):",
+   "bbox": [
+    76.32,
+    583.6,
+    232.38,
+    592.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- Valor de ICMS, Valor de ICMS ST, Valor da",
+   "bbox": [
+    76.32,
+    592.84,
+    238.71,
+    601.82
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Prestação e Valor Total da Carga do CTe devem ser",
+   "bbox": [
+    76.32,
+    601.96,
+    263.21,
+    610.94
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "iguais aos informados no evento prévio.",
+   "bbox": [
+    76.32,
+    611.2,
+    217.87,
+    620.18
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    583.6,
+    298.82,
+    592.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "642",
+   "bbox": [
+    310.2,
+    583.6,
+    325.74,
+    592.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    583.6,
+    355.12,
+    592.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: Os valores de ICMS, ICMS ST,",
+   "bbox": [
+    367.68,
+    583.6,
+    514.01,
+    592.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Prestação e Total da Carga do CTe devem ser",
+   "bbox": [
+    367.68,
+    592.84,
+    535.73,
+    601.82
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "iguais aos informados no EPEC.",
+   "bbox": [
+    367.68,
+    601.96,
+    485.1,
+    610.94
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G188",
+   "bbox": [
+    40.8,
+    620.92,
+    62.55,
+    629.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for 4 (EPEC):",
+   "bbox": [
+    76.32,
+    620.92,
+    232.38,
+    629.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- Tipo do Tomador do Serviço, CNPJ/CPF do",
+   "bbox": [
+    76.32,
+    630.04,
+    241.39,
+    639.02
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Tomador e IE do tomador do CTe devem ser iguais",
+   "bbox": [
+    76.32,
+    639.28,
+    258.67,
+    648.26
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "aos informados no evento prévio.",
+   "bbox": [
+    76.32,
+    648.52,
+    194.72,
+    657.5
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    620.92,
+    298.82,
+    629.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "643",
+   "bbox": [
+    310.2,
+    620.92,
+    325.74,
+    629.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    620.92,
+    355.12,
+    629.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: As informações do tomador de",
+   "bbox": [
+    367.68,
+    620.92,
+    514.38,
+    629.9
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "serviço do CTe devem ser iguais as",
+   "bbox": [
+    367.68,
+    630.04,
+    494.83,
+    639.02
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "informadas no EPEC",
+   "bbox": [
+    367.68,
+    639.28,
+    442.44,
+    648.26
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G189",
+   "bbox": [
+    40.8,
+    658.24,
+    62.55,
+    667.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for 4 (EPEC):",
+   "bbox": [
+    76.32,
+    658.24,
+    232.38,
+    667.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- Modal do CTe deve ser igual ao informado no",
+   "bbox": [
+    76.32,
+    667.36,
+    248.08,
+    676.34
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "evento prévio.",
+   "bbox": [
+    76.32,
+    676.6,
+    126.68,
+    685.58
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    658.24,
+    298.82,
+    667.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "644",
+   "bbox": [
+    310.2,
+    658.24,
+    325.74,
+    667.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    658.24,
+    355.12,
+    667.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: A informação do modal do CTe deve",
+   "bbox": [
+    367.68,
+    658.24,
+    533.81,
+    667.22
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "ser igual a informada no EPEC",
+   "bbox": [
+    367.68,
+    667.36,
+    477.6,
+    676.34
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G190",
+   "bbox": [
+    40.8,
+    686.32,
+    62.55,
+    695.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for 4 (EPEC):",
+   "bbox": [
+    76.32,
+    686.32,
+    232.38,
+    695.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- UF de início e UF de fim de prestação do CTe",
+   "bbox": [
+    76.32,
+    695.44,
+    244.57,
+    704.42
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "devem ser iguais aos informados no evento prévio.",
+   "bbox": [
+    76.32,
+    704.68,
+    257.38,
+    713.66
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    686.32,
+    298.82,
+    695.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "645",
+   "bbox": [
+    310.2,
+    686.32,
+    325.74,
+    695.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    686.32,
+    355.12,
+    695.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: A UF de início e fim de prestação do",
+   "bbox": [
+    367.68,
+    686.32,
+    534.91,
+    695.3
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "CTe devem ser iguais as informadas no EPEC.",
+   "bbox": [
+    367.68,
+    695.44,
+    535.41,
+    704.42
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G191",
+   "bbox": [
+    40.8,
+    714.4,
+    62.55,
+    723.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for 4 (EPEC):",
+   "bbox": [
+    76.32,
+    714.4,
+    232.38,
+    723.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- Data de emissão do CTe deve ser menor ou igual",
+   "bbox": [
+    76.32,
+    723.64,
+    257.87,
+    732.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "a data de autorização do evento prévio",
+   "bbox": [
+    76.32,
+    732.76,
+    214.71,
+    741.74
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    714.4,
+    298.82,
+    723.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "697",
+   "bbox": [
+    310.2,
+    714.4,
+    325.74,
+    723.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    714.4,
+    355.12,
+    723.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: CTe com emissão anterior ao evento",
+   "bbox": [
+    367.68,
+    714.4,
+    536.68,
+    723.38
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "prévio (EPEC)",
+   "bbox": [
+    367.68,
+    723.64,
+    418.92,
+    732.62
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "G192",
+   "bbox": [
+    40.8,
+    742.48,
+    62.55,
+    751.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Se forma de emissão do CTe for 4 (EPEC):",
+   "bbox": [
+    76.32,
+    742.48,
+    232.38,
+    751.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "- Data de emissão do CTe deve ser igual a data de",
+   "bbox": [
+    76.32,
+    751.72,
+    259.59,
+    760.7
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "emissão do evento prévio",
+   "bbox": [
+    76.32,
+    760.84,
+    167.68,
+    769.82
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    274.8,
+    742.48,
+    298.82,
+    751.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "756",
+   "bbox": [
+    310.2,
+    742.48,
+    325.74,
+    751.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    338.64,
+    742.48,
+    355.12,
+    751.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "Rejeição: Data de emissão do CTe deve ser",
+   "bbox": [
+    367.68,
+    742.48,
+    524.79,
+    751.46
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  },
+  {
+   "text": "igual à data de emissão da EPEC",
+   "bbox": [
+    367.68,
+    751.72,
+    487.45,
+    760.7
+   ],
+   "size": 8.04,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#EE0000"
+  }
+ ]
+}

@@ -18,7 +18,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import pymupdf
 
-from utils.cores import extract_page_content, aggregate_spans_into_lines
+from utils.colunas import linearizar_pagina
+from utils.cores import extract_page_content
 from utils.parsing import (
     parse_moc_metadata,
     calculate_sha256,
@@ -33,10 +34,12 @@ def itens_from_pdf(pdf_path):
     doc = pymupdf.open(pdf_path)
     all_items = []
     page_texts = []
+    estado_colunas = {}  # fronteira de colunas e "dentro de regra", compartilhados entre paginas
     for page_num in range(len(doc)):
         page = doc[page_num]
         raw_items = extract_page_content(page)
-        page_items = aggregate_spans_into_lines(raw_items)
+        # Em tabelas de regras separa as colunas (mensagem x notas), como nas NTs
+        page_items = linearizar_pagina(raw_items, page.rect.width, estado_colunas)
         text = page.get_text()
         page_texts.append(text)
         for item in page_items:

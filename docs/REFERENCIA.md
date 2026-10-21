@@ -262,14 +262,31 @@ Extracao completa de uma NT com secoes tipificadas e marcações interpretadas.
 Estrutura (schema em `scripts/python/utils/json_schema.py`):
 
 - `nt`, `versao`, `documento`, `titulo`, `arquivo_origem`, `sha256`,
-  `extraido_em`, `tipo_documento: "NT"` -- metadados obrigatorios
-- `cronograma[]` -- `versao`, `homologacao`, `producao` com datas LITERAIS
-  (ex.: `"Ate 05/10/2026"` nunca e convertido)
+  `extraido_em`, `tipo_documento: "NT"` -- metadados obrigatorios.
+  `titulo` e o impresso na CAPA do PDF (nao o resumo informal do manifest);
+  `versao` mantem o sufixo (`1.14b`); `arquivo_origem` e RELATIVO a raiz do
+  repositorio, com `/` (o JSON e compartilhado entre maquinas)
+- `cronograma[]` -- uma entrada por linha da tabela "Historico de
+  Alteracoes / Cronograma" que tenha alguma data: `versao`, `homologacao`
+  (coluna Teste/Homologacao), `producao`, `descricao`. Valores LITERAIS
+  (`"Ate 05/10/2026"`, `"Ja implantado"`, `"07/2025"`); marcadores de
+  ausencia (`-`, `-x-`) viram `""`. Pode ser `[]` (nunca se inventa versao
+  ou data); a extracao avisa `ERRO_DATA_NAO_ENCONTRADA`
 - `secoes[]` -- cada secao tem `numero`, `titulo` e `tipo`:
-  - `tipo: "tabela"` -> `cabecalho[]` + `linhas[]` (objetos por cabecalho)
-  - `tipo: "regras"` -> `regras[]` com `id`, `modelo`, `aplicacao`, `cStat`,
-    `efeito`, `mensagem`, `condicao`, `marcacao`, `pagina`, `notas[]`
+  - `tipo: "tabela"` -> `cabecalho[]` + `linhas[]` (objetos por cabecalho;
+    `trechos[]` quando a linha mistura marcacoes)
+  - `tipo: "regras"` -> `regras[]` com `id`, `id_unico`, `modelo`, `aplicacao`,
+    `cStat`, `efeito`, `mensagem` (completa), `condicao`, `marcacao`, `pagina`,
+    `notas[]` (cada nota com `marcacao` e, se mista, `trechos[]`).
+    `id` e o impresso no PDF e pode ser `""` em tabelas SEM coluna de ID
+    (CT-e 1054, 1055...; MDF-e 684): a chave de busca e entao o `cStat`.
+    `id_unico` (`<secao>:<id>`, ou `<secao>:cStat<N>` sem ID; `#2`... se
+    ainda repetir) e unico no documento: nas NTs de CT-e o `id` e so o numero
+    da linha e reinicia a cada tabela (`001`, `002`...)
   - `tipo: "texto"` -> `paragrafos[]` com `texto`, `marcacao`, `pagina`
+- `marcacao` de uma linha/nota e a mais relevante entre seus trechos
+  (EXCLUIDO > AMARELO > VERDE); `trechos[{texto, marcacao}]` so aparece
+  quando ha mais de uma marcacao. Cor nunca prova sozinha (regra 6)
 - `estatisticas` -- `total_secoes`, `total_regras`, `total_tabelas`,
   `por_marcacao` (AMARELO, VERDE, EXCLUIDO, SEM_MARCA)
 
@@ -287,7 +304,8 @@ Estrutura (schema em `scripts/python/utils/json_schema.py`):
     {
       "versao": "1.10",
       "homologacao": "Ate 05/10/2026",
-      "producao": "2026-11-03"
+      "producao": "03/11/2026",
+      "descricao": "- Alteracao em Regras de Validacao para facilitar testes em Homologacao."
     }
   ],
   "secoes": [
@@ -298,6 +316,7 @@ Estrutura (schema em `scripts/python/utils/json_schema.py`):
       "regras": [
         {
           "id": "001",
+          "id_unico": "4:001",
           "aplicacao": "Obrig.",
           "cStat": "311",
           "efeito": "Rej.",
@@ -333,9 +352,31 @@ Extracao completa de um MOC (PDF ou DOCX). Estrutura
 
 - `documento`, `versao`, `secao`, `titulo`, `arquivo_origem`, `sha256`,
   `extraido_em`, `tipo_documento: "MOC"` -- metadados obrigatorios
+- `arquivo_origem` e relativo a raiz do repositorio, com `/` (como nas NTs)
 - `secoes[]` -- hierarquicas: `numero`, `titulo`, `subsecoes[]` (recursivo)
-- `regras_validacao[]` -- `id`, `cStat`, `descricao`, `modelo`, `aplicacao`
+- `regras_validacao[]` -- `id`, `id_unico` (`<secao>:<id>`: o mesmo ID repete
+  em varias secoes do MOC), `cStat`, `descricao`, `mensagem` (completa),
+  `modelo`, `aplicacao`, `notas[]`, `secao`, `pagina`, `marcacao`
 - `campos_leiaute[]` -- `tag`, `tipo`, `ocorrencia`, `descricao`
+
+### 5.1.3 Como conferir uma extracao
+
+Uma extracao so esta "concluida" depois de conferida contra o PDF:
+
+```bash
+python scripts/python/verificar_extracao.py                 # todos os JSON de catalogo/
+python scripts/python/verificar_extracao.py --so-bloqueantes
+python -m pytest tests/python -q                            # testes de aceite (golden)
+python -m pytest tests/python -q -m "not lento"             # sem os MOCs (~4 min a menos)
+```
+
+- `verificar_extracao.py`: schema, cobertura de texto, IDs de regra (NF-e) e
+  cStat do PDF fora do JSON, mensagens cortadas, cronograma, marcacoes.
+  Codigo de saida diferente de zero se houver pendencia BLOQUEANTE.
+- `tests/golden/*.json` sao escritos a mao a partir das paginas dos PDFs
+  (metadados, cronograma, regras, marcacoes, pisos de MOC). Ao incluir uma NT
+  nova, acrescente a expectativa; os testes so leem `fontes/`.
+- Lacunas conhecidas ficam em `docs/duvidas-abertas.md`.
 
 ### 5.1.2 catalogo/nt/<doc>/<nt>.md e catalogo/moc/<doc>/<moc>.md
 

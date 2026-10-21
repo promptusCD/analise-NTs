@@ -3,9 +3,9 @@
   "versao": "7.00",
   "secao": "Anexo II DANFE",
   "titulo": "",
-  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\nfe\\moc\\MOC_NFe_v7.00_Anexo_II_DANFE.pdf",
+  "arquivo_origem": "fontes/nfe/moc/MOC_NFe_v7.00_Anexo_II_DANFE.pdf",
   "sha256": "729c04fd1374188c29eb21ca60342741b24a014003d4c2ff1bbb455bb1a6a60e",
-  "extraido_em": "2026-10-07T15:45:57.049200+00:00",
+  "extraido_em": "2026-10-20T15:33:57.761654+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {

@@ -1,100 +1,26 @@
 ---
-description: "Gerar checklist de implementacao para o time de desenvolvimento: campos novos/alterados/removidos, regras, rejeicoes, eventos e datas"
+description: Gerar checklist de implementação para o time de desenvolvimento a partir de uma NT (campos, regras, rejeições, eventos, datas)
+argument-hint: <NT, ex. 2026.004 ou NT-CT-e-2026.004> [versão]
 ---
 
-# /impacto <nt>
+# /fiscal-impacto
 
-Gerar checklist de implementacao a partir de uma NT para o time de
-desenvolvimento.
+**Argumentos**: $ARGUMENTS
 
-## Argumentos
-- `<nt>`: NT para analisar (ex: NT-CT-e-2026.004, NT-NF-e-2026.007) (obrigatorio)
+## Fluxo
 
-**Argumentos fornecidos**: $ARGUMENTS
+1. Rode `date`.
+2. **Localizar a NT**: normalize o argumento (`NT-CT-e-2026.004`, `CTe NT 2026.004`, `2026.004` → número
+   `2026.004` + documento) e busque em `catalogo/nt/<doc>/` arquivos `*_<AAAA>_<NNN>_*`
+   (ex.: `CTe_NT_2026_004_v1.00.json`). Mais de uma versão: use a mais recente e diga qual; ambiguidade
+   real (documentos diferentes com o mesmo número): pergunte. Não achou: `NAO ENCONTRADO NAS FONTES`
+   e sugerir `/fiscal-ingerir-nt`.
+3. Siga a skill **resumo-impacto-dev** (formato, fontes, comparação entre versões e fallback quando
+   `catalogo/campos|regras` e `calendario.yaml` não existem).
+4. Regras: use `cStat` e `id_unico` como chave (em CT-e o `id` repete entre tabelas e pode ser vazio) e a
+   `mensagem` completa. O `cronograma[]` traz uma linha por implantação (`homologacao`, `producao`, `descricao`)
+   com literais como "Até 05/10/2026"; datas de "bloco" que estão só em observações de regras não entram no
+   `cronograma[]` — leia-as nas notas da regra (skill `atualizar-calendario`).
+5. Termine **sempre** com `FONTES` e a situação (com a data de hoje) de cada bloco de datas.
 
-## Fluxo de execucao
-
-### 1. Localizar a NT
-- Buscar em `catalogo/nt/<doc>/` por NT matching
-- Ler JSON da extracao
-
-### 2. Ler catalogos complementares
-- `catalogo/campos/<doc>.json` - campos do leiaute
-- `catalogo/regras/<doc>.json` - regras de validacao
-- `calendario/calendario.yaml` - datas
-
-### 3. Compilar checklist
-
-```
-IMPACTO DA <NT> - CHECKLIST DE IMPLEMENTACAO
-Documento: <doc>
-Versao: <versao>
-
-========================================
-CAMPOS NOVOS
-========================================
-- <tag> (<grupo pai>) [<modelos>] - descricao
-  XSD: <arquivo_xsd>
-  Onde usar: <contexto>
-
-========================================
-CAMPOS ALTERADOS
-========================================
-- <tag> (<grupo pai>) [<modelos>] - o que mudou
-  Antes: <valor antigo>
-  Depois: <valor novo>
-
-========================================
-CAMPOS EXCLUIDOS
-========================================
-- <tag> (<grupo pai>) [<modelos>] - motivo
-
-========================================
-REGRAS NOVAS
-========================================
-- <ID> (cStat <codigo>) - descricao
-  Quem aplica: <SEFAZ/todas>
-  Modelo: <N>
-
-========================================
-REGRAS EXCLUIDAS
-========================================
-- <ID> (cStat <codigo>) - motivo da exclusao
-
-========================================
-EVENTOS NOVOS
-========================================
-- <tpEvento> - <nome>
-  Autorizador: <SEFAZ>
-  Schema: <arquivo>
-
-========================================
-REJEICOES NOVAS
-========================================
-- <cStat> - <mensagem> - quando ocorre
-
-========================================
-DATAS DE VIGENCIA
-========================================
-Homologacao: <data>
-Producao: <data>
-
-========================================
-IMPACTO NO EMISSOR
-========================================
-1. Implementar campos novos: <lista>
-2. Remover campos excluidos: <lista>
-3. Implementar regras novas: <lista>
-4. Remover regras excluidas: <lista>
-5. Testar: <cenarios>
-6. Atencao: <armadilhas>
-```
-
-## Como usar
-
-```
-/impacto NT-CT-e-2026.004
-```
-
-O time de desenvolvimento recebe um checklist pronto para criar
-tarefas no Jira, Linear ou gestor de projetos.
+O resultado deve ser pronto para virar tarefas em Jira/Linear/Asana (um item = uma tarefa).

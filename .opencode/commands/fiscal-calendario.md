@@ -1,59 +1,31 @@
 ---
-description: "Mostrar calendario de vigencias filtrado por documento fiscal, ordenado por data de producao"
+description: Mostrar calendário de vigências por documento, ordenado por data de produção, com situação calculada para hoje
+argument-hint: [NF-e|CT-e|MDF-e]
 ---
 
-# /calendario [doc]
+# /fiscal-calendario
 
-Mostrar calendario de vigencias com situacao calculada para a data de hoje.
+**Argumentos**: $ARGUMENTS (documento opcional; vazio = todos)
 
-## Argumentos
-- `[doc]`: documento fiscal (NF-e, CT-e, MDF-e) - opcional, mostra todos se omitido
+## Fluxo
 
-**Argumentos fornecidos**: $ARGUMENTS
+1. Rode `date` e use-a como "hoje".
+2. Leia `calendario/calendario.yaml` (skill **atualizar-calendario**). **Se não existir** (hoje não
+   existe): monte a tabela a partir de `cronograma[]` dos JSONs em `catalogo/nt/<doc>/` e avise que
+   o calendário oficial ainda não foi gerado — ou ofereça criar o yaml.
+3. Situação por item: `futura | em_homologacao | prazo_homologacao_encerrado | em_producao | excluida | indefinida` (datas PENDENTE).
+4. Ordene por produção crescente (PENDENTE por último); **negrito** no que vence em até 30 dias.
+5. Preserve textos literais (`Até 05/10/2026`) e **recalcule** a situação — não copie situação antiga.
+6. Opcional: `node scripts/js/gerar_calendario.js` (se existir) para o HTML.
 
-## Fluxo de execucao
-
-### 1. Ler calendario
-- Consultar `calendario/calendario.yaml`
-- Filtrar por documento se especificado
-
-### 2. Calcular situacao
-Para cada item, usar data de hoje:
-- `futura` - homologacao nao comecou
-- `em_homologacao` - entre inicio e fim
-- `prazo_homologacao_encerrado` - homologacao encerrou
-- `em_producao` - producao ja comecou
-
-### 3. Ordenar
-- Por data de producao crescente
-- Destacar em negrito o que vence em ate 30 dias
-
-### 4. Formatar resposta
+## Formato
 
 ```
-CALENDARIO DE VIGENCIAS - <data de hoje>
-Filtro: <documento ou "todos">
-
-| # | Doc | NT/Versao | Itens | Homologacao | Producao | Situacao |
-|---|-----|-----------|-------|-------------|----------|----------|
-| 1 | NF-e | 2026.007 v1.00 | ... | 01/09/2026 | 03/11/2026 | em_producao |
-| 2 | NF-e | 2026.007 v1.10 | ... | Ate 05/10/2026 | 03/11/2026 | em_homologacao |
-| 3 | CT-e | 2026.004 v1.00-A | ... | **13/10/2026** | **16/11/2026** | em_homologacao |
-| 4 | CT-e | 2026.004 v1.00-B | ... | 16/11/2026 | 14/12/2026 | futura |
-| 5 | CT-e | 2026.004 v1.00-C | ... | 01/02/2027 | 01/03/2027 | futura |
-
-LEGENDA:
-- Homologacao: azul
-- Producao: laranja
-- **Negrito**: vence em ate 30 dias
+CALENDÁRIO DE VIGÊNCIAS - <hoje>   Filtro: <doc|todos>
+| # | Doc | NT/Versão | Itens | Homologação | Produção | Situação |
+LEGENDA: 🟦 homologação · 🟧 produção · **negrito** = vence em ≤ 30 dias
+[FONTES] <NT> v<versão> - pág. do cronograma
 ```
 
-### 5. Gerar HTML (opcional)
-- Rodar `node scripts/js/gerar_calendario.js` para atualizar HTML
-- HTML fica em `calendario/calendario.html`
-
-## Erros tratados
-
-| Erro | Acao |
-|---|---|
-| `ERRO_DOCUMENTO_INVALIDO` | Avisar que documento deve ser NF-e, CT-e ou MDF-e |
+## Erros
+- `ERRO_DOCUMENTO_INVALIDO` → aceitar só NF-e, CT-e ou MDF-e

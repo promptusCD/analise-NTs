@@ -3,9 +3,9 @@
   "versao": "3.00b",
   "secao": "Anexo I Leiaute",
   "titulo": "",
-  "arquivo_origem": "C:\\Users\\Dev2\\Desktop\\analise-NTs\\fontes\\mdfe\\moc\\MOC_MDFe_Anexo_I_Leiaute_v3.00b.pdf",
+  "arquivo_origem": "fontes/mdfe/moc/MOC_MDFe_Anexo_I_Leiaute_v3.00b.pdf",
   "sha256": "823ca492144eb928821c8ac6d5440f7625397d7b90a770003256559c6d6abe78",
-  "extraido_em": "2026-10-07T15:49:59.953467+00:00",
+  "extraido_em": "2026-10-20T15:36:20.685696+00:00",
   "tipo_documento": "MOC",
   "secoes": [
     {
@@ -66,569 +66,9 @@
           "titulo": "Regras de Validação Específicas do MDFe",
           "paragrafos": [
             {
-              "texto": "Regra de Validação Aplic cStat Efeito Mensagem Validações Gerais F01 Tipo do ambiente do MDFe difere do ambiente do Web Service Obrig. 252 Rej. Rejeição: Ambiente informado diverge do Ambiente de recebimento F02 Sigla da UF do Emitente difere da UF da chave de acesso Obrig. 247 Rej. Rejeição: Sigla da UF do Emitente diverge da UF autorizadora Exceção : regra não será aplicada na hipótese de Regime Especial da NFF F03 Campo \"ID\" inválido: Obrig. 227 Rej. Rejeição: Erro na composição do Campo ID",
+              "texto": "Validações Gerais",
               "marcacao": "SEM_MARCA",
               "pagina": 6
-            },
-            {
-              "texto": "- Falta literal \"MDFe\"",
-              "marcacao": "SEM_MARCA",
-              "pagina": 6
-            },
-            {
-              "texto": "- Chave de acesso do campo ID difere da concatenação dos campos correspondentes F04 Verificar se Ano da chave de acesso é inferior a 2012 Obrig. 666 Rej. Rejeição: Ano do MDFe informado na chave de acesso inválido F05 Dígito Verificador inválido da Chave de acesso resultante da concatenação Obrig. 253 Rej. Rejeição: Digito Verificador da chave de acesso composta dos campos correspondentes inválido F06 Verificar se a Versão do Modal é suportada Obrig 579 Rej Rejeição: Versão informada para o modal não suportada F07 Verificar Schema XML conforme o modal (parte específica do modal) Obrig. 580 Rej. Rejeição: Falha no Schema XML específico para o modal F08 Município de Carregamento do MDFe diverge da UF (verificar se as 2 Obrig. 456 Rej. Rejeição: Código de Município diverge da UF de posições da esquerda do código de município que identifica o código da UF Carregamento do MDFe estão de acordo com a sigla da UF informada) F09 Código do Município de Carregamento inexistente (Tabela Municípios do Obrig. 405 Rej. Rejeição: Município de Carregamento inexistente IBGE) F10 Rejeitar Município de carregamento duplicado no MDFe Obrig. 685 Rej. Rejeição: Município de carregamento duplicado no MDFe F11 Município de descarregamento diverge da UF de descarregamento (verificar Obrig. 612 Rej. Rejeição: Código de Município diverge da UF de se as 2 posições da esquerda do código de município de descarregamento descarregamento do MDFe que identifica o código da UF de descarga estão de acordo com a sigla da UF informada) Retornar o código do município de descarga inválido.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 6
-            },
-            {
-              "texto": "F12 Código do Município de Descarregamento inexistente (Tabela Municípios do Obrig. 406 Rej. Rejeição: Município de Descarregamento inexistente IBGE) F13 Rejeitar Município de descarregamento duplicado no MDFe Obrig. 680 Rej. Rejeição: Município de descarregamento duplicado no MDFe Validações do Tipo de Emitente F14 Se tipo emitente informado for igual a Prestador de Serviço de Transporte Obrig. 638 Rej. Rejeição: Não deve ser informada Nota Fiscal para tipo de (tpEmit=1): emitente Prestador Serviço de Transporte O grupo de documentos NFe não pode ser preenchido F15 Se tipo emitente informado for igual a Transportador de Carga Própria Obrig. 639 Rej. Rejeição: Não deve ser informado Conhecimento de (tpEmit=2): Transporte Eletrônico para tipo de emitente Transporte de O grupo de documentos CTe não pode ser preenchido Carga Própria.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 7
-            },
-            {
-              "texto": "F16 Se tipo emitente informado for igual a Transportador que emitirá CTe Obrig. 540 Rej. Rejeição: Não deve ser informado Conhecimento de globalizado (tpEmit=3): Transporte para tipo de emitente Prestador Serviço de O grupo de documentos CTe não pode ser preenchido Transporte que emitirá CTe Globalizado F17 Rejeitar se tipo emitente informado for igual a Transportador que emitirá CTe Obrig. 541 Rej. Rejeição: Tipo de emitente inválido para operações Globalizado (tpEmit=3) e operação interestadual ou com exterior interestaduais ou com exterior Validações do Tipo de Transportador F18 Se modal rodoviário e informado CPF do proprietário do veículo de tração: Obrig. 743 Rej. Rejeição: O tipo de transportador deve ser TAC quando A informação do tipo de transportador (tpTransp) deverá ser preenchida com informado CPF do proprietário do veículo de tração TAC (2).",
-              "marcacao": "SEM_MARCA",
-              "pagina": 7
-            },
-            {
-              "texto": "F19 Se modal rodoviário e informado CNPJ do proprietário do veículo de tração: Obrig. 744 Rej. Rejeição: O tipo de transportador deve ser ETC ou CTE quando informado CNPJ do proprietário do veículo de tração A informação do tipo de transportador (tpTransp) deverá ser preenchida com ETC (1) ou CTC (3).",
-              "marcacao": "SEM_MARCA",
-              "pagina": 7
-            },
-            {
-              "texto": "F20 Se modal rodoviário e não informado o grupo proprietário do veículo de Obrig. 745 Rej. Rejeição: O tipo de transportador não ser informado quando tração: não estiver informado proprietário do veículo de tração A informação do tipo de transportador (tpTransp) não deverá ser preenchida.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 8
-            },
-            {
-              "texto": "Validações do Carregamento Posterior F21 Se informado indicador de carregamento posterior (indCarregaPosterior=1), Obrig. 703 Rej. Rejeição: Carregamento e Descarregamento inválidos para deve ser informado apenas um município de carregamento e um município MDFe com indicação de carregamento posterior de descarregamento que devem ser iguais.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 8
-            },
-            {
-              "texto": "F22 Se informado indicador de carregamento posterior (indCarregaPosterior=1), Obrig. 704 Rej. Rejeição: MDFe com indicação de carregamento posterior UF de Carregamento deve ser igual a UF de descarregamento e diferentes não permitido para operações interestaduais ou com o de EX exterior F23 Se informado indicador de carregamento posterior (indCarregaPosterior=1), Obrig. 705 Rej. Rejeição: Modal inválido para MDFe com indicação de modal deve ser Rodoviário carregamento posterior (apenas modal rodoviário) F24 Se informado indicador de carregamento posterior (indCarregaPosterior=1), Obrig. 707 Rej. Rejeição: MDFe com indicação de carregamento posterior o tipo do emitente deve ser transporte próprio (2) com tipo de emitente diferente de transporte próprio F25 Verificar se existe MDFe com indicação de carregamento posterior Obrig. 712 Rej. Rejeição: Existe MDFe com indicação de carregamento (indCarregaPosterior=1) sem evento de inclusão de DF-e há mais de 168 posterior sem inclusão de DF-e para o emitente há mais de horas para o mesmo CNPJ / CPF do emitente 168 horas Validações dos Documentos Originários F26 Pelo menos um dos grupos de documentos deverá ser informado (CTe, NFe Obrig. 616 Rej. Rejeição: Nenhum grupo de documentos foi informado (CTe, e/ou MDFe) CT, NFe, MDFe) Retornar Município de Descarregamento sem DF-e Observação: Retornar Município sem DF-e vinculado vinculado Exceção: Regra não deve ser aplicada em caso de indicação de carregamento posterior (indCarregaPosterior=1) F27 Se informado indicador de carregamento posterior (indCarregaPosterior=1), Obrig. 706 Rej. Rejeição: Não informar documentos transportados para os grupos de documentos transportados não devem ser informados (CTe, MDFe com indicação de carregamento posterior (usar NFe e MDFe) evento inclusão de DF-e) F28 Se informado grupo CTe e a Operação for: Obrig. 668 Rej Rejeição: Chave de Acesso de CTe duplicada Transporte Interestadual: [chCTe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 8
-            },
-            {
-              "texto": "Verificar se existe alguma chave de acesso duplicada no MDFe XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Interna:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 8
-            },
-            {
-              "texto": "Verificar se existe alguma chave de acesso duplicada no município de descarregamento Retornar a chave duplicada F29 Se informado grupo NFe e a Operação for: Obrig. 669 Rej Rejeição: Chave de Acesso de NFe duplicada Transporte Interestadual: [chNFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 8
-            },
-            {
-              "texto": "Verificar se existe alguma chave de acesso duplicada no MDFe XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Interna:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 8
-            },
-            {
-              "texto": "Verificar se existe alguma chave de acesso duplicada no município de descarregamento Retornar a chave duplicada F30 Se informado grupo CTe, para cada um dos CTe relacionados: Obrig. 601 Rej. Rejeição: Chave de acesso do CTe informado inválida",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "- Validar chave de acesso [chCTe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "Retornar chave inválida e o motivo da rejeição da Chave de Acesso: CNPJ / 99999999999999999999999999999999999999999999] CPF zerado ou inválido, Ano < 2008 ou maior que atual, Mês inválido (0 ou > [Motivo: XXXXXXXXXXXX] 12), Modelo diferente de 57, Número zerado, Tipo de emissão inválido, UF inválida ou DV inválido) [chCTe: 99999999999999999999999999999999999999999999] [Motivo: XXXXXXXXXXXX] F31 Se informado grupo CTe, para cada um dos CTe relacionados: Obrig. 671 Rej. Rejeição: CTe informado não existe na base de dados da Acesso BD CTe da SEFAZ Autorizadora (Chave: CNPJ/CPF Emit, Modelo, SEFAZ Serie, Nro.) com as informações da chave chCTe indicado. [chCTe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "- Verificar se CTe existe XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Observação : Retornar a chave do CTe inexistente Exceção : CTe em contingência fica dispensado dessa validação F32 Se informado grupo CTe, para cada um dos CTe relacionados: Obrig. 672 Rej. Rejeição: CTe informado com diferença de chave de acesso",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "- CTe não pode existir com diferença de chave de acesso Observação: [chCTe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "Retornar a chave de acesso de CTe com diferença na chave. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Exceção: CTe em contingência fica dispensado dessa validação F33 Se informado grupo CTe, para cada um dos CTe relacionados: Facult. 673 Rej. Rejeição: CTe informado não pode estar cancelado na base",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "- Verificar se CTe indicado está cancelado da SEFAZ [chCTe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "Observação : Retornar a chave do CTe com situação irregular XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Exceção : CTe em contingência fica dispensado dessa validação F34 Se modal for diferente de aéreo e informado grupo CTe, para cada um dos Obrig. 702 Rej. Rejeição: Modal inválido para entrega parcial (apenas modal CTe relacionados: aéreo) Rejeitar se foi informado grupo de entrega parcial (infEntregaParcial).",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "Observação : Retornar a chave do CTe.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "F35 Se o tipo de emissão do CTe informado for FS-DA, o campo SegCodBarra Obrig. 602 Rej. Rejeição: Segundo Código de Barras deve ser informado deverá ser informado para CTe em contingência FS-DA Observação : Retornar a chave do CTe em contingência F36 Se o tipo de emissão do CTe informado for diferente de FS-DA, o campo Obrig. 603 Rej. Rejeição: Segundo Código de Barras não deve ser SegCodBarra não deverá ser informado informado para CTe com este tipo de emissão Observação : Retornar a chave do CTe F37 Se informado grupo NFe, para cada uma das NFe relacionadas: Obrig. 604 Rej. Rejeição: Chave de acesso da NFe informada inválida",
-              "marcacao": "SEM_MARCA",
-              "pagina": 9
-            },
-            {
-              "texto": "- Validar chave de acesso [chNFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "Retornar chave inválida e o motivo da rejeição da Chave de Acesso: CNPJ / 99999999999999999999999999999999999999999999] CPF zerado ou inválido, Ano < 2006 ou maior que atual, Mês inválido (0 ou > [Motivo: XXXXXXXXXXXX] 12), Modelo diferente de 55, Número zerado, Tipo de emissão inválido, UF inválida ou DV inválido) [chNFe: 99999999999999999999999999999999999999999999] [Motivo: XXXXXXXXXXXX] F38 Se informado grupo NFe, para cada uma das NFe relacionadas: Facult. 675 Rej. Rejeição: NFe informada não existe na base de dados da Acesso BD NFe da SEFAZ Autorizadora (Chave: CNPJ / CPF Emit, Modelo, SEFAZ Serie, Nro.) com as informações da chave chNFe indicada. [chNFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "- Verificar se NFe existe XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Observação : Retornar a chave da NFe inexistente Exceção : NFe em contingência fica dispensada dessa validação F39 Se informado grupo NFe, para cada uma das NFe relacionadas: Facult. 676 Rej. Rejeição: NFe informada com diferença de chave de acesso",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "- NFe não pode existir com diferença de chave de acesso [chNFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Observação : Retornar a chave de acesso de NFe com diferença na chave.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "Exceção : NFe em contingência fica dispensada dessa validação F40 Se informado grupo NFe, para cada uma das NFe relacionadas: Facult. 677 Rej. Rejeição: NFe informada não pode estar",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "- Verificar se NFe indicada está cancelada ou denegada cancelada/denegada na base da SEFAZ Observação : Retornar a chave da NFe com situação irregular [chNFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "Exceção : NFe em contingência fica dispensada dessa validação XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] F41 Se o tipo de emissão da NFe informada for FS-DA, o campo SegCodBarra Obrig. 606 Rej. Rejeição: Segundo Código de Barras deve ser informado deverá ser informado para NFe em contingência (FS-DA e FS-IA) Observação : Retornar a chave da NFe em contingência F42 Se o tipo de emissão da NFe informada for diferente de FS-DA, o campo Obrig. 607 Rej. Rejeição: Segundo Código de Barras não deve ser SegCodBarra não deverá ser informado informado para NFe com este tipo de emissão Observação : Retornar a chave da NFe F43 Se informado o grupo MDFeTransp: Obrig. 647 Rej Rejeição: MDFe só pode ser referenciado por manifesto do",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "- Verificar se o MDFe é do modal Aquaviário modal aquaviário F44 Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados: Obrig. 648 Rej. Rejeição: MDFe só pode ser referenciado quando UF de",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "- Verificar se UF de carregamento ou UF de descarregamento = Amazonas Carregamento/Descarregamento for igual a AM ou AP (AM) ou Amapá (AP) F45 Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados: Obrig. 649 Rej. Rejeição: Chave de acesso de MDFe informada inválida",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "- Validar chave de acesso [chMDFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "Retornar chave inválida e o motivo da rejeição da Chave de Acesso: CNPJ / 99999999999999999999999999999999999999999999] CPF zerado ou inválido, Ano < 2012 ou maior que atual, Mês inválido (0 ou > [Motivo: XXXXXXXXXXXX] 12), Modelo diferente de 58, Número zerado, Tipo de emissão inválido, UF inválida ou DV inválido) [chMDFe: 99999999999999999999999999999999999999999999] [Motivo: XXXXXXXXXXXX] F46 Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados: Obrig. 655 Rej. Rejeição: MDFe referenciado não existe na base de dados Acesso BD MDFe (Chave: CNPJ / CPF Emit, Modelo, Serie, Nro.) com as da SEFAZ informações da chave chMDFe indicada.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 10
-            },
-            {
-              "texto": "- Verificar se MDFe existe Observação : Retornar a chave do MDFe inexistente Exceção : MDFe em contingência off-line fica dispensado dessa validação F47 Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados: Obrig. 656 Rej. Rejeição: Chave de Acesso do MDFe referenciado difere da",
-              "marcacao": "SEM_MARCA",
-              "pagina": 11
-            },
-            {
-              "texto": "- MDFe não pode existir com diferença de chave de acesso existente em BD Observação : Retornar a chave de acesso de MDFe com diferença na chave.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 11
-            },
-            {
-              "texto": "Exceção : MDFe em contingência off-line fica dispensado dessa validação F48 Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados: Obrig. 657 Rej. Rejeição: MDFe referenciado já está cancelado na base de",
-              "marcacao": "SEM_MARCA",
-              "pagina": 11
-            },
-            {
-              "texto": "- Verificar se MDFe indicado está cancelado dados da SEFAZ Observação : Retornar a chave do MDFe cancelado Exceção : MDFe em contingência off-line fica dispensado dessa validação F49 Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados: Obrig. 658 Rej. Rejeição: Modal do MDFe referenciado diferente de Modal do MDFe indicado diferente de Rodoviário Rodoviário Observação : Retornar a chave do MDFe F50 Se informado grupo MDFeTransp e tipo emitente informado for igual a Obrig. 659 Rej. Rejeição: Tipo do Emitente do MDFe referenciado difere de Transportador de Carga Própria (tpEmit=2): Transportador de Carga Própria Verificar se tipo do emitente do MDFe referenciado é igual a Transportador de Carga Própria Observação : Retornar a chave do MDFe F51 Verificar se o valor informado nos campos totalizadores de documentos Obrig. 667 Rej. Rejeição: Quantidade informada no grupo de totalizadores (qCTe, qNFe, qMDFe) está de acordo com o número de documentos não confere com a quantidade de documentos relacionada relacionados no MDFe.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 11
-            },
-            {
-              "texto": "F52 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 724 Rej. Rejeição: Grupo de informações do pagamento a prazo deve Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado ser informado (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmi=2 com tag tpTransp informada) e indicador de pagamento for a prazo (tag:indPag=1):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 11
-            },
-            {
-              "texto": "O grupo de informações a prazo deve ser informado (grupo:infPrazo) F53 Obrig. 729 Rej. Rejeição: Grupo de informações do pagamento a prazo não Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de deve ser informado Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmi=2 com tag tpTransp informada) e indicador de pagamento for a vista (tag:indPag=0):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 11
-            },
-            {
-              "texto": "O grupo de informações a prazo NÃO deve ser informado (grupo:infPrazo) F54 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Facult. 725 Rej. Rejeição: Grupo produto predominante deve ser informado Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado para modal rodoviário (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmi=2 com tag tpTransp informada), o grupo produto predominante deve estar informado (grupo: prodPred) F55 Facult. 726 Rej. Rejeição: O grupo de informações da carga lotação deve ser Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de informado Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmi=2 com tag tpTransp informada) e MDFe possuir apenas um DF-e transportado no grupo infDoc:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 12
-            },
-            {
-              "texto": "O grupo de informações da carga lotação (infLotacao) deve estar informado F56 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 727 Rej. Rejeição: CNPJ/CPF do responsável pelo pagamento do Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado frete inválido (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmi=2 com tag tpTransp informada) e informado grupo de pagamento, rejeitar se CNPJ/CPF do responsável pelo pagamento estiver inválido F57 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 728 Rej. Rejeição: CNPJ da instituição de pagamento eletrônico do Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado frete inválido (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmi=2 com tag tpTransp informada) e informado grupo de pagamento, rejeitar se CNPJ do IPEF estiver inválido F58 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 746 Rej. Rejeição: A soma dos componentes do pagamento deve ser Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado igual ao valor do contrato (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 12
-            },
-            {
-              "texto": "O somatório dos componentes (tag: infPag/Comp/vComp) deve ser igual ao valor do contrato (tag: infPag/vContrato) Observação : tolerar uma diferença de R$ 0,01 a mais ou a menos F59 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 735 Rej. Rejeição: Número da parcela inválido [nParcela:999] Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento com pagamento a prazo (tag: indPag=1):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 12
-            },
-            {
-              "texto": "O número da parcela deve ser informado com três algarismos, sequenciais e consecutivos entre as parcelas (ex: 001, 002, 003) Observação: informar o número da parcela com problema [nParcela: 999] F60 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 736 Rej. Rejeição: Data de vencimento da parcela menor que a data Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado de emissão [nParcela:999] (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento com pagamento a prazo (tag: indPag=1):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 13
-            },
-            {
-              "texto": "Nenhuma parcela pode ser anterior a data de emissão do MDFe Observação: informar o número da parcela com problema [nParcela: 999] F61 Obrig. 737 Rej. Rejeição: Data de vencimento da parcela menor que a data Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de da parcela anterior [nParcela: 999] Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento com pagamento a prazo (tag: indPag=1):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 13
-            },
-            {
-              "texto": "A data informada em cada parcela deve ser posterior a parcela anterior Observação : informar o número da parcela com problema [nParcela: 999] F62 Obrig. 738 Rej. Rejeição: Somatório do valor das parcelas diferente do valor Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de do contrato Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento com pagamento a prazo (tag: indPag=1):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 13
-            },
-            {
-              "texto": "O somatório do valor das parcelas (tag: vParcela) + valor do adiantamento (tag: vAdiant) não pode ser diferente do valor do Contrato (tag: vContrato) Observação : tolerar uma diferença de R$ 0,01 a mais ou a menos F63 Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 739 Rej. Rejeição: Valor do adiantamento não pode ser informado Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado para pagamento a vista (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento com pagamento a vista (tag: indPag=0):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 13
-            },
-            {
-              "texto": "O valor do adiantamento não pode ser informado (tag: vAdiant) F64 Se modal rodoviário e informado proprietário ou possuidor do veículo de Obrig, 740 Rej. Rejeição: O proprietário do veículo quando informado deve tração (CNPJ/CPF) este deve ser diferente do emitente do MDFe ser diferente do emitente do MDFe F65 Se modal rodoviário e informado proprietário ou possuidor do veículo de Obrig. 741 Rej. Rejeição: O contratante deve ser igual ao emitente do MDFe tração (CNPJ/CPF), o grupo contratante deverá ser informado com apenas quando indicado proprietário do veículo uma ocorrência (infContratante) indicando o CNPJ/CPF do emitente do MDFe F66 Obrig. 742 Rej. Rejeição: Contratante informado duplicado [Contratante:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 14
-            },
-            {
-              "texto": "Se informado o grupo contratante (infContratante), a informação de 99999999999] CNPJ/CPF/idEstrangeiro não poderá estar duplicada dentro do grupo.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 14
-            },
-            {
-              "texto": "Observação : indicar qual contratante está duplicado no grupo [Contratante: 99999999999] Validações do Emitente F67 Se informado CNPJ do Emitente: Obrig. 207 Rej. Rejeição: CNPJ do emitente inválido Validar CNPJ Emitente (dígito controle, zeros ou nulo) F68 Se informado CPF do Emitente: Obrig. 210 Rej. Rejeição: CPF do emitente inválido Validar CPF Emitente (dígito controle, zeros ou nulo) F69 Se informado CNPJ do Emitente: Obrig. 232 Rej. Rejeição: CNPJ do emitente com série incompatível Série informada não pode estar na faixa 920-969 F70 Se informado CPF do Emitente: Obrig. 233 Rej. Rejeição: CPF do emitente com série incompatível Série informada deve estar na faixa 920-969 Exceção : MDFe que possuir forma de emissão do Regime Especial da Nota Fiscal Fácil deverá aceitar a série indicada no app para Emitente com CPF F71 Se informado CPF do Emitente: Obrig. 234 Rej. Rejeição: Tipo de emitente inválido para emitente pessoa O tipo de emitente deve ser Transporte Próprio (tpEmit=2) física Exceção : MDFe que possuir forma de emissão do Regime Especial da Nota Fiscal Fácil deverá aceitar tipo de emitente Transportador de Carga (tpEmit=1) para Emitente com CPF F72 IE Emitente deve ser informada (zeros ou nulo) Obrig. 229 Rej. Rejeição: IE do emitente não informada Exceção: A IE não será informada se a forma de emissão (tpEmis) do MDFe for Regime Especial da Nota Fiscal Fácil (3) Exceção 2: Se MDFe gerado por PAA (grupo: infPAA) a IE do Emitente é opcional (MEI não inscrito na UF) F73 Se informada IE do emitente (tpEmis diferente de 3): Obrig. 209 Rej. Rejeição: IE do emitente inválida Validar IE Emitente (erro no dígito de controle) Obs.: Antes da validação, a IE deverá ser normalizada, na aplicação da SEFAZ, com o acréscimo de zeros não significativos previstos na definição do formato da IE, se necessário.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 14
-            },
-            {
-              "texto": "Exemplo: IE informada 130000019, formato da IE: NNNNNNNNNND, a IE deve ser padronizada para 00130000019, com o acréscimo dos zeros não significativos necessários para a validação do dígito verificador.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 15
-            },
-            {
-              "texto": "F74 Se informada IE do emitente (tpEmis diferente de 3): Obrig. 203 Rej. Rejeição: Emissor não habilitado para emissão do MDFe",
-              "marcacao": "SEM_MARCA",
-              "pagina": 15
-            },
-            {
-              "texto": "- Emitente deve estar habilitado na base de dados para emissão do MDFe F75 Se informada IE do emitente (tpEmis diferente de 3): Facult. 230 Rej. Rejeição: IE do emitente não cadastrada Acessar Cadastro de Emitentes (Chave: UF, IE):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 15
-            },
-            {
-              "texto": "- IE emitente não cadastrada F76 Se informada IE do emitente (tpEmis diferente de 3): Obrig. 231 Rej. Rejeição: IE do emitente não vinculada ao CNPJ / CPF",
-              "marcacao": "SEM_MARCA",
-              "pagina": 15
-            },
-            {
-              "texto": "- IE Emitente deve estar vinculada ao CNPJ (tratar Regime Especial de IE única) F76a Se MDFe for gerado por um Provedor de Assinatura e Autorização (PAA) Obrig 915 Rej. Rejeição: CNPJ MEI inexistente na base de dados para (grupo:infPAA): emissão pelo PAA",
-              "marcacao": "SEM_MARCA",
-              "pagina": 15
-            },
-            {
-              "texto": "- Verificar se o CNPJ do Emitente existe na base de dados MEI da Receita Federal do Brasil F76b Se MDFe for gerado por um Provedor de Assinatura e Autorização (PAA) Obrig 916 Rej. Rejeição: CNPJ MEI não habilitado para emissão de MDFe (grupo:infPAA): através de PAA",
-              "marcacao": "SEM_MARCA",
-              "pagina": 15
-            },
-            {
-              "texto": "- Verificar a situação do CNPJ do Emitente na base de dados da Receita Federal do Brasil F77 Município do Emitente diverge da UF (verificar se as 2 posições da esquerda Obrig. 407 Rej Rejeição: Código de Município diverge da UF do Emitente do do código de município que identifica o código da UF é compatível com a MDFe sigla da UF informada) Exceção : regra não será aplicada na hipótese de Regime Especial da NFF F78 Código do Município Emitente inexistente (Tabela Municípios do IBGE) Obrig. 408 Rej. Rejeição: Município do Emitente inexistente Validações da Data e Hora de Emissão F79 Data/Hora de Emissão posterior a Data/Hora de Recebimento (o Ambiente Obrig. 212 Rej. Rejeição: Data/hora de emissão MDFe posterior a data/hora Autorizador deve considerar a hora local do emissor para a validação). A de recebimento SEFAZ deve tolerar uma diferença máxima de 5 minutos quando a data/hora de emissão for maior que a data de recebimento, em função da sincronização de horário de servidores.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 15
-            },
-            {
-              "texto": "Observação : Essa Validação deve considerar o novo formato de datas UTC com indicação do timezone.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "F80 Se tipo de emissão for normal (tpEmis=1): Obrig. 228 Rej. Rejeição: Data de emissão muito atrasada Data-Hora de Emissão com atraso superior a 24 horas em relação ao horário de recepção na SEFAZ Autorizadora.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "Validações do Banco de Dados do MDFe F81 Acessar BD MDFe (Chave: UF, CNPJ / CPF Emit, Modelo, Série, Nro): Obrig 539 Rej. Rejeição: Duplicidade de MDFe, com diferença na Chave de",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "- Verificar duplicidade de MDFe com diferença na Chave de Acesso Acesso (Campo de Código Numérico difere) [chMDFe: 99999999999999999999999999999999999999999999] Retornar a chave de acesso já autorizada, o número do protocolo e data de [nProt:999999999999999] autorização do MDFe: [dhAut: AAAA-MM-DDTHH:MM:SS TZD].",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "[chMDFe: 99999999999999999999999999999999999999999999] [nProt:999999999999999] [dhAut: AAAA-MM-DDTHH:MM:SS TZD] F82 Acesso BD MDFe (Chave: UF, CNPJ / CPF Emit, Modelo, Serie, Nro.) Obrig. 204 Rej. Rejeição: Duplicidade de MDFe",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "- Verificar duplicidade de MDFe [nProt:999999999999999][dhAut: AAAA-MM-DDTHH:MM:SS TZD].",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "Retornar o número do protocolo e data de autorização do MDFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "[nProt:999999999999999] [dhAut: AAAA-MM-DDTHH:MM:SS TZD].",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "Observação : Esta validação leva em consideração o ambiente de autorização do DF-e F83 - Verificar se o MDFe está cancelado. Obrig. 218 Rej. Rejeição: MDFe já está cancelado na base de dados da SEFAZ.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "Retornar o número do protocolo e data de cancelamento do MDFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "[nProt:999999999999999][dhCanc: AAAA-MM-DDTHH:MM:SS [nProt:999999999999999] TZD].",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "[dhCanc: AAAA-MM-DDTHH:MM:SS TZD].",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "F84 - Verificar se o MDFe está encerrado Obrig. 609 Rej. Rejeição: MDFe já está encerrado na base de dados da Retornar o número do protocolo e data de encerramento do MDFe: SEFAZ [nProt:999999999999999] AAAA-MM-DDTHH:MM:SS [nProt:999999999999999][dhEnc:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "[dhEnc: AAAA-MM-DDTHH:MM:SS TZD]. TZD].",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "Validações do Modal Rodoviário F85 Se modal rodoviário: Obrig. 611 Rej. Rejeição: Existe MDFe não encerrado para esta placa, tipo",
-              "marcacao": "SEM_MARCA",
-              "pagina": 16
-            },
-            {
-              "texto": "- Verificar se existe MDFe não encerrado, para a placa principal (mesmo de emitente e UF descarregamento CNPJ base / CPF do emitente do MDFe, mesma placa, mesmo tipo de [chMDFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "emitente e mesma UF descarregamento).",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "99999999999999999999999999999999999999999999][nProt:9999 99999999999] Observação : retornar chave de acesso e protocolo de autorização mais antigo que causa o bloqueio Exceção: essa regra não deverá ser aplicada para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F86 Verificar se existe MDFe não encerrado para o CNPJ / CPF do emitente com Obrig. 686 Rej. Rejeição: Existe MDFe não encerrado há mais de 30 dias mais de 30 dias desde a autorização. para o emitente [chMDFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "Observação: retornar chave de acesso e protocolo de autorização mais 99999999999999999999999999999999999999999999][nProt:9999 antigo que causa o bloqueio.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "99999999999] Exceção: essa regra não deverá ser aplicada para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F87 Se modal rodoviário: Obrig. 462 Rej. Rejeição: Existe MDFe não encerrado há mais de 5 dias Verificar se existe MDFe não encerrado para a placa do veículo com o para placa com até 2 UF de percurso informadas mesmo CNPJ Base / CPF do emitente com mais de 5 dias desde a [chMDFe:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "autorização indicando no máximo duas UF de percurso além do 99999999999999999999999999999999999999999999][nPro carregamento e descarregamento. t:999999999999999] Observação: retornar chave de acesso e protocolo de autorização mais antigo que causa o bloqueio.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "Exceção: essa regra não deverá ser aplicada para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F88 Se modal rodoviário: Obrig. 662 Rej. Rejeição: Existe MDFe não encerrado para esta placa, tipo",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "- Verificar se existe MDFe não encerrado, para a placa principal (mesmo de emitente no sentido oposto da viagem CNPJ base / CPF do emitente do MDFe, mesma placa, mesmo tipo de emitente e contendo o par UF de Carregamento/ UF de Descarregamento no sentido oposto ao MDFe que está sendo autorizado).",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "Observação : retornar chave de acesso e protocolo de autorização mais antigo que causa o bloqueio Exceção: essa regra não deverá ser aplicada para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F89 Se modal rodoviário, UF Carregamento e Descarregamento forem diferentes Obrig. 646 Rej. Rejeição: Placa de veículo formato inválido (UF de Exterior: Carregamento e Descarregamento <> ‘EX’) Verificar se as placas informadas (veículo Tração e Reboques) encontram- se diferentes do formato nacional Expressão Regular: [A-Z]{3}[0-9][0-9A-Z][0-9]{2} F90 Se modal Rodoviário, o grupo de informações de UF de percurso deverá ser Obrig. 663 Rej. Rejeição: Percurso informado inválido preenchido na ordem Origem – Destino sempre que existir pelo menos uma UF entre a UF de carregamento e UF de descarregamento.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 17
-            },
-            {
-              "texto": "Observação : A regra será aplicada considerando as divisas possíveis na ordem definida para o percurso.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 18
-            },
-            {
-              "texto": "F91 Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 698 Rej Rejeição: Seguro da carga é obrigatório para modal Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado Prestador de Serviço de Transporte no modal rodoviário (tpEmit=3):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 18
-            },
-            {
-              "texto": "-Rejeitar se o grupo de informações do seguro da carga não estiver informado Exceção : o grupo do seguro poderá não ser informado para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F92 Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 699 Rej Rejeição: Dados do seguro de carga incompletos para o transporte (tpEmit=1) ou transportador que emitirá CTe globalizado modal rodoviário (tpEmit=3) e informado grupo de seguro da carga:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 18
-            },
-            {
-              "texto": "-Rejeitar se alguma informação do grupo seguro não estiver informada Observação : Verificar preenchimento de CNPJ da seguradora, infSeg, nApol e nAver Exceção : o nAver poderá não ser informado para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F93 Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de Obrig. 542 Rej. Rejeição: CNPJ/CPF do responsável pelo seguro deve ser Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado informado para o tipo de responsável informado (tpEmit=3), informado grupo de seguro da carga e indicado responsável pelo seguro contratante (tpResp=2):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 18
-            },
-            {
-              "texto": "- Rejeitar se não estiver informado CNPJ ou CPF do responsável pelo seguro Exceção : o responsável pelo seguro poderá não ser informado para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F94 Obrig. 578 Rej. Rejeição: Informações dos tomadores é obrigatória para esta Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de operação Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado (tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador (tpEmi=2 com tag tpTransp informada) e não estiverem preenchidos:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 18
-            },
-            {
-              "texto": "1. Responsável pela Geração do CIOT",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "2. Responsável pelo pagamento do Vale-pedágio Então:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "- Rejeitar se não estiver informado pelo menos um tomador de serviço (grupo infContratante) F95 Se modal rodoviário e informado o grupo de informações do vale pedágio Rejeição: A categoria de combinação veicular deve ser (infANTT/valePed). preenchida para o grupo vale pedágio Obrig. 731 Rej.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "A informação da categoria de combinação veicular deverá ser preenchida (tag: categCombVeic) F96 Se modal Rodoviário e informado grupo de informações do vale pedágio Rejeição: CNPJ do fornecedor do vale pedágio inválido.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "(grupo: valePed):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "Obrig. 732 Rej.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "Rejeitar se o CNPJ do fornecedor do vale pedágio informado estiver inválido (dígito de controle, zeros) F97 Rejeição: CNPJ do Fornecedor do Vale Pedágio inexistente Se modal rodoviário, informado grupo de informações do vale pedágio (grupo:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "na base da ANTT.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "valePed):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "Obrig. 733 Rej.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "Para cada dispositivo deverá ser verificado se o CNPJ do Fornecedor do Em caso de rejeição ligue para Ouvidoria ANTT pelo número Vale Pedágio existe na base de dados compartilhada da ANTT.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "166 F98 Se modal rodoviário, informado grupo de informações do vale pedágio (grupo: Rejeição: CNPJ / CPF do responsável pelo pagamento do valePed): vale pedágio inválido Obrig. 734 Rej.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "Rejeitar se o CPF ou CNPJ do responsável pelo pagamento do vale pedágio informado estiver inválido (dígito de controle, zeros) F99 Se modal Rodoviário: Obrig. 577 Rej. Rejeição: Duplicidade de condutor Rejeitar se existir CPF de condutor informado em duplicidade no grupo veículo tração F100 Se modal Rodoviário: Rejeitar se algum CPF de Condutor estiver inválido Obrig. 645 Rej. Rejeição: CPF do condutor inválido entre os relacionados (dígito de controle, zeros) F101 Se modal Rodoviário e informado grupo do CIOT (grupo: infCIOT): Obrig. 716 Rej. Rejeição: CNPJ / CPF do responsável pela geração do CIOT Rejeitar se o CPF ou CNPJ do responsável pela geração do CIOT informado inválido estiver inválido (dígito de controle, zeros) F102 Se modal Rodoviário e informado grupo do Contratante (grupo: Obrig. 717 Rej. Rejeição: CNPJ / CPF do contratante do transporte inválido infContratante):",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "Rejeitar se o CPF ou CNPJ informado para o contratante estiver inválido (dígito de controle, zeros) F103 Se modal Rodoviário e informado grupo do proprietário do veículo de tração Obrig. 718 Rej. Rejeição: CNPJ / CPF do proprietário do veículo de tração (grupo: veicTracao/prop): inválido Rejeitar se o CPF ou CNPJ informado para o proprietário estiver inválido (dígito de controle, zeros) F104 Se modal Rodoviário e informado grupo do proprietário do veículo reboque Obrig. 719 Rej. Rejeição: CNPJ / CPF do proprietário do veículo reboque (grupo: veicReboque/prop): inválido Rejeitar se o CPF ou CNPJ informado para o proprietário estiver inválido (dígito de controle, zeros) Observação: Verificar em todos os reboques informados Validações dos Autorizados ao XML do MDFe F105 Se informada autorização download XML com CNPJ: Obrig. 660 Rej. Rejeição: CNPJ autorizado para download inválido CNPJ com zeros ou dígito inválido F106 Se informada autorização download do XML com CPF: Obrig. 661 Rej. Rejeição: CPF autorizado para download inválido CPF com zeros, nulo, números repetidos (111, 222, etc.), ou dígito de controle inválido.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 19
-            },
-            {
-              "texto": "F107 Se informada autorização download XML: Obrig. 459 Rej Rejeição: Documento autorizado ao XML duplicado no",
-              "marcacao": "SEM_MARCA",
-              "pagina": 20
-            },
-            {
-              "texto": "- Verificar se existe duplicidade de CPF/CNPJ informado no MDFe MDFe Validações da ANTT F108 Se modal rodoviário, operação interestadual e tipo de emitente for Prestador Facult. 688 Rej. Rejeição: RNTRC deve ser informado para Prestador de de Serviço de Transporte (tpEmit=1) ou globalizado (tpEmit=3): Serviço de Transporte RNTRC deve ser informado F109 Se modal rodoviário e informado RNTRC Facult. 681 Rej. Rejeição: RNTRC informado inexistente.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 20
-            },
-            {
-              "texto": "Verificar se o RNTRC existe F110 Se modal rodoviário e informado RNTRC Facult. 682 Rej. Rejeição: RNTRC situação inválida.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 20
-            },
-            {
-              "texto": "Verificar situação do RNTRC Exceção: essa regra não deverá ser aplicada para MDFe com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil F111 Se modal rodoviário e informado RNTRC Facult. 687 Rej. Rejeição: RNTRC deve estar associado ao transportador Verificar se o RNTRC está associado ao transportador indicado Observação: verificar pelo CNPJ-Base F112 Se modal rodoviário e informado RNTRC Facult. 683 Rej. Rejeição: Placa do veículo de tração não vinculada ao Verificar se a placa do veículo de tração está associada ao RNTRC RNTRC informado.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 20
-            },
-            {
-              "texto": "F113 Se modal rodoviário, UF Carregamento e Descarregamento forem diferentes Facult. 684 Rej Rejeição: CIOT obrigatório para RNTRC informado.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 20
-            },
-            {
-              "texto": "de Exterior e informado RNTRC Verificar se foi informado CIOT quando este for obrigatório para o RNTRC As validações da ANTT são aplicadas com base na integração entre os sistemas da agência e do ambiente autorizador do MDFe, em caso de indisponibilidade do serviço de integração, as regras serão desabilitadas até a normalização.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 20
-            },
-            {
-              "texto": "Em caso de rejeição, entre em contato com a ANTT nos canais de atendimento para solucionar as pendências.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 21
-            },
-            {
-              "texto": "As regras serão aplicadas aos RNTRC do transportador emitente do MDFe e ao RNTRC do proprietário quando o veículo não pertencer ao emitente do MDFe Validações do QR Code F114 O grupo de informações do QRCode (infMDFeSupl) deve ser informado Obrig. 480 Rej. Rejeição: Consulta a uma Chave de Acesso muito antiga F115 Endereço do site do Portal Nacional para a Consulta via QR Code difere do Obrig. 479 Rej. Rejeição: Endereço do site da UF da Consulta via QR Code previsto. diverge do previsto Nota: O uso diferenciado de maiúsculas ou minúsculas não deve ser considerado na validação.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 21
-            },
-            {
-              "texto": "Observação: Para consultar as URLs utilizadas no QR Code, acesse:",
-              "marcacao": "SEM_MARCA",
-              "pagina": 21
-            },
-            {
-              "texto": "https://dfe-portal.svrs.rs.gov.br/MDFe/Servicos F116 Parâmetro Chave de Acesso no QR Code diverge da Chave de Acesso do Obrig. 481 Rej. Rejeição: Parâmetro chave de acesso do QR Code MDFe divergente do MDFe F117 Se tipo de emissão for igual a Contingência Off-Line: Obrig. 482 Rej. Rejeição: Parâmetro sign não informado no QR Code para O parâmetro sign deve informado no QR-Code emissão em contingência F118 Se tipo de emissão for igual a Normal: Obrig. 488 Rej. Rejeição: Parâmetro sign não deve ser informado no QR O parâmetro sign não deve ser informado no QR-Code Code para emissão Normal F119 Se tipo de emissão for igual a Contingência Off-Line: Obrig. 496 Rej. Rejeição: Assinatura do QR-Code difere do calculado Valor da assinatura (sign) do QR-Code difere do valor calculado As validações referentes ao QR Code serão aplicadas somente após data previamente acertada entre Fisco e empresas, podendo essa data ser de prazo distinto e superior à data de entrada em produção deste MOC, devendo acompanhar as datas do MOC Anexo do Documento Auxiliar.",
-              "marcacao": "SEM_MARCA",
-              "pagina": 21
-            },
-            {
-              "texto": "Validações do Responsável Técnico F120 Não informado o grupo de informações do responsável técnico Facul. 720 Rej. Rejeição: Obrigatória as informações do responsável técnico Observação: Implementação à critério da UF F121 Se informado grupo do responsável técnico (infRespTec): Facul. 713 Rej. Rejeição: CNPJ do desenvolvedor do sistema inválido",
-              "marcacao": "SEM_MARCA",
-              "pagina": 21
-            },
-            {
-              "texto": "- Validar CNPJ (dígito controle, zeros ou nulo). (zerado ou dígito inválido) F122 Obrigatória a informação do identificador do CSRT (tag:idCSRT) e Hash do Facul. 721 Rej. Rejeição: Obrigatória a informação do identificador do CSRT CSRT (tag: hashCSRT) e do Hash do CSRT Observação: Implementação futura Validações do Regime Especial da Nota Fiscal Fácil F123 Se a forma de emissão do MDFe (tpEmis) for diferente de Regime Especial Obrig. 902 Rej. Rejeição: Grupo de informações do pedido de emissão da da Nota Fiscal Fácil (3): NFF deve ser preenchido apenas para forma de emissão",
-              "marcacao": "SEM_MARCA",
-              "pagina": 21
-            },
-            {
-              "texto": "- O grupo de informações do pedido da NFF (infSolicNFF) não pode estar NFF preenchido",
-              "marcacao": "SEM_MARCA",
-              "pagina": 22
             }
           ]
         }
@@ -956,7 +396,4033 @@
       ]
     }
   ],
-  "regras_validacao": [],
+  "regras_validacao": [
+    {
+      "id": "F01",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "252",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Ambiente informado diverge do Ambiente de recebimento",
+      "marcacao": "SEM_MARCA",
+      "pagina": 6,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [],
+      "descricao": "Tipo do ambiente do MDFe difere do ambiente do Web Service",
+      "id_unico": "2.2:F01"
+    },
+    {
+      "id": "F02",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "247",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Sigla da UF do Emitente diverge da UF autorizadora",
+      "marcacao": "SEM_MARCA",
+      "pagina": 6,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Exceção : regra não será aplicada na hipótese de Regime Especial da NFF",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Sigla da UF do Emitente difere da UF da chave de acesso",
+      "id_unico": "2.2:F02"
+    },
+    {
+      "id": "F03",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "227",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Erro na composição do Campo ID",
+      "marcacao": "SEM_MARCA",
+      "pagina": 6,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Falta literal \"MDFe\"",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Chave de acesso do campo ID difere da concatenação dos campos",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "correspondentes",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Campo \"ID\" inválido:",
+      "id_unico": "2.2:F03"
+    },
+    {
+      "id": "F04",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "666",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Ano do MDFe informado na chave de acesso inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 6,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [],
+      "descricao": "Verificar se Ano da chave de acesso é inferior a 2012",
+      "id_unico": "2.2:F04"
+    },
+    {
+      "id": "F05",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "253",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Digito Verificador da chave de acesso composta inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 6,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "dos campos correspondentes",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Dígito Verificador inválido da Chave de acesso resultante da concatenação",
+      "id_unico": "2.2:F05"
+    },
+    {
+      "id": "F06",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "579",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Versão informada para o modal não suportada",
+      "marcacao": "SEM_MARCA",
+      "pagina": 6,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [],
+      "descricao": "Verificar se a Versão do Modal é suportada",
+      "id_unico": "2.2:F06"
+    },
+    {
+      "id": "F07",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "580",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Falha no Schema XML específico para o modal",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [],
+      "descricao": "Verificar Schema XML conforme o modal (parte específica do modal)",
+      "id_unico": "2.2:F07"
+    },
+    {
+      "id": "F08",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "456",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Código de Município diverge da UF de Carregamento do MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "posições da esquerda do código de município que identifica o código da UF",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "estão de acordo com a sigla da UF informada)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Município de Carregamento do MDFe diverge da UF (verificar se as 2",
+      "id_unico": "2.2:F08"
+    },
+    {
+      "id": "F09",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "405",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Município de Carregamento inexistente",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "IBGE)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Código do Município de Carregamento inexistente (Tabela Municípios do",
+      "id_unico": "2.2:F09"
+    },
+    {
+      "id": "F10",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "685",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Município de carregamento duplicado no MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [],
+      "descricao": "Rejeitar Município de carregamento duplicado no MDFe",
+      "id_unico": "2.2:F10"
+    },
+    {
+      "id": "F11",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "612",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Código de Município diverge da UF de descarregamento do MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "se as 2 posições da esquerda do código de município de descarregamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "que identifica o código da UF de descarga estão de acordo com a sigla da",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "UF informada)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar o código do município de descarga inválido.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Município de descarregamento diverge da UF de descarregamento (verificar",
+      "id_unico": "2.2:F11"
+    },
+    {
+      "id": "F12",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "406",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Município de Descarregamento inexistente",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "IBGE)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Código do Município de Descarregamento inexistente (Tabela Municípios do",
+      "id_unico": "2.2:F12"
+    },
+    {
+      "id": "F13",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "680",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Município de descarregamento duplicado no MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Validações do Tipo de Emitente",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Rejeitar Município de descarregamento duplicado no MDFe",
+      "id_unico": "2.2:F13"
+    },
+    {
+      "id": "F14",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "638",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Não deve ser informada Nota Fiscal para tipo de emitente Prestador Serviço de Transporte",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(tpEmit=1):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O grupo de documentos NFe não pode ser preenchido",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se tipo emitente informado for igual a Prestador de Serviço de Transporte",
+      "id_unico": "2.2:F14"
+    },
+    {
+      "id": "F15",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "639",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Não deve ser informado Conhecimento de Transporte Eletrônico para tipo de emitente Transporte de Carga Própria.",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(tpEmit=2):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O grupo de documentos CTe não pode ser preenchido",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se tipo emitente informado for igual a Transportador de Carga Própria",
+      "id_unico": "2.2:F15"
+    },
+    {
+      "id": "F16",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "540",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Não deve ser informado Conhecimento de Transporte para tipo de emitente Prestador Serviço de Transporte que emitirá CTe Globalizado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "globalizado (tpEmit=3):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O grupo de documentos CTe não pode ser preenchido",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se tipo emitente informado for igual a Transportador que emitirá CTe",
+      "id_unico": "2.2:F16"
+    },
+    {
+      "id": "F17",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "541",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Tipo de emitente inválido para operações interestaduais ou com exterior",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Globalizado (tpEmit=3) e operação interestadual ou com exterior",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Rejeitar se tipo emitente informado for igual a Transportador que emitirá CTe",
+      "id_unico": "2.2:F17"
+    },
+    {
+      "id": "F18",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "743",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: O tipo de transportador deve ser TAC quando informado CPF do proprietário do veículo de tração",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "A informação do tipo de transportador (tpTransp) deverá ser preenchida com",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "TAC (2).",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado CPF do proprietário do veículo de tração:",
+      "id_unico": "2.2:F18"
+    },
+    {
+      "id": "F19",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "744",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: O tipo de transportador deve ser ETC ou CTE quando informado CNPJ do proprietário do veículo de tração",
+      "marcacao": "SEM_MARCA",
+      "pagina": 7,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "A informação do tipo de transportador (tpTransp) deverá ser preenchida com",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "ETC (1) ou CTC (3).",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado CNPJ do proprietário do veículo de tração:",
+      "id_unico": "2.2:F19"
+    },
+    {
+      "id": "F20",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "745",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: O tipo de transportador não ser informado quando não estiver informado proprietário do veículo de tração",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "tração:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "A informação do tipo de transportador (tpTransp) não deverá ser preenchida.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do Carregamento Posterior",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e não informado o grupo proprietário do veículo de",
+      "id_unico": "2.2:F20"
+    },
+    {
+      "id": "F21",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "703",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Carregamento e Descarregamento inválidos para MDFe com indicação de carregamento posterior",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "deve ser informado apenas um município de carregamento e um município",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "de descarregamento que devem ser iguais.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado indicador de carregamento posterior (indCarregaPosterior=1),",
+      "id_unico": "2.2:F21"
+    },
+    {
+      "id": "F22",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "704",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe com indicação de carregamento posterior não permitido para operações interestaduais ou com o exterior",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "UF de Carregamento deve ser igual a UF de descarregamento e diferentes",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "de EX",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado indicador de carregamento posterior (indCarregaPosterior=1),",
+      "id_unico": "2.2:F22"
+    },
+    {
+      "id": "F23",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "705",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Modal inválido para MDFe com indicação de carregamento posterior (apenas modal rodoviário)",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "modal deve ser Rodoviário",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado indicador de carregamento posterior (indCarregaPosterior=1),",
+      "id_unico": "2.2:F23"
+    },
+    {
+      "id": "F24",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "707",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe com indicação de carregamento posterior com tipo de emitente diferente de transporte próprio",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "o tipo do emitente deve ser transporte próprio (2)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado indicador de carregamento posterior (indCarregaPosterior=1),",
+      "id_unico": "2.2:F24"
+    },
+    {
+      "id": "F25",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "712",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Existe MDFe com indicação de carregamento posterior sem inclusão de DF-e para o emitente há mais de 168 horas",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(indCarregaPosterior=1) sem evento de inclusão de DF-e há mais de 168",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "horas para o mesmo CNPJ / CPF do emitente",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações dos Documentos Originários",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Verificar se existe MDFe com indicação de carregamento posterior",
+      "id_unico": "2.2:F25"
+    },
+    {
+      "id": "F26",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "616",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Nenhum grupo de documentos foi informado (CTe, CT, NFe, MDFe) Retornar Município de Descarregamento sem DF-e vinculado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "e/ou MDFe)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: Retornar Município sem DF-e vinculado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção: Regra não deve ser aplicada em caso de indicação de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "carregamento posterior (indCarregaPosterior=1)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Pelo menos um dos grupos de documentos deverá ser informado (CTe, NFe",
+      "id_unico": "2.2:F26"
+    },
+    {
+      "id": "F27",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "706",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Não informar documentos transportados para MDFe com indicação de carregamento posterior (usar evento inclusão de DF-e)",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "os grupos de documentos transportados não devem ser informados (CTe,",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "NFe e MDFe)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado indicador de carregamento posterior (indCarregaPosterior=1),",
+      "id_unico": "2.2:F27"
+    },
+    {
+      "id": "F28",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "668",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Chave de Acesso de CTe duplicada [chCTe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte Interestadual:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Verificar se existe alguma chave de acesso duplicada no MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Interna:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Verificar se existe alguma chave de acesso duplicada no município de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "descarregamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar a chave duplicada",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo CTe e a Operação for:",
+      "id_unico": "2.2:F28"
+    },
+    {
+      "id": "F29",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "669",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Chave de Acesso de NFe duplicada [chNFe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 8,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte Interestadual:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Verificar se existe alguma chave de acesso duplicada no MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Interna:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Verificar se existe alguma chave de acesso duplicada no município de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "descarregamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar a chave duplicada",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo NFe e a Operação for:",
+      "id_unico": "2.2:F29"
+    },
+    {
+      "id": "F30",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "601",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Chave de acesso do CTe informado inválida [chCTe: 99999999999999999999999999999999999999999999] [Motivo: XXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 9,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Validar chave de acesso",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar chave inválida e o motivo da rejeição da Chave de Acesso: CNPJ /",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "CPF zerado ou inválido, Ano < 2008 ou maior que atual, Mês inválido (0 ou >",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "12), Modelo diferente de 57, Número zerado, Tipo de emissão inválido, UF",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "inválida ou DV inválido)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[chCTe: 99999999999999999999999999999999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[Motivo: XXXXXXXXXXXX]",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo CTe, para cada um dos CTe relacionados:",
+      "id_unico": "2.2:F30"
+    },
+    {
+      "id": "F31",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "671",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CTe informado não existe na base de dados da SEFAZ [chCTe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 9,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Acesso BD CTe da SEFAZ Autorizadora (Chave: CNPJ/CPF Emit, Modelo,",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Serie, Nro.) com as informações da chave chCTe indicado.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Verificar se CTe existe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do CTe inexistente",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : CTe em contingência fica dispensado dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo CTe, para cada um dos CTe relacionados:",
+      "id_unico": "2.2:F31"
+    },
+    {
+      "id": "F32",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "672",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CTe informado com diferença de chave de acesso [chCTe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 9,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- CTe não pode existir com diferença de chave de acesso Observação:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar a chave de acesso de CTe com diferença na chave.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção: CTe em contingência fica dispensado dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo CTe, para cada um dos CTe relacionados:",
+      "id_unico": "2.2:F32"
+    },
+    {
+      "id": "F33",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "673",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CTe informado não pode estar cancelado na base da SEFAZ [chCTe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 9,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se CTe indicado está cancelado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do CTe com situação irregular",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : CTe em contingência fica dispensado dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo CTe, para cada um dos CTe relacionados:",
+      "id_unico": "2.2:F33"
+    },
+    {
+      "id": "F34",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "702",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Modal inválido para entrega parcial (apenas modal aéreo)",
+      "marcacao": "SEM_MARCA",
+      "pagina": 9,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "CTe relacionados:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Rejeitar se foi informado grupo de entrega parcial (infEntregaParcial).",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do CTe.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal for diferente de aéreo e informado grupo CTe, para cada um dos",
+      "id_unico": "2.2:F34"
+    },
+    {
+      "id": "F35",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "602",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Segundo Código de Barras deve ser informado para CTe em contingência FS-DA",
+      "marcacao": "SEM_MARCA",
+      "pagina": 9,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "deverá ser informado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do CTe em contingência",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se o tipo de emissão do CTe informado for FS-DA, o campo SegCodBarra",
+      "id_unico": "2.2:F35"
+    },
+    {
+      "id": "F36",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "603",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Segundo Código de Barras não deve ser informado para CTe com este tipo de emissão",
+      "marcacao": "SEM_MARCA",
+      "pagina": 9,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "SegCodBarra não deverá ser informado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do CTe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se o tipo de emissão do CTe informado for diferente de FS-DA, o campo",
+      "id_unico": "2.2:F36"
+    },
+    {
+      "id": "F37",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "604",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Chave de acesso da NFe informada inválida [chNFe: 99999999999999999999999999999999999999999999] [Motivo: XXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Validar chave de acesso",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar chave inválida e o motivo da rejeição da Chave de Acesso: CNPJ /",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "CPF zerado ou inválido, Ano < 2006 ou maior que atual, Mês inválido (0 ou >",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "12), Modelo diferente de 55, Número zerado, Tipo de emissão inválido, UF",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "inválida ou DV inválido)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[chNFe: 99999999999999999999999999999999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[Motivo: XXXXXXXXXXXX]",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo NFe, para cada uma das NFe relacionadas:",
+      "id_unico": "2.2:F37"
+    },
+    {
+      "id": "F38",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "675",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: NFe informada não existe na base de dados da SEFAZ [chNFe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Acesso BD NFe da SEFAZ Autorizadora (Chave: CNPJ / CPF Emit, Modelo,",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Serie, Nro.) com as informações da chave chNFe indicada.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Verificar se NFe existe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave da NFe inexistente",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : NFe em contingência fica dispensada dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo NFe, para cada uma das NFe relacionadas:",
+      "id_unico": "2.2:F38"
+    },
+    {
+      "id": "F39",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "676",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: NFe informada com diferença de chave de acesso [chNFe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- NFe não pode existir com diferença de chave de acesso",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave de acesso de NFe com diferença na chave.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : NFe em contingência fica dispensada dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo NFe, para cada uma das NFe relacionadas:",
+      "id_unico": "2.2:F39"
+    },
+    {
+      "id": "F40",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "677",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: NFe informada não pode estar cancelada/denegada na base da SEFAZ [chNFe: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se NFe indicada está cancelada ou denegada",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave da NFe com situação irregular",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : NFe em contingência fica dispensada dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo NFe, para cada uma das NFe relacionadas:",
+      "id_unico": "2.2:F40"
+    },
+    {
+      "id": "F41",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "606",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Segundo Código de Barras deve ser informado para NFe em contingência (FS-DA e FS-IA)",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "deverá ser informado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave da NFe em contingência",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se o tipo de emissão da NFe informada for FS-DA, o campo SegCodBarra",
+      "id_unico": "2.2:F41"
+    },
+    {
+      "id": "F42",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "607",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Segundo Código de Barras não deve ser informado para NFe com este tipo de emissão",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "SegCodBarra não deverá ser informado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave da NFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se o tipo de emissão da NFe informada for diferente de FS-DA, o campo",
+      "id_unico": "2.2:F42"
+    },
+    {
+      "id": "F43",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "647",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe só pode ser referenciado por manifesto do modal aquaviário",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se o MDFe é do modal Aquaviário",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado o grupo MDFeTransp:",
+      "id_unico": "2.2:F43"
+    },
+    {
+      "id": "F44",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "648",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe só pode ser referenciado quando UF de Carregamento/Descarregamento for igual a AM ou AP",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se UF de carregamento ou UF de descarregamento = Amazonas",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(AM) ou Amapá (AP)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados:",
+      "id_unico": "2.2:F44"
+    },
+    {
+      "id": "F45",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "649",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Chave de acesso de MDFe informada inválida [chMDFe: 99999999999999999999999999999999999999999999] [Motivo: XXXXXXXXXXXX]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 10,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Validar chave de acesso",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar chave inválida e o motivo da rejeição da Chave de Acesso: CNPJ /",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "CPF zerado ou inválido, Ano < 2012 ou maior que atual, Mês inválido (0 ou >",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "12), Modelo diferente de 58, Número zerado, Tipo de emissão inválido, UF",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "inválida ou DV inválido)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[chMDFe: 99999999999999999999999999999999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[Motivo: XXXXXXXXXXXX]",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados:",
+      "id_unico": "2.2:F45"
+    },
+    {
+      "id": "F46",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "655",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe referenciado não existe na base de dados da SEFAZ",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Acesso BD MDFe (Chave: CNPJ / CPF Emit, Modelo, Serie, Nro.) com as",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "informações da chave chMDFe indicada.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Verificar se MDFe existe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do MDFe inexistente",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : MDFe em contingência off-line fica dispensado dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados:",
+      "id_unico": "2.2:F46"
+    },
+    {
+      "id": "F47",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "656",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Chave de Acesso do MDFe referenciado difere da existente em BD",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- MDFe não pode existir com diferença de chave de acesso",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave de acesso de MDFe com diferença na",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "chave.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : MDFe em contingência off-line fica dispensado dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados:",
+      "id_unico": "2.2:F47"
+    },
+    {
+      "id": "F48",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "657",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe referenciado já está cancelado na base de dados da SEFAZ",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se MDFe indicado está cancelado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do MDFe cancelado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : MDFe em contingência off-line fica dispensado dessa validação",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados:",
+      "id_unico": "2.2:F48"
+    },
+    {
+      "id": "F49",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "658",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Modal do MDFe referenciado diferente de Rodoviário",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Modal do MDFe indicado diferente de Rodoviário",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado o grupo MDFeTransp, para cada um dos MDFe relacionados:",
+      "id_unico": "2.2:F49"
+    },
+    {
+      "id": "F50",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "659",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Tipo do Emitente do MDFe referenciado difere de Transportador de Carga Própria",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transportador de Carga Própria (tpEmit=2):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Verificar se tipo do emitente do MDFe referenciado é igual a Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "de Carga Própria",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Retornar a chave do MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo MDFeTransp e tipo emitente informado for igual a",
+      "id_unico": "2.2:F50"
+    },
+    {
+      "id": "F51",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "667",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Quantidade informada no grupo de totalizadores não confere com a quantidade de documentos relacionada",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(qCTe, qNFe, qMDFe) está de acordo com o número de documentos",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "relacionados no MDFe.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Verificar se o valor informado nos campos totalizadores de documentos",
+      "id_unico": "2.2:F51"
+    },
+    {
+      "id": "F52",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "724",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Grupo de informações do pagamento a prazo deve ser informado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmi=2 com tag tpTransp informada) e indicador de pagamento for a prazo",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tag:indPag=1):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O grupo de informações a prazo deve ser informado (grupo:infPrazo)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F52"
+    },
+    {
+      "id": "F53",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "729",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Grupo de informações do pagamento a prazo não deve ser informado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 11,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmi=2 com tag tpTransp informada) e indicador de pagamento for a vista",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tag:indPag=0):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O grupo de informações a prazo NÃO deve ser informado (grupo:infPrazo)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:F53"
+    },
+    {
+      "id": "F54",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "725",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Grupo produto predominante deve ser informado para modal rodoviário",
+      "marcacao": "SEM_MARCA",
+      "pagina": 12,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmi=2 com tag tpTransp informada), o grupo produto predominante deve",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "estar informado (grupo: prodPred)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F54"
+    },
+    {
+      "id": "F55",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "726",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: O grupo de informações da carga lotação deve ser informado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 12,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmi=2 com tag tpTransp informada) e MDFe possuir apenas um DF-e",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "transportado no grupo infDoc:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O grupo de informações da carga lotação (infLotacao) deve estar informado",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:F55"
+    },
+    {
+      "id": "F56",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "727",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ/CPF do responsável pelo pagamento do frete inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 12,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmi=2 com tag tpTransp informada) e informado grupo de pagamento,",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "rejeitar se CNPJ/CPF do responsável pelo pagamento estiver inválido",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F56"
+    },
+    {
+      "id": "F57",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "728",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ da instituição de pagamento eletrônico do frete inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 12,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmi=2 com tag tpTransp informada) e informado grupo de pagamento,",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "rejeitar se CNPJ do IPEF estiver inválido",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F57"
+    },
+    {
+      "id": "F58",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "746",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: A soma dos componentes do pagamento deve ser igual ao valor do contrato",
+      "marcacao": "SEM_MARCA",
+      "pagina": 12,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O somatório dos componentes (tag: infPag/Comp/vComp) deve ser igual ao",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "valor do contrato (tag: infPag/vContrato)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : tolerar uma diferença de R$ 0,01 a mais ou a menos",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F58"
+    },
+    {
+      "id": "F59",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "735",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Número da parcela inválido [nParcela:999]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 12,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "com pagamento a prazo (tag: indPag=1):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O número da parcela deve ser informado com três algarismos, sequenciais e",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "consecutivos entre as parcelas (ex: 001, 002, 003)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: informar o número da parcela com problema [nParcela: 999]",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F59"
+    },
+    {
+      "id": "F60",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "736",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Data de vencimento da parcela menor que a data de emissão [nParcela:999]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 13,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "com pagamento a prazo (tag: indPag=1):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Nenhuma parcela pode ser anterior a data de emissão do MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: informar o número da parcela com problema [nParcela: 999]",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F60"
+    },
+    {
+      "id": "F61",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "737",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Data de vencimento da parcela menor que a data da parcela anterior [nParcela: 999]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 13,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "com pagamento a prazo (tag: indPag=1):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "A data informada em cada parcela deve ser posterior a parcela anterior",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : informar o número da parcela com problema [nParcela: 999]",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:F61"
+    },
+    {
+      "id": "F62",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "738",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Somatório do valor das parcelas diferente do valor do contrato",
+      "marcacao": "SEM_MARCA",
+      "pagina": 13,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "com pagamento a prazo (tag: indPag=1):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O somatório do valor das parcelas (tag: vParcela) + valor do adiantamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tag: vAdiant) não pode ser diferente do valor do Contrato (tag: vContrato)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : tolerar uma diferença de R$ 0,01 a mais ou a menos",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:F62"
+    },
+    {
+      "id": "F63",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "739",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Valor do adiantamento não pode ser informado para pagamento a vista",
+      "marcacao": "SEM_MARCA",
+      "pagina": 13,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=2 com tag tpTransp informada) e informado grupo de Pagamento",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "com pagamento a vista (tag: indPag=0):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "O valor do adiantamento não pode ser informado (tag: vAdiant)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F63"
+    },
+    {
+      "id": "F64",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "740",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: O proprietário do veículo quando informado deve ser diferente do emitente do MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "tração (CNPJ/CPF) este deve ser diferente do emitente do MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado proprietário ou possuidor do veículo de",
+      "id_unico": "2.2:F64"
+    },
+    {
+      "id": "F65",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "741",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: O contratante deve ser igual ao emitente do MDFe quando indicado proprietário do veículo",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "tração (CNPJ/CPF), o grupo contratante deverá ser informado com apenas",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "uma ocorrência (infContratante) indicando o CNPJ/CPF do emitente do",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado proprietário ou possuidor do veículo de",
+      "id_unico": "2.2:F65"
+    },
+    {
+      "id": "F66",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "742",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Contratante informado duplicado [Contratante: 99999999999]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Se informado o grupo contratante (infContratante), a informação de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "CNPJ/CPF/idEstrangeiro não poderá estar duplicada dentro do grupo.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : indicar qual contratante está duplicado no grupo",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[Contratante: 99999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do Emitente",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:F66"
+    },
+    {
+      "id": "F67",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "207",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ do emitente inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Validar CNPJ Emitente (dígito controle, zeros ou nulo)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado CNPJ do Emitente:",
+      "id_unico": "2.2:F67"
+    },
+    {
+      "id": "F68",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "210",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CPF do emitente inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Validar CPF Emitente (dígito controle, zeros ou nulo)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado CPF do Emitente:",
+      "id_unico": "2.2:F68"
+    },
+    {
+      "id": "F69",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "232",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ do emitente com série incompatível",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Série informada não pode estar na faixa 920-969",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado CNPJ do Emitente:",
+      "id_unico": "2.2:F69"
+    },
+    {
+      "id": "F70",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "233",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CPF do emitente com série incompatível",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Série informada deve estar na faixa 920-969",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : MDFe que possuir forma de emissão do Regime Especial da Nota",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Fiscal Fácil deverá aceitar a série indicada no app para Emitente com CPF",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado CPF do Emitente:",
+      "id_unico": "2.2:F70"
+    },
+    {
+      "id": "F71",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "234",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Tipo de emitente inválido para emitente pessoa física",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "O tipo de emitente deve ser Transporte Próprio (tpEmit=2)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : MDFe que possuir forma de emissão do Regime Especial da Nota",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Fiscal Fácil deverá aceitar tipo de emitente Transportador de Carga",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=1) para Emitente com CPF",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado CPF do Emitente:",
+      "id_unico": "2.2:F71"
+    },
+    {
+      "id": "F72",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "229",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: IE do emitente não informada",
+      "marcacao": "SEM_MARCA",
+      "pagina": 14,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Exceção: A IE não será informada se a forma de emissão (tpEmis) do MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "for Regime Especial da Nota Fiscal Fácil (3)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção 2: Se MDFe gerado por PAA (grupo: infPAA) a IE do Emitente é",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "opcional (MEI não inscrito na UF)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "IE Emitente deve ser informada (zeros ou nulo)",
+      "id_unico": "2.2:F72"
+    },
+    {
+      "id": "F73",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "209",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: IE do emitente inválida",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Validar IE Emitente (erro no dígito de controle)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Obs.: Antes da validação, a IE deverá ser normalizada, na aplicação da",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "SEFAZ, com o acréscimo de zeros não significativos previstos na definição",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "do formato da IE, se necessário.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exemplo: IE informada 130000019, formato da IE: NNNNNNNNNND, a IE",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "deve ser padronizada para 00130000019, com o acréscimo dos zeros não",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "significativos necessários para a validação do dígito verificador.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informada IE do emitente (tpEmis diferente de 3):",
+      "id_unico": "2.2:F73"
+    },
+    {
+      "id": "F74",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "203",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Emissor não habilitado para emissão do MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Emitente deve estar habilitado na base de dados para emissão do MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informada IE do emitente (tpEmis diferente de 3):",
+      "id_unico": "2.2:F74"
+    },
+    {
+      "id": "F75",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "230",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: IE do emitente não cadastrada",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Acessar Cadastro de Emitentes (Chave: UF, IE):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- IE emitente não cadastrada",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informada IE do emitente (tpEmis diferente de 3):",
+      "id_unico": "2.2:F75"
+    },
+    {
+      "id": "F76",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "231",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: IE do emitente não vinculada ao CNPJ / CPF",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- IE Emitente deve estar vinculada ao CNPJ (tratar Regime Especial de IE",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "única)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informada IE do emitente (tpEmis diferente de 3):",
+      "id_unico": "2.2:F76"
+    },
+    {
+      "id": "F76a",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "915",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ MEI inexistente na base de dados para emissão pelo PAA",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(grupo:infPAA):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Verificar se o CNPJ do Emitente existe na base de dados MEI da Receita",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Federal do Brasil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se MDFe for gerado por um Provedor de Assinatura e Autorização (PAA)",
+      "id_unico": "2.2:F76a"
+    },
+    {
+      "id": "F76b",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "916",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ MEI não habilitado para emissão de MDFe através de PAA",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(grupo:infPAA):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Verificar a situação do CNPJ do Emitente na base de dados da Receita",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Federal do Brasil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se MDFe for gerado por um Provedor de Assinatura e Autorização (PAA)",
+      "id_unico": "2.2:F76b"
+    },
+    {
+      "id": "F77",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "407",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Código de Município diverge da UF do Emitente do MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "do código de município que identifica o código da UF é compatível com a",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "sigla da UF informada)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : regra não será aplicada na hipótese de Regime Especial da NFF",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Município do Emitente diverge da UF (verificar se as 2 posições da esquerda",
+      "id_unico": "2.2:F77"
+    },
+    {
+      "id": "F78",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "408",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Município do Emitente inexistente",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Validações da Data e Hora de Emissão",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Código do Município Emitente inexistente (Tabela Municípios do IBGE)",
+      "id_unico": "2.2:F78"
+    },
+    {
+      "id": "F79",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "212",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Data/hora de emissão MDFe posterior a data/hora de recebimento",
+      "marcacao": "SEM_MARCA",
+      "pagina": 15,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Autorizador deve considerar a hora local do emissor para a validação). A",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "SEFAZ deve tolerar uma diferença máxima de 5 minutos quando a data/hora",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "de emissão for maior que a data de recebimento, em função da",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "sincronização de horário de servidores.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Essa Validação deve considerar o novo formato de datas UTC",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "com indicação do timezone.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Data/Hora de Emissão posterior a Data/Hora de Recebimento (o Ambiente",
+      "id_unico": "2.2:F79"
+    },
+    {
+      "id": "F80",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "228",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Data de emissão muito atrasada",
+      "marcacao": "SEM_MARCA",
+      "pagina": 16,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Data-Hora de Emissão com atraso superior a 24 horas em relação ao horário",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "de recepção na SEFAZ Autorizadora.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do Banco de Dados do MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se tipo de emissão for normal (tpEmis=1):",
+      "id_unico": "2.2:F80"
+    },
+    {
+      "id": "F81",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "539",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Duplicidade de MDFe, com diferença na Chave de Acesso [chMDFe: 99999999999999999999999999999999999999999999] [nProt:999999999999999] [dhAut: AAAA-MM-DDTHH:MM:SS TZD].",
+      "marcacao": "SEM_MARCA",
+      "pagina": 16,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar duplicidade de MDFe com diferença na Chave de Acesso",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(Campo de Código Numérico difere)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar a chave de acesso já autorizada, o número do protocolo e data de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "autorização do MDFe:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[chMDFe: 99999999999999999999999999999999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[nProt:999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "AAAA-MM-DDTHH:MM:SS TZD] [dhAut:",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Acessar BD MDFe (Chave: UF, CNPJ / CPF Emit, Modelo, Série, Nro):",
+      "id_unico": "2.2:F81"
+    },
+    {
+      "id": "F82",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "204",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Duplicidade de MDFe [nProt:999999999999999][dhAut: AAAA-MM-DDTHH:MM:SS TZD].",
+      "marcacao": "SEM_MARCA",
+      "pagina": 16,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar duplicidade de MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Retornar o número do protocolo e data de autorização do MDFe:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[nProt:999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[dhAut: AAAA-MM-DDTHH:MM:SS TZD].",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Esta validação leva em consideração o ambiente de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "autorização do DF-e",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Acesso BD MDFe (Chave: UF, CNPJ / CPF Emit, Modelo, Serie, Nro.)",
+      "id_unico": "2.2:F82"
+    },
+    {
+      "id": "F83",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "218",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe já está cancelado na base de dados da SEFAZ. [nProt:999999999999999][dhCanc: AAAA-MM-DDTHH:MM:SS TZD].",
+      "marcacao": "SEM_MARCA",
+      "pagina": 16,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Retornar o número do protocolo e data de cancelamento do MDFe:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[nProt:999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[dhCanc: AAAA-MM-DDTHH:MM:SS TZD].",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "- Verificar se o MDFe está cancelado.",
+      "id_unico": "2.2:F83"
+    },
+    {
+      "id": "F84",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "609",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: MDFe já está encerrado na base de dados da SEFAZ [nProt:999999999999999][dhEnc: AAAA-MM-DDTHH:MM:SS TZD].",
+      "marcacao": "SEM_MARCA",
+      "pagina": 16,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Retornar o número do protocolo e data de encerramento do MDFe:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[nProt:999999999999999]",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "[dhEnc: AAAA-MM-DDTHH:MM:SS TZD].",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do Modal Rodoviário",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "- Verificar se o MDFe está encerrado",
+      "id_unico": "2.2:F84"
+    },
+    {
+      "id": "F85",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "611",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Existe MDFe não encerrado para esta placa, tipo de emitente e UF descarregamento [chMDFe: 99999999999999999999999999999999999999999999][nProt:9999 99999999999]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 17,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se existe MDFe não encerrado, para a placa principal (mesmo",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "CNPJ base / CPF do emitente do MDFe, mesma placa, mesmo tipo de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emitente e mesma UF descarregamento).",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : retornar chave de acesso e protocolo de autorização mais",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "antigo que causa o bloqueio",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção: essa regra não deverá ser aplicada para MDFe com forma de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário:",
+      "id_unico": "2.2:F85"
+    },
+    {
+      "id": "F86",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "686",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Existe MDFe não encerrado há mais de 30 dias para o emitente [chMDFe: 99999999999999999999999999999999999999999999][nProt:9999 99999999999]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 17,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "mais de 30 dias desde a autorização.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: retornar chave de acesso e protocolo de autorização mais",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "antigo que causa o bloqueio.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção: essa regra não deverá ser aplicada para MDFe com forma de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Verificar se existe MDFe não encerrado para o CNPJ / CPF do emitente com",
+      "id_unico": "2.2:F86"
+    },
+    {
+      "id": "F87",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "462",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Existe MDFe não encerrado há mais de 5 dias para placa com até 2 UF de percurso informadas [chMDFe: 99999999999999999999999999999999999999999999][nPro t:999999999999999]",
+      "marcacao": "SEM_MARCA",
+      "pagina": 17,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Verificar se existe MDFe não encerrado para a placa do veículo com o",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "mesmo CNPJ Base / CPF do emitente com mais de 5 dias desde a",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "autorização indicando no máximo duas UF de percurso além do",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "carregamento e descarregamento.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: retornar chave de acesso e protocolo de autorização mais",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "antigo que causa o bloqueio.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção: essa regra não deverá ser aplicada para MDFe com forma de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário:",
+      "id_unico": "2.2:F87"
+    },
+    {
+      "id": "F88",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "662",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Existe MDFe não encerrado para esta placa, tipo de emitente no sentido oposto da viagem",
+      "marcacao": "SEM_MARCA",
+      "pagina": 17,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se existe MDFe não encerrado, para a placa principal (mesmo",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "CNPJ base / CPF do emitente do MDFe, mesma placa, mesmo tipo de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emitente e contendo o par UF de Carregamento/ UF de Descarregamento no",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "sentido oposto ao MDFe que está sendo autorizado).",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : retornar chave de acesso e protocolo de autorização mais",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "antigo que causa o bloqueio",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção: essa regra não deverá ser aplicada para MDFe com forma de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário:",
+      "id_unico": "2.2:F88"
+    },
+    {
+      "id": "F89",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "646",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Placa de veículo formato inválido (UF Carregamento e Descarregamento <> ‘EX’)",
+      "marcacao": "SEM_MARCA",
+      "pagina": 17,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "de Exterior:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Verificar se as placas informadas (veículo Tração e Reboques) encontram-",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "se diferentes do formato nacional",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Expressão Regular: [A-Z]{3}[0-9][0-9A-Z][0-9]{2}",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário, UF Carregamento e Descarregamento forem diferentes",
+      "id_unico": "2.2:F89"
+    },
+    {
+      "id": "F90",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "663",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Percurso informado inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 18,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "preenchido na ordem Origem – Destino sempre que existir pelo menos uma",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "UF entre a UF de carregamento e UF de descarregamento.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : A regra será aplicada considerando as divisas possíveis na",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "ordem definida para o percurso.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário, o grupo de informações de UF de percurso deverá ser",
+      "id_unico": "2.2:F90"
+    },
+    {
+      "id": "F91",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "698",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Seguro da carga é obrigatório para modal Prestador de Serviço de Transporte no modal rodoviário",
+      "marcacao": "SEM_MARCA",
+      "pagina": 18,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "-Rejeitar se o grupo de informações do seguro da carga não estiver",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "informado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : o grupo do seguro poderá não ser informado para MDFe com",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F91"
+    },
+    {
+      "id": "F92",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "699",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Dados do seguro de carga incompletos para o modal rodoviário",
+      "marcacao": "SEM_MARCA",
+      "pagina": 18,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) e informado grupo de seguro da carga:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "-Rejeitar se alguma informação do grupo seguro não estiver informada",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação : Verificar preenchimento de CNPJ da seguradora, infSeg,",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "nApol e nAver",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : o nAver poderá não ser informado para MDFe com forma de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F92"
+    },
+    {
+      "id": "F93",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "542",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ/CPF do responsável pelo seguro deve ser informado para o tipo de responsável informado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 18,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3), informado grupo de seguro da carga e indicado responsável pelo",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "seguro contratante (tpResp=2):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Rejeitar se não estiver informado CNPJ ou CPF do responsável pelo",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "seguro",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção : o responsável pelo seguro poderá não ser informado para MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "com forma de emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+      "id_unico": "2.2:F93"
+    },
+    {
+      "id": "F94",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "578",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Informações dos tomadores é obrigatória para esta operação Rejeição: A categoria de combinação veicular deve ser preenchida para o grupo vale pedágio",
+      "marcacao": "SEM_MARCA",
+      "pagina": 18,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Se modal Rodoviário e Tipo Emitente for igual a Prestador de Serviço de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Transporte (tpEmit=1) ou transportador que emitirá CTe globalizado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmit=3) ou Transportador Próprio que informou o Tipo de Transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tpEmi=2 com tag tpTransp informada) e não estiverem preenchidos:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "1. Responsável pela Geração do CIOT",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "2. Responsável pelo pagamento do Vale-pedágio",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Então:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- Rejeitar se não estiver informado pelo menos um tomador de serviço",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(grupo infContratante)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "F95 Se modal rodoviário e informado o grupo de informações do vale pedágio",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(infANTT/valePed).",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:F94"
+    },
+    {
+      "id": "",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "731",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ do fornecedor do vale pedágio inválido.",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "A informação da categoria de combinação veicular deverá ser preenchida",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(tag: categCombVeic)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "F96 Se modal Rodoviário e informado grupo de informações do vale pedágio",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(grupo: valePed):",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:cStat731"
+    },
+    {
+      "id": "",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "732",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ do Fornecedor do Vale Pedágio inexistente na base da ANTT.",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Rejeitar se o CNPJ do fornecedor do vale pedágio informado estiver inválido",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(dígito de controle, zeros)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "F97",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Se modal rodoviário, informado grupo de informações do vale pedágio (grupo:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "valePed):",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:cStat732"
+    },
+    {
+      "id": "",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "733",
+      "efeito": "Rej",
+      "mensagem": "Em caso de rejeição ligue para Ouvidoria ANTT pelo número 166 Rejeição: CNPJ / CPF do responsável pelo pagamento do vale pedágio inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Para cada dispositivo deverá ser verificado se o CNPJ do Fornecedor do",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Vale Pedágio existe na base de dados compartilhada da ANTT.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "F98 Se modal rodoviário, informado grupo de informações do vale pedágio (grupo:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "valePed):",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:cStat733"
+    },
+    {
+      "id": "",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "734",
+      "efeito": "Rej",
+      "mensagem": "",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Rejeitar se o CPF ou CNPJ do responsável pelo pagamento do vale pedágio",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "informado estiver inválido (dígito de controle, zeros)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "",
+      "id_unico": "2.2:cStat734"
+    },
+    {
+      "id": "F99",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "577",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Duplicidade de condutor",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Rejeitar se existir CPF de condutor informado em duplicidade no grupo",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "veículo tração",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário:",
+      "id_unico": "2.2:F99"
+    },
+    {
+      "id": "F100",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "645",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CPF do condutor inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "entre os relacionados (dígito de controle, zeros)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário: Rejeitar se algum CPF de Condutor estiver inválido",
+      "id_unico": "2.2:F100"
+    },
+    {
+      "id": "F101",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "716",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ / CPF do responsável pela geração do CIOT inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Rejeitar se o CPF ou CNPJ do responsável pela geração do CIOT informado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "estiver inválido (dígito de controle, zeros)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário e informado grupo do CIOT (grupo: infCIOT):",
+      "id_unico": "2.2:F101"
+    },
+    {
+      "id": "F102",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "717",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ / CPF do contratante do transporte inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 19,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "infContratante):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Rejeitar se o CPF ou CNPJ informado para o contratante estiver inválido",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(dígito de controle, zeros)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário e informado grupo do Contratante (grupo:",
+      "id_unico": "2.2:F102"
+    },
+    {
+      "id": "F103",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "718",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ / CPF do proprietário do veículo de tração inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(grupo: veicTracao/prop):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Rejeitar se o CPF ou CNPJ informado para o proprietário estiver inválido",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(dígito de controle, zeros)",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário e informado grupo do proprietário do veículo de tração",
+      "id_unico": "2.2:F103"
+    },
+    {
+      "id": "F104",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "719",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ / CPF do proprietário do veículo reboque inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "(grupo: veicReboque/prop):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Rejeitar se o CPF ou CNPJ informado para o proprietário estiver inválido",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "(dígito de controle, zeros)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: Verificar em todos os reboques informados",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações dos Autorizados ao XML do MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal Rodoviário e informado grupo do proprietário do veículo reboque",
+      "id_unico": "2.2:F104"
+    },
+    {
+      "id": "F105",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "660",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ autorizado para download inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "CNPJ com zeros ou dígito inválido",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informada autorização download XML com CNPJ:",
+      "id_unico": "2.2:F105"
+    },
+    {
+      "id": "F106",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "661",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CPF autorizado para download inválido",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "CPF com zeros, nulo, números repetidos (111, 222, etc.), ou dígito de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "controle inválido.",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informada autorização download do XML com CPF:",
+      "id_unico": "2.2:F106"
+    },
+    {
+      "id": "F107",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "459",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Documento autorizado ao XML duplicado no MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Verificar se existe duplicidade de CPF/CNPJ informado no MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações da ANTT",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informada autorização download XML:",
+      "id_unico": "2.2:F107"
+    },
+    {
+      "id": "F108",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "688",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: RNTRC deve ser informado para Prestador de Serviço de Transporte",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "de Serviço de Transporte (tpEmit=1) ou globalizado (tpEmit=3):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "RNTRC deve ser informado",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário, operação interestadual e tipo de emitente for Prestador",
+      "id_unico": "2.2:F108"
+    },
+    {
+      "id": "F109",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "681",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: RNTRC informado inexistente.",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Verificar se o RNTRC existe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado RNTRC",
+      "id_unico": "2.2:F109"
+    },
+    {
+      "id": "F110",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "682",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: RNTRC situação inválida.",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Verificar situação do RNTRC",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Exceção: essa regra não deverá ser aplicada para MDFe com forma de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "emissão (tpEmis=3) Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado RNTRC",
+      "id_unico": "2.2:F110"
+    },
+    {
+      "id": "F111",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "687",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: RNTRC deve estar associado ao transportador indicado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Verificar se o RNTRC está associado ao transportador",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: verificar pelo CNPJ-Base",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado RNTRC",
+      "id_unico": "2.2:F111"
+    },
+    {
+      "id": "F112",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "683",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Placa do veículo de tração não vinculada ao RNTRC informado.",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Verificar se a placa do veículo de tração está associada ao RNTRC",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário e informado RNTRC",
+      "id_unico": "2.2:F112"
+    },
+    {
+      "id": "F113",
+      "modelo": "",
+      "aplicacao": "Facult",
+      "cStat": "684",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CIOT obrigatório para RNTRC informado.",
+      "marcacao": "SEM_MARCA",
+      "pagina": 20,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "de Exterior e informado RNTRC",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Verificar se foi informado CIOT quando este for obrigatório para o RNTRC",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "As validações da ANTT são aplicadas com base na integração entre os sistemas da agência e do ambiente autorizador do MDFe, em caso de indisponibilidade do serviço de",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "integração, as regras serão desabilitadas até a normalização.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Em caso de rejeição, entre em contato com a ANTT nos canais de atendimento para solucionar as pendências.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "As regras serão aplicadas aos RNTRC do transportador emitente do MDFe e ao RNTRC do proprietário quando o veículo não pertencer ao emitente do MDFe",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do QR Code",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se modal rodoviário, UF Carregamento e Descarregamento forem diferentes",
+      "id_unico": "2.2:F113"
+    },
+    {
+      "id": "F114",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "480",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Consulta a uma Chave de Acesso muito antiga",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [],
+      "descricao": "O grupo de informações do QRCode (infMDFeSupl) deve ser informado",
+      "id_unico": "2.2:F114"
+    },
+    {
+      "id": "F115",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "479",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Endereço do site da UF da Consulta via QR Code diverge do previsto",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "previsto.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Nota: O uso diferenciado de maiúsculas ou minúsculas não deve ser",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "considerado na validação.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: Para consultar as URLs utilizadas no QR Code, acesse:",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "https://dfe-portal.svrs.rs.gov.br/MDFe/Servicos",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Endereço do site do Portal Nacional para a Consulta via QR Code difere do",
+      "id_unico": "2.2:F115"
+    },
+    {
+      "id": "F116",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "481",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Parâmetro chave de acesso do QR Code divergente do MDFe",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "MDFe",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Parâmetro Chave de Acesso no QR Code diverge da Chave de Acesso do",
+      "id_unico": "2.2:F116"
+    },
+    {
+      "id": "F117",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "482",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Parâmetro sign não informado no QR Code para emissão em contingência",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "O parâmetro sign deve informado no QR-Code",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se tipo de emissão for igual a Contingência Off-Line:",
+      "id_unico": "2.2:F117"
+    },
+    {
+      "id": "F118",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "488",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Parâmetro sign não deve ser informado no QR Code para emissão Normal",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "O parâmetro sign não deve ser informado no QR-Code",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se tipo de emissão for igual a Normal:",
+      "id_unico": "2.2:F118"
+    },
+    {
+      "id": "F119",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "496",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Assinatura do QR-Code difere do calculado",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Valor da assinatura (sign) do QR-Code difere do valor calculado",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "As validações referentes ao QR Code serão aplicadas somente após data previamente acertada entre Fisco e empresas, podendo essa data ser de prazo distinto e superior à",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "data de entrada em produção deste MOC, devendo acompanhar as datas do MOC Anexo do Documento Auxiliar.",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do Responsável Técnico",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se tipo de emissão for igual a Contingência Off-Line:",
+      "id_unico": "2.2:F119"
+    },
+    {
+      "id": "F120",
+      "modelo": "",
+      "aplicacao": "Facul",
+      "cStat": "720",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Obrigatória as informações do responsável técnico",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "Observação: Implementação à critério da UF",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Não informado o grupo de informações do responsável técnico",
+      "id_unico": "2.2:F120"
+    },
+    {
+      "id": "F121",
+      "modelo": "",
+      "aplicacao": "Facul",
+      "cStat": "713",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: CNPJ do desenvolvedor do sistema inválido (zerado ou dígito inválido)",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "- Validar CNPJ (dígito controle, zeros ou nulo).",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se informado grupo do responsável técnico (infRespTec):",
+      "id_unico": "2.2:F121"
+    },
+    {
+      "id": "F122",
+      "modelo": "",
+      "aplicacao": "Facul",
+      "cStat": "721",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Obrigatória a informação do identificador do CSRT e do Hash do CSRT",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "CSRT (tag: hashCSRT)",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Observação: Implementação futura",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "Validações do Regime Especial da Nota Fiscal Fácil",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Obrigatória a informação do identificador do CSRT (tag:idCSRT) e Hash do",
+      "id_unico": "2.2:F122"
+    },
+    {
+      "id": "F123",
+      "modelo": "",
+      "aplicacao": "Obrig",
+      "cStat": "902",
+      "efeito": "Rej",
+      "mensagem": "Rejeição: Grupo de informações do pedido de emissão da NFF deve ser preenchido apenas para forma de emissão NFF",
+      "marcacao": "SEM_MARCA",
+      "pagina": 21,
+      "grupo": "",
+      "secao": {
+        "numero": "2.2",
+        "titulo": "Regras de Validação Específicas do MDFe"
+      },
+      "notas": [
+        {
+          "texto": "da Nota Fiscal Fácil (3):",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "- O grupo de informações do pedido da NFF (infSolicNFF) não pode estar",
+          "marcacao": "SEM_MARCA"
+        },
+        {
+          "texto": "preenchido",
+          "marcacao": "SEM_MARCA"
+        }
+      ],
+      "descricao": "Se a forma de emissão do MDFe (tpEmis) for diferente de Regime Especial",
+      "id_unico": "2.2:F123"
+    }
+  ],
   "campos_leiaute": [
     {
       "texto": "1 infMDFe 0 Informações do MDFe G 1 - 1",
@@ -5901,13 +9367,13 @@
   ],
   "estatisticas": {
     "total_secoes": 22,
-    "total_regras": 0,
+    "total_regras": 125,
     "total_campos": 260,
     "por_marcacao": {
       "AMARELO": 0,
       "VERDE": 0,
       "EXCLUIDO": 0,
-      "SEM_MARCA": 427
+      "SEM_MARCA": 440
     }
   }
 }

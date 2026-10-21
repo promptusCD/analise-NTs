@@ -1,154 +1,65 @@
 ---
-description: "Ler entrada/, organizar automaticamente em fontes/, atualizar manifest e catalogo"
+description: Organizar entrada/ em fontes/ (identifica tipo e documento), atualizar manifest e ARQUIVOS_NECESSARIOS
+argument-hint: [--dry-run]
 ---
 
-# /catalogar-atualizar
+# /fiscal-catalogar-atualizar
 
-Ler todos os arquivos em `entrada/`, identificar o tipo e documento fiscal,
-mover para a pasta correta em `fontes/`, atualizar manifest.yaml e
-CATALOGO_ARQUIVOS.md.
+**Argumentos**: $ARGUMENTS (`--dry-run` = só mostrar o que faria)
 
-## Argumentos
-- `--dry-run`: apenas mostra o que faria, sem mover (opcional)
-- `--limpar`: remove entrada/ apos mover (padrao: sim, com verificacao)
+**Regra 11: a IA nunca edita, cria ou copia nada em `fontes/` — só MOVE (`mv`) o que o usuário colocou em `entrada/`, sem sobrescrever.**
+Este command é a **fonte única das regras de classificação** de `entrada/`; `/fiscal-processar`
+(etapa 1) usa as mesmas regras. Preserve sempre `entrada/README.md`. Sem commit (regra 12).
 
-**Argumentos fornecidos**: $ARGUMENTS
+## 0. Organizar entrada/
 
-## Fluxo de execucao
+1. Liste: `ls -R entrada/` (ou `Get-ChildItem entrada -Recurse -File`). Vazio → pule para o passo 1.
+2. **ZIP**: extraia para um subdiretório **novo e vazio** dentro de `entrada/` (nunca rode scripts de
+   dentro dele) e reclassifique o conteúdo.
+3. **Classificar** cada arquivo (por extensão e nome, sem diferenciar maiúsculas):
 
-### 0. Pre-etapa: Organizar entrada/
-
-**REGRA: O usuario pode colar qualquer arquivo em `entrada/` e esta
-etapa cuida de organizar automaticamente. O `entrada/README.md` deve
-ser preservado e nunca removido.**
-
-#### 0.1 Listar tudo em entrada/
-```powershell
-Get-ChildItem "entrada/" -Recurse -File
-```
-
-Se entrada/ estiver vazio: pular para etapa 1 (buscar portais).
-
-#### 0.2 Identificar cada arquivo
-Para cada arquivo em entrada/, determinar:
-
-**Tipo do arquivo:**
-- `.pdf` = pode ser NT ou MOC
-- `.docx` = pode ser MOC
-- `.xsd` = schema XML
-- `.xlsx` / `.xls` = tabela/informe
-- `.zip` = pacote (extrair primeiro)
-
-**Documento fiscal (pelo nome):**
-- Nome contem `NFe`, `NF-e`, `NT2026.007`, `NT 2025.002` = NF-e
-- Nome contem `CTe`, `CT-e`, `CTe_`, `PL_CTe` = CT-e
-- Nome contem `MDFe`, `MDF-e`, `PL_MDFe` = MDF-e
-- Nome contem `MOC` + `NF-e` ou `NFe` = MOC NF-e
-- Nome contem `MOC` + `CTe` ou `CT-e` = MOC CT-e
-- Nome contem `MOC` + `MDFe` ou `MDF-e` = MOC MDF-e
-- Nome contem `ABI` = externa (NFe ABI)
-- Nome contem `IT ` ou `Tabela` = tabela/informe
-
-**Subtipo (NT vs MOC vs XSD):**
-- Se e `.xsd` = XSD
-- Se nome contem `MOC` ou `Manual` ou `Anexo` ou `VisaoGeral` = MOC
-- Se nome contem `NT` ou `Nota_Tecnica` ou `Nota Tecnica` = NT
-- Se e `.xlsx`/`.xls` = tabela
-
-#### 0.3 Mover para pasta correta
-
-| Tipo | Documento | Destino |
+| Critério | Classe | Destino |
 |---|---|---|
-| NT | NF-e | `fontes/nfe/notas-tecnicas/` |
-| NT | CT-e | `fontes/cte/notas-tecnicas/` |
-| NT | MDF-e | `fontes/mdfe/notas-tecnicas/` |
-| MOC | NF-e | `fontes/nfe/moc/` |
-| MOC | CT-e | `fontes/cte/moc/` |
-| MOC | MDF-e | `fontes/mdfe/moc/` |
-| XSD | NF-e | `fontes/nfe/xsd/<nome_pacote>/` |
-| XSD | CT-e | `fontes/cte/xsd/<nome_pacote>/` |
-| XSD | MDF-e | `fontes/mdfe/xsd/<nome_pacote>/` |
-| Tabela | qualquer | `fontes/externas/tabelas/` |
-| Externa | qualquer | `fontes/externas/` |
-| ZIP | qualquer | extrair para `entrada/` primeiro, depois re-classificar |
+| `.xsd` / pasta de pacote `PL_*` | XSD | `fontes/<doc>/xsd/<pacote>/` |
+| nome com `MOC`/`Manual`/`Anexo`/`VisaoGeral` | MOC (`.pdf`/`.docx`) | `fontes/<doc>/moc/` |
+| nome com `NT`/`Nota_Tecnica`/`Nota Tecnica` | NT | `fontes/<doc>/notas-tecnicas/` |
+| `.xlsx`/`.xls` ou `IT `/`Tabela` | Tabela | `fontes/externas/tabelas/` |
+| nome com `ABI` | Externa | `fontes/externas/` |
 
-**Nomenclatura padrao:**
-- NT: `<DOC>_NT_<numero>_v<versao>.pdf` (ex: `CTe_NT_2026_004_v1.00.pdf`)
-- MOC: `MOC_<DOC>_<secao>_<versao>.pdf` (ex: `MOC_NFe_v7.00_Anexo_I_Leiaute.pdf`)
-- XSD: manter nome original da pasta
-- Tabela: manter nome original
+   Documento: `NFe`/`NF-e`/`NT_`sem prefixo/`NT2026.007` → nfe · `CTe`/`CT-e`/`PL_CTe` → cte ·
+   `MDFe`/`MDF-e`/`PL_MDFe` → mdfe. Se o nome contiver mais de um doc ou nenhum:
+   `ERRO_DOCUMENTO_NAO_IDENTIFICADO` → **não mova**, pergunte.
+4. **Nomenclatura**: NT `<DOC>_NT_<AAAA>_<NNN>_v<versão>.pdf` (NF-e sem prefixo `NFe_`, como já existe) ·
+   MOC `MOC_<DOC>_<seção>_<versão>.pdf` · XSD/Tabela mantêm o nome original.
+5. **Duplicata**: SHA256 (`sha256sum`) contra **todo** `fontes/` (não só o destino; não confie no
+   manifest: shas truncados). Idêntico → duplicata; remover de `entrada/` (o `rm` pede confirmação).
+   Mesmo nome e hash diferente → `ERRO_DUPLICATA_HASH_DIVERGENTE`, alertar, manter ambos.
+6. Mover com `mv` (Bash). Em `--dry-run`, apenas imprima a tabela origem → destino.
+7. Confirme que `entrada/` só contém o README.
 
-#### 0.4 Verificar duplicatas
-Antes de mover, calcular SHA256 e comparar com arquivos ja existentes em fontes/.
-- Se hash identico = duplicata, remover de entrada/ sem mover
-- Se hash diferente = versao diferente, alertar usuario
+## 1. Atualizar `manifest.yaml`
+Uma entrada por arquivo (id, documento, tipo, nt, versao, titulo, arquivo, sha256, status_ingestao,
+confianca). NTs/MOCs ainda não extraídos entram como `pendente`.
 
-#### 0.5 Verificar organizacao
-Apos mover tudo com sucesso:
-- Verificar que todos os arquivos foram movidos corretamente
-- Manter entrada/ como pasta permanente na raiz
-- Preservar entrada/README.md (nunca remover)
+## 2. Atualizar `docs/ARQUIVOS_NECESSARIOS.md`
+- Marque como OK os itens atendidos e atualize "Documentos pendentes: N".
+- `Status: ATIVO` = ciclo em andamento. Se **todos** OK: marque CONCLUIDO (versão, data, contagem),
+  copie para `docs/historico-arquivos/ARQUIVOS_NECESSARIOS_vN_AAAA-MM-DD.md` e abra novo ciclo ATIVO.
+  Detalhes em `docs/REFERENCIA.md` seção 15.
+- `CATALOGO_ARQUIVOS.md` (seção 16 da REFERENCIA): se o arquivo existir, atualize; senão avise.
 
-### 1. Atualizar manifest.yaml
-Registrar cada arquivo movido/criado no manifest com:
-- id, documento, tipo, nt, versao, titulo, arquivo, sha256, status_ingestao
-
-### 2. Atualizar CATALOGO_ARQUIVOS.md
-Adicionar/atualizar entradas no catalogo para cada arquivo organizado.
-
-### 3. Atualizar ARQUIVOS_NECESSARIOS.md
-
-#### 3.1 Verificar status atual
-- Ler `docs/ARQUIVOS_NECESSARIOS.md`
-- Se tem "Status: ATIVO" = ciclo em andamento (esperado)
-- Se tem "Status: CONCLUIDO" = ciclo ja fechado (criar novo antes de continuar)
-
-#### 3.2 Marcar itens encontrados
-- Para cada arquivo movido de `entrada/` para `fontes/`, buscar item
-  correspondente no ARQUIVOS_NECESSARIOS
-- Marcar item como OK
-- Atualizar contagem de "Documentos pendentes: N"
-
-#### 3.3 Verificar se ciclo completo
-Se TODOS os itens estiverem OK:
-1. Adicionar data e versao ao cabecalho do ARQUIVOS_NECESSARIOS.md:
-   ```
-   > Status: CONCLUIDO
-   > Versao: vN (incrementar)
-   > Data de conclusao: YYYY-MM-DD
-   > Documentos importados: N/N
-   ```
-2. Copiar arquivo para `docs/historico-arquivos/ARQUIVOS_NECESSARIOS_vN_YYYY-MM-DD.md`
-3. Criar novo `docs/ARQUIVOS_NECESSARIOS.md` (sem data/versao, status ATIVO)
-   para o proximo ciclo
-
-Se ainda ha itens pendentes:
-- Manter como ATIVO
-- Atualizar contagem de pendentes
-- Listar itens que ainda faltam
-
-### 4. Relatorio final
-
+## 3. Relatório
 ```
-ORGANIZACAO CONCLUIDA - <data>
-
-Arquivos processados: N
-- NTs movidas: N
-- MOCs movidos: N
-- XSDs movidos: N
-- Tabelas movidas: N
-- Duplicatas removidas: N
-
-Manifest atualizado: sim
-Catalogo atualizado: sim
-entrada/ verificado: sim
+ORGANIZAÇÃO CONCLUÍDA - <data>
+Processados N · NTs N · MOCs N · XSDs N · Tabelas N · Duplicatas N · Não identificados N
+Manifest atualizado: sim/não · Pendentes em ARQUIVOS_NECESSARIOS: N (lista)
+Próximo passo: /fiscal-processar --etapa 2
 ```
 
-## Erros tratados
-
-| Erro | Acao |
+## Erros
+| Erro | Ação |
 |---|---|
-| `ERRO_DOCUMENTO_NAO_IDENTIFICADO` | Arquivo nao e NF-e/CT-e/MDF-e -> mover para fontes/externas/ |
-| `ERRO_TIPO_NAO_IDENTIFICADO` | Nao e NT/MOC/XSD -> alertar usuario, mover para externas/ |
-| `ERRO_DUPLICATA_HASH_DIVERGENTE` | Mesmo arquivo com hash diferente -> alertar, manter ambos |
-| `ERRO_ARQUIVO_CORROMPIDO` | SHA256 nao calculavel -> alertar, nao mover |
+| `ERRO_DOCUMENTO_NAO_IDENTIFICADO` | Não mover; perguntar |
+| `ERRO_TIPO_NAO_IDENTIFICADO` | Não é NT/MOC/XSD → alertar, perguntar (padrão: `fontes/externas/`) |
+| `ERRO_DUPLICATA_HASH_DIVERGENTE` | Alertar, manter ambos |
+| `ERRO_ARQUIVO_CORROMPIDO` | SHA256 falhou → alertar, não mover |

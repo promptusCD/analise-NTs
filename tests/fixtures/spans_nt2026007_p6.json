@@ -1,0 +1,1673 @@
+{
+ "pdf": "fontes/nfe/notas-tecnicas/NT_2026_007_v1.10.pdf",
+ "pagina": 6,
+ "largura": 841.9199829101562,
+ "spans": [
+  {
+   "text": "Projeto",
+   "bbox": [
+    42.6,
+    23.68,
+    72.44,
+    32.65
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "Nota Fiscal Eletrônica",
+   "bbox": [
+    42.6,
+    32.87,
+    149.91,
+    43.97
+   ],
+   "size": 9.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "NT 2026.007 - Emissão por Contribuinte exclusivo do IBS/CBS",
+   "bbox": [
+    42.6,
+    44.32,
+    279.15,
+    53.29
+   ],
+   "size": 8.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#808080"
+  },
+  {
+   "text": "Página",
+   "bbox": [
+    746.5,
+    567.73,
+    777.06,
+    577.77
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "6",
+   "bbox": [
+    777.1,
+    567.73,
+    782.1,
+    577.77
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "/",
+   "bbox": [
+    782.14,
+    567.73,
+    789.68,
+    577.77
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "11",
+   "bbox": [
+    789.58,
+    567.73,
+    799.62,
+    577.77
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "4 Leiaute",
+   "bbox": [
+    42.6,
+    53.86,
+    124.7,
+    71.65
+   ],
+   "size": 15.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "4.1 Grupo C. Identificação do Emitente da Nota Fiscal eletrônica",
+   "bbox": [
+    42.6,
+    78.03,
+    477.73,
+    93.69
+   ],
+   "size": 14.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "#",
+   "bbox": [
+    61.68,
+    102.11,
+    68.15,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "ID",
+   "bbox": [
+    96.14,
+    102.11,
+    106.21,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Campo",
+   "bbox": [
+    141.98,
+    102.11,
+    170.17,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Descrição",
+   "bbox": [
+    287.33,
+    102.11,
+    325.24,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Ele",
+   "bbox": [
+    425.81,
+    102.11,
+    438.88,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Pai",
+   "bbox": [
+    458.11,
+    102.11,
+    471.9,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Tipo",
+   "bbox": [
+    487.15,
+    102.11,
+    505.38,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Ocor.",
+   "bbox": [
+    517.75,
+    102.11,
+    539.82,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Tam.",
+   "bbox": [
+    556.63,
+    102.11,
+    577.5,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação",
+   "bbox": [
+    675.94,
+    102.11,
+    722.01,
+    111.11
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "30",
+   "bbox": [
+    59.28,
+    113.63,
+    70.43,
+    122.63
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "C01",
+   "bbox": [
+    93.26,
+    113.63,
+    109.21,
+    122.63
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "emit",
+   "bbox": [
+    146.42,
+    113.63,
+    165.61,
+    122.63
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Identificação do emitente da NF-e",
+   "bbox": [
+    197.54,
+    113.63,
+    326.44,
+    122.63
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "G",
+   "bbox": [
+    428.45,
+    113.63,
+    436.24,
+    122.63
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "A01",
+   "bbox": [
+    456.67,
+    113.63,
+    473.22,
+    122.63
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "1-1",
+   "bbox": [
+    521.83,
+    113.63,
+    535.74,
+    122.63
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "...",
+   "bbox": [
+    60.48,
+    125.15,
+    69.35,
+    134.15
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "...",
+   "bbox": [
+    96.74,
+    125.15,
+    105.61,
+    134.15
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "...",
+   "bbox": [
+    151.58,
+    125.15,
+    160.45,
+    134.15
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "...",
+   "bbox": [
+    197.54,
+    125.15,
+    206.41,
+    134.15
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "...",
+   "bbox": [
+    427.97,
+    125.15,
+    436.84,
+    134.15
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "...",
+   "bbox": [
+    460.51,
+    125.15,
+    469.38,
+    134.15
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "...",
+   "bbox": [
+    524.35,
+    125.15,
+    533.22,
+    134.15
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "46",
+   "bbox": [
+    59.28,
+    136.55,
+    70.43,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "C17",
+   "bbox": [
+    93.26,
+    136.55,
+    109.21,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "IE",
+   "bbox": [
+    151.7,
+    136.55,
+    160.45,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Inscrição Estadual do Emitente",
+   "bbox": [
+    197.54,
+    136.55,
+    312.04,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "E",
+   "bbox": [
+    429.17,
+    136.55,
+    435.64,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "C01",
+   "bbox": [
+    457.03,
+    136.55,
+    472.98,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "C",
+   "bbox": [
+    492.79,
+    136.55,
+    499.62,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "0-1",
+   "bbox": [
+    521.83,
+    136.55,
+    535.74,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "2-14",
+   "bbox": [
+    557.83,
+    136.55,
+    576.3,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Informar somente os algarismos, sem os caracteres de",
+   "bbox": [
+    588.79,
+    136.55,
+    808.93,
+    145.55
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "formatação (ponto, barra, hífen, etc.).",
+   "bbox": [
+    588.79,
+    147.47,
+    729.69,
+    156.47
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação 1:",
+   "bbox": [
+    588.79,
+    160.55,
+    641.53,
+    169.55
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "No caso de NF-e Avulsa (Série 890-919), pode",
+   "bbox": [
+    641.62,
+    160.55,
+    809.11,
+    169.55
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "ser informada a IE emitente como “ISENTO”;",
+   "bbox": [
+    602.95,
+    171.47,
+    765.95,
+    180.47
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação 2:",
+   "bbox": [
+    588.79,
+    184.58,
+    644.76,
+    193.58
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Para emitente contribuinte exclusivo do",
+   "bbox": [
+    644.86,
+    184.58,
+    809.05,
+    193.58
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "IBS/CBS sem Inscrição Estadual na UF (não contribuinte",
+   "bbox": [
+    602.95,
+    195.62,
+    808.89,
+    204.62
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "do ICMS), não informar a IE.",
+   "bbox": [
+    602.95,
+    206.54,
+    705.59,
+    215.54
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "5 Detalhamento das Regras de Validação – Autorização",
+   "bbox": [
+    42.6,
+    231.37,
+    476.83,
+    249.16
+   ],
+   "size": 15.96,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "5.1 B. Identificação da Nota Fiscal eletrônica",
+   "bbox": [
+    42.6,
+    255.66,
+    347.87,
+    271.32
+   ],
+   "size": 14.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "#",
+   "bbox": [
+    68.88,
+    279.74,
+    75.35,
+    288.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Modelo",
+   "bbox": [
+    104.9,
+    279.74,
+    135.73,
+    288.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de Validação",
+   "bbox": [
+    289.25,
+    279.74,
+    363.88,
+    288.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Aplic.",
+   "bbox": [
+    528.43,
+    279.74,
+    551.22,
+    288.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Msg",
+   "bbox": [
+    559.03,
+    279.74,
+    577.26,
+    288.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Efeito",
+   "bbox": [
+    588.07,
+    279.74,
+    611.82,
+    288.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Descrição Erro",
+   "bbox": [
+    685.78,
+    279.74,
+    741.21,
+    288.74
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "B02-10",
+   "bbox": [
+    58.08,
+    291.14,
+    86.03,
+    300.14
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "55/65",
+   "bbox": [
+    108.5,
+    291.14,
+    132.25,
+    300.14
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Código da UF do Emitente difere da UF do Web Service",
+   "bbox": [
+    142.1,
+    291.14,
+    345.04,
+    300.14
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção:",
+   "bbox": [
+    142.1,
+    302.18,
+    174.32,
+    311.18
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Na SVRS, a regra acima",
+   "bbox": [
+    174.38,
+    302.18,
+    260.47,
+    311.18
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "não se aplica para modelo 55 quando não informada a IE do emitente",
+   "bbox": [
+    262.58,
+    302.18,
+    519.25,
+    311.18
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "(contribuinte exclusivo do IBS/CBS).",
+   "bbox": [
+    156.26,
+    313.12,
+    288.88,
+    322.12
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    142.1,
+    324.16,
+    188.59,
+    333.16
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de validação para todas as SEFAZ Autorizadoras.",
+   "bbox": [
+    188.66,
+    324.16,
+    391.72,
+    333.16
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    527.59,
+    291.14,
+    552.06,
+    300.14
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "226",
+   "bbox": [
+    560.23,
+    291.14,
+    575.94,
+    300.14
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    592.03,
+    291.14,
+    607.86,
+    300.14
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Código da UF do Emitente diverge da UF",
+   "bbox": [
+    619.63,
+    291.14,
+    804.35,
+    300.14
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "autorizadora",
+   "bbox": [
+    619.63,
+    302.18,
+    668.49,
+    311.18
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "B25-90",
+   "bbox": [
+    58.08,
+    335.68,
+    86.03,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "55/65",
+   "bbox": [
+    108.5,
+    335.68,
+    132.25,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Se a finalidade da NF-e for diferente de Nota de Crédito e Nota de Débito (tag: finNFe<>5 e finNFe<>6):",
+   "bbox": [
+    142.1,
+    335.68,
+    521.46,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "- Não informado ICMS (tag: ICMS) e não informado ISSQN (tag: ISSQN)",
+   "bbox": [
+    142.1,
+    346.6,
+    406.72,
+    355.6
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção 1:",
+   "bbox": [
+    142.1,
+    357.64,
+    182.98,
+    366.64
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "a regra acima não se aplica no caso de tpOperGov=2-Recebimento do pagamento.",
+   "bbox": [
+    183.02,
+    357.64,
+    485.46,
+    366.64
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção 2:",
+   "bbox": [
+    142.1,
+    368.56,
+    182.98,
+    377.56
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Para modelo 55, na SVRS,",
+   "bbox": [
+    183.02,
+    368.56,
+    276.56,
+    377.56
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "a regra acima não se aplica quando não informada a IE do",
+   "bbox": [
+    278.69,
+    368.56,
+    491.59,
+    377.56
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "emitente (tag: emit/IE) - contribuinte exclusivo do IBS/CBS.",
+   "bbox": [
+    156.26,
+    379.6,
+    371.82,
+    388.6
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    142.1,
+    390.52,
+    188.59,
+    399.52
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de validação para todas as SEFAZ Autorizadoras.",
+   "bbox": [
+    188.66,
+    390.52,
+    389.55,
+    399.52
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig. 1002",
+   "bbox": [
+    527.59,
+    335.68,
+    578.22,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    592.03,
+    335.68,
+    607.86,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: NF-e sem informação de ICMS / ISSQN",
+   "bbox": [
+    619.63,
+    335.68,
+    797.37,
+    344.68
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "5.2 C. Identificação do Emitente",
+   "bbox": [
+    42.6,
+    419.24,
+    262.88,
+    434.9
+   ],
+   "size": 14.04,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#4F81BD"
+  },
+  {
+   "text": "#",
+   "bbox": [
+    68.88,
+    443.35,
+    75.35,
+    452.35
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Modelo",
+   "bbox": [
+    104.9,
+    443.35,
+    135.73,
+    452.35
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de Validação",
+   "bbox": [
+    289.25,
+    443.35,
+    363.88,
+    452.35
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Aplic.",
+   "bbox": [
+    528.43,
+    443.35,
+    551.22,
+    452.35
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Msg",
+   "bbox": [
+    559.03,
+    443.35,
+    577.26,
+    452.35
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Efeito",
+   "bbox": [
+    588.07,
+    443.35,
+    611.82,
+    452.35
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Descrição Erro",
+   "bbox": [
+    685.78,
+    443.35,
+    741.21,
+    452.35
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "C12-10",
+   "bbox": [
+    58.2,
+    454.87,
+    84.0,
+    463.87
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "55/65",
+   "bbox": [
+    108.5,
+    454.87,
+    130.21,
+    463.87
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Sigla da UF do Emitente difere da UF do Web Service",
+   "bbox": [
+    142.1,
+    454.87,
+    336.52,
+    463.87
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Exceção:",
+   "bbox": [
+    142.1,
+    465.79,
+    174.32,
+    474.79
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Na SVRS, a regra acima não se aplica para modelo 55, quando não informada a IE do emitente",
+   "bbox": [
+    174.38,
+    465.79,
+    521.38,
+    474.79
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "(contribuinte exclusivo do IBS/CBS)",
+   "bbox": [
+    156.26,
+    476.83,
+    284.44,
+    485.83
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    142.1,
+    487.75,
+    188.59,
+    496.75
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de validação para todas as SEFAZ Autorizadoras.",
+   "bbox": [
+    188.66,
+    487.75,
+    389.55,
+    496.75
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    527.59,
+    454.87,
+    549.89,
+    463.87
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "247",
+   "bbox": [
+    560.23,
+    454.87,
+    573.91,
+    463.87
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    592.03,
+    454.87,
+    605.8,
+    463.87
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Rejeição: Sigla da UF do Emitente diverge da UF",
+   "bbox": [
+    619.63,
+    454.87,
+    795.85,
+    463.87
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "autorizadora",
+   "bbox": [
+    619.63,
+    465.79,
+    666.41,
+    474.79
+   ],
+   "size": 9.0,
+   "marcacao": "SEM_MARCA",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "C17-10",
+   "bbox": [
+    58.2,
+    499.27,
+    86.03,
+    508.27
+   ],
+   "size": 9.0,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#FE0E0E"
+  },
+  {
+   "text": "55/65",
+   "bbox": [
+    108.5,
+    499.27,
+    132.25,
+    508.27
+   ],
+   "size": 9.0,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#FE0E0E"
+  },
+  {
+   "text": "IE Emitente com zeros ou nulo",
+   "bbox": [
+    142.1,
+    499.27,
+    255.25,
+    508.27
+   ],
+   "size": 9.0,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#FE0E0E"
+  },
+  {
+   "text": "Observação:",
+   "bbox": [
+    142.1,
+    510.31,
+    188.59,
+    519.31
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": true,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Regra de validação excluída para todas as SEFAZ Autorizadoras.",
+   "bbox": [
+    188.66,
+    510.31,
+    421.8,
+    519.31
+   ],
+   "size": 9.0,
+   "marcacao": "AMARELO",
+   "bold": false,
+   "strikethrough": false,
+   "text_color": "#000000"
+  },
+  {
+   "text": "Obrig.",
+   "bbox": [
+    527.59,
+    499.27,
+    552.06,
+    508.27
+   ],
+   "size": 9.0,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#FE0E0E"
+  },
+  {
+   "text": "229",
+   "bbox": [
+    560.23,
+    499.27,
+    575.94,
+    508.27
+   ],
+   "size": 9.0,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#FE0E0E"
+  },
+  {
+   "text": "Rej.",
+   "bbox": [
+    592.03,
+    499.27,
+    607.86,
+    508.27
+   ],
+   "size": 9.0,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#FE0E0E"
+  },
+  {
+   "text": "Rejeição: IE do emitente não informada",
+   "bbox": [
+    619.63,
+    499.27,
+    764.39,
+    508.27
+   ],
+   "size": 9.0,
+   "marcacao": "EXCLUIDO",
+   "bold": false,
+   "strikethrough": true,
+   "text_color": "#FE0E0E"
+  }
+ ]
+}

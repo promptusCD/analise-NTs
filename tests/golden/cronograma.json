@@ -1,0 +1,74 @@
+{
+  "_comentario": [
+    "Expectativas escritas a mao a partir da tabela 'Historico de Alteracoes / Cronograma' de cada NT (colunas: Versao | Historico de atualizacoes | Implantacao Teste/Homologacao | Implantacao Producao).",
+    "Convencoes: homologacao = coluna 'Teste' (NF-e) ou 'Homologacao' (CT-e/MDF-e). Espacos no numero de versao sao removidos ('1.14 a' -> '1.14a'). Marcadores de ausencia ('-', '-x-') viram ''. Literais ('Ate 05/10/2026', 'Ja implantado', '07/2025') sao mantidos como impressos. Versoes SEM nenhuma data na tabela ficam de fora.",
+    "As datas de 'bloco C' da CT-e 2026.004 (01/02/2027 -> 01/03/2027) NAO estao na tabela: vem de observacoes dentro das regras e pertencem ao calendario, nao ao cronograma[]."
+  ],
+  "NT_2026_007_v1.10": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.00", "homologacao": "01/09/2026", "producao": "03/11/2026", "descricao_contem": "Criação e atualização campos e de Regras de Validação desta NT"},
+      {"versao": "1.10", "homologacao": "Até 05/10/2026", "producao": "03/11/2026", "descricao_contem": "Alteração em Regras de Validação para facilitar testes em Homologação"}
+    ]
+  },
+  "NT_2026_002_v1.11_DANFE_Simplificado": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.00", "homologacao": "01/06/2026", "producao": "15/06/2026", "descricao_contem": "Alteração da regra W16-40"},
+      {"versao": "1.00", "homologacao": "01/07/2026", "producao": "03/08/2026", "descricao_contem": "Atualização de domínio em campos da NF-e/NFC-e"},
+      {"versao": "1.00", "homologacao": "01/09/2026", "producao": "05/10/2026", "descricao_contem": "Estrutura de autorização com alertas"},
+      {"versao": "1.10", "homologacao": "01/09/2026", "producao": "05/10/2026", "descricao_contem": "Criação da regra BA02-35 e VC02-40"},
+      {"versao": "1.10a", "homologacao": "01/09/2026", "producao": "05/10/2026", "descricao_contem": "Alteração da regra BA10-20"},
+      {"versao": "1.11", "homologacao": "", "producao": "14/12/2026", "descricao_contem": "Alteração da data de implantação das RV I08-180"}
+    ]
+  },
+  "CTe_NT_2025_001_RTC_v1.14b": {
+    "pagina": "3-4",
+    "linhas": [
+      {"versao": "1.12a", "homologacao": "Já implantado", "producao": "Já implantado", "descricao_contem": "Correção da validação da redução de alíquota"},
+      {"versao": "1.13", "homologacao": "03/02/2026", "producao": "02/03/2026", "descricao_contem": "Criação de regra específica para exigir vTotDFe"},
+      {"versao": "1.14a", "homologacao": "06/04/2026", "producao": "04/05/2026", "descricao_contem": "Ajuste nas mensagens de validação das compras gov"},
+      {"versao": "1.14b", "homologacao": "04/05/2026", "producao": "Até 15/05/2026", "descricao_contem": "Novas regra de validação para o CTe Aquaviário de cabotagem"}
+    ]
+  },
+  "NT_2026_010_v1.00_DANFE_impressao": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.00", "homologacao": "", "producao": "01/12/2026", "descricao_contem": "Alteração do Leiaute do DANFE"}
+    ]
+  },
+  "CTe_NT_2026_004_v1.00": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.00", "homologacao": "13/10/2026", "producao": "16/11/2026", "descricao_contem": "Criação dos campos que representam os valores líquidos de impostos"},
+      {"versao": "1.00", "homologacao": "16/11/2026", "producao": "14/12/2026", "descricao_contem": "Alteração da estrutura do CTe Simplificado"}
+    ]
+  },
+  "MDFe_NT_2025_001_v1.03": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.03", "homologacao": "07/2025", "producao": "10/2025", "descricao_contem": "Inclusão do tipo de componente de pagamento 4"}
+    ]
+  },
+  "MDFe_NT_2026_001_v1.00": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.00", "homologacao": "21/09/2026", "producao": "23/11/2026", "descricao_contem": "Regra de validação exigência do CIOT"}
+    ]
+  },
+  "CTe_NT_2026_002_v1.01": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.00", "homologacao": "01/07/2026", "producao": "03/08/2026", "descricao_contem": "Obrigatoriedade do preenchimento dos campos da RTC"},
+      {"versao": "1.00", "homologacao": "03/08/2026", "producao": "31/08/2026", "descricao_contem": "Campo da inscrição SUFRAMA do emitente"},
+      {"versao": "1.01", "homologacao": "Implantada", "producao": "Implementação futura", "descricao_contem": "Alteração da data de exigência do preenchimento dos campos da RTC"}
+    ]
+  },
+  "NT_2026_008_v1.00_Valor_Liquido": {
+    "pagina": 3,
+    "linhas": [
+      {"versao": "1.00", "homologacao": "05/10/2026", "producao": "03/11/2026", "descricao_contem": "Criação dos campos que representam os valores líquidos do produto"},
+      {"versao": "1.00", "homologacao": "01/02/2027", "producao": "01/03/2027", "descricao_contem": "Regra de validação incluída: NB01-30"}
+    ]
+  }
+}

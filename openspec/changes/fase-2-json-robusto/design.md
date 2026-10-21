@@ -16,7 +16,8 @@ Ver `proposal.md` para motivacao e `specs/` para requisitos comportamentais.
 **Non-Goals:**
 - Alterar extracao de cores (ja funciona)
 - Alterar deteccao de strikethrough (ja funciona)
-- Alterar cronograma (ja funciona)
+- (Cronograma: a premissa original de que nao precisava mudar era falsa. O cronograma por regex falhava em 6 das 9 NTs:
+  versao inventada, datas faltando, `00/00/0000`. Corrigido pela change `fase-2b-correcao-extracao-nt`, com leitura da tabela por coluna.)
 - Alterar manifest (ja funciona)
 
 ## Decisions
