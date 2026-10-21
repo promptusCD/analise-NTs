@@ -67,6 +67,16 @@ Voce consulta documentacao tecnica de NF-e, CT-e e MDF-e. Siga SEMPRE:
 
 ---
 
+## Regras de Projetos do Usuario
+
+13. **Projetos listados em `projetos.yaml` sao SOMENTE LEITURA.** Ao rodar
+    `/fiscal-compatibilidade` (ou ler esses projetos por qualquer motivo) use apenas
+    leitura/busca: nunca edite, crie, mova, apague nem copie nada neles, e nunca grave
+    codigo deles neste repositorio (`catalogo/`, `docs/` etc.). Cite so `arquivo:linha`
+    e trechos minimos. "Nao encontrado por busca" nao prova ausencia.
+
+---
+
 ## Contexto do Projeto
 
 - Arquitetura hibrida: Python (extracao de PDF com PyMuPDF) + JavaScript
@@ -78,6 +88,8 @@ Voce consulta documentacao tecnica de NF-e, CT-e e MDF-e. Siga SEMPRE:
   Permissoes: `.claude/settings.json` e `opencode.json` (ambos negam edicao em `fontes/`).
 - Para detalhes completos, leia `docs/REFERENCIA.md`
 - Para saber o que falta baixar, leia `docs/ARQUIVOS_NECESSARIOS.md`
+- Projetos do usuario (backEnd/frontEnd) ficam em `projetos.yaml` (local, no `.gitignore`;
+  template em `projetos.exemplo.yaml`) e sao consultados por `/fiscal-compatibilidade`
 
 ---
 

@@ -1,0 +1,62 @@
+# projetos.exemplo.yaml - Template da configuração dos projetos do usuário
+#
+# Como usar:
+#   1. Copie este arquivo para `projetos.yaml` (na raiz do repositório).
+#   2. Ajuste os caminhos para as pastas dos seus projetos.
+#   3. Rode `/fiscal-compatibilidade <NT> [projeto]`.
+#
+# `projetos.yaml` está no .gitignore (caminhos são da sua máquina): nunca é versionado.
+# Este template é versionado: não coloque caminhos reais aqui.
+#
+# SOMENTE LEITURA: a IA só lê os projetos listados. Não edita, não move, não apaga e
+# não copia código deles para este repositório (regra no AGENTS.md).
+#
+# Campos de cada projeto:
+#   id          (obrigatório) nome curto e único, usado em `/fiscal-compatibilidade <NT> <id>`.
+#   tipo        (obrigatório) `backend` ou `frontend`.
+#                 backend  -> confere tags do schema, cStat de rejeição e eventos.
+#                 frontend -> confere campos exibidos/digitados e itens de DANFE/DACTE/DAMDFE.
+#   caminho     (obrigatório) pasta raiz do projeto (absoluta). Se não existir, a IA avisa e
+#               segue com os outros projetos.
+#   documentos  (opcional) quais documentos o projeto cobre: nfe, cte, mdfe.
+#               Sem o campo, vale para todos. Projeto fora do documento da NT é pulado.
+#   incluir     (opcional) subpastas/globs onde procurar (relativos ao caminho).
+#               Sem o campo, procura no projeto todo.
+#   ignorar     (opcional) pastas/globs a nunca varrer. Se informado, substitui a lista padrão
+#               abaixo (repita os itens que quiser manter).
+#   dicas       (opcional) texto livre para orientar a busca (onde ficam o leiaute,
+#               as validações, as telas...). Costuma valer mais que qualquer heurística.
+#
+# Aviso sobre o resultado: "não encontrado por busca" NÃO prova que algo não existe
+# (pode estar em constante, arquivo de configuração ou código gerado). Use `dicas`.
+#
+# Para validar se a LÓGICA de uma regra está correta no seu código, não use o command:
+# peça direto à IA ("a regra 539 está implementada corretamente no meu backend?").
+#
+# --- Permissões locais (opcional, por pessoa; NÃO altere .claude/settings.json) ---
+# Ler pastas fora deste repositório pode pedir aprovação. Para liberar a leitura e
+# bloquear escrita de forma definitiva, crie `.claude/settings.local.json` (não versionado):
+#
+#   {
+#     "permissions": {
+#       "additionalDirectories": ["C:\\dev\\erp-api", "C:\\dev\\erp-web"],
+#       "deny": ["Edit(C:\\dev\\erp-api/**)", "Write(C:\\dev\\erp-api/**)",
+#                "Edit(C:\\dev\\erp-web/**)", "Write(C:\\dev\\erp-web/**)"]
+#     }
+#   }
+
+projetos:
+  - id: erp-backend
+    tipo: backend
+    caminho: C:\dev\erp-api
+    documentos: [nfe, cte, mdfe]
+    incluir: [src/main]
+    ignorar: [.git, node_modules, target, build, dist, bin, obj]
+    dicas: "Leiaute em br/com/empresa/fiscal/*; validações em ValidadorNFe e ValidadorCTe."
+
+  - id: erp-frontend
+    tipo: frontend
+    caminho: C:\dev\erp-web
+    documentos: [nfe]
+    ignorar: [.git, node_modules, dist, build, .next]
+    dicas: "Telas de emissão em src/pages/nfe; DANFE em src/reports/danfe."

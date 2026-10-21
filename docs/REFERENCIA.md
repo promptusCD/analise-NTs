@@ -838,6 +838,7 @@ ou `python scripts/...`. Basta digitar `/comando` e a IA faz tudo.
 | `/campo <tag>` | Dados de campo XSD | Leitura de catalogo |
 | `/calendario [doc]` | Vigencias filtradas | Leitura de calendario.yaml |
 | `/impacto <nt>` | Checklist para dev | Leitura de catalogo + NT |
+| `/fiscal-compatibilidade <nt> [projeto]` | Confere se tags/cStat/campos da NT aparecem nos projetos do usuario | Leitura de catalogo + busca (somente leitura) nos projetos de `projetos.yaml` |
 | `/atualizar-fontes` | Buscar novidades + versionar | WebFetch (portais) + JS |
 | `/duvidas` | Lista priorizada | Leitura de duvidas-abertas.md |
 | `/catalogar-atualizar` | Organizar entrada/, atualizar manifest e catalogo | Classificacao + movimentacao + escrita |
@@ -924,3 +925,32 @@ fontes/
 | XSDs/NT 2026.001 RTC Vinculacao Pagamento.../ | fontes/cte/xsd/PL_CTe_400_NT2026.001_v1.01c/ |
 | XSDs/PL_MDFe_300b_NT012025_1.05/ | fontes/mdfe/xsd/PL_MDFe_300b_NT012025_v1.05/ |
 | tabelas-informes/*.xlsx | fontes/externas/tabelas/ |
+
+---
+
+## 19. Projetos do Usuario (compatibilidade)
+
+O command `/fiscal-compatibilidade <NT> [projeto]` confere se as tags, `cStat` e campos de uma
+NT/MOC/XSD do catalogo aparecem nos projetos backEnd/frontEnd do usuario.
+
+### Configuracao
+- Copie `projetos.exemplo.yaml` para `projetos.yaml` (raiz). O `projetos.yaml` esta no `.gitignore`
+  (caminhos sao da maquina); o exemplo e versionado.
+- Campos de cada projeto: `id`, `tipo` (`backend` | `frontend`) e `caminho` sao obrigatorios;
+  `documentos` (nfe/cte/mdfe), `incluir`, `ignorar` e `dicas` sao opcionais.
+- Caminho inexistente gera aviso e a analise segue com os demais projetos.
+
+### Como a IA confere
+- So busca por chave (tag XML, `cStat`, nome de campo) e reporta `arquivo:linha`.
+  "Nao encontrado por busca" nao prova ausencia (constante, configuracao, codigo gerado).
+- Backend: tags do schema, `cStat` de rejeicao, eventos. Frontend: campos exibidos/digitados e
+  itens de DANFE/DACTE/DAMDFE (Anexos II).
+- Resposta somente no chat; nenhum relatorio e gravado. Validar a logica de uma regra no codigo do
+  usuario nao faz parte do command: peca direto a IA.
+
+### Somente leitura e permissoes
+- Os projetos do usuario sao somente leitura (regra 13 do `AGENTS.md`).
+- O `.claude/settings.json` versionado nao recebe caminhos do usuario. Para liberar leitura fora do
+  repositorio e bloquear escrita de forma definitiva, cada pessoa cria `.claude/settings.local.json`
+  (nao versionado) com `additionalDirectories` e `deny` de `Edit`/`Write` nos seus caminhos
+  (exemplo comentado em `projetos.exemplo.yaml`).

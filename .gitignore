@@ -27,6 +27,9 @@ catalogo/legendas/*.yaml
 calendario/CALENDARIO.md
 calendario/calendario.html
 
+# Config local dos projetos do usuario (caminhos da maquina; usar projetos.exemplo.yaml)
+projetos.yaml
+
 # XLSX (fontes originais, nao versionar)
 *.xlsx
 
