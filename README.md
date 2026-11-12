@@ -49,7 +49,7 @@ ORQUESTRACAO (Node.js)
 CONSULTA (CLI + opencode)
   /fiscal-consultar, /fiscal-regra, /fiscal-campo, /fiscal-calendario
   /fiscal-ingerir-nt, /fiscal-gerar-md, /fiscal-processar
-  /fiscal-impacto, /fiscal-atualizar-fontes
+  /fiscal-impacto, /fiscal-plano-dev, /fiscal-atualizar-fontes
   /fiscal-compatibilidade, /fiscal-diagnostico, /fiscal-reextrair
 ```
 
@@ -194,6 +194,19 @@ Gerar checklist de implementacao para o time de desenvolvimento.
 - Rejeicoes
 - Datas de vigencia
 - Exemplo: `/fiscal-impacto NT-CT-e-2026.004`
+
+### `/fiscal-plano-dev <nt[,nt2]> [versao] [--anterior <versao>]`
+Gerar um plano de implementacao aprofundado em `docs/plano-dev-<doc>-<NT>-v<versao>.md`.
+Mais detalhado que `/fiscal-impacto`, para revisao do analista antes de virar tarefa.
+- Pre-tarefas (P01...) com recomendacao padrao e marcacao BLOQUEANTE
+- Campos e regras novos, alterados e excluidos, conferidos no PDF e no XSD
+- O que o sistema deve enviar, por situacao ou tipo de documento
+- Cuidados e ordem de implementacao ligada aos prazos
+- Tarefas para desenvolvedores (T01...) com criterio de aceite e dependencias
+- Nao faz commit. Nao escreve em `fontes/`.
+- Exemplo: `/fiscal-plano-dev 2026.004 v1.01 --anterior v1.00`
+- Exemplo: `/fiscal-plano-dev 2026.004,2026.005`
+- Modelo: `docs/CTe-NT-2026-004-005-implementacao.md`
 
 ### `/fiscal-atualizar-fontes`
 Buscar novidades nos portais oficiais.
@@ -349,6 +362,9 @@ No dia a dia, use `/fiscal-consultar` para tirar duvidas rapidas.
        |
        v
   /fiscal-impacto <nt>              ← Checklist para dev
+       |
+       v
+  /fiscal-plano-dev <nt>            ← Plano em docs/ (pre-tarefas e tarefas)
        |
        v
   /fiscal-consultar <pergunta>      ← Uso diario

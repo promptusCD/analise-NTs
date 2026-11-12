@@ -56,3 +56,63 @@
 - Prioridade: BAIXA
 - Impacto: ruído nas estatísticas por marcação; risco de interpretar o cabeçalho como alteração de regra.
 - Status: pendente (fora do escopo da change fase-2b)
+
+### [#004] Portal NF-e Fazenda sem lista de NTs (2026-11-12)
+- Data: 2026-11-12
+- Documento: NF-e
+- NT/MOC: portal `https://www.nfe.fazenda.gov.br` (página "Documentos")
+- Página: n/a
+- Trecho: a página retornou só o título "Portal Nacional da Nota Fiscal Eletrônica", sem NTs, MOCs ou XSDs. Em execução anterior, `listaConteudo.aspx` deu "Too many redirects" (3 tentativas).
+- O que parece errado: a fonte oficial Fazenda da NF-e não foi listada em nenhuma execução, então a verificação de NF-e depende só do SVRS.
+- Fontes em conflito: nenhuma (fonte não consultada com sucesso)
+- Prioridade: MEDIA
+- Impacto: uma NT NF-e publicada só na Fazenda não aparece nos relatórios de `/fiscal-atualizar-fontes`.
+- Status: pendente (ERRO_PORTAL_INDISPONIVEL parcial; informar a URL exata da página de Notas técnicas da NF-e para tentar de novo)
+
+### [#005] MDF-e NT 2022.002 v1.02: título vazio no JSON (capa sem título)
+- Data: 2026-11-12
+- Documento: MDF-e
+- NT/MOC: NT MDF-e 2022.002 v1.02 (`fontes/mdfe/notas-tecnicas/MDFe_NT_2022_002_PAA_v1.02.pdf`)
+- Página: 1 (capa); título aparece na pág. 2 ("NT 2022.002 PAA")
+- Trecho: capa diz só "Projeto Manifesto Eletrônico de Documentos Fiscais / Nota Técnica 2022.002 / Versão 1.02 – abril 2026"
+- O que parece errado: `verificar_extracao.py` marca TITULO_SUSPEITO (`titulo: ''`). Pela pág. 2 e pelo sumário, o assunto é "Provedor de Assinatura e Autorização (PAA)". Não editei o JSON gerado.
+- Fontes em conflito: nenhuma (falha de extração de metadados)
+- Prioridade: MEDIA
+- Impacto: bloqueia o verificador (exit 1) até o título ser resolvido ou a dúvida aceita; manifest já usa "Nota Tecnica 2022.002 (PAA)".
+- Status: pendente (corrigir título no extrator ou confirmar "Provedor de Assinatura e Autorização (PAA)")
+
+### [#006] NTs com `arquivo_origem` absoluto e títulos de cabeçalho ("Projeto ...") no JSON
+- Data: 2026-11-12
+- Documento: CT-e, NF-e, MDF-e
+- NT/MOC: NT CT-e 2025.001 v1.14b, CT-e 2026.002 v1.01, CT-e 2026.004 v1.00, NF-e 2026.002 v1.11, NF-e 2026.007 v1.10, NF-e 2026.008 v1.00, NF-e 2026.010 v1.00, MDF-e 2025.001 v1.03, MDF-e 2026.001 v1.00
+- Página: n/a
+- Trecho: `arquivo_origem: /Users/.../fontes/...` (absoluto); `titulo: 'Projeto Conhecimento de'` / `'Projeto Nota Fiscal'` / `'Projeto Manifesto'`
+- O que parece errado: JSONs gerados antes da correção do extrator guardam caminho absoluto (viola a regra de origem relativa do verificador) e pegam a linha do cabeçalho da capa como título. Os JSONs de 2026-11 (CT-e 2025.001 v1.14a, CT-e 2026.001, CT-e 2026.004 v1.01, CT-e 2026.005, MDF-e 2022.002) saíram corretos.
+- Fontes em conflito: nenhuma (artefato de extração antiga)
+- Prioridade: MEDIA
+- Impacto: 9 NTs reprovam no verificador (ORIGEM_ABSOLUTA / SCHEMA / TITULO_SUSPEITO); bloqueia `/fiscal-gerar-md` e calendário para elas.
+- Status: pendente (solução: reextrair cada NT com `extrair_nt.py`; o script não tem `--forcar` — confirmar o comportamento de reextração antes; decidir com o usuário, pois reprocessa NTs já extraídas)
+
+### [#007] NTs com regras ausentes ou mensagens cortadas no JSON
+- Data: 2026-11-12
+- Documento: NF-e, CT-e
+- NT/MOC: NF-e NT 2026.002 v1.11 (0 regras; 99 IDs do PDF fora do JSON); NF-e NT 2026.008 v1.00 (0 regras; 11 IDs fora); NF-e NT 2026.007 v1.10 (17 de 38 mensagens cortadas); CT-e NT 2025.001 v1.14b (23 de 68 mensagens cortadas); CT-e NT 2026.002 v1.01 (0 regras); CT-e NT 2026.004 v1.00 (0 regras, superada por v1.01)
+- Página: n/a
+- Trecho: IDs do PDF que não viram regra, ex.: `5E17-65`, `B09-20`, `B09-40`, `NB01-10`, `VB01-10`; mensagens cortadas, ex.: `C17-11`, `I08-191`, `004`, `006`
+- O que parece errado: o extrator não captura regras de tabelas/blocos e corta mensagens de validação. O verificador acusa REGRAS_AUSENTES e MENSAGEM_TRUNCADA.
+- Fontes em conflito: nenhuma (falha de extração)
+- Prioridade: ALTA
+- Impacto: `/fiscal-regra` pode responder "NAO ENCONTRADO NAS FONTES" para regras que existem no PDF. Afeta resposta confiável sobre rejeições.
+- Status: pendente (corrigir extrator e reextrair; ver `revisar-extracao` para ERRO_MUDANCA_SEM_MARCACAO)
+
+### [#008] Cronogramas inválidos ou vazios em NT NF-e 2026.010 e MDF-e 2025.001
+- Data: 2026-11-12
+- Documento: NF-e, MDF-e
+- NT/MOC: NF-e NT 2026.010 v1.00 (`NT_2026_010_v1.00_DANFE_impressao.pdf`); MDF-e NT 2025.001 v1.03
+- Página: n/a
+- Trecho: NF-e 2026.010: `versao: '.'`, homologação e produção `00/00/0000`; MDF-e 2025.001: cronograma vazio (ERRO_DATA_NAO_ENCONTRADA)
+- O que parece errado: a extração não achou datas de vigência nessas NTs. Sem data, o calendário não pode calcular situação.
+- Fontes em conflito: nenhuma (falha de extração). Conferir no PDF se a tabela existe em outro formato.
+- Prioridade: MEDIA
+- Impacto: essas NTs ficam sem vigência no `calendario/calendario.yaml`; consultas de "quando vale" não têm resposta.
+- Status: pendente (conferir o cronograma no PDF e registrar a data ou confirmar que não existe)

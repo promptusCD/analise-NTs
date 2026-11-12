@@ -178,3 +178,53 @@
   sha256: 823ca492144eb928821c8ac6d5440f7625397d7b90a770003256559c6d6abe78
   status_ingestao: extraida
   confianca: oficial
+- id: CTE-NT-2025.001-v1.14a
+  documento: CT-e
+  tipo: nota_tecnica
+  nt: '2025.001'
+  versao: 1.14a
+  titulo: Reforma Tributaria do Consumo CT-e
+  arquivo: fontes/cte/notas-tecnicas/CTe_NT_2025_001_RTC_v1.14a.pdf
+  sha256: FC5BCEB63E5A58D0
+  status_ingestao: extraida
+  confianca: oficial
+- id: CTE-NT-2026.001-v1.01
+  documento: CT-e
+  tipo: nota_tecnica
+  nt: '2026.001'
+  versao: '1.01'
+  titulo: Vinculacao com a transacao de pagamento do DFe
+  arquivo: fontes/cte/notas-tecnicas/CTe_NT_2026_001_RTC_VinculacaoPgto_v1.01.pdf
+  sha256: 71DB07C561730A96
+  status_ingestao: extraida
+  confianca: oficial
+- id: CTE-NT-2026.004-v1.01
+  documento: CT-e
+  tipo: nota_tecnica
+  nt: '2026.004'
+  versao: '1.01'
+  titulo: Valor Liquido
+  arquivo: fontes/cte/notas-tecnicas/CTe_NT_2026_004_v1.01.pdf
+  sha256: 5A45D15E462C8973
+  status_ingestao: extraida
+  confianca: oficial
+- id: CTE-NT-2026.005-v1.00
+  documento: CT-e
+  tipo: nota_tecnica
+  nt: '2026.005'
+  versao: '1.00'
+  titulo: Simples Nacional
+  arquivo: fontes/cte/notas-tecnicas/CTe_NT_2026_005_SN_v1.00.pdf
+  sha256: 3DF8AB6A7F055FEE
+  status_ingestao: extraida
+  confianca: oficial
+- id: MDFE-NT-2022.002-v1.02
+  documento: MDF-e
+  tipo: nota_tecnica
+  nt: '2022.002'
+  versao: '1.02'
+  titulo: Nota Tecnica 2022.002 (PAA)
+  arquivo: fontes/mdfe/notas-tecnicas/MDFe_NT_2022_002_PAA_v1.02.pdf
+  sha256: 913828CFCF1C5BD4
+  status_ingestao: extraida
+  confianca: oficial

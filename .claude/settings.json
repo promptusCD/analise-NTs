@@ -8,6 +8,7 @@
       "Bash(sha256sum:*)",
       "Bash(date:*)",
       "Bash(ls:*)",
+      "Bash(mv:*)",
       "Bash(git status:*)",
       "Bash(git diff:*)",
       "Bash(git log:*)",
