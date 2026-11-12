@@ -62,14 +62,15 @@ bibliotecario que sempre cita a pagina".
 |       v                                                            |
 |  QUERY LAYER (CLI + opencode)                                      |
 |  +-------------------------------------------------------------+  |
-|  |  /ingerir-nt <arquivo>    orquestra: move + extrai + cataloga|  |
-|  |  /consultar <pergunta>    resposta mastigada com fontes      |  |
-|  |  /regra <id>              detalhe de regra + status          |  |
-|  |  /campo <tag>             dados XSD + NT                    |  |
-|  |  /calendario [doc]        vigências com cores               |  |
-|  |  /impacto <nt>            checklist para o dev               |  |
-|  |  /atualizar-fontes        busca novidades nos portais       |  |
-|  |  /duvidas                 lista priorizada                   |  |
+|  |  /fiscal-ingerir-nt <arquivo> move+extrai+cataloga           |  |
+|  |  /fiscal-consultar <pergunta> resposta com fontes            |  |
+|  |  /fiscal-regra <id>           detalhe de regra + status      |  |
+|  |  /fiscal-campo <tag>          dados XSD + NT                 |  |
+|  |  /fiscal-calendario [doc]     vigencias com cores            |  |
+|  |  /fiscal-impacto <nt>         checklist para o dev           |  |
+|  |  /fiscal-compatibilidade <nt> NT x projetos do usuario       |  |
+|  |  /fiscal-atualizar-fontes     busca novidades nos portais    |  |
+|  |  /fiscal-duvidas              lista priorizada               |  |
 |  +-------------------------------------------------------------+  |
 |                                                                    |
 |  FUTURE: RAG LAYER                                                 |
@@ -253,7 +254,7 @@ O script `atualizar_docs_fiscais.js` regenera esses blocos.
 
 O catalogo e o coracao do projeto. Ele transforma PDFs brutos em JSON
 estruturado e consultavel. O JSON e a fonte: o MD e gerado pela IA a partir
-delo (command `/gerar-md`), nunca pelo Python.
+delo (command `/fiscal-gerar-md`), nunca pelo Python.
 
 ### 5.1 catalogo/nt/<doc>/<nt>.json
 
@@ -380,7 +381,7 @@ python -m pytest tests/python -q -m "not lento"             # sem os MOCs (~4 mi
 
 ### 5.1.2 catalogo/nt/<doc>/<nt>.md e catalogo/moc/<doc>/<moc>.md
 
-MD gerado pela IA a partir do JSON (command `/gerar-md`). Regras de
+MD gerado pela IA a partir do JSON (command `/fiscal-gerar-md`). Regras de
 formatacao documentadas no command: tabelas como bullets com campo em
 destaque, regras com ID/cStat/mensagem destacados, datas em negrito e
 literais preservadas. Nao editar o MD manualmente nem gerar por script.
@@ -709,7 +710,7 @@ O ambiente so esta pronto quando todos estes testes passam:
 | 7 | tpEmis 4 e 5 ainda valem no CT-e? | Nao: EPEC e FSDA eliminados |
 | 8 | Cores da tabela ALC sao marcações de revisao? | Nao: sao dado |
 | 9 | Como calcular vTotDFe em 2026? | Repetir vTPrest (nao somar IBS/CBS) |
-| 10 | /calendario CT-e | Lista 3 linhas com situacao calculada |
+| 10 | /fiscal-calendario CT-e | Lista 3 linhas com situacao calculada |
 | 11 | Qualidade | Aponta 4 pontos em duvidas-abertas.md |
 | 12 | Pergunta sobre MDF-e | "NAO ENCONTRADO NAS FONTES" |
 
@@ -775,7 +776,7 @@ Funciona como changes do OpenSpec:
 
 ### Fluxo de Versionamento
 1. Criar ARQUIVOS_NECESSARIOS.md **sem data e sem versao** (status ATIVO)
-2. A cada `/atualizar-fontes`, atualizar status dos itens
+2. A cada `/fiscal-atualizar-fontes`, atualizar status dos itens
 3. Quando todos os itens estiverem OK:
    - Adicionar data e versao ao cabecalho
    - Copiar para `docs/historico-arquivos/ARQUIVOS_NECESSARIOS_vN_YYYY-MM-DD.md`
@@ -800,8 +801,8 @@ com data de criacao, localizacao, versao e descricao. Facilita a consulta
 da IA aos documentos disponiveis.
 
 ### Quando E Atualizado
-- **Automaticamente**: por commands que criam arquivos (`/ingerir-nt`, `/atualizar-fontes`)
-- **Manualmente**: via command `/catalogar-atualizar`
+- **Automaticamente**: por commands que criam arquivos (`/fiscal-ingerir-nt`, `/fiscal-atualizar-fontes`)
+- **Manualmente**: via command `/fiscal-catalogar-atualizar`
 
 ### Estrutura
 Cada secao do catalogo contem:
@@ -832,17 +833,19 @@ ou `python scripts/...`. Basta digitar `/comando` e a IA faz tudo.
 
 | Command | Descricao | Executa |
 |---|---|---|
-| `/ingerir-nt <arquivo>` | Ingerir NT nova | Python (extrair_nt.py) + JS (calendario, docs) |
-| `/consultar <pergunta>` | Consulta com fontes | Leitura de catalogo + formatacao |
-| `/regra <id>` | Detalhe de regra | Leitura de catalogo |
-| `/campo <tag>` | Dados de campo XSD | Leitura de catalogo |
-| `/calendario [doc]` | Vigencias filtradas | Leitura de calendario.yaml |
-| `/impacto <nt>` | Checklist para dev | Leitura de catalogo + NT |
+| `/fiscal-ingerir-nt <arquivo>` | Ingerir NT nova | Python (extrair_nt.py) + JS (calendario, docs) |
+| `/fiscal-consultar <pergunta>` | Consulta com fontes | Leitura de catalogo + formatacao |
+| `/fiscal-regra <id>` | Detalhe de regra | Leitura de catalogo |
+| `/fiscal-campo <tag>` | Dados de campo XSD | Leitura de catalogo |
+| `/fiscal-calendario [doc]` | Vigencias filtradas | Leitura de calendario.yaml |
+| `/fiscal-impacto <nt>` | Checklist para dev | Leitura de catalogo + NT |
 | `/fiscal-compatibilidade <nt> [projeto]` | Confere se tags/cStat/campos da NT aparecem nos projetos do usuario | Leitura de catalogo + busca (somente leitura) nos projetos de `projetos.yaml` |
-| `/atualizar-fontes` | Buscar novidades + versionar | WebFetch (portais) + JS |
-| `/duvidas` | Lista priorizada | Leitura de duvidas-abertas.md |
-| `/catalogar-atualizar` | Organizar entrada/, atualizar manifest e catalogo | Classificacao + movimentacao + escrita |
-| `/gerar-md <nt|moc>` | Gerar MD a partir do JSON extraido | Leitura de catalogo + escrita do MD |
+| `/fiscal-atualizar-fontes` | Buscar novidades + versionar | WebFetch (portais) + JS |
+| `/fiscal-duvidas` | Lista priorizada | Leitura de duvidas-abertas.md |
+| `/fiscal-diagnostico` | Verifica Python, dependencias, Node e OpenSpec; lista arquivos/scripts referenciados que nao existem | Leitura + checagens locais |
+| `/fiscal-reextrair [--sem-md]` | DESTRUTIVO: limpa catalogo/ e re-extrai todas as NTs e MOCs (exige confirmacao) | Python + JS |
+| `/fiscal-catalogar-atualizar` | Organizar entrada/, atualizar manifest e catalogo | Classificacao + movimentacao + escrita |
+| `/fiscal-gerar-md <nt|moc>` | Gerar MD a partir do JSON extraido | Leitura de catalogo + escrita do MD |
 | `/fiscal-processar [--etapa N]` | Pipeline completo (organizar, extrair NTs/MOCs, manifest, verificar) | Classificacao + Python (extrair_nt/extrair_moc) + JS |
 
 ### Permissoes

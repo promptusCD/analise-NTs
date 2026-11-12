@@ -2,7 +2,7 @@
 utils/saida.py - Geracao de JSON para NTs e MOCs.
 
 O MD nao e gerado por Python: a IA le o JSON e produz o MD
-(command /gerar-md e /fiscal-processar).
+(command /fiscal-gerar-md e /fiscal-processar).
 """
 
 import json

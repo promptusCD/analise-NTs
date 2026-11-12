@@ -178,4 +178,4 @@ cat catalogo/nt/cte/stdout/CTe_NT_2026_004_v1.00.log | grep WARN
 - `scripts/python/extrair_moc.py` -- extrai MOCs (PDF + DOCX)
 - `scripts/python/atualizar_manifest.py` -- gerencia manifest.yaml
 
-Para regenerar, rode o script correspondente ou use o command `/ingerir-nt`.
+Para regenerar, rode o script correspondente ou use o command `/fiscal-ingerir-nt`.

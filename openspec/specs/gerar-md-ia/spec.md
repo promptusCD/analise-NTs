@@ -10,7 +10,7 @@ Workflow para IA gerar MD a partir do JSON. A IA le o JSON estruturado e gera MD
 O sistema SHALL permitir que a IA gere MD a partir do JSON estruturado.
 
 #### Scenario: Command para gerar MD
-- **WHEN** o usuario executa `/gerar-md <nt>` ou `/gerar-md <moc>`
+- **WHEN** o usuario executa `/fiscal-gerar-md <nt>` ou `/fiscal-gerar-md <moc>`
 - **THEN** a IA le o JSON correspondente e gera MD legivel
 
 ### Requirement: Formatacao inteligente
@@ -32,11 +32,11 @@ O sistema SHALL gerar MD com formatacao inteligente.
 O sistema SHALL atualizar o fluxo de trabalho do usuario.
 
 #### Scenario: Novo fluxo de extracao
-- **WHEN** o usuario executa `/ingerir-nt <arquivo>`
+- **WHEN** o usuario executa `/fiscal-ingerir-nt <arquivo>`
 - **THEN** o sistema extrai JSON robusto e a IA gera MD automaticamente
 
 #### Scenario: Regenerar MD
-- **WHEN** o usuario executa `/gerar-md <nt>` para NT ja extraida
+- **WHEN** o usuario executa `/fiscal-gerar-md <nt>` para NT ja extraida
 - **THEN** a IA regenera o MD a partir do JSON existente
 
 ### Requirement: Documentacao atualizada

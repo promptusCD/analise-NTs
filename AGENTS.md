@@ -38,7 +38,7 @@ Voce consulta documentacao tecnica de NF-e, CT-e e MDF-e. Siga SEMPRE:
 ## Regras de Integridade
 
 8. **Nao invente** regra, cStat, tag, versao ou data. Se nao encontrar
-   na fonte, escreva "NAO ENCONTRADO NAS FONTES" e sugira `/atualizar-fontes`.
+   na fonte, escreva "NAO ENCONTRADO NAS FONTES" e sugira `/fiscal-atualizar-fontes`.
 
 9. **Contradição entre fontes**: mostre as duas, prevalece a oficial,
    registre em `docs/duvidas-abertas.md`.

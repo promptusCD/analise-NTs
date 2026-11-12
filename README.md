@@ -35,7 +35,7 @@ EXTRACAO (Python 3.11+)
         |
         v  (JSON robusto: secoes tipificadas, tabelas, regras)
 IA GERA O MD (opencode)
-  /gerar-md <nt|moc>  -> le o JSON e escreve catalogo/**/*.md legivel
+  /fiscal-gerar-md <nt|moc>  -> le o JSON e escreve catalogo/**/*.md legivel
         |
         v  (JSON + MD)
 ORQUESTRACAO (Node.js)
@@ -47,9 +47,10 @@ ORQUESTRACAO (Node.js)
         |
         v
 CONSULTA (CLI + opencode)
-  /consultar, /regra, /campo, /calendario
-  /ingerir-nt, /gerar-md, /fiscal-processar
-  /impacto, /atualizar-fontes
+  /fiscal-consultar, /fiscal-regra, /fiscal-campo, /fiscal-calendario
+  /fiscal-ingerir-nt, /fiscal-gerar-md, /fiscal-processar
+  /fiscal-impacto, /fiscal-atualizar-fontes
+  /fiscal-compatibilidade, /fiscal-diagnostico, /fiscal-reextrair
 ```
 
 **Regra de ouro do fluxo:** Python so extrai JSON. Quem formata o MD e a IA
@@ -130,7 +131,7 @@ fiscal-dfe-knowledge/
 Todos os commands sao self-contained: basta digitar o comando e a IA
 executa tudo internamente. Nao e necessario rodar scripts manualmente.
 
-### `/ingerir-nt <arquivo>`
+### `/fiscal-ingerir-nt <arquivo>`
 Ingerir uma nova Nota Tecnica no repositorio.
 - Move o arquivo para `fontes/<doc>/notas-tecnicas/`
 - Registra no manifest.yaml
@@ -139,14 +140,14 @@ Ingerir uma nova Nota Tecnica no repositorio.
 - Gera o MD automaticamente (IA le o JSON)
 - Lista duvidas encontradas
 
-### `/gerar-md <nt|moc>`
+### `/fiscal-gerar-md <nt|moc>`
 Gerar (ou regenerar) o MD de uma NT ou MOC a partir do JSON extraido.
 - Le `catalogo/nt/<doc>/*.json` ou `catalogo/moc/<doc>/*.json`
 - Tabelas viram bullets com campo em destaque
 - Regras aparecem com ID, cStat e mensagem destacados
 - Datas em negrito, datas literais preservadas
 - Nao e preciso re-extrair o PDF para ajustar a formatacao
-- Exemplo: `/gerar-md 2025.001`
+- Exemplo: `/fiscal-gerar-md 2025.001`
 
 ### `/fiscal-processar [--etapa N]`
 Pipeline completo: organizar `entrada/` -> `fontes/`, extrair JSON de NTs e
@@ -156,57 +157,72 @@ MOCs, atualizar manifest, verificar resultado.
   4 manifest, 5 verificar)
 - Exemplo: `/fiscal-processar --etapa 2`
 
-### `/consultar <pergunta>`
+### `/fiscal-consultar <pergunta>`
 Responder uma pergunta sobre documentacao fiscal.
 - Busca no catalogo (JSON)
 - Calcula vigencia automaticamente
 - Formata com citacao de fontes
-- Exemplo: `/consultar "A regra C17-10 da NF-e esta vigente?"`
+- Exemplo: `/fiscal-consultar "A regra C17-10 da NF-e esta vigente?"`
 
-### `/regra <id ou cStat>`
+### `/fiscal-regra <id ou cStat>`
 Mostrar detalhes de uma regra de validacao.
 - Status: ativa/alterada/excluida
 - NT de origem e versao
 - Quem aplica (SEFAZ/todas)
 - cStat e mensagem de rejeicao
-- Exemplo: `/regra C17-10`
+- Exemplo: `/fiscal-regra C17-10`
 
-### `/campo <tag> [doc]`
+### `/fiscal-campo <tag> [doc]`
 Mostrar dados de um campo do leiaute (tag XML).
 - Tipo, ocorrencia, tamanho
 - Regras relacionadas
 - NT de origem
-- Exemplo: `/campo vTPrestLiq CT-e`
+- Exemplo: `/fiscal-campo vTPrestLiq CT-e`
 
-### `/calendario [doc]`
+### `/fiscal-calendario [doc]`
 Mostrar calendario de vigencias filtrado.
 - Ordenado por data de producao
 - Situacao calculada para hoje
 - Cores: azul (homologacao), laranja (producao)
-- Exemplo: `/calendario CT-e`
+- Exemplo: `/fiscal-calendario CT-e`
 
-### `/impacto <nt>`
+### `/fiscal-impacto <nt>`
 Gerar checklist de implementacao para o time de desenvolvimento.
 - Campos novos/alterados/removidos
 - Regras novas e excluidas
 - Eventos novos
 - Rejeicoes
 - Datas de vigencia
-- Exemplo: `/impacto NT-CT-e-2026.004`
+- Exemplo: `/fiscal-impacto NT-CT-e-2026.004`
 
-### `/atualizar-fontes`
+### `/fiscal-atualizar-fontes`
 Buscar novidades nos portais oficiais.
 - Consulta nfe.fazenda.gov.br + dfe-portal.svrs.rs.gov.br
 - Compara com manifest.yaml
 - Propoe o que e novo (nao ingere automaticamente)
 - Versiona ARQUIVOS_NECESSARIOS
 
-### `/duvidas`
+### `/fiscal-compatibilidade <nt> [projeto]`
+Confere se tags, cStat e campos da NT aparecem nos projetos backEnd/frontEnd do usuario.
+- Somente leitura: busca por chave nos projetos listados em `projetos.yaml`
+- Sem `projeto`, analisa todos os aplicaveis ao documento da NT
+- Exemplo: `/fiscal-compatibilidade 2026.004 erp-backend`
+
+### `/fiscal-diagnostico`
+Diagnostica o ambiente (Python, dependencias, Node, OpenSpec) e lista arquivos e scripts referenciados que ainda nao existem.
+- Rode se algum comando falhar por dependencia faltando
+
+### `/fiscal-reextrair [--sem-md]`
+DESTRUTIVO: limpa `catalogo/` e re-extrai todas as NTs e MOCs.
+- Exige confirmacao explicita antes de apagar
+- Use apos corrigir bugs em `extrair_nt.py` / `extrair_moc.py`
+
+### `/fiscal-duvidas`
 Listar e priorizar duvidas abertas.
 - Classifica por prioridade (alta/media/baixa)
 - Sugere como resolver
 
-### `/catalogar-atualizar`
+### `/fiscal-catalogar-atualizar`
 Ler `entrada/`, organizar automaticamente em `fontes/`, atualizar manifest e catalogo.
 - Identifica tipo (NT/MOC/XSD/Tabela) e documento fiscal (NF-e/CT-e/MDF-e)
 - Move para a pasta correta em `fontes/`
@@ -221,12 +237,12 @@ Este e o fluxo padrao para adicionar novos documentos ao repositorio.
 
 ### Passo 1: Verificar o que falta
 
-Rode `/atualizar-fontes` para consultar os portais oficiais e ver o que
+Rode `/fiscal-atualizar-fontes` para consultar os portais oficiais e ver o que
 e novo. A IA compara o que esta nos portais com o que ja temos no
 manifest.yaml e gera um relatorio de novidades.
 
 ```
-/atualizar-fontes
+/fiscal-atualizar-fontes
 ```
 
 Saida: lista de NTs, MOCs e XSDs novos disponiveis nos portais.
@@ -246,12 +262,12 @@ entrada/
 
 ### Passo 3: Organizar e catalogar
 
-Rode `/catalogar-atualizar`. A IA le tudo em `entrada/`, identifica
+Rode `/fiscal-catalogar-atualizar`. A IA le tudo em `entrada/`, identifica
 automaticamente o que e cada arquivo, move para a pasta correta em
 `fontes/` e atualiza o manifest e o catalogo.
 
 ```
-/catalogar-atualizar
+/fiscal-catalogar-atualizar
 ```
 
 O que acontece:
@@ -266,37 +282,37 @@ O que acontece:
 
 ### Passo 4: Ingerir NTs novas (se houver NTs)
 
-Se foram adicionadas NTs novas, rode `/ingerir-nt` para cada uma.
+Se foram adicionadas NTs novas, rode `/fiscal-ingerir-nt` para cada uma.
 A IA extrai as marcações de cor, cataloga regras e campos, atualiza
 o calendario e os docs-fiscais.
 
 ```
-/ingerir-nt fontes/nfe/notas-tecnicas/NT_2026_009_v1.00.pdf
+/fiscal-ingerir-nt fontes/nfe/notas-tecnicas/NT_2026_009_v1.00.pdf
 ```
 
 O que acontece:
 1. Extrai marcações de cor (Python/PyMuPDF)
 2. Gera JSON robusto em `catalogo/nt/<doc>/` (secoes tipificadas)
-3. A IA gera o MD a partir do JSON (`/gerar-md`)
+3. A IA gera o MD a partir do JSON (`/fiscal-gerar-md`)
 4. Atualiza legenda de cores
 5. Atualiza calendario de vigencias
 6. Regenera blocos AUTO dos docs-fiscais
 7. Registra duvidas encontradas
 
 Se quiser so regenerar o MD sem re-extrair o PDF (ex.: para ajustar a
-formatacao), use `/gerar-md <nt>`:
+formatacao), use `/fiscal-gerar-md <nt>`:
 
 ```
-/gerar-md 2026.007
+/fiscal-gerar-md 2026.007
 ```
 
 ### Passo 5: Verificar impacto (para desenvolvedores)
 
 Se voce e desenvolvedor e precisa saber o que mudar no sistema de
-emissao, rode `/impacto` para gerar um checklist.
+emissao, rode `/fiscal-impacto` para gerar um checklist.
 
 ```
-/impacto NT-CT-e-2026.004
+/fiscal-impacto NT-CT-e-2026.004
 ```
 
 Saida: campos novos/alterados/removidos, regras, rejeicoes, eventos,
@@ -304,38 +320,38 @@ datas de vigencia — pronto para criar tarefas no Jira/Linear.
 
 ### Passo 6: Consultar (uso diario)
 
-No dia a dia, use `/consultar` para tirar duvidas rapidas.
+No dia a dia, use `/fiscal-consultar` para tirar duvidas rapidas.
 
 ```
-/consultar "A regra C17-10 da NF-e esta vigente?"
-/consultar "Quando entra em producao o vTPrestLiq no CT-e?"
-/regra C17-10
-/campo vTPrestLiq CT-e
-/calendario CT-e
+/fiscal-consultar "A regra C17-10 da NF-e esta vigente?"
+/fiscal-consultar "Quando entra em producao o vTPrestLiq no CT-e?"
+/fiscal-regra C17-10
+/fiscal-campo vTPrestLiq CT-e
+/fiscal-calendario CT-e
 ```
 
 ### Resumo do fluxo
 
 ```
-  /atualizar-fontes          ← O que falta?
+  /fiscal-atualizar-fontes          ← O que falta?
        |
        v
   Baixar e colar em entrada/ ← Download manual
        |
        v
-  /catalogar-atualizar       ← Organiza automaticamente
+  /fiscal-catalogar-atualizar       ← Organiza automaticamente
        |
        v
-  /ingerir-nt <arquivo>      ← Extrai JSON, cataloga
+  /fiscal-ingerir-nt <arquivo>      ← Extrai JSON, cataloga
        |
        v
-  /gerar-md <nt>             ← IA gera o MD a partir do JSON
+  /fiscal-gerar-md <nt>             ← IA gera o MD a partir do JSON
        |
        v
-  /impacto <nt>              ← Checklist para dev
+  /fiscal-impacto <nt>              ← Checklist para dev
        |
        v
-  /consultar <pergunta>      ← Uso diario
+  /fiscal-consultar <pergunta>      ← Uso diario
 ```
 
 ## Como Funciona a Extracao de Cores

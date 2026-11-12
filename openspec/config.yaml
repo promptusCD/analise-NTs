@@ -53,19 +53,23 @@ context: |
   - catalogo/ = camada "mastigada" gerada por scripts (nt/, regras/, campos/, legendas/)
   - calendario/ = fonte unica de vigencias (calendario.yaml -> .md/.html)
   - docs-fiscais/ = documentacao por documento (NFE.md, CTE.md, MDFE.md)
-  - entrada/ = area de recebimento permanente na raiz (colar arquivos aqui, /catalogar-atualizar organiza)
+  - entrada/ = area de recebimento permanente na raiz (colar arquivos aqui, /fiscal-catalogar-atualizar organiza)
 
   ## Commands Disponiveis
-  - /atualizar-fontes: buscar novidades nos portais
-  - /catalogar-atualizar: organizar entrada/ automaticamente em fontes/
-  - /ingerir-nt <arquivo>: extrair NT com marcações de cor
-  - /gerar-md <nt|moc>: IA gera o MD a partir do JSON extraido
-  - /consultar <pergunta>: resposta com fontes citadas
-  - /regra <id>: detalhe de regra de validacao
-  - /campo <tag>: dados de campo XSD
-  - /calendario [doc]: vigencias filtradas
-  - /impacto <nt>: checklist para dev
-  - /duvidas: lista priorizada
+  - /fiscal-atualizar-fontes: buscar novidades nos portais
+  - /fiscal-catalogar-atualizar: organizar entrada/ automaticamente em fontes/
+  - /fiscal-ingerir-nt <arquivo>: extrair NT com marcações de cor
+  - /fiscal-gerar-md <nt|moc>: IA gera o MD a partir do JSON extraido
+  - /fiscal-consultar <pergunta>: resposta com fontes citadas
+  - /fiscal-regra <id>: detalhe de regra de validacao
+  - /fiscal-campo <tag>: dados de campo XSD
+  - /fiscal-calendario [doc]: vigencias filtradas
+  - /fiscal-impacto <nt>: checklist para dev
+  - /fiscal-duvidas: lista priorizada
+  - /fiscal-processar [--etapa N]: pipeline completo de ingestao
+  - /fiscal-compatibilidade <nt> [projeto]: confere NT x projetos do usuario (somente leitura)
+  - /fiscal-diagnostico: verifica ambiente e dependencias
+  - /fiscal-reextrair: DESTRUTIVO, re-extrai todo o catalogo (exige confirmacao)
 
   ## Convencoes
   - Nomenclatura de NTs: <DOC>_NT_<numero>_v<versao>.pdf
